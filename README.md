@@ -74,6 +74,11 @@ El proyecto esta construido usando varias tecnologias de la epoca. Destaco las p
 - Packetes de librerias las cuales se instalan descomprimiendo archivos .zip
 - Llamadas a la API de windows.
 
+# Ayuda de la aplicación
+Para generar el archivo de ayuda de la aplicacion (.HLP) usaba un programa llamado HelpWriter32. El cual era un muy editor y generador de archivos de ayuda. Estos se compilaban a partir de un archivo .rtf. 
+
+Era bien interesante la generación de toda la documentación del programa usando los archivos de ayuda. El utilitario y compilador viene en la distribución de visual basic 6 creo que en una carpeta llamada utils ...
+
 # Funcionalidades generales de la aplicación
 
 Interfaz
