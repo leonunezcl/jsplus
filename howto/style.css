@@ -1,0 +1,275 @@
+/* GENERAL STYLES */
+
+body {
+  font-family: Verdana, Arial;
+  font-size: 12px;
+  margin-left: 0.5em; 
+  margin-right: 0.5em;
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-family: Verdana, Arial;
+  line-height: 1.5em;
+  font-size: 12px
+}
+
+td, th {
+  font-family: Verdana, Arial;
+  font-size: 12px
+}
+
+a {
+  font-family: Verdana, Arial;
+  text-decoration: underline;
+  color: #003495
+}
+
+
+a:hover {
+  color: #DB7923
+}
+
+font {
+  font-family: Verdana, Arial
+}
+
+ol {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  line-height: 1.5em;
+}
+
+ul {
+  margin-left: 2.0em;
+  margin-right: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+  list-style-image: url('images/bullet.gif');
+}
+
+li {
+  font-size: 12px
+}
+
+/* TITLE STYLES */
+
+.note {
+  font-family: Verdana, Arial;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #800000;
+  margin-bottom:-.9em;
+}
+
+.label {
+  font-family: Verdana, Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.bold {
+  font-family: Verdana, Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.list {
+  font-family: Verdana, Arial;
+  font-size: 11pt;
+  font-weight: bold;
+  color: #666666;
+}
+
+.big {
+  font-size: 12pt;
+  font-weight: bold;  
+}
+
+h1 {
+  font-family: Verdana, Arial;
+  font-size: 10pt;
+  font-weight: bold;
+  color:#888888
+}
+
+h2 {
+  font-family: Verdana, Arial;
+  font-size: 11pt;
+  font-weight: bold;
+  color: #666666;
+}
+
+h3 {
+  font-family: Verdana, Arial;
+  font-size: 10pt;
+  font-weight: bold;
+  color: #333333;
+}
+
+.title {
+  font-family: Verdana, Arial;
+  font-size: 12pt;
+  font-weight: bold;
+  color:#888888
+}
+
+.subtitle {
+  font-family: Verdana, Arial;
+  font-size: 10pt;
+  font-weight: bold;
+  color:#666666
+}
+
+.review {
+  font-family: Verdana, Arial;
+  font-size: 9;
+  color:#666666
+}
+
+.smalltitle {
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.smalltitle2 {
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  font-weight: bold;
+  color: #666666
+}
+
+/* LINK STYLES */
+
+.navl {
+  font-family: Verdana, Arial;
+  text-decoration: none;
+  color: #808080
+}
+
+a.navl:hover {
+  text-decoration: underline;
+}
+
+/* TEXT STYLES */
+
+.news {
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  text-decoration: none;
+  color: #333333
+}
+
+.normal {
+  font-family: Verdana, Arial;
+  font-size: 10pt
+}
+
+.small {
+  font-family: Verdana, Arial;
+  font-size: 11px;
+}
+
+
+p.spacy {
+  font-family: Verdana, Arial;
+  line-height: 2em;
+  font-size: 12px
+}
+
+/* SIDE MENU STYLES */
+
+.menulink {
+  font-family: Tahoma, Verdana, Arial;
+  font-size: 11px;
+  text-decoration: none;
+  color: #003495;
+}
+
+.menulink:hover {
+  text-decoration: underline;
+  /*color: #000000;*/
+}
+
+.price {
+  font-family: Tahoma, Verdana, Arial;
+  font-size: 8pt;
+  color: #CF0000;
+}
+
+
+/* FRAMES */
+
+.box {
+  border: 1px dashed Gray;
+  background: #EEEEEE;
+}
+
+.special {
+  border: 1px dashed #DEDF00;
+  background-color: #FFFFDD;
+  padding: 6px;
+  line-height: 1.7em;
+  margin-top: 16px;
+}
+
+.special1 {
+  border: 1px dashed #cccccc;
+  background-color: #FFFFDD;
+  padding: 5px;
+  line-height: 1.7em;
+  clear: both;
+}
+
+.special2 {
+  border: 1px dashed #cccccc;
+  background-color: #F7F7F7;
+  padding: 5px;
+  line-height: 1.7em;
+}
+
+/* OTHER */
+
+.listitem {
+  font-size: 12px;
+  margin-bottom: 5px
+}
+
+/* FRONT PAGE */
+
+.gray {
+  color: #808080
+}
+
+.ftext {
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+
+.ftitle {
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.flink {
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  line-height: 1.7em;
+}
+
+.fprod {
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
