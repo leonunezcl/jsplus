@@ -35,11 +35,13 @@ Espero te haya gustado mi historia.
 # Término y fin del proyecto
 El proyecto finalizo el año 2010 por falta de tiempo, bajas ventas y por el periodo de vida util de la aplicacion. Debo agradecer todo lo que aprendi con el, las muchas noches que me acoste tarde, el frio del invierno de ese año en especial 2005 y las incontables tazas de te que tome .... xD
 
+Actualmente ocupo para mis fines particulares una edición "LITE" de al aplicacion la cual se llama "Javascript Studio". Esta versión es mas simplificada y liviana que la ultima versión anterior. 
+
 # Hosting del proyecto
 Javascript Plus! estaba alojado en el sitio web http://www.vbsoftware.cl. Este nombre de sitio venia originalmente de un proyecto personal al cual yo habia llamado "proyectovb" y del cual fui muy entusiasta con el lenguaje visual basic desde la version 4 a la 6. Este sitio actualmente esta "tomado" en NIC por otra persona. Curiosamente usa la aplicacion como promoción en su sitio pero tiene un link de direccion a juegos de casino. No tengo ganas de iniciar algun tipo de pelea o disputa legal por el nombre del sitio. Curioso igual que tengan el proyecto como referencia en este. Quizas como experiencia cuiden sus sitios webs o registren su marca. 
 
 # Patentes y nombres comerciales
-Javascript Plus! no es un nombre de marca registrado y esperaria que se conserve como esta. En su epoca hice las averiguaciones del tema "legal" de registro de marcas y patentes pero era engorroso y caro para mi en la epoca. Desconozco si en la actualidad esto seguira igual o se haya simplificado el proceso de registro de aplicaciones.
+Javascript Plus! no es un nombre de marca registrado y esperaria que se conserve como esta. En su epoca hice las averiguaciones del tema "legal" de registro de marcas y patentes pero era engorroso y caro para mi en la epoca. Desconozco si en la actualidad esto seguira igual o se haya simplificado el proceso de registro de aplicaciones. Si estas leyendo esto es para que aprendas de alguien que hizo todo lo que esta escrito, aprendas de el y quizas te sirva de inspiración para tu proyecto.
 
 # Shareware y canales de promoción
 Para usar el canal de venta ocupe el que provee la empresa http://www.regnow.com. Tienes que configurar una cuenta, indicar los datos del deposito de la cuenta destino y solicitar al banco un numero de transaccion para autorizar depositos internacionales. Luego en tu cuenta de regnow te configuras cada cuanto quieres que te lleguen los depositos (en mi caso eran cada 200 USD). 
