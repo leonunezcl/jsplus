@@ -1,0 +1,12 @@
+
+===== FarPoint Technologies, Inc. 26-Oct-07  10:32AM =====
+===== Start of export of FarPoint Spread data to XML file D:\Documents and Settings\lnunez\Escritorio\tb_inagenes_box.xml. =====
+
+Col	Row	Information
+---   	---	-------------------------------------------------------------
+n/a	n/a	Spread has successfully exported columns 1 through 10,
+		rows 1 through 50 to XML file (D:\Documents and Settings\lnunez\Escritorio\tb_inagenes_box.xml).
+
+===== End of XML export          =====
+===== FarPoint Technologies, Inc. =====
+
