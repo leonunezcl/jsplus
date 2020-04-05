@@ -53,7 +53,7 @@ Para los canales de promoción existen muchos y variados sitios web que te ofrec
 La subida de la información se realizaba usando la aplicacion PAD la cual te permitia configurar varios parametros comunes en los portales de distribución de software o bien tenias que ingresar "a mano" todos los valores segun corresponda.
 
 # Distribución y empaquetamiento de la aplicación
-El proceso de instalación se realizaba usando la aplicacion Inno Setup Script Wizard el cual generabas todo el script y proceso de instalación de todos los archivos de la aplicación. Luego la aplicacion "compila" tu proyecto en un archivo setup.exe el cual va realizando todos los tipicos pasos tradicionales de un instalador de software.
+El proceso de instalación se realizaba usando la aplicacion Inno Setup Script Wizard (https://jrsoftware.org/isinfo.php) el cual generaba todo el script y proceso de instalación de todos los archivos de la aplicación. Luego la aplicacion "compila" tu proyecto en un archivo setup.exe el cual va realizando todos los tipicos pasos tradicionales de un instalador de software.
 
 # Proceso de validación y trial de la aplicación
 Para el proceso de la validación del trial de la aplicacion el proyecto tiene un flag dentro de las opciones de compilación condicional. Este parámetro se llama LITE. Si tiene el valor 1 al momento de compilar entonces era la version trial y se permitia usar hasta 30 veces la aplicación. Pasado ese numero se invitaba al usuario a comprar la aplicación y se bloqueba el uso de esta. El metodo para evitar posibles hackeos o crackeos usaba el siguiente truco :
