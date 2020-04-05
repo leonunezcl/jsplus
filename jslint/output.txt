@@ -1,0 +1,83 @@
+<FORM name=jslint><TEXTAREA name=input>
+
+</TEXTAREA> 
+<DIV id=output>
+<DIV id=functions>
+<DIV><I>No new global variables introduced.</I></DIV></DIV></DIV>
+<FIELDSET id=options><INPUT id=adsafe type=checkbox> <BR><INPUT id=bitwise type=checkbox> <BR><INPUT id=browser type=checkbox> <BR><INPUT id=cap type=checkbox> <BR><INPUT id=debug type=checkbox> <BR><INPUT id=eqeqeq type=checkbox> <BR><INPUT id=evil type=checkbox> <BR><INPUT id=fragment type=checkbox> <BR><INPUT id=laxbreak type=checkbox> <BR><INPUT id=nomen type=checkbox> <BR><INPUT id=passfail type=checkbox> <BR><INPUT id=plusplus type=checkbox> <BR><INPUT id=rhino type=checkbox> <BR><INPUT id=undef type=checkbox> <BR><INPUT id=white type=checkbox> <BR><INPUT id=widget type=checkbox> <BR><INPUT id=on type=checkbox> <BR><INPUT id=forin type=checkbox> <BR></FIELDSET> </FORM>
+<SCRIPT>
+
+/*extern JSLINT */
+
+var OPTIONS = [
+
+'adsafe',
+
+'bitwise',
+
+'browser',
+
+'cap',
+
+'debug',
+
+'eqeqeq',
+
+'evil',
+
+'fragment',
+
+'laxbreak',
+
+'nomen',
+
+'passfail',
+
+'plusplus',
+
+'rhino',
+
+'undef',
+
+'white',
+
+'widget',
+
+'on',
+
+'forin'
+];
+
+function go(){
+
+var b, d = new Date(), k = '{', i, o = {};
+
+for (i = 0; i < OPTIONS.length; i += 1) {
+
+if (document.forms.jslint[OPTIONS[i]].checked) {
+
+o[OPTIONS[i]] = true;
+
+if (b) {
+
+k += ',';
+
+}
+
+k += '"' + OPTIONS[i] + '":true';
+
+b = true;
+
+}
+
+}
+
+k += '}';
+
+JSLINT(document.forms.jslint.input.value, o);
+
+document.getElementById('output').innerHTML = JSLINT.report();
+
+}
+
+</SCRIPT>

@@ -1,0 +1,180 @@
+<html>
+
+<head>
+
+<title></title>
+
+<script src='jslint.js'></script>
+
+</head>
+
+<body onload='go();return false'>
+
+<form name='jslint'>
+
+<textarea name='input'>
+
+
+</textarea>
+
+<div id=output></div>
+
+<fieldset id=options>
+
+<input type=checkbox id=adsafe >
+
+<br>
+
+<input type=checkbox id=bitwise >
+
+<br>
+
+<input type=checkbox id=browser >
+
+<br>
+
+<input type=checkbox id=cap >
+
+<br>
+
+<input type=checkbox id=debug >
+
+<br>
+
+<input type=checkbox id=eqeqeq >
+
+<br>
+
+<input type=checkbox id=evil >
+
+<br>
+
+<input type=checkbox id=fragment >
+
+<br>
+
+<input type=checkbox id=laxbreak >
+
+<br>
+
+<input type=checkbox id=nomen >
+
+<br>
+
+<input type=checkbox id=passfail >
+
+<br>
+
+<input type=checkbox id=plusplus >
+
+<br>
+
+<input type=checkbox id=rhino >
+
+<br>
+
+<input type=checkbox id=undef >
+
+<br>
+
+<input type=checkbox id=white >
+
+<br>
+
+<input type=checkbox id=widget >
+
+<br>
+
+<input type=checkbox id=on >
+
+<br>
+
+<input type=checkbox id=forin >
+
+<br>
+
+</fieldset>
+
+</form>
+
+<script>
+
+/*extern JSLINT */
+
+var OPTIONS = [
+
+'adsafe',
+
+'bitwise',
+
+'browser',
+
+'cap',
+
+'debug',
+
+'eqeqeq',
+
+'evil',
+
+'fragment',
+
+'laxbreak',
+
+'nomen',
+
+'passfail',
+
+'plusplus',
+
+'rhino',
+
+'undef',
+
+'white',
+
+'widget',
+
+'on',
+
+'forin'
+];
+
+function go(){
+
+var b, d = new Date(), k = '{', i, o = {};
+
+for (i = 0; i < OPTIONS.length; i += 1) {
+
+if (document.forms.jslint[OPTIONS[i]].checked) {
+
+o[OPTIONS[i]] = true;
+
+if (b) {
+
+k += ',';
+
+}
+
+k += '"' + OPTIONS[i] + '":true';
+
+b = true;
+
+}
+
+}
+
+k += '}';
+
+JSLINT(document.forms.jslint.input.value, o);
+
+document.getElementById('output').innerHTML = JSLINT.report();
+
+}
+
+</script>
+
+</body>
+
+</html>
+
