@@ -1,0 +1,7 @@
+CJSFtp = 129, 103, 617, 679, C
+frmConnect = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmMainFTP = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmProgress = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+mdlModule = 0, 0, 0, 0, C
+cConnection = 0, 0, 0, 0, C
+cRemoteFile = 0, 0, 0, 0, C
