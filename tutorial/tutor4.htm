@@ -1,0 +1,310 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 4 - Working with Forms</h1>
+<p align="right"><a href="tutor3.htm">Tutorial 3 - Core Language</a> -
+<a href="tutor5.htm">Tutorial 5 - Forms and DHTML</a></p>
+<p>User interaction is commonly accomplished through the use of HTML forms
+and their input controls. Interaction involves acquiring data and then
+performing some task based on that information. The results can be presented
+either with dialogs or more commonly by using other input control elements.</p>
+<p>As this tutorial relies heavily on their use, you should already be able
+to create HTML forms and include any input control in a functional layout.
+You may wish to refer to <a href="htmlqwkf.htm">Quick Forms</a> for a fast
+review of your skills or to my <a href="htmlform.htm">HTML forms reference
+page</a> for more complete details.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#re">referencing forms and controls</a></li>
+<li><a href="#ac">accessing control content</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#te">simple text control example</a></li>
+<li><a href="#rb">radio button confirmation</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#se">select list navigation</a></li>
+<li><a href="#dy">dynamic select list</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="re">Referencing Form and Control Objects</h2>
+<p>Forms can be designed to permit controlled (ie. prevalidated) data
+(eg. radio buttons, check boxes and select lists) or free format data
+such as text entry boxes and file uploads using input controls.
+These forms can be validated before submission using the techniques
+that are discussed in the <a href="tutorb.htm">next tutorial</a>.
+The controls can also be used for input and output in client-side
+<a href="tutorc.htm">smart form</a> utilities that are never submitted.</p>
+<p>There are two techniques for referencing an input control <em>object</em>
+for reading or modifying it. The form method (old way) requires a surrounding
+form element and uses the format:</p>
+<pre class="spec">document.form_name.control_name</pre>
+<p>The element method (new way) of DOM object reference that requires
+<em>no</em> form element container is:</p>
+<pre class="spec">document.getElementById('control_id')</pre>
+<p>Use the form method (old way) when <em>any</em> of the following
+conditions apply:</p>
+<ul>
+<li>many elements have to be passed to a single function.</li>
+<li>radio controls or select boxes are used.</li>
+<li>multiple field validations are to be done with arrays.</li>
+<li>a form is required for CGI submission purposes.</li>
+<li>Netscape 4 has to be supported.</li>
+</ul>
+<p>Use the element method (new way) when:</p>
+<ul>
+<li>XHTML specification is used!</li>
+<li>the input controls are strictly for client-side use with no form
+submission and no support for Netscape 4 is offered. Removal of the form
+element helps suppress false submissions in some browsers. See the
+<a href="tutorb.htm#en">validation by entry</a> topic for another
+technique that is used when a form is used.</li>
+</ul>
+
+<p><span>Note:</span> Netscape (and gecko engine based browsers) do not
+treat form objects in the same manner as MSIE and Opera. To them, forms
+are <strong>not</strong> globally accessible so either they are passed to
+the called function as an object or the specific value is passed. MSIE can
+access a form by using its specific name in the function. If you always pass
+the form through as a function parameter your routines will work in both
+sets of browsers! And it is better programming practice too!</p>
+
+<h2 id="ac">Accessing Control Contents</h2>
+<p>Most controls can have their contents accessed or updated through the
+<em>value</em> property of the control's <em>object</em>. When used on
+the right side of an (equal's) assignment, the current value of the object
+is read. When used on the left side of an assignment, the object is updated.
+Exceptions to this general rule are:</p>
+<dl>
+<dt><b>Check Box</b></dt>
+<dd>Use the <em>checked</em> property. The value is either true or false.</dd>
+<dt><b>Radio Buttons</b></dt>
+<dd>Use the <em>checked</em> property. The value is either true or false.
+Since all radio buttons in a group have the same name, the individual
+object is accessed via an <em>index</em>. Indexes are numbers in square
+brackets such as radioButton[0] etc. (<strong>NOTE:</strong> index
+numbering starts at zero with the first reference in the HTML document.)</dd>
+<dt><b>Select List</b></dt>
+<dd>The <em>selectedIndex</em> property holds the position in the list
+of the <em>first</em> currently selected item. A value of -1 indicates
+<em>no selection</em> has been made or it has been <em>deselected</em>.<br>
+form_name.control_name[form_name.control_name.selectedIndex].<em>value</em>
+reads the value (ie. what is assigned by the value attribute of the
+current selection.<br>
+form_name.control_name[form_name.control_name.selectedIndex].<em>text</em>
+reads the text (ie. what is contained in the option element) of the
+current selection.<br>
+<span>Note: </span>If multiple selections are allowed, you must cycle
+through the entire select control, testing the <em>selected</em> property
+of each item in the options array.<br>
+<span>Note2: </span>If you are trying to support the MSIE browser, use the
+multiple selection method, even if only one selection is allowed.</dd>
+<dt><b>File</b></dt>
+<dd>The file control uses FileUpload.value (note that the Object name is
+not the same as the type value - this is done to deliberately confuse
+programmers!)</dd></dl>
+<p><strong>Note:</strong> Although radio buttons are the most commonly
+<em>indexed</em> input control, any control can be set up for indexing
+by reusing (overloading) its name attribute in HTML. One appropriate
+use would be for gathering a column of numbers (perhaps scores or
+unit prices) in an array within a loop and doing totals or averages.
+The arrays always start at '0' and are accessed similar to the radio
+control example above.</p>
+
+<h2 id="te">Simple Text Control Example</h2>
+<p><em>Input</em> text controls (single line) and <em>textarea</em>
+controls (multiple line) are commonly used to output the results of
+processing the input data. This example places the results of the system
+object <em>Date</em> method <em>toString()</em> into an input area.
+The input box is made <em>readonly</em> to prevent typing to it.</p>
+<div class="c">
+<input class="go130" value="Display date &amp; time" onclick="now=new Date;document.getElementById('t').value=now.toString();" type="button">
+<input class="box300" id="t" readonly="readonly" type="text" size="20">
+</div>
+<p>Since this is a simple action it can be done within the event call
+itself such as:</p>
+<pre class="special">&lt;input class="go130" type="button" value="Display date &amp;amp; time"
+   onclick="now=new Date;document.getElementById('t').value=now.toString();" /&gt;
+&lt;input name="t" type="text" readonly="readonly" /&gt;</pre>
+<p>However a more structured and easier to read approach is to separate
+the programming action into its own <em>function</em> that can be removed
+to the head section of the document (or even to a separate file). The
+activating event passes one <em>control object</em> to the called function
+so that it can be updated.</p>
+<pre class="special">function showDate(thisObj) {
+/* create a Date object using the system clock */
+now=new Date;
+/* convert contents to string and place in control */
+document.getElementById(thisObj).value=now.toString();
+}
+................
+&lt;input type="button" value="Display date &amp;amp; time"
+   onclick="showDate('t')" /&gt;
+&lt;input id="t" type="text" readonly="readonly" /&gt;</pre>
+
+<h2 id="rb">Radio Button Confirmation Example</h2>
+<p>There are times when you may need to confirm that something has been
+read or an agreement made before access is given to a page. This can
+be done easily with a radio button control. Even more design elements
+(legend and fieldset) are included in this example. Note their effect.</p>
+<form id="rb_form" action="" method="post"><fieldset>
+<legend>Licence Agreement</legend>
+<table class="n" summary=""><tbody><tr><th class="n">
+<textarea class="list2" name="txt" readonly="readonly" rows="14" cols="55">This licence covers all versions of Niagara Learning Software
+encryption mechanisms.
+The vendor is not liable for any damage to hardware or loss of
+data through the use of any Niagara Learning System software.
+The licensee will not reverse engineer or manipulate the code
+in any manner in order to disable or enhance any functionality.
+The licensee is not entitled to distribute the software in any
+manner except for use on the licensee's computers and those of
+his employees.
+Any violation of this agreement will result in immediate
+termination of the contract and the loss of the licensee's
+first born.
+</textarea></th></tr>
+<tr><th class="n">I have read and accept this agreement
+<input id="y" class="radio" name="rbc" type="radio" value="1">Yes
+<input id="n" class="radio" name="rbc" checked="" type="radio" value="2">No
+<input name="act" class="go130" value="View Utilities" onclick="doYes(document.getElementById('y').checked)" type="button">
+</th></tr></tbody></table></fieldset></form>
+<p>Here is the button setup and event call. For the complete form
+read the source file.</p>
+<pre class="special">&lt;input id="y" name="rbc" type="radio" /&gt;Yes
+&lt;input id="n" name="rbc" type="radio" checked="checked" /&gt;No
+&lt;input name="act" type="button" value="View Utilities"
+ onclick="doYes(document.getElementById('y').checked)" /&gt;
+&lt;/form&gt;</pre>
+<p>And here is the JavaScript function. The === is important!</p>
+<pre class="special">function doYes(entry) {
+if (entry===true) {
+    top.location.href="http://home.cogeco.ca/~ve3ll/utility.htm";
+    } else {
+    alert("Sorry - You must sign agreement to access utilities");
+    }
+}</pre>
+<p><strong>Note:</strong> In this example I chose to pass only
+a <em>simple data value</em> rather than a control or complete form.
+It was sufficient for performing a test. However if <em>feedback</em>
+to a form control is needed, then the form or at least the control
+must be passed. Some programmers choose to always pass the form for
+consistency.</p>
+<p>If you want this agreement to be <em>remembered</em> so that
+it doesn't have to be repeated, you will need to bake a cookie
+as described in the <a href="tutor9.htm">Cookies</a> tutorial.
+If you need to log that an agreement was made, you will need to do a
+<em>mailto</em> submission as outlined in the <a href="htmlqwkf.htm">
+Quick Forms</a> tutorial. If you need security (ie. a concealed
+jump address) then check my
+<a href="http://home.cogeco.ca/%7Ecipher/cyhome.htm">
+Cryptology Zone</a> for suggestions.</p>
+
+<h2 id="se">Select List Navigation Example</h2>
+<p>This example passes information gathered from a select control
+selection to an onclick event. Since the info contains URL's,
+the event is designed to perform the hyperlink jump.</p>
+<div class="c"><table summary="*"><tbody><tr><th class="n">
+<select id="list"><option selected="selected" value="javascript:alert('You must select from list')">
+        Select a Tutorial...</option><option value="jstutor1.htm">1 - Screen Output</option><option value="jstutor2.htm">2 - Objects and Events</option><option value="jstutor3.htm">3 - Core Language</option><option value="jstutor4.htm">4 - Working With Forms</option><option value="jstutorb.htm">5 - Form Validation</option></select></th>
+<td class="n"><input class="go130" value="Go To Site!" onclick="goto('list')" type="button"></td></tr></tbody></table></div>
+<pre class="special">&lt;div class="c"&gt;
+&lt;table&gt;&lt;&lt;tr&gt;&lt;th&gt;select id="list"&gt;
+&lt;option selected value="javascript:alert('You must select from list')"&gt;
+        Select a Tutorial...&lt;/option&gt;
+&lt;option value="jstutor1.htm"&gt;1 - Screen Output&lt;/option&gt;
+&lt;option value="jstutor2.htm"&gt;2 - Objects and Events&lt;/option&gt;
+... etc ...
+&lt;/select&gt;
+&lt;/th&gt;&lt;td&gt;
+&lt;input type="button" value="Go To Site!" onclick="goto('list')" /&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</pre>
+<p>The key to this example is the action contained in the onclick event.
+It takes the option highlighted in the select form and feeds its value
+to <em>top.location.href</em> for the jump. <em>top.location</em> is
+an object that refers to the location (ie. current web address) of the
+first document layer. <em>href</em> is a property that is the complete
+url within an object.</p>
+<p><span>Note: </span>The default selection (which is really a prompt)
+uses a JavaScript command to display a message rather than moving to a
+new document.</p>
+<p>Once again the JavaScript component could (structured programmers
+would say <em>should</em>) be extracted to a separate function to
+enhance readability.</p>
+<p>The property <em>top.location.href</em> can also be used in other ways
+to jump to a new HTML document. For example by using the system's date
+one could move on to other screens depending on the day of the week or
+hour of the day. It can also be used with <em>browser sniffing</em>
+(described in <a href="tutor5.htm">Forms and DHTML</a>) to skip a page
+for specific browsers which do not support specific code on that page.</p>
+
+<h2 id="dy">Dynamic Select Lists</h2>
+<div class="c"><table class="n" summary="*"><tbody><tr><th class="n">
+<select id="list1" size="10" multiple="multiple"><option>1 - Screen Output</option><option>2 - Objects and Events</option><option>3 - Core Language</option><option>4 - Working With Forms</option><option>5 - Form Validation</option><option>6 - Smart Forms</option><option>7 - Forms and DHTML</option><option>8 - DOM and DHTML</option><option>9 - Cookies</option><option>10 - Animation / Multimedia</option></select></th>
+<th class="n" style="vertical-align: middle;">
+<input class="go" value=" --&gt; " onclick="add2list('list1','list2')" type="button"></th>
+<th class="n">
+<select id="list2" size="10" style="width: 199px;"><option></option><option></option><option></option><option></option><option></option><option></option><option></option><option></option><option></option><option></option></select></th>
+</tr></tbody></table></div>
+<p>This example illustrates passing multiple selected items from a select
+list to another select control. Only the select elements' names are passed
+through the onclick event. The <em>add2list</em> function finds the objects
+and loops through the options array looking for <em>selected</em> items.
+The function also prevents duplicate entries by maintaining a global
+<em>picked</em> array. Refer to the source listing head section.
+The form construction is:</p>
+<pre class="special">&lt;div class="c"&gt;&lt;table class="n" summary="*"&gt;&lt;tr&gt;
+&lt;th class="n"&gt;&lt;select name="list1" id="list1" size="10" multiple&gt;
+&lt;option&gt;1 - Screen Output&lt;/option&gt;
+&lt;option&gt;2 - Objects and Events&lt;/option&gt;
+... etc ...
+
+&lt;/select&gt;&lt;/th&gt;
+&lt;th class="n"&gt;&lt;input class="go" type="button" value=" --&gt; "
+       onclick="add2list('list1','list2')" /&gt;&lt;/th&gt;
+
+&lt;th class="n"&gt;&lt;select name="list1" id="list2" size="10"&gt;
+&lt;/select&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/div&gt;</pre>
+
+        <div align="right">
+<a href="tutor3.htm">Tutorial 3 - Core Language</a> - <a href="tutor5.htm">Tutorial 5 - Forms and DHTML</a>
+
+        </div>
+
+        <div align="right">
+&nbsp;</div>
+        <div align="right">
+<b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b>
+
+        </div>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

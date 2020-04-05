@@ -1,0 +1,303 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 13 - Getting the bugs out</h1>
+<p align="right"><a href="tutorc.htm">Tutorial 12 - Smart Forms</a> -
+<a href="tutore.htm">Tutorial 14 - Regular Expressions</a></p>
+<p><strong>Bugs</strong> or programming errors occur often when learning
+a new programming language or when developing a new routine or utility.
+Ripped or cut/pasted scripts are often filled with latent bugs as well.
+This tutorial will hopefully give you some successful strategies for
+squashing any bugs that occur in your JavaScript writings or trying to
+get ripped scripts to work correctly.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#types">Types of JavaScript Errors</a></li>
+<li><a href="#debug">Using Your Browser's Debugger</a></li>
+<li><a href="#alert">Alerts and the Status Line</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#write">Using write() and writeln()</a></li>
+<li><a href="#lint">Using the JSlint Validator</a></li>
+<li><a href="#common">Common JavaScript Errors</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#brow">Browser Issues</a></li>
+<li><strong>Issues:</strong> <a href="#bin">Net4</a> and <a href="#bim">MSIE</a></li>
+<li><a href="#sniff">Browser Sniffing</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="types">Types of JavaScript Errors</h2>
+<p>There are several types of error, each with its own method of detection
+and repair. The basic types of error are:</p>
+<dl>
+<dt><b>Browser Implementation Errors</b></dt>
+<dd>These are quirks that occur in one browser but not others. See
+<a href="#brow">Browser Issues</a> for more details. Test your code
+on all anticipated client browsers!</dd>
+<dt><b>Syntax Errors</b></dt>
+<dd>These are errors in grammar and punctuation such as mismatched
+quotes or missed commas. These errors are caught quickly if you have
+the browser's built-in error detector in display mode or run the
+script through JS Lint.</dd>
+<dt><b>Runtime Errors</b></dt>
+<dd>These errors only show up as the script is executed. Common
+examples are calling a function that hasn't been declared
+(typing error or case-sensitivity issue) or division by zero.
+Although JavaScript is typeless, many built in objects expect
+and/or return specific types (eg. style.left needs string type).</dd>
+<dt><b>Logic Errors</b></dt>
+<dd>These are basic errors in the programmer's algorithms or
+procedural errors. Diagnosis only comes when incorrect results
+occur and solution requires mapping out the flow for test cases.
+The wrong scoping of a variable is an example of this kind of error.</dd>
+<dt><b>Incorrect Operator Precedence Errors</b></dt>
+<dd>These are basic mathematical <em>grouping</em> errors. The best
+way to avoid them is with brackets to force the order that you want
+operations to occur explicitly.</dd>
+</dl>
+
+<h2 id="debug">Using Your Browser's Debugger</h2>
+<p><strong>Microsoft Internet Explorer</strong> has a built-in debugger but
+you must first enable it by selecting Tools -- Internet Options -- Advanced.
+Uncheck the box labeled 'disable script debugging' and check the box that
+says 'display a notice about every script error'. Note: MSIE 5 users will
+have to first download the debugger utility from <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sdbug/Html/sdbug_2.asp">
+Microsoft</a>. Note that the line number given in any error message is
+only approximately correct ;-]</p>
+<p><strong>Netscape 7 and Mozilla Group</strong> browsers have a current
+version of the <em>Venkman</em> browser that is accessible from the Tools
+menu option. <strong>Netscape 6</strong> users must download Venkman from
+<a href="http://www.mozilla.org/projects/venkman/">Mozilla Projects</a>. The
+<a href="http://www.svendtofte.com/code/learning_venkman/">Venkman tutorial</a>
+is a comprehensive document for learning how to use this important debugging
+tool</p>
+<p><strong>Netscape 4</strong> users  must enter <strong>javascript:</strong>
+in the location bar to obtain an error report. Any error will be listed along
+with the <em>correct</em> line number. Some messages are very cryptic but at
+least you know where to start looking ;-] .</p>
+
+<h2 id="alert">Alert Windows and the Status Line</h2>
+<p>Previous tutorials have shown how to use the alert window to provide
+feedback to the user. This same technique can be used by a JavaScript
+programmer to set breakpoints (ie pauses) and watch the value of
+variables within the code. Don't forget to use the typeof() operator
+to check the type of the variable. And sometimes it is more convenient
+to use window.status to display variable contents without pausing the
+program.</p>
+
+<h2 id="write">Using write() and writeln() Methods</h2>
+<p>At times you may want to analyze a list of values. You can open a new
+window and use the write() or writeln() methods. This is the equivalent
+to the use of print or printf statements in other languages.</p>
+
+<h2 id="lint">Using the JSlint Validator</h2>
+<p><a href="http://www.crockford.com/javascript/jslint.html">
+JSlint</a> is an on-line validator that is very easy to use. Simply cut and
+paste your script into the text entry zone and press the JSlint button.
+Any error will generate a simple text message and a line number reference.
+This is an excellent way of getting the lint out of the wash ;-]</p>
+<p>JSlint enforces a style that is tighter than what most browsers need
+but which detects many common mistakes that programmers make. Some of
+the guidelines are as follows:</p>
+<ul>
+<li>jslint expects that every statement be followed by ; except for
+<em>for</em>, <em>function</em>, <em>if</em>, <em>switch</em>, <em>try</em>,
+and <em>while</em>.</li>
+<li>jslint does <em>not</em> expect to see unnecessary semicolons or the
+empty statement.</li>
+<li>jslint does <em>not</em> expect to see an <em>identifier</em>, a
+<em>string</em>, a <em>number</em>, or a suffix operator such as
+<em>) ] ++ --</em> at the end of a line.</li>
+<li>jslint expects that <em>if</em> and <em>for</em> statements will be
+made with <em>blocks</em> {that is, with statements enclosed in braces}.</li>
+<li>jslint expects blocks with<em> function, if, switch, while, for, do,
+and try</em> statements and <em>nowhere</em> else.</li>
+<li>jslint expects that a var will be declared <em>only once</em>, and that
+it will be declared <em>before</em> it is used.</li>
+</ul>
+
+<h2 id="common">Common JavaScript Errors</h2>
+<p>Errors can take some of the fun out of programming but experience
+will gradually eliminate (or at least make you more watchful for)
+certain commonly made ones. Some of the most common errors are:</p>
+<ul>
+<li>Spelling and typo errors. Remember case sensitivity and avoid hard
+to find lookalikes (1 and l, 0 and O, etc.).</li>
+<li>Not matching brackets or quotes correctly.</li>
+<li>Wrong type of bracket. Each has its own use.</li>
+<li>Not using the escaper backslash when required.</li>
+<li>The type of the variable may be critical in spite of being a
+<em>typeless</em> language.</li>
+<li>The <em>scope</em> of a variable can affect its current value.</li>
+</ul>
+<h2 id="brow">Browser Issues</h2>
+<p>In the nineties, browsers developed at a fast pace and without standards.
+This led to proprietary ways of doing things and the need for sniffing to
+see what browser was being used. But in today's world there is a known
+recommendation for both script <em>[ECMA]</em> and DOM <em>[w3.org]</em>.
+Unfortunately some recommendations are vague and consequently are implemented
+differently. Also texts and on-line material continue to use legacy methods
+which no longer work in the modern browsers. The next few subtopics are a
+guide as to what to <span>beware</span> in texts, tutorials and ripped
+scripts. The best way to avoid problems is to stick with the
+<em>ECMA/w3.org</em> recommendations!</p>
+
+<h3 id="bin">Netscape 4</h3>
+<p>Netscape originally used a <em>layers</em> model for DHTML. Netscape 4
+introduced a layer element which could be manipulated or positioned with
+effects similar to what developed later with the <em>div</em> element in
+the DOM model. However the manner in which this was programmed was very
+different than that chosen for the DOM method. Because of both technical
+and political considerations, <em>w3.org</em> chose to recommend using only
+the DOM model.<br>As an example of layers style <em>document.flyer.left</em>
+or <em>document.layers['flyer'].left</em> was the Netscape 4 equivalent
+to <em>document.getElementById("flyer").style.left</em>.</p>
+<p>If you are <em>required</em> to support Netscape 4, you must first
+<em>sniff</em> for it and set a global variable appropriately. Then at
+any point where DHTML is used, set up a branch that uses either DOM or
+the layers model as needed. <a href="http://www.mozilla.org/docs/web-developer/css1technote/css1tojs.html">
+CSS1 technote</a> may help those who are supporting Netscape 4. As it is so
+very old now, I choose not to support it! You can move Netscape 4 users off
+a page by using a <a href="#ns4">transfer method</a>, detect and raise an
+<em>alert</em> message, or just neglect them altogether.</p>
+
+<h3 id="bim">Microsoft Internet Explorer</h3>
+<p>MSIE has properties in addition to those in the DOM model. But it
+is better to find these and replace with w3.org recommendation coding.
+For example both pixelTop and pixelLeft can be replaced by top and left.</p>
+<pre class="special">where=styleObj.pixelLeft;  //MSIE specific
+where=parseInt(styleObj.left); // makes integer count in pixels
+. . .
+styleObj.pixelLeft=where;  // MSIE specific
+styleObj.left=where + 'px' // guarantees measured in pixels</pre>
+<p><em>document.all</em> is MSIE specific. It should be replaced with
+the DOM construct document.getElementById('ident').</p>
+<p>For some reason MSIE does not like smart forms to be nested
+in definition lists even though it is a valid html construct.
+This can result in SELECT box text becoming inaccessible.</p>
+<p>JavaScript variable names that are the same as html ids can
+cause error messages within MSIE. This is an undocumented
+enhancement in MicroSpeak. ;-]  ;-]</p>
+<p>MSIE has <em>filters</em> and <em>transitions</em> which look
+slick but only in MSIE. Avoid the use of any proprietary feature!
+It is just not worth the maintenance hassle.</p>
+<p id="blur">An example of a vague recommendation in DOM that causes a
+problem in MSIE is the sequence of actions when both focus and blur
+(anti-focus) occur at the same time. Here is a fragment that tries to
+insure that a field is not empty as soon as you move to the next field.
+Unfortunately, in MSIE it leads to an endless loop.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+function requiredString (control, label) {
+if (control.value.length == 0)
+   {alert("you need to enter a string for "+label); control.focus();}
+}&lt;/script&gt;
+. . .
+&lt;input name="Control1" onBlur="requiredString (this, 'Label1');"&gt;
+&lt;input name="Control2" onBlur="requiredString (this, 'Label2');"&gt;</pre>
+
+<h2 id="sniff">Browser Sniffing</h2>
+<p>The document object model (DOM) is a convenient way of understanding how
+to access html elements. Unfortunately the major browser makers have chosen
+to implement the DOM objects differently. And older browsers used a concept
+called <em>layers</em> to achieve many of the effects now done with the DOM
+model. Thus there are compatibility problems that must be overcome either
+by programming branches within a script, offering different pages depending
+on browsers, defensive programming, warning users of possible conflicts,
+or benign neglect (playing the percentages that one browser has over 90
+percent of the users). It is important to realize that there is an issue!
+Decide how you will deal with these differences.  And know your clients,
+their browsers, and their ability to upgrade to newer, better ones!
+Browser sniffing is commonly used:</p>
+<div class="c"><table summary="*"><tbody><tr><td><ul>
+<li>to invoke either <em>DOM</em> or <em>layers</em> depending on the
+browser's age</li>
+<li>to program around various vendor interpretations of what the style
+object should be</li>
+<li>to avoid problems with tags that certain browsers do not handle well</li>
+<li>to provide an alternate stylesheet for a specific browser</li>
+</ul></td></tr></tbody></table></div>
+<p>Sniffers can be designed to either return a single value denoting
+the appropriate browser and version or to set global variables which
+flag capabilities such as DOMable, layered, etc.</p>
+<p>One strategy that allows for <em>maintainability</em> and
+<em>documentation</em> is to identify the object properties that are
+different and build a JavaScript module of functions to deal with the
+variations. This isolates the selection of processing techniques to one
+area of your script. Further scripts allow reuse of the functions and
+if a newer browser requires sniffer tweaking, it is only needed in one
+file.</p>
+<p id="ns4">The first example identifies a browser as a non-dom model and
+transfers to a page that works ok using layers. This can also be used to
+skip a page eg a fancy splash screen) entirely if that is the
+author's method of dealing with variations.</p>
+<pre class="special">var dom=document.getElementById; //browser uses DOM ??
+if (dom==0) {top.location.href="http://www.xyz.com/nextpage.htm"}</pre>
+<p>Variations on this theme is to check for layer users (eg Netscape 4)
+or MSIE specific browsers.</p>
+<pre class="special">if (document.layers) {ns=1} else {ns=0}
+if (document.all) {ie=1} else {ie=0}</pre>
+<p>The next example is of an <em>older style</em> sniffer that relies on
+the basic navigator object properties available even in the older browsers.
+In many cases identifying the browser by name and version is sufficient.
+But <strong>BEWARE!</strong> Many browsers have the capabilities of
+identifying as another browser (aka spoofing).</p>
+<pre class="special">/* Note: sniffer must id older Netscape browsers */
+ie=0; ns=0; gecko=0; opera=0;
+agent=navigator.userAgent;
+browser=navigator.appName;
+version=parseInt(navigator.appVersion);
+agent=agent.toLowerCase();
+browser=browser.charAt(0);
+if (agent.indexOf('gecko') != -1) {gecko=1;}
+if (agent.indexOf('opera') != -1) {opera=1;}
+if (browser=="N" &amp;&amp; version &lt; 5) {ns=1;} else {ie=1;}</pre>
+<p><span>Important Note: </span>The above example is provided only for
+historical purposes and to indicate what you should <strong>avoid</strong>!
+Modern techniques use <strong>feature identification</strong> for sniffing.</p>
+
+<p align="right"><a href="tutorc.htm">Tutorial 12 - Smart Forms</a> -
+<a href="tutore.htm">Tutorial 14 - Regular Expressions</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

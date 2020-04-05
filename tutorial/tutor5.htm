@@ -1,0 +1,226 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 5 - Forms &amp; DHTML</h1>
+<p align="right"><a href="tutor4.htm">Tutorial 4 - Working with Forms</a> -
+<a href="tutor6.htm">Tutorial 6 - DOM and DHTML</a></p>
+<p>Dynamic HTML (DHTML) is a collection of strategies (scripting,
+CSS and DOM) that lets you create web pages that are more interactive,
+responsive and animated than ever before. This tutorial emphasizes
+working with forms for interaction and older methods (aka DOM level 0) of
+dynamically modifying web pages. <a href="tutor6.htm">DOM and DHTML</a>
+will explain the DOM level 1 model as well as ways to really <em>liven up</em>
+your site. You should already be familiar with JavaScripting and HTML
+forms (refer to <a href="htmlqwkf.htm"> Quick Forms</a>) before starting
+this tutorial.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#bex">browser/object explorer tool</a></li>
+<li><a href="#dom">DOM level 0 document object</a></li>
+<li><a href="#bgc">new background color function</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#sel">select list color picker</a></li>
+<li><a href="#rad">radio button color selector</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#hex">hexadecimal entry color picker</a></li>
+<li><a href="#all">Demo: <span>extreme</span> color picker</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="bex">Browser/Object Explorer Tool</h2>
+<p>This example displays all the properties that a specific browser agent
+contains in its navigator object. Note that many of the properties are
+<strong>not</strong> available on older browsers but it is worth while
+checking for yourself. You must run this example using each of the browsers
+that you want to check out.</p>
+<p>The technique uses a <em>for/in loop</em> which works a bit differently
+than the usual <em>for loop</em> that we have been using for string scanning.
+Instead of incrementing a counter, For/in loops increment their way through
+the named object's <em>properties</em>. In this case the named object was
+<em>navigator</em> which indicates the browser. But you could have used
+other objects such as <em>window</em> or <em>Math</em>. Those who enjoy
+finding every property implemented can have fun by grabbing the next chunk
+of code and changing the name navigator to another object name. What client
+object properties are <em>not</em> available in Opera 7? That is easy to
+find out. A bit harder is to find out if MSIE is missing one of the core
+object properties. But a bit of testing and saving screen shots will solve
+these problems.</p>
+<code>
+<pre class="special">function explore_it() {
+browser="browser info:\n";
+for (propname in navigator) {
+    browser += propname+": "+navigator[propname]+"\n";
+    }
+alert(browser);
+}</pre>
+</code>
+<div class="c">
+<input class="go130" value="Navigator properties..." onclick="explore_it();" type="button"></div>
+<h2 id="dom">DOM Level 0 Objects</h2>
+<p>The original <em>document</em> object had properties that could be read
+using script and some could also be set. The <em>window.screen</em> object
+also provided useful readable properties. Refer to
+<a href="jstutorx.htm#Jclient">client objects</a> for specific properties.
+Since DOM level 0 has been superceded by DOM level 1, we will only explore
+setting bgColor. Some examples of DOM level 1 access are:</p>
+<pre class="special">textColor = document.fgcolor;
+document.bgColor = 'thistle';
+colors = screen.colorDepth; // note windows. omitted as redundant!</pre>
+
+<h2 id="bgc">New Background Color Function</h2>
+<p>The form examples shown on this page all use a common function called
+<em>newColor</em> to set the desired <em>body</em> background color.
+On this tutorial page only the left and right margins will change color
+as an overlay retints most of the page. newColor accepts X11 named colours,
+hexadecimal 3 and 6 character formats preceded by a # and rgb format
+[eg. rgb(50,100,200)] entries. Because of browser differences, a sniffer
+is required inside the newColor function. <span>Note:</span> The rgb format
+is unknown to Netscape 4. An <a href="tutor9.htm#ex1">improved version</a>
+of newColor that tints any element is presented in a later tutorial.</p>
+<pre class="special">function newColor(entry) {
+/* Note: sniffer must id older Netscape */
+if (document.body) { // its DOM!!
+   document.body.style.backgroundColor=entry;
+   } else {
+   if (entry.indexOf('rgb')!=-1) {return;} // trap NS4 lack of knowledge
+   document.bgColor=entry;
+   }
+}</pre>
+
+<h2 id="sel">Select List Color Picker</h2>
+<p>This example shows the use of a selection list to pick a color from
+the X11 named colors. The onChange event uses the form name explicitly
+to get a value to feed the <em>newColor</em> function. newColor sniffs
+for the browser type and changes a style property dynamically.</p>
+<div class="c"><table summary="*"><tbody><tr><td class="n">
+<form class="fancy2" action="">
+<fieldset><legend>Background Color Selection from X11 List</legend>
+&nbsp;&nbsp;<select id="c_sel" size="6" onchange="selColor('c_sel')"><option>aliceblue</option><option>antiquewhite</option><option>aqua</option><option>aquamarine</option><option>azure</option><option>beige</option><option>bisque</option><option>black</option><option>blanchedalmond</option><option>blue</option><option>blueviolet</option><option>brown</option><option>burlywood</option><option>cadetblue</option><option>chartreuse</option><option>chocolate</option><option>coral</option><option>cornflowerblue</option><option>cornsilk</option><option>crimson</option><option>cyan</option><option>darkblue</option><option>darkcyan</option><option>darkgoldenrod</option><option>darkgray</option><option>darkgreen</option><option>darkkhaki</option><option>darkmagenta</option><option>darkolivegreen</option><option>darkorange</option><option>darkorchid</option><option>darkred</option><option>darksalmon</option><option>darkseagreen</option><option>darkslateblue</option><option>darkslategray</option><option>darkturquoise</option><option>darkviolet</option><option>deeppink</option><option>deepskyblue</option><option>dimgray</option><option>dodgerblue</option><option>firebrick</option><option>floralwhite</option><option>forestgreen</option><option>fuchsia</option><option>gainsboro</option><option>ghostwhite</option><option>gold</option><option>goldenrod</option><option>gray</option><option>green</option><option>greenyellow</option><option>honeydew</option><option>hotpink</option><option>indianred</option><option>indigo</option><option>ivory</option><option>khaki</option><option>lavender</option><option>lavenderblush</option><option>lawngreen</option><option>lemonchiffon</option><option>lightblue</option><option>lightcoral</option><option>lightcyan</option><option>lightgoldenrodyellow</option><option>lightgreen</option><option>lightgrey</option><option>lightpink</option><option>lightsalmon</option><option>lightseagreen</option><option>lightskyblue</option><option>lightslategray</option><option>lightsteelblue</option><option>lightyellow</option><option>lime</option><option>limegreen</option><option>linen</option><option>magenta</option><option>maroon</option><option>mediumaquamarine</option><option>mediumblue</option><option>mediumorchid</option><option>mediumpurple</option><option>mediumseagreen</option><option>mediumslateblue</option><option>mediumspringgreen</option><option>mediumturquoise</option><option>mediumvioletred</option><option>midnightblue</option><option>mintcream</option><option>mistyrose</option><option>moccasin</option><option>navajowhite</option><option>navy</option><option>oldlace</option><option>olive</option><option>olivedrab</option><option>orange</option><option>orangered</option><option>orchid</option><option>palegoldenrod</option><option>palegreen</option><option>paleturquoise</option><option>palevioletred</option><option>papayawhip</option><option>peachpuff</option><option>peru</option><option>pink</option><option>plum</option><option>powderblue</option><option>purple</option><option>red</option><option>rosybrown</option><option>royalblue</option><option>saddlebrown</option><option>salmon</option><option>sandybrown</option><option>seagreen</option><option>seashell</option><option>sienna</option><option>silver</option><option>skyblue</option><option>slateblue</option><option>slategray</option><option>snow</option><option>springgreen</option><option>steelblue</option><option>tan</option><option>teal</option><option>thistle</option><option>tomato</option><option>turquoise</option><option>violet</option><option>wheat</option><option>white</option><option>whitesmoke</option><option>yellow</option><option>yellowgreen</option></select></fieldset></form></td></tr></tbody></table></div>
+<p>The color selection form in HTML</p>
+<pre class="special">&lt;form action=""&gt;
+&lt;fieldset&gt;&lt;legend&gt;Background Color Selection from X11 List&lt;/legend&gt;
+&lt;select id="c_sel" size="6"
+onChange="selColor('c_sel');"&gt;
+&lt;option&gt;aliceblue&lt;/option&gt;
+&lt;option&gt;antiquewhite&lt;/option&gt;
+...
+&lt;/select&gt;&lt;/fieldset&gt;&lt;/div&gt;</pre>
+
+<h2 id="rad">Radio Button Color Selector</h2>
+<p>This example shows the use of a 'controlled' input to choose from
+a 'restricted' set of color backgrounds. The onclick event feeds the
+selected color value to the newColor function.</p>
+<div class="c"><form class="fancy4" id="radio_form" action="" method="get">
+<fieldset><legend>Background Color Selector</legend>
+<label for="radCol1">Aquamarine:
+<input class="radio" id="radCol1" name="radCol" onclick="newColor('Aquamarine')" type="radio" value="1" checked></label>
+<label for="radCol2">Burlywood:
+<input class="radio" id="radCol2" name="radCol" onclick="newColor('Burlywood')" type="radio" value="2"></label>
+<label for="radCol3">Floralwhite:
+<input class="radio" id="radCol3" name="radCol" onclick="newColor('Floralwhite')" type="radio" value="3"></label><br>
+<label for="radCol4">Goldenrod:
+<input class="radio" id="radCol4" name="radCol" onclick="newColor('Goldenrod')" type="radio" value="4"></label>
+<label for="radCol5">Peachpuff:
+<input class="radio" id="radCol5" name="radCol" onclick="newColor('Peachpuff')" type="radio" value="5"></label>
+<label for="radCol6">White:
+<input class="radio" id="radCol6" name="radCol" onclick="newColor('White')" type="radio" value="6"></label>
+</fieldset></form></div>
+<pre class="special">&lt;form id="radio_form" action="" method="get"&gt;
+&lt;fieldset&gt;&lt;legend&gt;Background Color Selector&lt;/legend&gt;
+&lt;label&gt;Aquamarine:&lt;input name="radCol" type="radio"
+onclick="newColor('Aquamarine')" /&gt;&lt;/label&gt;
+&lt;label&gt;Burlywood:&lt;input name="radCol" type="radio"
+onclick="newColor('Burlywood')" /&gt;&lt;/label&gt;
+&lt;label&gt;Floralwhite:&lt;input name="radCol" type="radio"
+onclick="newColor('Floralwhite')" /&gt;&lt;/label&gt;&lt;br&gt;
+&lt;label&gt;Goldenrod:&lt;input name="radCol" type="radio"
+onclick="newColor('Goldenrod')" /&gt;&lt;/label&gt;
+&lt;label&gt;Peachpuff:&lt;input name="radCol" type="radio"
+onclick="newColor('Peachpuff')" /&gt;&lt;/label&gt;
+&lt;label&gt;White:&lt;input name="radCol" type="radio"
+checked="checked" onclick=newColor"('White')" /&gt;&lt;/label&gt;
+&lt;/fieldset&gt;&lt;/form&gt;</pre>
+
+<h2 id="hex">Hexadecimal Entry Color Picker</h2>
+<p>This example lets the user enter a 6 digit hex code and test the
+color choice before using it on a web page. This example also includes
+verification that the input was a valid hexcode before using it to
+prepare the new background color. Validation should always be performed
+on any free format input. <a href="tutorc.htm#nu">numeric validation</a>
+discusses some methods of input validation.</p>
+<div class="c"><table summary="*"><tbody><tr><td class="n">
+<form id="formhex" class="fancy" action="" method="get" onsubmit="return false;">
+<fieldset><legend>Free Format Color Selector</legend>
+<label for="query">Background color (6 hexadigits):
+<input id="query" name="query" size="8" maxlength="6" type="text"></label>
+<input class="go130" value="Test!" onclick="ChangeColor('query');" type="button">
+</fieldset></form></td></tr></tbody></table></div>
+<pre class="special">&lt;form id="formhex" action="" method="get" onsubmit="return false;"&gt;
+&lt;fieldset&gt;&lt;legend&gt;Free Format Color Selector&lt;/legend&gt;
+&lt;label for="query"&gt;Background color (6 hexadigits):
+&lt;input id="query" type="text" size="8" maxlength="6"&gt;&lt;/label&gt;
+&lt;input type="button" value="Test!" onclick="ChangeColor('query');"&gt;&lt;/form&gt;
+</pre>
+<p>And the validation script is:</p>
+<pre class="special">function ChangeColor(id) {
+el=getElementById(id);entry=el.value;
+entry=entry.toUpperCase();strlen=entry.length;
+// Note: input must be validated
+validChar='0123456789ABCDEF';
+if (strlen!=6) {
+    alert("Entry must be EXACTLY 6 characters long");
+    return false;
+    }
+// Check for legal characters in string
+for (i=0;i&lt;6;i++ ) {
+    if (validChar.indexOf(entry.charAt(i))&lt;0) {
+       alert("Entry must be in RRGGBB hexcode format!");
+       return false;}
+    }
+if (entry.charAt(0) || "#" ) {entry="#"+entry;}
+newColor(entry);
+return true;
+}</pre>
+
+<h2 id="all">Demo: <span>Extreme</span> Color Picker</h2>
+<p>The <a href="http://home.cogeco.ca/%7Eve3ll/jscolors.htm"><span>Extreme</span> color picker</a> combines
+many of the ideas from the above examples. Cut and paste it to your site or
+use it from here. Have fun!</p>
+
+<p align="right"><a href="tutor4.htm">Tutorial 4 - Working with Forms</a> -
+<a href="tutor6.htm">Tutorial 6 - DOM and DHTML</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

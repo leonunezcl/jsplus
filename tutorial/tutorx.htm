@@ -1,0 +1,411 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial Appendices</h1>
+<p align="right"><a href="tutorf.htm">Tutorial 15 - User-Defined Objects</a></p>
+<p>The JavaScript tutorial appendix is a synopsis of important objects,
+methods, properties, functions ,events and reserved words. It includes
+a brief history of the JavaScript language.The terms used will help you
+access an appropriate reference book that explains in detail what the
+term means. Some useful references are:</p>
+<table class="n"><tbody><tr><th><ul>
+<li><em>JavaScript Unleashed</em>, Sams ['03]</li>
+<li><em>JavaScript Bible</em>, IDG Books ['99]</li>
+</ul></th><th><ul>
+<li><em>JavaScript - The Definitive Guide</em>, O'Reilly ['01]</li>
+<li><em>Pure JavaScript</em>, Sams ['99]</li>
+</ul></th></tr></tbody></table>
+
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul class="nodec">
+<li><a href="#Jword">JavaScript Reserved Words</a></li>
+<li><a href="#Jclient">Client-Side Objects, Methods &amp; Properties</a></li>
+<li><a href="#Jobject">ECMA Core Objects, Methods &amp; Properties</a></li>
+</ul></td><td class="box"><ul class="nodec">
+<li><a href="#Jevent">Events and Event Handlers</a></li>
+<li><a href="#Jfunction">Built-In Functions</a></li>
+<li><a href="#Jhistory">A Brief History of JavaScript</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="Jword">JavaScript Reserved Words</h2>
+<p>Reserved words are words with a special purpose. These words
+<strong>cannot</strong> be used as variable names.</p>
+<pre class="special">abstract  boolean    break       byte      case          catch      char
+class     const      continue    debugger  default       delete     do
+double    else       enum        export    extends       false      final
+finally   float      for         function  goto          if         implements
+import    in         instanceof  int       interface     long       native
+new       null       package     private   protected     public     return
+short     static     super       switch    synchronized  this       throw
+throws    transient  true        try       typeof        undefined  var
+void      volatile   while       with</pre>
+<p>To avoid unnecessary debugging problems do not use any <em>property</em>
+or <em>method</em> name as a <em>variable</em> name. Also avoid using a case
+variant even when it is legal (eg. do not use instanceOf).</p>
+
+<h2 id="Jclient">Client-Side Objects, Methods &amp; Properties</h2>
+<p>Client-side objects are basic objects tied to a particular browser. This
+may cause some inconsistencies in syntax or use as browser versions change.
+Be aware that differences exist and <em>always</em> test your code. The
+client-side objects are <em>Document, Form, History, Location, Navigator</em>
+and <em>Window</em>.</p>
+<ul>
+<li><strong>Document Object</strong> - Primary Output
+<ul>
+<li>content properties - anchors[], applets[], embeds[], forms[],
+images[], links [], plugins[]</li>
+<li>display properties - alinkColor, bgColor, fgColor, linkColor,
+vlinkColor</li>
+<li>information properties - cookie, domain, lastModified, location,
+mimeTypes, referrer, title, URL</li>
+<li>methods - open(), write(), writeln()</li>
+</ul></li>
+<li><strong>Form Objects</strong> - Primary Input
+<ul>
+<li>form properties - name, target, action, method, encoding, elements,
+length</li>
+<li>form methods - submit(), reset()</li>
+<li>input, textarea and select methods - focus(), blur(), select()</li>
+<li>button, hidden, reset, and submit object properties - name, value, type</li>
+<li>checkbox properties - name, value, type, checked, default checked</li>
+<li>password properties - name, value, type, default value</li>
+<li>radio button properties - name, value, type, checked, default checked,
+length</li>
+<li>select properties -  name, value, type, length, options, defaultSelected,
+index, selected, selectedIndex</li>
+<li>text, textarea properties - name, value, defaultvalue</li>
+</ul></li>
+<li><strong>History Object</strong> - Access the browser's history file
+<ul>
+<li>properties - length</li>
+<li>methods - back(), forward(), go()</li>
+</ul></li>
+<li><strong>Location Object</strong>
+<ul>
+<li>properties - hash, hostname, href, pathname, port, protocol, search</li>
+<li>methods - reload(), replace()</li>
+</ul></li>
+<li><strong>Navigator Object</strong> - Root of all Objects
+<ul>
+<li>properties - appCodeName, appName, appVersion, userAgent</li>
+<li>methods - javaEnabled()</li>
+</ul></li>
+<li><strong>Window Object</strong>
+<ul>
+<li>contained objects -
+<ul>
+<li><strong>Screen Object</strong></li>
+<li>properties - availHeight, availLeft, availTop, availWidth, colorDepth,
+height, pixelDepth, width</li>
+</ul></li>
+<li>properties - defaultStatus, frames, length, name, opener, parent,
+self, status, top, window</li>
+<li>methods - alert(), blur(), clearInterval(), clearTimeout(), close(),
+confirm(), focus(), open(), print(), prompt(), scroll(), setInterval(),
+setTimeout(), timeoutID()</li>
+</ul></li></ul>
+
+<h2 id="Jobject">ECMA Core Objects, Methods &amp; Properties</h2>
+<p>ECMA is a standards committee which defines specific core objects
+(or internal constructs) to help a programmer. Some are used to access
+operating system functions. Others are used to perform data and string
+manipulations. The ECMA objects are <em>Array, Boolean, Date, Error,
+Function, Global, Math, Number, Object, RegExp</em> and <em>String</em></p>
+<ul>
+<li><strong>Array Object</strong>
+<ul>
+<li>properties - constructor, length, prototype</li>
+<li>methods - concat(), join(), pop(), push(), reverse(), shift(),
+slice(), sort(), splice(), toLocaleString(), toString(), unshift(),
+valueOf()</li>
+</ul></li>
+
+<li><strong>Boolean Object</strong>
+<ul>
+<li>properties - constructor, prototype</li>
+<li>methods - toString(), valueOf()</li>
+</ul></li>
+
+<li><strong>Date Object</strong>
+<ul>
+<li>properties - constructor, prototype</li>
+<li>methods - getDate(), getDay(), getFullYear(), getHours(),
+getMilliseconds(), getMinutes(), getMonth(), getSeconds(),
+getTime(), getTimeZoneOffset(), getUTCDate(), getUTCDay(),
+getUTCFullYear(), getUTCHours(), getUTCMilliseconds(),
+getUTCMinutes(), getUTCMonth(), getUTCSeconds(), getVarDate(),
+getYear(), parse(), setDate(), setFullYear(), setHours(),
+setMilliseconds(), setMinutes(), setMonth(), setSeconds(),
+setTime(), setUTCDate(), setUTCFullYear(), setUTCHours(),
+setUTCMilliseconds(), setUTCMinutes(), setUTCMonth(),
+setUTCSeconds(), setUTCTime(), setUTCYear(), setYear(),
+toLocaleString(), toUTCString(), toString(), UTC(), valueOf()</li>
+</ul></li>
+
+<li><strong>Error Object</strong>
+<ul>
+<li>properties - description, number</li>
+<li>methods - </li>
+</ul></li>
+
+<li><strong>Function Object</strong>
+<ul>
+<li>properties - arguments[], caller, constructor, prototype</li>
+<li>methods - toString(), valueOf()</li>
+</ul></li>
+
+<li><strong>Global Object</strong>
+<ul>
+<li>properties - Infinity, NaN, undefined</li>
+<li>methods - escape(), eval(), isFinite(), isNaN(), parseFloat(),
+parseInt(), unescape()</li>
+</ul></li>
+
+<li><strong>Math Object</strong>
+<ul>
+<li>properties - E, LN10, LN2, LOG10E, LOG2E, PI, SQRT2, SQRT1_2</li>
+<li>methods - abs(), acos(), asin(), atan(), atan2(), ceil(), cos(),
+exp(), floor(), log(), max(), min(), pow(), random(), round(), sin(),
+sqrt(), tan()</li>
+</ul></li>
+
+<li><strong>Number Object</strong>
+<ul>
+<li>properties - MAX_VALUE, MIN_VALUE, NaN, NEGATIVE _INFINITY,
+POSITIVE_INFINITY, constructor, prototype</li>
+<li>methods - toLocaleString(), toString(), valueOf()</li>
+</ul></li>
+
+<li><strong>Object Object</strong>
+<ul>
+<li>properties - constructor, prototype</li>
+<li>methods - toLocaleString(), toString(), valueOf()</li>
+</ul></li>
+
+<li><strong>RegExp Object</strong>
+<ul>
+<li>properties - $1 - $9, index, input, lastIndex, lastMatch, lastParen,
+leftContext, rightContext</li>
+</ul></li>
+
+<li><strong>String Object</strong>
+<ul>
+<li>properties - constructor, length, prototype</li>
+<li>display methods - anchor(), big(), blink(), bold(), fixed(),
+fontcolor(), fontsize(), italics(), small(), strike(), sub(), sup()</li>
+<li>manipulation methods - charAt(), charCodeAt(), concat(), fromCharCode(),
+indexOf(), lastIndexOf(), link(), match(), replace(), search(), slice(),
+split(), substr(), substring(), toLowerCase(), toUpperCase(),
+toString(), valueOf()</li>
+</ul></li>
+</ul>
+
+<h2 id="Jevent">JavaScript Events and Event Handlers</h2>
+<p>JavaScript <em>events</em> are external stimulae or actions by a user or
+by the operating system that cause internal procedures to run which modify
+the 'properties' of 'objects'. Clicking the mouse, pressing the [Enter] key,
+and moving the cursor are some of the 'events' that start the ball rolling.
+<em>Event handlers</em> are the specific methods for reacting to an event.</p>
+
+<h3>System Event Handlers:</h3>
+<table class="col"><tbody><tr>
+<th class="col" style="width: 200px;">Event Name</th>
+<th class="col">Handler Executes When</th>
+</tr><tr>
+<td>onError [window, image]</td>
+<td>window or image fails to load.</td></tr><tr>
+<td>onLoad [window, frame, image]</td>
+<td>window, complete frame or image(s) finishes loading.</td></tr><tr>
+<td>onUnload [window, frame]</td>
+<td>window or all windows in a frame have been exited.</td></tr></tbody></table>
+
+<h3 id="ue">User Event Handlers:</h3>
+<p><span>NOTE:</span> When used as an <em>attribute</em>, an event handler
+must be typed in lowercase only (eg. onclick) to meet XHTML specifications!
+Most, <em>but not all</em> of the following user event handlers can be
+included as form control attributes.</p>
+<table class="col"><tbody><tr>
+<th class="col" style="width: 220px;">Event Name</th>
+<th class="col">Handler Executes When</th></tr><tr>
+<td>onAbort [image]</td>
+<td>image load has been abandoned by hitting the
+<strong>STOP</strong> icon.</td></tr><tr>
+<td>onBlur [window, frame, select, text, textarea]</td>
+<td>focus is <strong>lost</strong> (ie. changed or blurred)
+to a new element.</td></tr><tr>
+<td>onChange [select, text, textarea]</td>
+<td>last element has been changed before focus change.</td></tr><tr>
+<td>onClick [clickable form element]</td>
+<td>user left mouse clicks or clicks on form element but can be stopped if
+the executing procedure (such as validation) returns a false signal.</td>
+</tr><tr>
+<td>onContextmenu</td>
+<td>right mouse button clicked.</td></tr><tr>
+<td>onDblclick</td>
+<td>mouse button is double-clicked.</td></tr><tr>
+<td>onFocus [window, frame, select, text, textarea]</td>
+<td>object <strong>gains</strong> focus. aka anti-blur!</td></tr><tr>
+<td>onHelp</td>
+<td>F1 button pressed. Used to override browser Help.</td></tr><tr>
+<td>onKeydown</td>
+<td>alphanumeric key is pressed.</td></tr><tr>
+<td>onKeypress</td>
+<td>alphanumeric key is fully pressed/released.</td></tr><tr>
+<td>onKeyup</td>
+<td>alphanumeric key is released.</td></tr><tr>
+<td>onMousedown</td>
+<td>either mouse button is clicked.</td></tr><tr>
+<td>onMousemove</td>
+<td>mouse is moved.</td></tr><tr>
+<td>onMouseOut [link, area]</td>
+<td>cursor <strong>leaves</strong> a link or area.</td></tr><tr>
+<td>onMouseOver [link, area]</td>
+<td>cursor <strong>enters</strong> a link or area.</td></tr><tr>
+<td>onReset [form]</td>
+<td>the reset button is clicked.</td></tr><tr>
+<td>onResize</td>
+<td>a window is resized.</td></tr><tr>
+<td>onSelect [text, textarea]</td>
+<td>some text is highlighted in either of these form boxes.</td></tr><tr>
+<td>onStop</td>
+<td>GUI stop button is pressed or user leaves page.</td></tr><tr>
+<td>onSubmit [form]</td>
+<td>Executes after a return key is pressed or a submit button is clicked
+but allows a bailout similar to the onclick event. Failure in a validation
+routine is the most common reason for bailout.</td></tr></tbody></table>
+
+<h2><a name="Jfunction">Built-In Functions</a></h2>
+<p>In order to help the programmer, JavaScript includes several useful
+built-in functions. Their names and usage follows:</p>
+<table class="col"><tbody><tr>
+<td>escape()</td>
+<td>Many special characters cause problems when submitting information to a
+0CGI server. These characters include <em>$ # ! spaces and tabs</em>. An
+example of a safely encoded string is coded = escape('&amp; ').
+[returns "%26%20"]. See also <em>unescape</em>.</td></tr><tr>
+<td>eval()</td>
+<td>Evaluates a <em>string</em> and returns a <em>numeric</em>
+value. An example is  eval(x) + eval(y); If x and y are strings '1' and '2'
+the result is three. Without the eval function the value would be 12!</td>
+</tr><tr>
+<td>isFinite()</td>
+<td>Tests whether the variable is a finite number. Returns <em>false</em>
+if contents is not a number or is infinite. An example of usage is
+flag = isFinite(var_name);</td></tr><tr>
+<td>isNaN()</td>
+<td>Tests whether the variable is <em>not</em> a number. Returns <em>true</em>
+if contents is not a <em>decimal based</em> number. An example of usage is
+flag = isNaNum(var_name);</td></tr><tr>
+<td>Number()</td>
+<td>Converts the object argument to a number representing the object's value.
+If the value cannot be represented by a legitimate number, the "Not-a-Number"
+value, NaN is returned.<br><span>Note the inconsistency in case!!</span></td>
+</tr><tr>
+<td>parseFloat()</td>
+<td>Turns a string into a <em>floating-point</em> number. If the first
+character can't be converted the result is NaN. Otherwise the conversion
+stops at first character that can't be converted. The function is decimal
+base only! an example of usage is n = parseFloat('23.45');</td></tr><tr>
+<td>parseInt()</td>
+<td>Turns a string into an <em>integer</em> number. If the first character
+can't be converted the result is NaN. Otherwise the conversion stops at first
+character that can't be converted. If a second parameter is included, the
+numeric base can be binary, octal, decimal or hexadecimal. An example is
+n = parseInt('55'); which places the <em>number</em> 55 into the variable n.
+</td></tr><tr>
+<td>unescape()</td>
+<td>Recovers an <em>escaped</em> string. An example is decoded =
+unescape('%26%20') [returns "&amp; "].<br><br><hr class="short"></td>
+</tr><tr>
+<td>new</td>
+<td>Creates a copy or <em>instance</em> of an object for use or
+modification within a program. For example
+<span class="g">now&nbsp;=&nbsp;new&nbsp;Date;</span> creates a Date object
+called <em>now</em> that can be affected by all the Date properties and
+methods. Technically new is an operator but it works very much like a
+function!</td></tr><tr>
+<td>this</td>
+<td>A shorthand convention to allow working with the <em>current</em> object
+method without naming it. This is used to save retyping a method name.</td>
+</tr><tr>
+<td>with</td>
+<td>A shorthand convention to allow working with the <em>current</em> object
+without naming it. This is used to save retyping a long object name.
+An example is:<br><br><pre class="special">with (document) {
+   writeln(lastmodified);
+   writeln(location);
+   writeln(title);
+   }</pre></td></tr></tbody></table>
+
+<h2 id="Jhistory">A Brief History of JavaScript</h2>
+<p>Everything has a history and often knowing that history gives insight
+into why things are done the way they are and what issued were solved
+and what were missed or created. This topic attempts to reveal the
+evolution of <em>JavaScript</em>.</p>
+<p>Originally browsers only had one method of interactivity: forms
+submitted to other sites. What was desperately required was interactivity
+within the client browser itself. Netscape created a language called
+<em>LiveScript</em> which was interpreted and provided the required
+functionality for internal utilities and interaction. LiveScript was
+rebranded as <em>JavaScript</em> to gain from the good publicity that
+Java was getting. Its only commonality with Java is that both are OOP
+languages that use C syntax as a starting point.</p>
+<p>Successive versions have added functionality in response to user
+demand. Image support, arrays, and plug-ins are examples of these additions.
+MicroSoft implemented its version as JScript but unfortunately often
+did things differently or included features not implemented in JavaScript.
+This was part of the browser wars and caused much grief for program authors.</p>
+<p>Finally in 1996, developers had had enough and asked for standards!
+Unfortunately several standards group accepted the challenge. ECMA was the
+most successful and now ECMAScript is available on most browsers. However,
+ECMASCript is restricted to defining the core language. The browser
+interface is standardized through the DOM recommendation of w3.org.
+DOM also covers other languages that must interface with a browser,
+not just JavaScript.</p>
+
+<p align="right"><a href="tutorf.htm">Tutorial 15 - User-Defined Objects</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

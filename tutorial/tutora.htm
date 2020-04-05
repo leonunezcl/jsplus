@@ -1,0 +1,178 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 10 - Menuing Systems</h1>
+<p align="right"><a href="tutor9.htm">Tutorial 9 - Cookies</a> -
+<a href="tutorb.htm">Tutorial 11 - Form Validation</a></p>
+
+<p>Clean navigation schemes are essential for successful website viewing
+and user comfort. A variety of menuing techniques have been used depending
+on application complexity. Simple links can be dressed up as tabs using
+style. Dropdown, pullout, floatout and popup menus save real estate by
+opening when hotzones are hovered. Collapsing tree menus open/close with
+keyclicks to show submenus. Working examples are included in this tutorial
+to aid in rapid inclusion on websites. The technique of dynamic menu
+creation is also explained and demonstrated as it is important for
+installation and maintenance on larger sites.</p>
+
+<h2 id="au">Autoflagged Menu Items</h2>
+<p>Many menu systems indicate the current page by changing the text or
+background color or image. This is normally done by manually altering
+the page in some way. But that technique causes problems for those who
+have automated the menu provision process thru an include utility or by
+using an external script to write the menus dynamically.</p>
+<p>The solution turns out to be quite easy with JavaScript. First identify
+the page name and then use it to modify a specific id tag. The id tags
+could be on each cell of a navigation table or on each hotlink.
+The style object is accessed through DOM and modified as needed. The
+small fragment of code follows:</p>
+<pre class="special">id=document.location; re=/\w+\./i; rf=/\w+/i
+id=re.exec(id); id=rf.exec(id)+"";
+styleObj=document.getElementById(id).style;
+styleObj.background="#ffdead";</pre>
+<p><span>Caution: </span>This code must be executed as a function called
+by the unload action. Otherwise the objects to be modified do not yet exist.
+Here is a very <a href="http://home.cogeco.ca/%7Eve3ll/bin2/autoflag.zip">rudimentary example</a>. The
+tabbed menu system that follows shows autoflagging in a more polished way.</p>
+
+<h2 id="ta">Tabbed Menus</h2>
+<div class="tab">
+<span class="tab"><a class="tab" href="#au">Autoflagging</a></span>
+<span class="tab"><a class="tab" href="#ta">Tabbed Menu</a></span>
+<span class="tab"><a class="tab" href="#se">Select List</a></span>
+<span class="tab"><a class="tab" href="#dr">DropDowns</a></span>
+<span class="tab"><a class="tab" href="#tr">Tree Menus</a></span>
+<span class="tab"><a class="tab" href="#po">PopUp Boxes</a></span></div>
+<div class="box">
+<p>One simple menu yet attractive approach resembles the tabs used on
+filing systems or sometimes on textbooks by hyper-organized students.
+This type of menu can be created quite easily with a one dimensional
+table and CSS styling. When the table is drawn in a vertical fashion
+it is usually styled as a button menu. Button and tab menus are the
+same from a structural view and only styling makes them different.</p>
+<p>A quantum improvement for installation and maintenance of the menu can be
+achieved by dynamically creating the menu using external JavaScript files.
+<a href="http://home.cogeco.ca/%7Eve3ll/bin2/tabmenu.zip">TabMenu.zip</a> is a quick example that can be
+cut and pasted into your project. It has external .css and .js files plus
+three demo documents. It requires a div dedicated to holding the text
+written by the script file itself (see the working example). One feature
+to look at is how captions and links are isolated to variables instead of
+hardcoding into the menu writing function. Be sure to read the included
+readme.txt file!</p></div>
+
+<h2 id="se">Select List Menus</h2>
+<p>A very simple dropdown menu can be built from a select list control and
+an onclick event. By setting the size attribute the list can be displayed
+open if desired.</p>
+<div class="c"><form id="form" action="" method="get">
+<table class="n" summary="*"><tbody><tr>
+<th class="n"><select id="list1"><option selected="selected" value="javascript:alert('You must select from list')">
+        Select a Tutorial...</option><option value="jstutor1.htm">1 - Screen Output</option><option value="jstutor2.htm">2 - Objects and Events</option><option value="jstutor3.htm">3 - Core Language</option><option value="jstutor4.htm">4 - Working With Forms</option><option value="jstutorb.htm">5 - Form Validation</option></select><br>
+<input class="go130" value="Go To Site!" onclick="goto('list1')" type="button"></th>
+<th class="n"><select id="list2" size="6"><option selected="selected" value="javascript:alert('You must select from list')">
+        Select a Tutorial...</option><option value="jstutor1.htm">1 - Screen Output</option><option value="jstutor2.htm">2 - Objects and Events</option><option value="jstutor3.htm">3 - Core Language</option><option value="jstutor4.htm">4 - Working With Forms</option><option value="jstutorb.htm">5 - Form Validation</option></select><br>
+<input class="go130" value="Go To Site!" onclick="goto('list2')" type="button">
+</th></tr></tbody></table></form></div>
+<p>The key to this example is the action contained in the onclick event.
+It takes the option highlighted in the select form and feeds its value
+to <em>top.location.href</em> for the jump. <em>top.location</em> is
+an object that refers to the location (ie current web address) of the
+first document layer. <em>href</em> is a property that is the complete
+url within an object.</p>
+<p><span>Note: </span>The default selection (which is really a prompt)
+uses a JavaScript command to display a message rather than moving to a
+new document.</p>
+
+<h2 id="dr">Dropdown Menus</h2>
+<p>Another popular menu technique is to have a single menubar with dropdown
+item selections as in my main menu [see top of screen]. This minimizes real
+estate and yet allows accessibility to more complex sites. One simple
+approach for constructing dropdown menus is to build static divisions, lists
+or tables in the body of your document that have the appropriate links.
+Your script either <em>shows</em> or <em>hides</em> elements depending on
+the hover event and cursor position. This is very simple to understand and
+program but the tradeoff is that a substantial amount of 'table' code must
+be inserted into each document.</p>
+<ul>
+<li><a href="http://home.cogeco.ca/%7Eve3ll/jsdrop.htm">DropMenu</a> is a very simple approach that is
+useful for smaller sites.</li>
+<li><a href="http://home.cogeco.ca/%7Eve3ll/jsfloat.htm">FloatMenu</a> is an extension of the ideas used to
+implement DropMenu. This time a menu tab sits in the left margin. Hovering
+the tab rolls out (aka floats) a menu to select from. This type of menu is
+very unobtrusive, consuming no real estate until the user calls for it.</li>
+<li><a href="http://home.cogeco.ca/%7Eve3ll/jsfloat2.htm">RightFloatMenu</a> has the menu tab sitting
+in the left margin. Hovering the tab rolls out (aka floats) the menu. This
+menu is very unobtrusive, consuming no real estate until a user request.</li>
+</ul>
+<p>A better approach is to construct the menus dynamically. This involves
+more complex script but allows the menu itself to be contained in an external
+file, written to the screen as needed. This is a much better approach for
+maintenance of a larger site.</p>
+
+<h2 id="tr">Collapsing Tree Menus</h2>
+<p>Collapsing Tree menus are similar in appearance to folder/subfolder
+trees in Windows. They allow organization of a large number of pages
+with much less clutter than a linear list. But some find them too techie!
+Know your clients !!!</p>
+<ul>
+<li><a href="http://www.treemenu.org/">Morten's TreeMenu</a> and
+<a href="http://www.treemenu.org/board/">Discussion Board</a>
+</li>
+<li><a href="tutor6.htm">Collapsing elements</a> shows how
+collapsing menus work with elementary CSS visibility rules.</li>
+</ul>
+
+<h2 id="po">Popup Box Menus</h2>
+<p>Hover a hotzone and a popup box can allow a set of links to
+be displayed. Hover a link and a tooltip like information box can
+be provided.</p>
+<ul><li><a href="http://home.cogeco.ca/%7Eve3ll/jspop.htm">The demo for a popup menu using
+a <strong>styled</strong> table and dynamic positioning.</a></li></ul>
+
+        <p align="right"><a href="tutor9.htm">Tutorial 9 - Cookies</a> -
+        <a href="tutorb.htm">Tutorial 11 - Form Validation</a></p>
+        <p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

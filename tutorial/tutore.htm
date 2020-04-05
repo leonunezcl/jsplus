@@ -1,0 +1,228 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 14 - Regular Expressions</h1>
+<p align="right"><a href="tutord.htm">Tutorial 13 - Getting The Bugs Out</a> -
+<a href="tutorf.htm">Tutorial 15 - User-Defined Objects</a></p>
+<p>Regular expressions are a shorthand notation for matching, extracting,
+sorting or formatting strings. Their most common use is to reduce the amount
+of work while validating data input. This tutorial covers the special syntax
+used, how one can use a regular expression in form validation, and several
+useful examples.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul class="n">
+<li><a href="#e">Escaper Characters</a></li>
+<li><a href="#c">Character Classes</a></li>
+<li><a href="#b">Boundaries&amp;Quantifiers</a></li>
+</ul></td><td class="box"><ul class="n">
+<li><a href="#m">Regular Expression Modifiers</a></li>
+<li><a href="#t">Testing Regular Expressions</a></li>
+<li><a href="#u">Using Regular Expressions</a></li>
+</ul></td><td class="box"><ul class="n">
+<li><a href="#pc">Example - Canadian Postal Codes</a></li>
+<li><a href="#ur">Example - URLs and Files</a></li>
+<li><a href="#em">Example - E-mail Addresses</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="e">Escaper Characters</h2>
+<p>Escaper characters are used to literally represent characters that
+normally have a special meaning in regular expressions (ie. meta-characters).
+They are also used to represent non-typable characters.</p>
+<div>
+<table class="col" style="margin: 0px 0px 0px 35px; float: left;">
+<tbody><tr><th class="col">Escaper</th><th class="col">Literal Character</th></tr>
+<tr><td>\f</td><td>Formfeed</td></tr>
+<tr><td>\n</td><td>Newline</td></tr>
+<tr><td>\r</td><td>Carriage return</td></tr>
+<tr><td>\t</td><td>Tab</td></tr>
+<tr><td>\v</td><td>Vertical Tab</td></tr>
+<tr><td></td></tr></tbody></table>
+<table class="col" summary="*" style="margin: 0px 0px 0px 35px;">
+<tbody><tr><th class="col">Escaper</th><th class="col">Literal Character</th></tr>
+<tr><td>\xnn</td><td>ASCII char defined by hex code nn</td></tr>
+<tr><td>\onn</td><td>ASCII char defined by octal code nn</td></tr>
+<tr><td>\unnnn</td><td>Unicode char defined by sequence nnnn</td></tr>
+<tr><td>\cX</td><td>Control char defined by X</td></tr>
+<tr><td>&nbsp;</td></tr></tbody></table></div>
+
+<h2 id="c">Character Classes</h2>
+<p>Special characters are used as a shorthand, to abbreviate the amount
+of typing and specifying required when creating a regular expression.
+For example <em>\w</em> includes all letters, numbers and the underscore
+character.</p>
+<div class="c">
+<table class="col" style="margin: 0px 0px 0px 20px; float: left;">
+<tbody><tr><th class="col">Character</th><th class="col">Matches</th></tr>
+<tr><td>.</td><td>Any character except newline</td></tr>
+<tr><td>\d</td><td>Any digit 0-9</td></tr>
+<tr><td>\D</td><td>Any non-digit</td></tr>
+<tr><td>\s</td><td>Any whitespace character</td></tr>
+<tr><td>\S</td><td>Any single non-whitespace</td></tr>
+<tr><td>\w</td><td>Any letter, number or underscore</td></tr>
+<tr><td>\W</td><td>Any char except letter, number<br>or underscore</td></tr>
+</tbody></table><table class="col" summary="*" style="margin: 0px 0px 0px 20px;">
+<tbody><tr><th class="col">Character</th><th class="col">Matches</th></tr>
+<tr><td>[abcde]</td><td>Any character in the enclosed set</td></tr>
+<tr><td>[^abcde]</td><td>Any character <em>not</em> in the enclosed set</td></tr>
+<tr><td>[a-e]</td><td>Any character in the enclosed range</td></tr>
+<tr><td>()</td><td>Grouping that is stored (back referenced) for later use
+($1, $2 etc.)</td></tr>
+<tr><td>x|y</td><td>Either x or y (ie. logical OR)</td></tr>
+</tbody></table></div>
+
+<h2 id="b">Boundary Matches and Greedy Quantifiers</h2>
+<div class="c">
+<table class="col" style="margin: 0px 0px 0px 35px; float: left;">
+<tbody><tr><th class="col">Character</th><th class="col">Matches</th></tr>
+<tr><td>^</td><td>Beginning of string</td></tr>
+<tr><td>$</td><td>End of string</td></tr>
+<tr><td>\b</td><td>Word boundary</td></tr>
+<tr><td>\B</td><td>Non-word boundary</td></tr>
+</tbody></table><table class="col" style="margin: 0px 0px 0px 35px;">
+<tbody><tr><th class="col">Character</th><th class="col">Matches Previous Char</th></tr>
+<tr><td>*</td><td>Zero or more times</td></tr>
+<tr><td>+</td><td>One or more times</td></tr>
+<tr><td>?</td><td>Zero or one time</td></tr>
+<tr><td>{n}</td><td>Exactly n occurrences</td></tr>
+<tr><td>{n,}</td><td>At least n occurrences</td></tr>
+<tr><td>{n,m}</td><td>Between n and m occurrences</td></tr>
+</tbody></table></div>
+
+<h2 id="m">Regular Expression Modifiers</h2>
+<p>Regular expression modifiers have been added to the syntax to
+handle global modification of the entire expression. They are placed
+at the end of the expression outside the quoting brackets as in
+<span class="g">/[abc]+/i</span></p>
+<div class="c"><table class="col" summary="*">
+<tbody><tr><th class="col">Character</th><th class="col">Modification</th></tr>
+<tr><td>g</td><td><em>g</em>lobal search for <em>all</em> matches</td></tr>
+<tr><td>i</td><td><em>i</em>nsensitive case searches</td></tr>
+<tr><td>m</td><td><em>m</em>ultiple line searches</td></tr>
+</tbody></table></div>
+
+<h2 id="t">Testing Regular Expressions</h2>
+<p>Several on-line sites let you test a regular expression before
+using it in your own scripts. A good one to use is provided by
+<a href="http://www.roblocher.com/technotes/regexp.aspx">Locher</a>.</p>
+
+<h2 id="u">Using Regular Expressions in Scripts</h2>
+<p>To use a regular expression for <em>validating</em> an entry in
+JavaScript, first set up a variable that contains the expression.<br>
+<span>Note:</span> Forward slashes are used to quote a <em>regular</em>
+expression while ' and " are used to quote a <em>string</em> expression.</p>
+<pre class="special">re = /whatever/</pre>
+<p>Then apply the regular expression <em>test method</em> on the string
+to be tested.</p>
+<pre class="special">if (re.test(entryValue)) {return true;}</pre>
+
+<p>To use a regular expression to <em>extract</em> a matching string,
+first set up a regular expression variable as above. Next use the
+regular expression <em>exec method</em> on the string.
+Any match is returned and null indicates no match.</p>
+<pre class="special">var ar = re.exec(var_string);</pre>
+
+<p>To use a regular expression for <em>modifying</em> a string in
+JavaScript first set up a regular expression variable as above.
+Next use the string replace method. Note that you can use back
+references if required.</p>
+<pre class="special">var x = y.replace(re,"$1");</pre>
+
+<h2 id="pc">Example - Canadian Postal Codes</h2>
+<p>Canadian postal codes alternate between letter and number such as
+L0S 1E0. Some choose not to put in the space. And not every letter is
+used as the first letter which designates region. The regions are (from
+east to west, then north): <em>A,B,C,E,G,H,J,K,L,M,N,P,R,S,T,V,X,Y</em>.
+A 'first version' regular expression for Canadian postal codes is:</p>
+<pre class="special">/^([a-z]\d){3}$/i</pre>
+<p>This expression makes sure that there is exactly 3 <span>{3}</span>
+groups of a letter <span>[a-z]</span> followed by a digit <span>\d</span>.
+The <span>i</span> suffix indicates insensitivity (ie capitals allowed).
+The <span>^ and $</span> guarantee that no other data is provided.
+However this easy to understand expression does not allow for an optional
+space after the third character or a restricted subset on the first letter.
+It also doesn't allow for leading/trailing whitespace. The solution is to
+explicitly do the repeating but place a <span>(/s)?</span> to check for zero
+or one space after the third character and to reduce the matches on the
+first letter to the specific regional characters.</p>
+<pre class="special">/^\s*[a-ceghj-npr-tvxy]\d[a-z](\s)?\d[a-z]\d\s*$/i</pre>
+
+<h2 id="ur">Example - URLs and Files</h2>
+<p>Often validation of an URL or filename requires a specific extension.
+One regular expression that will catch all filenames (and more!) is:</p>
+<pre class="special">/^\S+\.(gif|jpg|jpeg|png)$/</pre>
+<p>The above expression will match only image files that are Web standard.
+The expression is not foolproof as it permits subfolders with null names
+such as a//b.gif and specs like  a:/b:/c.gif</p>
+
+<h2 id="em">Example - E-mail Addresses</h2>
+<p>E-mail addresses are of the form xxx@yyy where xxx is the specific
+mailbox (and can contain underscores and periods) and yyy is the domain
+which can contain a series of suffixes such as .com.uk. One regular
+expression that matches 99.99% of valid entries is:</p>
+<pre class="special">/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/</pre>
+<p>This is a very complex expression and deserves explanation. All regular
+expressions start and end with forward slashes to differentiate them from
+ordinary string expressions. Most regular expressions start matches at the
+first character <span>^</span> and end at the last <span>$</span>.</p>
+<p>Now we try to match the <em>mailbox</em> name which can include periods
+and dashes <span>\w+</span> states one or more alphanumeric must be at the
+start of the name. <span>([\.-]?\w+)*</span> allows periods or dashes to
+be included in the mailbox name with the trailing \w+ ensuring that those
+characters can not finish the name. The <span>@</span> is the mandatory
+separator.</p>
+<p>The domain name can have several .xx or .xyz suffixes such as .com.uk.
+Once again <span>\w+</span> ensures that domain starts with an alphanumeric
+and <span>([\.-]?\w+)*</span> allows for the dashes and periods. Finally
+<span>(\.\w{2,3})+</span> ensures that there is at least one suffix of
+between 2 and 3 characters preceded by a period.</p>
+<p><span>Note:</span> This is not a completely foolproof validation as
+it does not account for new domain names of 4 or more characters. Also
+not all two and three letter combinations are legitimate domains!</p>
+
+<p align="right"><a href="tutord.htm">Tutorial 13 - Getting The Bugs Out</a> -
+<a href="tutorf.htm">Tutorial 15 - User-Defined Objects</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

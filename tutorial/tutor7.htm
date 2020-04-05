@@ -1,0 +1,345 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}-->
+</style>               
+<script type="text/javascript">
+/* checked with jsLint 2003 09 07 */
+p6='<h1 class="scroll">News!!!<\/h1><p>Any important message goes here<\/p>';
+p6+='<p><em>Note:<\/em> This effect does not function in netscape 4!';
+p6+=' Yet another reason to upgrade.<\/p>';
+function scrollerObj(name,initH,initW,heightB,widthB,content,initBg,Bg,speed,initFl){
+//**data**//
+this.name=name; this.initH=initH; this.initW=initW; this.heightB=heightB;
+this.widthB=widthB; this.content=content; this.initBg=initBg;
+this.Bg=Bg; this.iniFl=initFl; this.speed=parseInt(speed);
+this.timer=name + "Timer";
+//**methods**//
+this.getElement=getElement; this.createLayer=createLayer;
+this.scrollLayer=scrollLayer; this.scrollLoop=scrollLoop;
+//**initiate methods**//
+this.createLayer(); this.getElement(); this.scrollLayer();
+}
+//**call this method to stop scrolling**//
+function scrollLoop(s){this.speed=s;}
+function scrollLayer(){
+if(parseInt(this.elem.style.top)>(this.elem.offsetHeight*(-1))){
+  this.elem.style.top=parseInt(this.elem.style.top)-this.speed+'px';
+  } else {this.elem.style.top=this.initH+'px';}
+}
+function getElement(){this.elem=document.getElementById(this.name);}
+function createLayer(){
+document.write('<div id="layer'+this.name+'" style="position:relative;overflow:hidden;float:');
+document.write(this.initFl+';background-color:#'+this.initBg+';border:1px solid black;width:');
+document.write(this.initW+'px;height:'+this.initH+'px;" onmouseover="');
+document.write(this.name+'.scrollLoop(0)" onmouseout="'+this.name+'.scrollLoop(');
+document.write(this.speed+')">');
+document.write('<div id="'+this.name+'" style="position:absolute;top:');
+document.write(this.initH+'px;left:0px;border:0px solid black;width:');
+document.write(this.widthB+'px;height:'+this.heightB+'px;background-color:#');
+document.write(this.Bg+'">');
+document.write(this.content);
+document.write('<\/div><\/div>');
+if(this.scrollLayer){this.timer=setInterval(this.name+'.scrollLayer()','30');}
+</script>
+<script type="text/javascript"> 
+/* checked with jsLint 2003 09 09 */
+//status line marque
+mmsg=" -- JR's marquee demonstration";counter=(mmsg.length+1)*1;rate=8;
+function scrollMsg() {
+if (counter > 0) {
+   window.status=mmsg;
+   mmsg=mmsg.substring(1,mmsg.length) + mmsg.substring(0,1);
+   setTimeout('scrollMsg()',1000/rate);
+   counter -=1;
+   }
+}
+//textbox scroller example
+text=" This is the demonstration text -- ";
+len=text.length;// total characters in status line - Opera is short!
+msg="";       // build blank message for clean start
+for (i=0;i <= len;i++) {msg += " ";}
+pos=0;        // pointer into text array
+speed=10;     // adjust scrolling speed here
+
+function scroll() {
+msg=msg.substring(1,len) + text.charAt(pos);
+// slides window over and adds one char from text message
+document.getElementById('ctrText').value=msg;
+if (pos++ == text.length) {pos=0;}
+// returns to front of message for next go around
+id=setTimeout("scroll()",1000/speed);
+}
+//glowing text example
+//next four vars can be modified
+from=5;   // animation start value
+to=11;	   // animation end value
+delay=55;	   // animation speed
+glowColor="lime"; // color of text glow
+idx=to;j=0;
+function textPulseUp() {
+if (!document.all) {return;} // browser not MicroSoft
+if (idx < to) {
+   theText.style.filter="Glow(Color=" + glowColor + ", Strength=" + idx + ")";
+   idx++;theTimeout=setTimeout('textPulseUp()',delay);return;
+   }
+if (idx == to) {
+   theTimeout=setTimeout('textPulseDown()',delay);return;
+   }
+}
+function textPulseDown() {
+if (!document.all) {return;} // browser not MicroSoft
+if (idx > from) {
+   theText.style.filter="Glow(Color=" + glowColor + ", Strength=" + idx + ")";
+   idx--;theTimeout=setTimeout('textPulseDown()',delay);return;
+   }
+if (idx == from) {
+   theTimeout=setTimeout('textPulseUp()',delay);return;
+   }
+}  
+</script>
+</head>
+<body id="top" onload="writeMenu();textPulseDown()">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 7 - Animation</h1>
+<p align="right"><a href="tutor6.htm">Tutorial 6 - DOM and DHTML</a> -
+<a href="tutor8.htm">Tutorial 8 - Multimedia</a></p>
+<p>Animation is the process of making text and/or graphics to move or appear
+to move. It does not add content to a webpage but properly used, can be an
+important <em>attractor</em> of viewers or <em>highlighter</em> of material
+needing emphasis. <a href="tutor8.htm">Multimedia</a> covers audio, video
+and print presentations.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#ma">scrolling marquees</a></li>
+<li><a href="#gl">glowing text</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#fl">flying text</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#ns">news scroller</a></li>
+<li><a href="#sp">splash screens</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="ma">Scrolling Marquees</h2>
+<p>Marquees or scrolling banners are used to draw the reader's attention to
+important information such as a new product release. The HTML marquee tag
+has been superceded by dynamic marquees using JavaScript data manipulation.
+One algorithm that is easy to implement is to rebuild the message to be
+displayed by dropping the first letter and adding one to the end, then
+redisplaying the message after a short delay. The first rather simple example
+uses the status bar for display. It could be autostarted with the onLoad
+event but then it should also be timed out instead of continuously running.
+Remember that the status line has some very important uses and
+<strong>should not</strong> be captured forever by a JavaScript function.</p>
+<div class="c">
+<input class="go130" name="button" value="Try It!" onclick="scrollMsg()" type="button"></div>
+<pre class="special">mmsg=" -- JR's marquee demonstration";
+counter=(mmsg.length+1)*1;rate=8;
+function scrollMsg() {
+if (counter &gt; 0) {
+   window.status=mmsg;
+   mmsg=mmsg.substring(1,mmsg.length) + mmsg.substring(0,1);
+   setTimeout('scrollMsg()',1000/rate);
+   counter -=1;
+   }
+}</pre>
+<p>The example is terminated by counting the letters and stopping after
+one pass through. You can change the number of passes by changing the
+multiplier on the counter variable. Another refinement would be to
+start with no message at the start. I chose to present the whole message
+first to remove the drama ;-]</p>
+<p>An improved version starts with a blank marquee and runs continuously.
+Output is to a textarea form element to show some display variations
+that are allowed with JavaScript. You can use style to hide or change
+the look of the textarea if you wish.</p>
+<div class="c"><input id="ctrText" readonly="readonly" size="80" style="background: bisque none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" type="text">
+<input class="go130" name="button" value="Click Me!" onclick="scroll('ctrText')" type="button"></div>
+<pre class="special">text=" This is the demonstration text -- ";
+len=text.length;// total characters in status line - Opera is short!
+msg="";       // build blank message for clean start
+for (i=0;i &lt;= len;i++) {msg += " ";}
+pos=0;        // pointer into text array
+speed=10;     // adjust scrolling speed here
+
+function scroll(id) {
+msg=msg.substring(1,len) + text.charAt(pos);
+// slides window over and adds one char from text message
+document.getElementById(id).value=msg;
+if (pos++ == text.length) {pos=0;}
+// returns to front of message for next go around
+id=setTimeout("scroll(id)",1000/speed);
+}</pre>
+<p>An assignment that will check your understanding of the algorithm
+is to change the scrolling so that letters appear to move from left
+to right instead of the usual right to left motion.</p>
+
+<div class="c"><h2 id="gl"><span id="theText" style="width: 100%;">
+Glowing Text</span></h2></div>
+<p>Text can appear to glow by using CSS filter effects. This can be an
+attractive effect for headings. Unfortunately it works in MSIE browsers
+(<a href="http://home.cogeco.ca/%7Eve3ll/htmlqwkh.htm#st">QUIRKS MODE</a>) only as the style.filter
+property is JScript specific.</p>
+<pre class="special">//next four vars can be modified
+from=5;       // animation start value
+to=11;	     // animation end value
+delay=55;	     // animation speed
+glowColor="lime"; // color of text glow
+
+//do not edit from here down
+idx=to;j=0;
+
+function textPulseUp() {
+if (!document.all) {return;} // browser not MicroSoft
+if (idx &lt;to) {
+   theText.style.filter="Glow(Color="+glowColor+", Strength="+idx+")";
+   idx++;theTimeout=setTimeout('textPulseUp()',delay);return;
+   }
+if (idx == to) {
+   theTimeout=setTimeout('textPulseDown()',delay);return;
+   }
+}
+function textPulseDown() {
+if (!document.all) {return;} // browser not MicroSoft
+if (idx &gt;from) {
+   theText.style.filter="Glow(Color="+glowColor+", Strength="+idx+")";
+   idx--;theTimeout=setTimeout('textPulseDown()',delay);return;
+   }
+if (idx == from) {
+   theTimeout=setTimeout('textPulseUp()',delay);return;
+   }
+}</pre>
+<p>Other filter effects available are Alpha, BasicImage, Blur, Chroma,
+Compositor, DropShadow, Emboss, Engrave, Light, MaskFilter, Matrix,
+MotionBlur, Pixelate, Shadow, and Wave.</p>
+
+<h2 id="fl">Flying Text</h2>
+<p>Text can be given the appearance of flying by using CSS positioning.
+The first example will fly the text to the right only. Step one is
+to define the text, uniquely identify it and give it some initial position.
+The text is contained in a <em>div</em> element with some <em>inline</em>
+css style. Inline style is used as the position can only be set on an
+element by element basis. It is placed in the body of the document.
+For example:</p>
+<pre class="special">&lt;div id="flyer" style="position:absolute; left:0px; top:10px"&gt;
+Pizza to Go...&lt;/div&gt;</pre>
+<p>An alternative to inline style is to use a css style element with an
+id selector:</p>
+<pre class="special">#flyer {position:absolute; left:0px; top:10px}</pre>
+<p>The JavaScript function sets the position of the div element using
+its <em>style.left</em> property. Note the addition of "px". This is very
+important for correct functioning in some browsers. If the text hasn't
+reached the right edge, it increments the position. Finally a delay is
+built in using the system <em>setTimeout()</em> method to allow reading
+the message. Without the delay the text would blur across the screen.
+The JavaScript code is placed in the head section.</p>
+<pre class="special">spot=0; // global state memory for position
+function move() {
+styleObj=document.getElementById('flyer').style;
+if (spot &lt; 500) {  // check whether we are at right stop point
+    spot += 2;                  // no - so move over a bit
+    styleObj.left=spot + "px";  // redisplay at new site
+    setTimeout('move()',50);    // but first wait 50 milliseconds
+    }
+}</pre>
+<p>To start the flying on page load, add an <em>onLoad</em> event
+attribute to the body element. For example:</p>
+<pre class="special">&lt;body onLoad="move()"&gt;</pre>
+<p><strong>Note 1:</strong> MSIE has <em>pixelLeft</em> and
+<em>pixelTop</em> properties which guarantee that the measure is in pixels
+and is a numeric quantity. Unfortunately these properties are not part of
+the DOM recommendation. Change any 'pixelxx' references as follows:</p>
+<pre class="special">where=styleObj.pixelLeft;  //MSIE specific
+where=parseInt(styleObj.left); // makes integer count in pixels
+. . .
+styleObj.pixelLeft=where;  // MSIE specific
+styleObj.left=where + 'px' // guarantees measured in pixels</pre>
+<p><strong>Note 2:</strong> Netscape 4 does not have a style object. See
+<a href="tutord.htm#brow">browser differences</a> if it must be supported.</p>
+<p>The first modification to this routine would be to add parameters
+for the stop, increment, and delay settings. This would make the
+function much more flexible for reuse.</p>
+<p>Another modification would be to add vertical motion with the .top
+style property. How about moving the other way with negative values for
+the steps (don't forget to set initial and final positions and invert
+the check method). And instead of simply stopping when you reach the limit
+you may want to cycle the movement. This can be done by adding an
+<em>else</em> component to the decision to increment such as:</p>
+<pre class="special">} else {  // this addition makes continuous flying possible
+//  if (times &lt; 2) { times+=1; } else {return;}
+    spot=0;      // this does the reset for next cycle
+    styleObj.left=spot + "px";       // redisplay
+    setTimeout('move()',50);  // but first wait 50 milliseconds
+    }</pre>
+<p><span>Note:</span> The commented out line will also add a limit to
+the number of repetitions. For this to work correctly, times has to be
+declared as a global variable. And of course REMOVE the comment ;-]</p>
+<p>Over the top applications would want a routine to randomly pick both
+the horizontal and vertical increments. And then once an edge is hit,
+reverse that direction. How about correct angle of bounce off the wall.
+Lots of ideas here for those who want to explore animation. See what you
+can do with dynamic text movement.</p>
+
+<h2 id="ns">News Scrollers</h2>
+<p>Many sites now include a news scroller with important or fresh info.
+The usual way of doing this is with animated gifs. But JavaScript methods
+allow you to stop the scroll by hovering on the newsbox. This gives you
+time to read the text. To use the javascript scroller demoed on this page
+capture the script between the meta <em>generator</em> elements in the
+<em>head</em> section and make it your own with a bit of hand tuning.
+Make sure you include the styling element and then add the following
+element where you want the newsbox to appear.</p>
+<pre class="special">&lt;div class="newsbox"&gt;&lt;script type="text/javascript"&gt;
+c=new scrollerObj('c','135','100','200','100',p6,'ffdd00','cccccc','3','center')
+&lt;/script&gt;&lt;/div&gt;</pre>
+<p>The parameters represent the boxName, boxHeight, boxWidth,
+contentHeight, contentWidth, content, boxColor, textColor, speed and
+initial FloatPosition.</p>
+<div class="newsbox"><script type="text/javascript">
+c=new scrollerObj('c','135','100','200','100',p6,'ffdd00','cccccc',
+'3','center');</script><div id="layerc" style="border: 1px solid black; position: relative; overflow: hidden; background-color: rgb(255, 221, 0); width: 100px; height: 135px;" onmouseover="c.scrollLoop(0)" onmouseout="c.scrollLoop(3)"><div id="c" style="border: 0px solid black; position: absolute; left: 0px; width: 100px; height: 200px; background-color: rgb(204, 204, 204); top: -96px;"><h1 class="scroll">News!!!</h1><p>Any important message goes here</p><p><em>Note:</em> This effect does not function in netscape 4! Yet another reason to upgrade.</p></div></div></div>
+
+<h2 id="sp">Splash Screens</h2>
+<p>Splash screens are intros or leaders that can attract certain viewers.
+But please use discretion and <em>know your audience</em>. You can view
+and rip my <a href="http://home.cogeco.ca/%7Eve3ll/jssplash.htm">jssplash.htm</a> example of a super
+flying text screen for a nice intro to your own site. Another splash
+uses the zoom effect and position shifting to achieve a
+<a href="http://home.cogeco.ca/%7Eve3ll/jsstrwar.htm">star wars credits</a> effect.</p>
+
+<p align="right"><a href="tutor6.htm">Tutorial 6 - DOM and DHTML</a> -
+<a href="tutor8.htm">Tutorial 8 - Multimedia</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

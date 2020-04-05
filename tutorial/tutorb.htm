@@ -1,0 +1,293 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+                            
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 11 - Form Validation</h1>
+<p align="right"><a href="tutora.htm">Tutorial 10 - Menuing Systems</a> -
+<a href="tutorc.htm">Tutorial 12 - Smart Forms</a></p>
+<p>Validation routines test for required strings whether a specific value,
+a range of accepted values or a pattern of an accepted format. Validation
+is required in forms, whether fill-in or smart forms and also in routines
+that manipulate data. Testing for valid numerics and whether the numeric
+is in a required range is also a part of data validation.</p>
+<p>The best method of form validation is to choose form controls that
+restrict value selection to known pretested quantities. Examples of these
+controls are radio buttons, check boxes and select lists. However there
+are times when they are not always appropriate. In these cases you can
+let the user complete the form and then validate it or validate on each
+individual entry.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#ty">common validations needed</a></li>
+<li><a href="#va">validating before submission</a></li>
+<li><a href="#en">validating on a by entry basis</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#ke">validating on a keystroke basis</a></li>
+<li><a href="#br">brute force validation</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#ma">email address validation</a></li>
+<li><a href="#pc">postal code validation</a></li>
+<li><a href="#pw">password controlled pages</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="ty">Common Validations Needed</h2>
+<p>There are many types of common validations that you should be ready
+to do on a form. These checks include:</p>
+<ul>
+<li>guaranteeing a minimum length (eg. password of 5 or more characters)</li>
+<li>making sure an entry matches a specific word</li>
+<li>making sure two entries agree (eg. double entry of password)</li>
+<li>validating a number format or range</li>
+<li>checking the format for a pattern (eg. is this like a mail address)</li>
+<li>checking two or more fields for consistent results such as
+married:no  and name of spouse field filled in.</li>
+</ul>
+<p>However do not make any false assumptions in what the entry will be.
+Assuming that age:12 children:3 is in error may require checking the state
+address ;-] ;-] Common mistakes seen on some entry forms are:</p>
+<ul>
+<li>Assuming a specific format for telephone numbers. Some numbers require
+an area code. And some international numbers are <strong>NOT</strong>
+3x3x4 digits long. And of course letters are still valid!</li>
+<li>Not all addresses are ZIP codes! In fact only one country uses them.
+There is a <em>large</em> variation in <strong>postal codes</strong>.</li>
+<li>Dates have many variations depending on locale. Separate entry boxes
+for each component (year/month/day) is a safer method of entry.</li>
+</ul>
+
+<h2 id="va">Validating Before Form Submission</h2>
+<p>The onSubmit event can be used to call a function to check all fields
+that require validation before sending a form. The values to be checked
+(or perhaps the entire form) are passed as parameters. The validation function
+must return a <em>true</em> if ready to submit or a <em>false</em> if not
+ready. It also makes sense to use dialog boxes to indicate the nature of
+the error. An example of a simple call to a validating function is:</p>
+<pre class="special">&lt;form id="SurveyForm" action="http://www.flintstone.ca/survey/"
+      method="post" onSubmit="return validate(fld1,fld2);"&gt;&lt;/form&gt;</pre>
+<p>An alternative method uses a simple button with an <em>onclick</em> event.
+Either the submit action is suppressed by placing <em>onSubmit="return false;"
+</em> in the form element or removing the form element altogether!</p>
+<pre class="special">&lt;form id="foo" action="?" method="post" onSubmit="return false;"&gt;
+. . .
+&lt;input value="Check Form!" onclick="validate(fld1,fld2);" /&gt;
+&lt;/form&gt;</pre>
+
+<h2 id="en">Validating On A By Entry Basis</h2>
+<p>Many forms are best validated on a by entry basis. A function to validate
+the contents of an entry box can be called by the <em>onBlur</em> event.
+<em>onBlur</em> occurs whenever an element such as an entrybox loses focus.
+That means the entry is checked when you click on a new entry field or
+another spot in your window or use the tab key to move off the entry.<br>
+<span>NOTE:</span> Read my <a href="tutord.htm#blur">Bugs Tutorial</a>
+to see how some browsers can create endless loops when blur and focus events
+are encountered. Another event that can be used is <em>onChange</em> which
+only does the validation when you move off the entry box <em>and</em> that
+entry has changed. The next example brings up an alert dialog if the
+correct word is not entered.</p>
+<form id="pass" action="" method="post" onsubmit="return false;">
+<p>Input the word <em>STOP</em> in the following entry box:<br>
+Then click somewhere <em>outside</em> of the box to test!&nbsp;&nbsp;
+   <input id="i1" value="" onclick="return false;" onblur="isit('i1','STOP'); return true;" type="text" size="20"></p></form>
+<pre class="special">&lt;form id="pass" action="" method="post" onSubmit="return false;"&gt;
+&lt;p&gt;Input the word STOP in the following entry box:&lt;br&gt;
+Then click somewhere outside of the box to test!&nbsp;&nbsp;
+&lt;input id="i1" type="text" value="" onclick="return false;"
+       onBlur="isit('i1','STOP'); return true;"&gt;&lt;/p&gt;&lt;/form&gt;</pre>
+<p>And here is the JavaScript checking routine. Note that the validation
+is case sensitive. The onSubmit event in the form element is used to
+suppress the return key and the onclick event suppresses other key clicks.</p>
+<pre class="special">function isit(id,expectedval) {
+   inputval=document.getElementById(id);
+   if (inputval!=expectedval) {
+      alert('You must enter the word '+ expectedval);
+      } else {alert('ok')}
+   }</pre>
+
+<h2 id="ke">Validating On A Keystroke Basis</h2>
+<p>Sometimes you may want to restrict invalid characters from being
+entered into a control or do some form of on-the-fly reformatting.
+This requires catching individual keystrokes with the <em>onKeyPress</em>
+event. An example of this is:</p>
+<pre class="special">document.onkeydown=keyHit; // register key pressed event
+upArrow=38; dnArrow=40;  // names for important keys
+function keyHit(evt) {
+	thiskey=window.event.keyCode;
+	if (thiskey==upArrow) {alterSelection(-1)}
+	if (thiskey==dnArrow) {alterSelection(+1)}
+	}</pre>
+<p>Notice that instead of using an element attribute, the event is
+registered in JavaScript. The <em>evt</em> object can be tested if you
+need to restrict keystrokes to specific zones or elements. You can use
+an alert(thiskey) method to show the specific keyCode. It helps to make
+a name synonym for any keyCode that is being used such as <em>pound</em>
+or <em>percent</em>.</p>
+
+<h2 id="br">Brute Force Validation</h2>
+<p>Brute force evaluation is programming that takes the simplest approach
+or uses very crude assumptions. It is easy to get the code in place and
+most often does the job. Stepwise refinement can then be applied. But the
+resulting code is not elegant and often quirky. As an example suppose that
+a field is intended to hold a person's surname and is a mandatory field.
+The first approach is to check for an empty string. That is a start but
+surely a person's last name is at least 2 characters long. And only a few
+punctuation symbols (such as hyphen and apostrophe) are allowed and no
+digits please!</p>
+<p>There are several String object functions and properties that can
+make your brute force checks easy! You may want to refer to
+<a href="tutorx.htm#Jobject">Appendices - Objects</a> for the
+complete list.</p>
+<ul>
+<li><em>entry=entry.toUpperCase()</em> will change any lowercase
+characters to uppercase. This way you do not have to check for each
+of ANN, ann, Ann, etc.</li>
+<li><em>x=entry.length;</em> will return the length of the string
+<em>entry</em>.</li>
+<li><em>x=entry.indexOf(char)</em> will return the <em>first</em> position
+of <em>char</em> within the string <em>entry</em>. Returns 0 if not found!</li>
+<li><em>x=entry.lastIndexOf(char)</em> will return the <em>last</em> position
+of <em>char</em> within the string <em>entry</em>. Returns 0 if not found!</li>
+<li><em>x=entry.indexOf(char,start)</em> will return the <em>first</em>
+position of <em>char</em> within the string <em>entry</em> starting at
+position <em>start</em>. Returns 0 if not found!</li>
+<li><em>x=entry.charAt(p)</em> will return the character at the specific
+position <em>p</em>. Combined with a loop such as
+<em>for (p=1;p&lt;entry.length;p++) {BLOCK}</em> which scans the entire string,
+you can watch for problem characters.</li>
+<li><em>x=parseInt(entry)</em> will return an INTEGER <em>number</em>
+from the string. <span>BEWARE:</span> truncation can occur!</li>
+<li><em>x=parseFloat(entry)</em> will return an DECIMAL <em>number</em>
+from the string. <span>BEWARE:</span> truncation can occur!</li>
+</ul>
+<p>Validation with <a href="tutore.htm">regular expressions</a> is more
+elegant and much easier than the brute force technique, once you master
+the syntax. If your scripts rely heavily on input validation, it is well
+worth the effort to learn how to use them.</p>
+
+<h2 id="ma">E-mail Address Validation</h2>
+<p>A good example of brute force validation is checking an e-mail address.
+The first version would check for the @ symbol. Refinements would check
+for at least one dot after the @ and characters before, between, and after
+the symbols. Further refinement would find the last dot and make sure that
+there is at least two alphabetic characters after it. Very thorough
+validation would check any two character final character combination
+(Top Level Domain or TLD) against a list of
+<a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html">
+valid ISO country TLD's</a>. Also one should scan for illegal punctuation
+<em>never</em> found in e-mail addresses.</p>
+<p>An example of a brute force email entry field test routine (some but not
+all of the possible checks!) can be found <a href="http://home.cogeco.ca/%7Eve3ll/bin2/verify.htm">here</a>.
+You can use it as a good start for your own validation routine.</p>
+<p>Validation with <a href="tutore.htm">regular expressions</a> is much
+easier. If your scripts rely heavily on input validation, it is well worth
+the effort to learn regular expression syntax.</p>
+
+<h2 id="pc">Postal Code Validation</h2>
+<p>Another example of brute force validation is checking postal codes.
+As each country has their own format, you should use the <em>country</em>
+address value to select the required validator function.</p>
+<p>As an example of how a postal code validator function is constructed,
+first review <em>Canada's Postal Code</em> rules:</p>
+<ol>
+<li>Postal code must be exactly six characters.</li>
+<li>Letters and numbers alternate.</li>
+<li>Certain letters never occur (I AND O).</li>
+<li>The first character is even more restricted as it designates region.
+Regions are (from east to west, then north):
+A,B,C,E,G,H,J,K,L,M,N,P,R,S,T,V,X,Y</li>
+</ol>
+<pre class="special">function isPostCode(entry){ // CANADIAN CODES ONLY
+strlen=entry.length; if (strlen!=6) {return false}
+entry=entry.toUpperCase();    // in case of lowercase characters
+// Check for legal characters in string - note index starts at zero
+if ('ABCEGHJKLMNPRSTVXY'.indexOf(entry.charAt(0))&lt;0) {return false}
+if ('0123456789'.indexOf(entry.charAt(1))&lt;0) {return false}
+if ('ABCDEFGHJKLMNPQRSTUVWXYZ'.indexOf(entry.charAt(2))&lt;0) {return false}
+if ('0123456789'.indexOf(entry.charAt(3))&lt;0) {return false}
+if ('ABCDEFGHJKLMNPQRSTUVWXYZ'.indexOf(entry.charAt(4))&lt;0) {return false}
+if ('0123456789'.indexOf(entry.charAt(5))&lt;0) {return false}
+return true; }</pre>
+<div class="c"><form id="postal" class="fancy2" action="?" method="post" onsubmit="return false;">
+<fieldset><legend>Postal Code String Test</legend>
+<input id="io" value="" size="6" maxlength="6" type="text" name="1">
+<input id="go" class="go130" value="Test String Now!" onclick="alert(isPostCode('io'));return false;" type="button">
+</fieldset></form></div>
+<p>Once again validation with <a href="tutore.htm">regular expressions</a>
+is much easier, once you master the syntax. If your scripts rely heavily on
+input validation, it is well worth the effort.</p>
+
+<h2 id="pw">Password Controlled Pages</h2>
+<p>One common validation is requiring a password to enter a page.
+Use of a password control box on the form and its value within the
+JavaScript function are all that is required. The html fragment is:</p>
+<pre class="special">&lt;fieldset&gt;&lt;legend&gt;Test Form&lt;/legend&gt;
+&lt;label for="pw"&gt;Password:&lt;/label&gt;
+&lt;input id="pw" type="password"&gt;
+&lt;input id="act" type="button" value="View Utilities" onClick="doPw('pw');"&gt;
+&lt;/fieldset&gt;</pre>
+<p>And here is the JavaScript function. Note that to be of any value both
+the comparison value and the referenced page must be encrypted. FlashPeak
+offers <a href="http://www.flashpeak.com/crypthtml/">CryptHTML</a> for
+encoding html and javascript documents. Another more expensive solution is
+<a href="http://invisitec.com/">invisitec.com</a>.</p>
+<pre class="special">function doPw(objectId) {
+entry=document.getElementById(objectId).value;
+if (entry=="test") {
+   top.location.href="http://home.cogeco.ca/~ve3ll/utility.htm";
+   } else {
+   alert("Sorry - You must sign agreement to access utilities");
+   }
+}</pre>
+
+        <div align="right">
+<a href="tutora.htm">Tutorial 10 - Menuing Systems</a> - <a href="tutorc.htm">Tutorial 12 - Smart Forms</a>
+
+        </div>
+
+        <div align="right">
+&nbsp;</div>
+        <div align="right">
+<b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b>
+
+        </div>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

@@ -1,0 +1,259 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 15 - User-Defined Objects</h1>
+<p align="right"><a href="tutore.htm">Tutorial 14 - Regular Expressions</a> -
+<a href="tutorx.htm">Javascript Tutorial Appendices</a></p>
+<p>Larger projects require the use of many specialized objects of a similar
+type. In modern languages this is normally done with user-defined objects.
+This tutorial shows you how to create your own specialized user-defined
+objects and explains the issues of constructors, prototypes and inheritance.
+This tutorial also describes JSON, a cross language data interchange format.
+<span>Note:</span> This page assumes familiarity with basic Object Oriented
+Language principles!</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#con">Object Constructors</a></li>
+<li><a href="#cm">Defining Methods in Constructors</a></li>
+<li><a href="#fc">Function Constructor Methods &amp; Literals</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#pro">Prototype Based Inheritance</a></li>
+<li><a href="#sub">Subclasses</a></li>
+<li><a href="#ass">Objects as Associative Arrays</a></li>
+<li><a href="#json">Javascript Object Notation</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="con">Object Constructors</h2>
+<p><em>Object constructors</em> can be thought of as templates for making
+objects. As a simple example, rectangles contain several basic properties
+(aka variables). A simple template is:</p>
+<pre class="special">// define a constructor with properties
+function Rectangle(w,h) {
+   this.width = w;
+   this.height = h;
+   }</pre>
+<p>Note that Rectangle has its initial letter capitalized. This indicates
+that it is a <em>constructor</em> function (similar to a class in Java).
+The keyword <em>this</em> refers to the current object that called the
+constructor function. It identifies constructor objects and is not normally
+used otherwise.</p>
+
+<h2 id="cm">Defining Methods in Constructors</h2>
+<p><em>Methods</em> may also be added to constructors. However they must be
+defined first. The names used in this definition are not important but one
+convention is to prepend the method name with constructor name and an
+underscore. It is also good pratice to keep the defining methods and the
+constructor that uses them near each other (maybe using comments to help).</p>
+<pre class="special">// define some methods to be included in Rectangle object
+function Rectangle_area() {return this.width * this.height;}
+function Rectangle_perimeter() {return 2 * (this.width+this.height);}
+function Rectangle_enlarge() {this.width *= 2; this.height *= 2;}
+
+// define Rectangle's property display method
+function Rectangle_showObj() {
+   document.writeln('Width is '+this.width+'&lt;br&gt;');
+   document.writeln('Height is '+this.height+'&lt;br&gt;');
+   document.writeln('Area is '+this.area()+'&lt;br&gt;');
+   document.writeln('Perimeter is '+this.perimeter()+'&lt;br&gt;');
+   }
+
+// define constructor with properties
+function Rectangle(w,h) {
+   this.width = w;
+   this.height = h;
+   this.area = Rectangle_area; // Note: parameter brackets are not used
+   this.perimeter = Rectangle_perimeter;
+   this.enlarge = Rectangle_enlarge;
+   this.showObj = Rectangle_showObj;
+   }
+
+// test by creating and displaying an instance of the Rectangle object
+myRect = new Rectangle(5,6);
+myRect.showObj();
+myRect.enlarge();
+myRect.showObj();</pre>
+<p>This works but is very inefficient. Each instance of a new Rectangle
+object would contain all of the code for each method such as computing
+area and perimeter. The <a href="#pro">prototype based inheritance</a>
+section illustrates a much better way of constructing objects.</p>
+
+<h2 id="fc">Function Constructor Methods &amp; Literals</h2>
+<p><em>Function constructor methods</em> allow <em>dynamic</em> compilation of
+a function. An example for the area and perimeter functions used above is:</p>
+<pre class="special">Rectangle_area = new Function("return this.width * this.height;")
+Rectangle_perimeter = new Function("return 2 * (this.width+this.height);")</pre>
+<p>Note that Function is capitalized (ie. an object) and uses round
+(ie. method) brackets.</p>
+<p><em>Function literals</em> can also be used to define a function such as:</p>
+<pre class="special">Rectangle_area = function{return this.width * this.height;};
+Rectangle_perimeter = function{return 2 * (this.width + this.height);};</pre>
+<p>Note that the function is unnamed on the right hand side.</p>
+
+<h2 id="pro">Prototype Based Inheritance</h2>
+<p>Javascript is different from the more commonly used object oriented
+languages such as C++ and Java in that it uses prototypes instead of
+classes for inheritance.</p>
+<p><em>Prototypes</em> are special template objects whose properties and
+methods are inherited (ie pointed at, not copied to by objects created by
+them. This allows method code to be reused rather than copied. It also can
+be used to set a property to a constant value. If many objects have the
+same default value for a specific property but with a few exceptions, the
+prototype can set the default and an individual instance override the setting.
+A sample of a prototype approach to the Rectangle object is:</p>
+<pre class="special">// define a couple of methods to be included in Rectangle object
+function Rectangle_area() {return this.width * this.height;}
+function Rectangle_perimeter() {return 2 * (this.width + this.height);}
+function Rectangle_enlarge() {this.width *= 2; this.height *= 2;}
+
+// define Rectangle's property display method
+function Rectangle_showObj() {
+   document.writeln('Shape is '+this.shape+'&lt;br&gt;');
+   document.writeln('Width is '+this.width+'&lt;br&gt;');
+   document.writeln('Height is '+this.height+'&lt;br&gt;');
+   document.writeln('Area is '+this.area()+'&lt;br&gt;');
+   document.writeln('Perimeter is '+this.perimeter()+'&lt;br&gt;');
+   }
+
+// define constructor with properties
+function Rectangle(w,h) {
+   this.width = w;
+   this.height = h;
+   this.shape = "rectangle" // majority are !!
+   }
+
+// create and throw away a prototype object
+new Rectangle (0,0);
+
+// define object methods for rectangles
+Rectangle.prototype.area = Rectangle_area;
+Rectangle.prototype.perimeter = Rectangle_perimeter;
+Rectangle.prototype.enlarge = Rectangle_enlarge;
+Rectangle.prototype.showObj = Rectangle_showObj;
+
+// test by creating and displaying an instance of the Rectangle object
+myRect = new Rectangle(5,6);
+myRect.showObj();
+myRect.enlarge();
+myRect.showObj();
+
+// and a special instance of the Rectangle object that is square
+mySquare = new Rectangle(3,3);
+mySquare.shape = "Square"
+mySquare.showObj();
+mySquare.enlarge();
+mySquare.showObj();</pre>
+<p>The prototype object may also be applied to any built-in class
+to add a new method to it.</p>
+
+<h2 id="sub">Subclasses</h2>
+<p>Although not often needed subclasses (children) of user defined classes
+are able to be created by making their prototype objects instances of
+their superclass (parent). As an example we will extend a Complex object:</p>
+<pre class="special">//constructor for subclass
+function MoreComplex (real, imaginary) {
+  this.x = real;
+  this.y = imaginary;
+}
+/*force the prototype to be a Complex (superclass) object
+  which has been defined previously in the script */
+MoreComplex.prototype = new Complex (0,0);
+//now add new method or features to MoreComplex
+MoreComplex.prototype.swap = function () {
+  var tmp = this.x;
+  this.x = this.y;
+  this.y = tem;
+}</pre>
+<p><span>NOTE:</span> This makes the MoreComplex constructor property the
+same as its superclass. To overcome this the constructor property must be
+reset explicitly such as:</p>
+<pre class="special">MoreComplex.prototype.constructor = MoreComplex;</pre>
+
+<h2 id="ass">Objects as Associative Arrays</h2>
+<p>In addition to the dot address method of identification such as
+<em>object.property</em>, object data can also be represented in array
+format such as <em>object[property]</em>.</p>
+<p>One advantage of the array representation is that the array index is
+a string and can thus itself be manipulated dynamically. For example to
+catenate all customer address data into a single string:</p>
+<pre class="special">var addr = "";
+for (i=0; i &lt; 4; i++) { addr += customer["address" + i] }</pre>
+<p>The above example could have been hard coded with the dot address
+method but it would hve been longer and less elegant. And there are
+times when the <em>dynamic</em> capability is required. For example
+if a client query is made for entry of a database stock item and the
+quantity on hand is to be obtained from the database:</p>
+<pre class="special">var item_name = get_item_name(item); // dialog with user, dynamic answer
+var quantity = database[item];
+show_info(item, quantity); // display the results</pre>
+<p>And because objects can be expressed as associative arrays the
+powerful <em>for/in</em> construct can be used as illustrated in the
+<a href="tutor5.htm#bex">browser explorer tool</a>. For the above
+database we could quickly calculate the total inventory count without
+knowing the names or number of unique items in the database:</p>
+<pre class="special">var item=""; var names=""; total = 0; // variables initialized
+// define a constructor with properties
+function Database() {}
+// construct the database
+database = new Database();
+// now populate the database
+database.widgets = 6; database.gadgets = 7;
+for (item in database) {
+    names += item + ": " + database[item] + "\n";
+    total += database[item];}
+alert(names + "\n--------------\n" + "Total: " + total)</pre>
+
+<h2 id="json">Javascript Object Notation</h2>
+<p>Javascript Object Notation (JSON) is a cross language data interchange
+format that has a much simpler syntax than XML. It is based on the constructs
+objects and arrays which are found in virtually all modern languages. JSON
+has been implemented on Java, C++, C#, Python and other languages.</p>
+<p>More details on the syntax and use of JSON can be found at
+<a href="http://www.json.org/">json.org</a></p>
+
+<p align="right"><a href="tutore.htm">Tutorial 14 - Regular Expressions</a> -
+<a href="tutorx.htm">Javascript Tutorial Appendices</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

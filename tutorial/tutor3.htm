@@ -1,0 +1,298 @@
+<html>
+<title>JavaScript Plus! Tutorial - Core Language</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+    <td bgcolor="#e2e2e2" width="1">
+    <td bgcolor="#ffffff" valign="top" width="604">
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 3 - Core Language</h1>
+<p align="right"><a href="tutor2.htm">Tutorial 2 - Objects,Events&amp;Functions</a> 
+- <a href="tutor4.htm">Tutorial 4 - Working with Forms</a></p>
+<p>JavaScript like many languages (eg C, Java, awk, perl) is based on a
+common syntax and grammar developed by the Bell Labs in the 60's. This
+makes it easy to cross over from one language to another based on program
+requirements, resources and politics. This tutorial on JavaScript syntax
+and grammar (ie. programming in the small) assumes introductory programming
+experience in another language and includes the following topics:</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#le">lexical structure</a></li>
+<li><a href="#li">literals or constants</a></li>
+<li><a href="#es">escape characters</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#va">variables</a></li>
+<li><a href="#ar">arrays</a></li>
+<li><a href="#op">operators</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#ex">expressions and conditions</a></li>
+<li><a href="#st">statements</a></li>
+<li><a href="#lo">loops and switches</a></li>
+<li><a href="#br">continue, break &amp; return</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="le">Lexical Structure</h2>
+<p>The lexical structure of a programming language is the set of
+elementary rules that specify how you write a program. It is the lowest
+level syntax of a language and specifies such things as what identifier
+names look like. Some of the basic rules for JavaScript are:</p>
+<ul>
+<li>JavaScript <em>is</em> case sensitive.</li>
+<li>Whitespace, tabs, and newline characters are ignored except when part
+of string constants. Whitespace can be added as needed for readability.</li>
+<li>Block comments begin with /* and end with */ [preferred over single
+liners]</li>
+<li>Single line comments begin with //</li>
+<li><em>Identifiers</em> are names for variables, functions and loop labels.
+The first character must be an ASCII letter, underscore or dollar sign.
+Following characters can also include digits. Letters are A to Z and a to z.
+<br><span>Note:</span> An identifier must <span>NOT</span> be any word
+contained in the JavaScript Reserved Word List</li>
+<li><em>Reserved words</em> (or keywords) have special meanings within the
+language syntax. Check the <a href="tutorx.htm#Jword">JavaScript Reserved
+Word List</a> for a complete listing.</li>
+<li>Statements terminate in semicolons! Make sure to <em>always</em>
+terminate statements with a semicolon.</li>
+</ul>
+
+<h2 id="li">Literals or Constants</h2>
+<p><em>Literals</em> (or constants) are values that do not change
+within a program. Some types of literals and examples are:</p>
+<ul>
+<li><em>Boolean:</em> true, false</li>
+<li><em>Numeric</em> 5, 0xFF (hexadecimal), 2.543, 8e12, -4.1E-6</li>
+<li><em>String:</em> 'fred', "Fred and Ethel"</li>
+<li><em>Primitive:</em> Infinity, NaN, null, undefined</li>
+</ul>
+<p>One question that is often asked is 'WHY can one use either kind of
+quote marks (they must match however) when defining a STRING value?'
+The answer lies in the fact that you may need to have a string that uses
+a possessive form or contraction (apostrophe) or an internal quote. To
+handle either situation bracket the string with the opposite form of quote</p>
+<p><em>Note:</em> Floating point numbers less than one should
+begin with a leading zero. For example write 0.1 rather than .1</p>
+<p><span>Warning:</span> If a number begins with two zeros and contains
+a decimal point (eg. 005.3) it will generate an error. Validation
+techniques to guard against this type of error will be discussed in
+<a href="tutord.htm">Getting the Bugs Out</a>.</p>
+
+<h2 id="es">Escape Characters</h2>
+<p>Escape characters are used inside literal strings to allow print
+formatting as well as preventing certain characters from causing
+interpretation errors. Each escape character starts with a backslash.
+The available character sequences are: </p>
+<div class="c"><table class="col" summary="*">
+<tbody><tr><th class="col">Seq</th><th class="col">Name</th>
+    <th class="col">Seq</th><th class="col">Name</th></tr>
+<tr><td class="col">\b</td><td class="col">backspace</td>
+    <td class="col">\f</td><td class="col">formfeed</td></tr>
+<tr><td class="col">\t</td><td class="col">horizontal tab</td>
+    <td class="col">\"</td><td class="col">double quote</td></tr>
+<tr><td class="col">\n</td><td class="col">newline</td>
+    <td class="col">\'</td><td class="col">single quote</td></tr>
+<tr><td class="col">\r</td><td class="col">carriage return</td>
+    <td class="col">\\</td><td class="col">backslash</td></tr>
+<tr><td class="col">\###</td><td class="col">Latin encoded character</td>
+<td class="col">\uHHHH</td><td class="col">Unicode encoded character</td></tr>
+</tbody></table></div>
+
+<h2 id="va">Variables</h2>
+<p><em>Variables</em> are temporary data holders. Variable names
+(or identifiers) must begin with a letter, underscore or dollarsign, use
+ASCII characters and underscore only, and are <em>case sensitive</em>.
+They can not be one of the <a href="tutorx.htm#Jword">JavaScript reserved
+words</a>. Variables are declared with the reserved word <em>var</em>.
+At the same time variables are declared they may or may not be
+<em>assigned</em> or take on a value of <em>boolean</em>, <em>numeric</em>
+or <em>string</em> type. JavaScript is said to be a <em>loosely</em> typed
+language as the variable can take on a different type later in the script
+depending on its 'assigned' value. Variables have <em>scope</em>, ie. they
+are either <em>global</em> (defined outside any function) or <em>local</em>
+to the function they are defined within).</p>
+<pre class="special">var name;                /* variable created but undefined */
+var signal_flag = true;  /* boolean */
+var counter = 1;         /* numeric */
+var first_name = 'fred'; /* string using single quotes */
+var last_name = "fred";  /* string using double quotes */</pre>
+
+<h2 id="ar">Arrays</h2>
+<p>Arrays allow you to store several related values in the same variable
+(eg. a set of marks). One example that shows how days and months can
+be displayed in text rather than numeric form is:</p>
+<pre class="special">// Set up array of day Names
+var dayNames=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday',
+    'Friday','Saturday');
+// Set up array of month Names
+var monthNames=new Array('January','February','March','April','May',
+    'June','July','August','September','October','November','December');</pre>
+<p>To access an individual value in an array use the array name followed
+by an indexing number in square brackets. The array name by itself will
+return the <em>full</em> array (ie. all values). If you ever need to know
+how many items are contained in an array, use the <em>length</em> property
+(eg. monthNames.length would return the value 12).</p>
+<p><span>ADVANCED TOPIC: </span><em>Multiple dimension</em> arrays can be
+set up as an array of arrays.</p>
+<pre class="special">array1 = new Array ('fred', 'ethel', 'ricky', 'lucy');   // people
+array2 = new Array ('65', '60' , '33', '31');   // ages
+arrayArray = new Array (array1, array2); // two dimensioned array of above
+
+alert(arrayArray[0][3]); // shows array access</pre>
+<p><span>ADVANCED TOPIC: </span><em>Associative</em> arrays can be faked
+by using the <em>Object</em>
+object.</p>
+<pre class="special">var aa=Object();
+aa["red"] = "red";  // if you like bracket style
+aa.size = 15;       // if you like object style</pre>
+<p>You can access the values in the usual manner. And to get a full
+display of the entire array you can use the for/in construct.</p>
+<pre class="special">text = "";
+for (prop in aa) {
+    text += prop + ': ' + aa.prop; + '\';
+    }
+alert (text);</pre>
+
+<h2 id="op">Operators</h2>
+<p><em>Operators</em> are actions that manipulate, combine or
+compare variables. They fall into several categories as follows:</p>
+<ul>
+<li><em>Arithmetic:</em> + - * / % (modulus) ++ (increment) --
+(decrement)</li>
+<li><em>String Concatenation:</em> +</li>
+<li><em>Assignment:</em> =</li>
+<li><em>Advanced Assignment:</em> += -= *= /= %=</li>
+<li><em>Comparison:</em> == != &gt; &gt;= &lt; &lt;=</li>
+<li><em>Identity:</em> === !==<br>
+<span>Note: </span>Use this form when type conversion is unwanted
+      before comparison! (<em>eg true, false, null or ""</em>)</li>
+<li><em>Logical:</em> &amp;&amp; || !</li>
+<li><em>Bitwise:</em> &amp; | ^ ~ - &lt;&lt; &gt;&gt; &gt;&gt;&gt;</li>
+<li><em>Conditional:</em> ? (eg. ans = (w&lt;x) ? trueval : falseval )</li>
+<li><em>Typeof:</em> typeof </li>
+<li><em>Object specific:</em> new, delete</li>
+<li><em>Void:</em> void [returns undefined regardless of expression]</li>
+</ul>
+
+<h2 id="ex">Expressions and Conditions</h2>
+<p><em>Expressions</em> are used to combine two or more values
+using operators to create a new value. One example is x + y which will
+add the two values together if they are numeric or <em>catenate</em> or
+join them together if they are strings.</p>
+<p><em>Conditions</em> compare two values (often as variables) and
+return either a true or a false value. An example is "does x equal 9".
+In JavaScript the condition is surrounded by round brackets and
+expressed in logical terms (x == 9) <span>note the double equal!</span>.</p>
+
+<h2 id="st">Statements</h2>
+<p><em>Statements</em> are complete program instructions made from
+constants, variables, expressions and conditions. Statements always end
+with a semicolon. A program contains one or more statements.
+Although most interpreters assume a semicolon at the end of a line,
+a good coding practice is to make sure you put it in <em>explicitly</em>!</p>
+<p><em>Blocks</em> are sets or lists of assignment statements enclosed
+in curly brackets. Blocks are normally treated as units.</p>
+<p><em>Variable statements</em> assign a <em>named</em> placeholder
+for referencing a value. The variable statement can optionally assign an
+initial value as well. For example:</p>
+<pre class="special">var this_car;
+var this_truck = "Mazda B2000";</pre>
+<p><em>Assignment statements</em> use an assignment operator
+to store a value or the result of an expression in a variable.</p>
+<pre class="special">first_name = "Fred";</pre>
+<p><em>Conditional statements</em> execute a set of other statements
+only if certain conditions are met. The condition is always enclosed in
+round brackets. The statements to be performed if the condition is true
+are enclosed in <em>blocks</em> (ie curly brackets). For example:</p>
+<pre class="special">if (value &gt; 5) { x = 7 }</pre>
+<p>Occasionally you may want to perform some actions for the false outcome
+of the condition as well. The <em>else</em> keyword is used to
+separate branches.</p>
+<pre class="special">if (name == "fred") {
+     x = 4;
+     }
+     else {
+     x = 20;
+     }</pre>
+<p><strong>NOTE:</strong> When the conditional if statement is used only to
+make an assignment to one variable, you can use the terse C syntax such as:</p>
+<pre class="special">x = (name == "fred") ? 4 : 20;</pre>
+
+<h2 id="lo">Loops and Switches</h2>
+<p><em>While statements</em> allow a set of statements to be repeated or
+looped through <em>until a certain condition is met</em>.  For example
+to output #1 #2 #3 etc. on separate rows you could write:</p>
+<pre class="special">while (i&lt;=5) {
+    document.writeln("#"+i);
+    i = i + 1;
+    }</pre>
+<p><em>For statements</em> allow a set of statements to be repeated
+or looped through <em>a fixed number of times</em>. For example to output
+#1 #2 #3 etc. on separate rows you could write:</p>
+<pre class="special">for (i=1; i&lt;=15; i++) {
+    document.writeln("#"+i);
+    }</pre>
+<p><em>For ... in statements</em> allow looping through all the
+elements of an array or properties of an object. For example:</p>
+<pre class="special">for (var propname in navigator) {
+    browser += propname + ": " + navigator[propname] + "\n";
+    }
+alert(browser);</pre>
+<p>would loop through all the <em>navigator</em> object's properties.
+This can be made into a great exploring tool.</p>
+<p><em>Switch (or case) statements</em> are used to select which statements
+are to be executed depending on a variable's value matching a label.</p>
+<pre class="special">yourchoice=window.prompt('pick a number between 1 and 4');
+switch (yourchoice) {
+   case '1': alert('you typed a 1'); break;
+   case '2': alert('you typed a 2'); break;
+   case '3': alert('you typed a 3'); break;
+   default: alert('Only 1, 2 or 3 allowed!);
+   }</pre>
+<p>A problem with this example is that there is only one type of error
+checking done. What if the user had entered a punctuation sign or typed
+TWO instead. Also this is a forced example as one could have used the
+variable <em>yourchoice</em> within the alert method and not used a switch
+statement at all. Think of the example as just a demonstration of how the
+switch statement is structured.</p>
+
+<h2 id="br">Continue, Break and Return</h2>
+<p><em>Continue statements</em> are used in 'while' or 'for' statements
+to force another iteration of the loop. The following is a trivial example.
+Most often the continue is used as part of a conditional statement that
+only happens in certain cases.</p>
+<pre class="special">var x = 0;
+while (x &lt; 10) {
+   x++;
+   alert(x);
+   continue;
+   alert('you will never see this alert dialog');
+   }</pre>
+<p><em>Break statements</em> are used in 'while', 'for' and 'switch'
+statements to force an abrupt termination or exit from the loop.
+In the following example the loop is never completed. Once again
+the normal use of break is as part of a conditional statement.</p>
+<pre class="special">var x = 0;
+while (x &lt; 10) {
+   x++;
+   alert(x);
+   break;
+   alert('you will never see this alert dialog');
+   }</pre>
+<p><em>Return statements</em> are used to exit quickly from a
+<a href="tutor2.htm#fun">function</a> or to to pass values back
+from the function.</p>
+
+<p align="right"><a href="tutor2.htm">Tutorial 2 - Objects,Events&amp;Functions</a> 
+- <a href="tutor4.htm">Tutorial 4 - Working with Forms</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>

@@ -1,0 +1,301 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 2 - Objects, Events &amp; Functions</h1>
+<p align="right"><a href="tutor1.htm">Tutorial 1 - Basic Display</a> -
+<a href="tutor3.htm">Tutorial 3 - Core Language</a></p>
+<p>JavaScript uses modern <em>object oriented programming</em> techniques
+to make it easier to program and reuse code. JavaScript is also highly
+interactive because it is <em>event driven</em> (ie. it reacts to user
+or system activities).</p>
+<p>This tutorial describes JavaScript objects, function calls
+and event handling as well as many useful event functions.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#ob">objects, properties and methods</a></li>
+<li><a href="#fun">user defined functions</a></li>
+<li><a href="#call">event handler function calls</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#time">user's time on page example</a></li>
+<li><a href="#to">page timeout example</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#roll">mouse rollover effect</a></li>
+<li><a href="#cycle">banner ad cycler</a></li>
+<li><a href="#vp">images viewport</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="ob">Objects, Properties and Methods</h2>
+<p><strong>Objects</strong> are collections of related properties and
+methods. <strong>Properties</strong> are <em>things</em>, similar to
+variables but their contents are <em>contained</em> within the object
+itself. <strong>Methods</strong> are <em>actions</em> that can be performed
+on an object. Often methods alter one or more of an object's properties.</p>
+<p><span>Note: </span> an analogy may be of help here. One can consider
+cars as <em>objects</em>. They have a collection of <em>properties</em>,
+one of which is the status of the parking brakes (<em>park_brake</em>)
+(either <em>set</em> or <em>released</em>). One <em>method</em> or action
+would be to apply the parking brakes (<em>apply_park_brake()</em>) which
+would change the status of park_brake to <em>set</em>.</p>
+<p>Objects can be created when necessary by using the <em>new</em> operator
+keyword and equating them to a name. The created object can then have its
+properties accessed and appropriate methods applied to it.
+An example of object creation using our analogy is would be:</p>
+<pre class="special">myCar=new Car;// creates one car from the Car template</pre>
+<p>Object properties and methods are accessed using dot notation such as
+<em>object_name.object_property</em> or <em>object_name.object_method()</em>.
+Note that methods are identified by brackets. When a method is unambiguous
+(ie only available through one object), the object_name can be
+omitted such as alert() instead of window.alert(). But this is <em>not</em>
+good programming practice. Also the dot notation is considered as a
+<em>hierarchy</em> (or tree) notation. For example to refer to the current
+value property of a specific control object within a specific form object
+you would use a format like <em>form_name.control_name.value</em>.</p>
+<p>A simple example using the <em>math</em> object's <em>property</em>
+<strong>PI</strong> reveals JavaScript's value of <strong>&#960;</strong>.</p>
+<pre class="special">window.alert('The value of PI is ' + Math.PI);</pre>
+<p>Another simple math example demonstrates a <em>method</em>
+that rounds a number to the closest integer.</p>
+<pre class="special">window.alert('The value is ' + Math.round(4.56789));</pre>
+<p>The JavaScript Appendix shows how object rich the JavaScript
+language is. There are many <a href="tutorx.htm#Jobject">core </a>and
+<a href="tutorx.htm#Jclient">client side browser specific</a>
+objects with <em>methods</em> or routines to handle data gathering and
+display, string and math manipulation, and system calls. The object
+<em>properties</em> are used to retain settings for recall.</p>
+
+<h2 id="fun">User Defined Functions</h2>
+<p>Functions gather a group of statements together for performing a
+complex operation or <em>reaction</em> to an event <em>action</em>.
+The general format of a function looks like:</p>
+<pre class="special">function doIt(param1, param2, etc.) {
+    some statement ;
+    another statement;
+    etc;
+    return xyz;
+    }</pre>
+<p>A function is begun with the keyword <em>function</em> followed by a
+unique <em>identifier</em> name and a set of round brackets. Inside the
+round brackets is a <em>parameter list</em> of <em>identifiers</em>
+or names for each value passed to the function, separated by commas.
+These values can be <em>simple data</em> (such as numbers or strings)
+or <em>objects</em>. The parameter list can also be empty (ie. null)!
+Statements within the function are grouped into a <em>block</em> using
+brace (curly) brackets. A function is <em>called</em> or started by
+referring to it in another portion of the script or from an event handler.</p>
+<p>Parameters are passed <em>by value</em>, ie. changing the variables value
+inside the function <em>will not</em> change its value outside the function.
+It is good programming practice to use different parameter names when
+writing a function!</p>
+<p>Functions can optionally <em>return</em> a single value back to
+the event handler or other function that <em>called</em> them.</p>
+<div><span>Note #1:</span> There is no semicolon after a curly bracket!<br>
+<span>Note #2:</span> The round brackets must be used in both the function
+and the calling statement even when no parameter values are passed.</div>
+<p>Functions are useful in separating code from the HTML (functions are
+normally found in head section) and can also be <em>referenced</em> or
+reused from several other points in the script. Functions are
+<strong>NOT</strong> a part of object oriented programming but provide
+an much easier approach to fast program development. JavaScript makes
+this tradeoff to keep the language from being 'elitist' only!</p>
+<pre class="special">function biggest(a,b,c) {
+   biggun=a; // start by assuming first is biggest
+   if (b&gt;biggun) {biggun=b;}
+   if (c&gt;biggun) {biggun=c;}
+   return biggun;
+}
+...
+alert('biggest is ' + biggest(x,y,z));</pre>
+<p>This function has three formal parameters. Based on the values fed in,
+the largest numerical is selected and returned to the caller. The caller
+simply displays the result. Note that the parameter names in the caller
+do not need to be (and in fact it is good programming practice that they
+are not) the same as the <em>formal parameters</em> used in the function.</p>
+
+<h2 id="call">Event Handler Function Calls</h2>
+<p><em>Events</em> are actions that occur because of user interaction.
+Using the car analogy given above one possible event is <em>pressing the
+parking brake pedal</em> which would use the <em>apply_parking_brake()</em>
+method and perhaps others such as <em>turn_parking_indicator_on()</em> and
+<em>turn_running_lights_off()</em>. In computing, user events (like moving
+the mouse) or system effects (like a file completing loading) are common
+occurrences. JavaScript can use <em>event handlers</em> to initiate some
+process such as checking for valid information in a form by <em>calling
+a function</em>. To see the list of possible actions that you can program
+for by using event handlers, check <a href="tutorx.htm#Jevent">Appendix
+- Events and Handlers</a>.</p>
+<p>The most common method of calling a function using an event handler is
+to treat the event as an HTML attribute for the appropriate element. Note
+that <em>any</em> element, not just form controls can have associated events.
+To enable event handling from an HTML attribute use a call such as:</p>
+<pre class="syn">event_name="function_name(parameter_list);return true;"
+    This format forces a true result to be passed to the event_name.
+event_name="return function_name(parameter_list);"
+    This format allows a function to return a true/false indicator.
+    This can be used with validation handlers to react to bad input.
+event_name="function_name(parameter_list);"
+    The result passed is unpredictable.
+</pre><p>For example:</p>
+<pre class="special">&lt;body onLoad="startUpStuff()&gt;"</pre>
+<p>The preceding line would call the function startUpStuff()
+as soon as the page was loaded. Another example is:</p>
+<pre class="special">&lt;form name="formx" action="?" method="post"&gt;
+&lt;input id="b1" name="b1" type="button" value="Transfer Now!"
+   onclick="transfer(a,b);return true" /&gt;
+...
+&lt;/form&gt;</pre>
+<p>Note that the string between the quotes is a <em>list</em> of Javascript
+statements. If there are more than a couple of statements it is better
+programming practice to call a <em>single</em> function whose task is
+to sequence those statements. And the code is much more readable too!</p>
+<p>Event handlers can also be defined within JavaScript itself. For
+example resizing a window may require repositioning some elements.</p>
+<pre class="special">window.onResize = someFunctionName;</pre>
+<p>In this example someFunctionName will be called on each resizing event.
+Note that there is no parameter brackets for the function!</p>
+
+<h2 id="time">User's Time On Page Example</h2>
+<p>The next example illustrates how one can time how long a viewer remains
+on a page. The <em>person_in</em> function records the start time. The
+<em>person_out</em> function records the stop time, takes the difference
+and shows the result to the reader. The result could also be accumulated
+in a cookie!</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+function person_in() {
+enter=new Date;
+}
+function person_out() {
+exit=new Date;
+time_dif=(exit.getTime()-enter.getTime())/1000;
+time_dif=Math.round(time_dif);
+alert("You've only been on this page for: "+time_dif+" seconds!!");
+}
+&lt;/script&gt;
+. . .
+&lt;body onLoad="person_in()" onUnLoad="person_out()"&gt;
+&lt;h1&gt;Timing This Page Now!&lt;/h1&gt;</pre>
+
+<h2 id="to">Page Timeout Example</h2>
+<p>This example watches how long the page has been displayed and transfers
+to another page when timed out. The application is perfect for a static
+splash screen or front 'intro' page. Be sure to use the <em>onLoad</em>
+event to initialize the timer function.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+limit=5;// time limit in seconds
+limit=limit * 1000;
+function timer() {
+    setTimeout('window.location="http://home.cogeco.ca/~ve3ll/"',limit);
+    }
+&lt;/script&gt;</pre>
+
+<h2 id="roll">Mouse Rollover Effect</h2>
+<p>In the most common form, a rollover consists of an image serving as
+a hypertext link. While the mouse pointer is over the image, it changes
+appearance to attract attention to the link. For example, you could add
+a glow effect, a drop shadow or simply change the background color. The
+<em>onMouseOver</em> and <em>onMouseOut</em> events are used for rollovers.
+Images are preloaded to avoid delays in transmission.Here is an example of
+the JavaScript functions which can be placed in the document head section
+or saved as a separate .js file:</p>
+<pre class="special">// preload images to avoid delays
+img1out=new Image;img1out.src="images/enter1.gif";
+img1over=new Image;img1over.src="images/enter2.gif";
+img2out=new Image;img2out.src="images/keio.gif";
+img2over=new Image;img2over.src="images/inria.gif";
+// add statement pair for each rollover wanted
+function chgImg(el, image) {document.image[el].src=eval(image+".src");}</pre>
+<p>And the HTML document code to be used for each rollover area is:</p>
+<pre class="special">&lt;a href="/" onMouseOver='chgImg("item1", "img1over")'
+             onMouseOut='chgImg("item1", "img1out")'&gt;
+&lt;img id="item1" src="images/enter1.gif" alt="*" /&gt;&lt;/a&gt;</pre>
+<p>and here is what it looks like ...</p>
+<div>&nbsp;</div>
+<p><em>NOTE:</em> These images were created using a freeware painting tool
+by adding a hot wax effect and then a drop shadow to the text. You can find
+advice and royalty free clip art on the Web by using a search engine.</p>
+<table summary="*"><tbody><tr>
+<td>&nbsp;</td>
+<td>And here is a second rollover to show how the Javascript portion is
+reusable. In fact every rollover on your site can be pointed to the same
+external .js file if you wish!</td></tr></tbody></table>
+<p><strong>Note: </strong>Make sure that all of the images are the same
+width and height. An alternative is to add width and height attributes
+to the img element to ensure the images are all shown at the same size.</p>
+
+<h2 id="cycle">Banner Ad Cycler</h2>
+<p>If your website has several sponsors, then you can use an image link
+that cycles through each of the sponsors banner ad in turn. The first step
+is to create an image for each of your sponsors banner ad. All the images
+should have the same size. The corresponding URLs for the images and for
+the websites are then loaded into the arrays named <em>adImages</em> and
+<em>adURLs</em> defined at the start of the script. The img element
+for the link should be initialized to the first image in the array.
+The cycle is started by using the onLoad event on the body element.
+The delay between ads is set by the setTimeout() method.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+adImages=new Array("images/mit.gif", "images/inria.gif", "images/keio.gif");
+adURLs=new Array("www.lcs.mit.edu", "www.inria.fr", "www.keio.ac.jp");
+thisAd=0;
+function gotoAd() {document.location.href="http://" + adURLs[thisAd];}
+function cycleAds() {
+  if (++thisAd==adImages.length) {thisAd=0;} //move to next ad
+  document.images.adBanner.src=adImages[thisAd]; //display current ad
+  setTimeout("cycleAds()", 3000);  //change ad every 3 seconds
+}
+&lt;/script&gt;</pre>
+<p>The above is placed in the head section and the following in the body:</p>
+<pre class="special">&lt;body onLoad="cycleAds()"&gt;
+...
+&lt;a href="javascript:gotoAd()"&gt;&lt;img name="adBanner"
+src="images/mit.gif" border="0" alt="Our sponsors"&gt;&lt;/a&gt;</pre>
+<p>Our Sponsors: </p>
+<p>The banner ad cycling concept could be extended to present a slideshow
+to viewers. A form could be set up for control of timing and start/stop
+functions.</p>
+
+<h2 id="vp">Images ViewPort</h2>
+<p>A viewport is a image viewer that allows selection by hovering a
+related menu item. It is set up much like the rollover effect and the
+rotating ad banner but this time the event initiators are onmouseover
+and onmouseout. The onclick event will take you to an appropriate page
+if programmed. <a href="http://home.cogeco.ca/%7Eve3ll/bin2/viewport.zip">Viewport.zip</a> gives a
+working example that can be tailored with css and script to fit your needs.
+Be sure to consult the <em>readme.txt</em> file for setup information.</p>
+
+<p align="right"><a href="tutor1.htm">Tutorial 1 - Basic Display</a> -
+<a href="tutor3.htm">Tutorial 3 - Core Language</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

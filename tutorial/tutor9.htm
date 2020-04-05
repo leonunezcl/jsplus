@@ -1,0 +1,236 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 9 - Cookies</h1>
+<p align="right"><a href="tutor8.htm">Tutorial 8 - Multimedia</a> -
+<a href="tutora.htm">Tutorial 10 - Menuing Systems</a></p>
+<p>Cookies are used for information storage that can be read either by the
+same page on a later viewing, other HTML/JavaScript pages on the same site
+or by servers. Cookies are stored in a file named <em>cookies.txt</em> in
+Netscape or in the folder <em>\System\Cookies</em> in MSIE. Some of the
+many uses of cookies are: tracking visits by a specific client, remembering
+the last page viewed,shopping basket storage, notifying a user of any recent
+change to site, user profiling: login, view method, preferences, passing
+information from one document to another and maintaining state information
+longer than a session</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#req">Required Ingredients</a></li>
+<li><a href="#bake">Baking a Cookie</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#eat">Eating a Cookie</a></li>
+<li><a href="#toss">Tossing a Cookie</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#ex1">Example 1 - Saving a User Preference</a></li>
+<li><a href="#ex2">Example 2 - Saving a User 'Agreement'</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="req">Required Ingredients for a Cookie</h2>
+<p>Certain ingredients are required for the correct <em>baking</em> of a
+cookie from scratch. The following sections of this page provide functions
+that set reasonable defaults for most applications. But these ingredients
+can be added as <em>baking</em> parameters if needed by a specialized
+application.</p>
+<dl>
+<dt><b>Name</b></dt>
+<dd>Used as the identifier as many cookies could be used for different
+purposes by the same site. Names can't contain semicolon, comma or space.
+Well behaved calls will verify that the name does not have any of these
+characters.</dd>
+<dt><b>Value</b></dt>
+<dd>The data that is to be saved.</dd>
+<dt><b>Expires</b></dt>
+<dd>Last date that the 'value' is valid for. Format is DD-Mon-YY HH:MM:SS UTC
+<br><span>NOTE:</span> MSIE expires <em>after</em> the date, gecko expires
+<em>on</em> the date. The data is not necessarily removed from the file
+but it is inaccessable using JavaScript.</dd>
+<dt><b>Path</b></dt>
+<dd>Restricts cookie to specific level of a site. Defaults to the level
+that made the cookie.</dd>
+<dt><b>Domain</b></dt>
+<dd>Site specification to restrict access to cookies. Defaults to open.</dd>
+<dt><b>Secure</b></dt>
+<dd>If set to 'true', the cookie responds only to a 'secure' server.
+ Defaults to 'false'</dd>
+</dl>
+
+<h2 id="bake">Baking a Cookie</h2>
+<p><em>BakeCookie</em> is a generic function for creating cookies. It also
+illustrates how you can have a variable number of parameters for a JavaScript
+function. The mandatory parameters are the variable name and the value to be
+stored. Multiple values can be stored in the same cookie by calling the
+BakeCookie function several times but using a different variable name as the
+first parameter. This function is written so that optional parameters default
+to useful values, and the order is predefined as given above in <a href="#req">
+cookie ingredients</a> (ie. expiry [defaults to never], path, domain, security).
+MSIE stores cookies in <em>\windows\cookies</em> and gecko browsers store
+cookies in a <em>cookies.txt</em> file (useful debugging note!). Netscape
+and mozilla share the cookie.txt file in the mozilla profile.</p>
+<pre class="special">function BakeCookie(name,value) {
+   argv=arguments;
+   argc=arguments.length;
+   expires=(argc&gt;2) ? argv[2] : null;
+   path=(argc&gt;3) ? argv[3] : null;
+   domain=(argc&gt;4) ? argv[4] : null;
+   secure=(argc&gt;5) ? argv[5] : false;
+   document.cookie=name+"="+escape(value) +
+     ((expires === null) ? "" : ("; expires="+expires.toUTCString())) +
+     ((path === null) ? "" : ("; path="+path)) +
+     ((domain === null) ? "" : ("; domain="+domain)) +
+     ((secure === true) ? "; secure" : "");
+}</pre>
+
+<h2 id="eat">Eating a Cookie</h2>
+<p><em>EatCookie</em> is a generic function that recovers stored cookie
+information. The only required parameter is the variable name. The returned
+value is a <em>string</em> value or <em>null</em> if nothing was stored in
+that variable.</p>
+<pre class="special">function EatCookie(name) {
+   arg=name+"=";
+   alen=arg.length;
+   clen=document.cookie.length;
+   i=0;
+   while (i&lt;clen) {
+      j=i+alen;
+      if (document.cookie.substring(i,j) == arg) {
+          return EatCookieVal(j);
+          }
+      i=document.cookie.indexOf(" ",i) + 1;
+      if (i === 0) {break;}
+   }
+}
+function EatCookieVal(offset) {
+   endstr=document.cookie.indexOf(";",offset);
+   if (endstr == -1) {endstr=document.cookie.length;}
+   return unescape(document.cookie.substring(offset,endstr));
+}</pre>
+
+<h2 id="toss">Tossing a Cookie</h2>
+<p><em>TossCookie</em> is a generic function that removes an old cookie
+value from further use. It relies on the fact that each cookie has an
+expiry date. By setting that date to one prior to today, the cookie will
+be eliminated automatically.</p>
+<pre class="special">function TossCookie(name) {
+   ThreeDays = 3*24*60*60*1000; //in millisecounds
+   expDate=new Date();
+   expDate.setTime(exp.getTime()-ThreeDays);
+   document.cookie=name+'=foobar; expires='+expDatetoGMTString();
+}</pre>
+
+<h2 id="ex1">Working Example #1 - Saving a User Preference</h2>
+<p>One of the most common uses of cookies is saving user preferences for
+reuse. Our example will use an <em>improved</em> color selector based on
+the one in <a href="tutor5.htm#rad">tutorial 7</a> and save its setting.
+Returning to the page will reset the color to the last setting selected.</p>
+<pre class="special">function newColor(entry,areaID) { // use DOM only, no geezer browsers
+   BakeCookie("colorSet",entry,expDate);
+   styleObj=document.getElementById(areaID).style;
+   styleObj.background=entry;
+}</pre>
+<div style="float: right;">
+<form id="radioForm" class="fancy1" action="" method="get">
+<fieldset><legend>Background</legend>
+&nbsp;Aquamarine: 
+<input name="radioColor" class="radio" onclick="newColor('Aquamarine','radioForm')" type="radio" value="1"><br>
+&nbsp;Burlywood: 
+<input name="radioColor" class="radio" onclick="newColor('Burlywood','radioForm')" type="radio" value="2"><br>
+&nbsp;Floralwhite:&nbsp; 
+<input name="radioColor" class="radio" onclick="newColor('Floralwhite','radioForm')" type="radio" value="3"><br>
+&nbsp;Goldenrod:&nbsp;&nbsp; 
+<input name="radioColor" class="radio" onclick="newColor('Goldenrod','radioForm')" type="radio" value="4"><br>
+&nbsp;Peachpuff:&nbsp;&nbsp; 
+<input name="radioColor" class="radio" onclick="newColor('Peachpuff','radioForm')" type="radio" value="5"><br>
+&nbsp;White:&nbsp;&nbsp;&nbsp; 
+<input name="radioColor" class="radio" onclick="newColor('White','radioForm')" checked="" type="radio" value="6"><br>
+&nbsp;<input name="reset" class="go75" value="Reset" onclick="TossCookie('colorSet');" type="button"></fieldset></form></div>
+<div>
+<p><strong>STEP 1:</strong> Create an interface such as a form for the
+color entry. <a href="tutor5.htm">Forms and DHTML</a> has several methods
+that may be used. Make sure that the element that displays the color has
+an id attribute.</p>
+<p><strong>STEP 2:</strong> Add a script element to the document body and
+initialize a global value for the cookie's expiry date.</p>
+<pre class="special">   expDate=new Date();
+   ThreeDays = 3*24*60*60*1000; //in millisec
+   expDate.setTime(exp.getTime()-ThreeDays);</pre>
+<p><strong>STEP 3:</strong> Copy the BakeCookie(), EatCookie(), TossCookie()
+and newColor() functions into the script.</p>
+<p><strong>STEP 4:</strong> Set up init function that eats the old cookie
+if it is there and calls the color setting function. Call this function
+with the <em>onload</em> attribute in the body element.</p>
+<pre class="special">function InitCookie(areaID) { // points at color element
+   colorSet = null;
+   if (!(colorSet = EatCookie("colorSet"))) {colorSet=null;}
+   if (colorSet !== null) {newColor(colorSet,areaID);}
+}</pre>
+<p><strong>STEP 5:</strong> Add a call from the color setting function
+to bake a new cookie with any updates.</p></div>
+
+<h2 id="ex2">Working Example #2 - Saving a User 'Agreement'</h2>
+<p>User agreement to site policy statements are common on corporate
+sites offering copyright material or corporate property on-line.
+To perform this kind of customer recording you would first display
+'the terms of use' message with a checkbox or radio button for
+acknowledgement of reading. Some do not display checkbox/button
+until scrolling has been done, indicating a chance of 'terms' being
+read. At the acknowledgement, a cookie is created so that the next
+visit does not show the agreement. Some sites also create a mailto
+message at this point to record the visitors agreement
+(ie. documentation for later legal use).  Any page that requires
+the agreement would check for the cookie's existence and if not there
+redirect the user to the agreement page.</p>
+<p><strong>Step 1:</strong> Create a form with the 'terms' and buttons
+for acknowledgement.</p>
+<p><strong>Step 2:</strong> When 'Agree' button is checked <em>bake</em>
+a cookie for it.</p>
+<p><strong>Step 3:</strong> If needed, submit the form as a mailto or
+to a mail server.</p>
+<p><strong>Step 4:</strong> Add an <em>eat</em> cookie and if not found
+then redirect routine to each page on site that requires agreement
+acknowledgement.</p>
+<p><span>Note that this section is a work in progress. The preceding
+is an algorithm that will work. The actual code will be developed
+soon and included.</span></p>
+
+<p align="right"><a href="tutor8.htm">Tutorial 8 - Multimedia</a> -
+<a href="tutora.htm">Tutorial 10 - Menuing Systems</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->        
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

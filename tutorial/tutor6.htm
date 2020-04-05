@@ -1,0 +1,275 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 6 - DOM &amp; DHTML</h1>
+<p align="right"><a href="tutor5.htm">Tutorial 5 - Forms and DHTML</a> -
+<a href="tutor7.htm">Tutorial 7 - Animation</a></p>
+<p>The W3 Consortium <em>document object model</em> (DOM) that is
+implemented in all modern browsers extends access to virtually every HTML
+element using programming <em>objects</em> as the basic modeling paradigm.
+This allows a variety of scripting languages to dynamically modify the look
+of a page as they react to <a href="tutor2.htm">events</a>. Although all
+modern browsers incorporate DOM, they are not at the same stage and the
+model itself is being extended. <a href="http://www.quirksmode.org/dom/">
+QuirksMode.com</a> gives details of variants. It is a wise procedure
+to test any browser that your clients/viewers may use against the w3.org
+<a href="http://www.w3.org/2003/02/06-dom-support.html">dom support test</a>.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#ac">accessing an element using DOM</a></li>
+<li><a href="#co">dynamic style - color changes and fades</a></li>
+<li><a href="#fo">dynamic style - fontsize changes and zooms</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#gt">dynamic positioning - floating GoToTop</a></li>
+<li><a href="#vi">dynamic visibility - collapsing text</a></li>
+<li><a href="#to">dynamic content - toggle button example</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="ac">Accessing an Element Using DOM</h2>
+<p>The usual procedure for setting up access to an element is:</p>
+<ol>
+<li>Establish appropriate property values for the element's class.[CSS]</li>
+<li>Identify the element with a unique id attribute.[HTML]</li>
+<li>Set a class group attribute for the element.[HTML]</li>
+<li>Create an <em>activating</em> event that passes the identifier [HTML]</li>
+<li>Capture the element's style object.[script]</li>
+<li>Work with the element's style, position, visibility or content[script]</li>
+</ol>
+<p>Capturing the element's object uses the DOM
+<em>document.getElementById('idname')</em> method and the appropriate
+object such as style. You can then modify any of the object's
+properties (such as style, position, visibility or content).</p>
+
+<h2 id="co">Dynamic Style - Color Changes and Fades</h2>
+<p><a href="tutor2.htm">Objects and Events</a> has already demonstrated
+how different images could be activated with the onMouseOver and onMouseOut
+events. As an simple example of implementing DHTML using the DOM model
+here is one approach for changing a heading's color as the cursor
+<em>rolls over</em> it. Note that the element identifier is passed to
+JavaScript so that the function can be written in a generic way.</p>
+<h3 id="roll" class="rollover" onmouseover="change('roll');" onmouseout="back('roll');">
+This is the changing color heading...</h3>
+<pre class="special">...
+&lt;style type="text/css"&gt;
+h2.rollover {color:black}  /* initialize properties on class */
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
+function change(thistag) {
+   styleObj=document.getElementById(thistag).style;
+   styleObj.color="red";
+}
+function back(thistag) {
+   styleObj=document.getElementById(thistag).style;
+   styleObj.color="black";
+}
+&lt;/script&gt;
+...
+&lt;h2 id="roll" class="rollover"
+   onMouseOver="change('roll');" onMouseOut="back('roll');"&gt;
+This is the changing color heading...&lt;/h2&gt;
+...</pre>
+<p>You can achieve a <em>fade</em> effect by choosing colors of successive
+shades and cycling through them. Our first example of fade is programmed with
+a increment function using a <em>switch</em> statement to select the next color.
+The <em>onMouseOver</em> event is used to trigger the event. You could also use
+an onclick event or better still an  onLoad event and setTimeout() method.</p>
+<h3 id="caption" class="fading" onmouseover="fade('caption')">Stroke Me!</h3>
+<p>The JavaScript code for the fade function is:</p>
+<pre class="special">fadept=0; // global to remember fade state
+function fade(thisone) {
+col="#000";
+switch (fadept) {
+    case 0:col='#000';break;
+    case 1:col='#333';break;
+    case 2:col='#666';break;
+    case 3:col='#999';break;
+    case 4:col='#aaa';break;
+    case 5:col='#ccc';break;
+    case 6:col='#ddd';break;
+    case 7:col='#eee';break;
+    case 8:col='#fff';break;
+    }
+fadept += 1;   // increment for next time around
+if (fadept&gt;8) {fadept=0;}  // hit end so reset
+    styleObj=document.getElementById(thisone).style;
+    styleObj.color=col;
+ }</pre>
+<p>The second version of fade uses a mathematical progression for the
+fadeout. It also automatically fades on a timer. You may want to reset
+the count or have a method for starting the fade another time.</p>
+<pre class="special">fadept2=0;       // global to remember fade state
+fadeid="fadezone"; // global for object to be faded
+function fade2() {
+    if (fadept2 &lt; 255) {
+    fadept2+=4;
+    styleObj=document.getElementById(thisone).style;
+    newColor= 'rgb('+fadept2+','+fadept2+','+fadept2+')';
+    styleObj.color=newColor;
+    setTimeout('fade2()',2);
+    }
+}</pre>
+<p>For a more flexible fader check the source code for
+<a href="http://home.cogeco.ca/%7Eve3ll/jsfader.htm">JR's Ultimate Fader</a>. The user can pick both
+start and finish color as well as the number of steps in the fade effect.
+Routines to allow cycling or reverse cycling are included but not
+hardwired. The effect can also be redirected to any element that a
+programmer wishes to write for.</p>
+
+<h2 id="fo">Dynamic Style - Fontsize Changes and Zooms</h2>
+<p>Instead of using color changes, you could do fontsize changes to
+achieve a zooming effect. Instead of using the switch to set the
+colors, you set <em>siz="12pt";</em> etc. and then use the
+<em>fontSize</em> property. Note that style properties with hyphens
+are changed when used as a JavaScript property. Drop the hyphen
+and capitalize the next word such as <em>margin-left</em> becomes
+<em>marginLeft</em>.</p>
+<div><span id="me" class="zoomer" onmouseover="zoom('me');">
+Touch Me!</span></div>
+
+<h2 id="gt">Dynamic Positioning - Floating GoToTop Link</h2>
+<p>Longer pages cause problems for some viewers. A GoToTop link sitting
+in the lower right of the screen can help. This <em>sticky element</em>
+technique can be done by making the element move according to its scrolled
+position. A loop monitors the visual top of the document and adds an offset
+to place the element at the bottom of the screen. The same type of process
+can be used to hold menus on the screen.</p>
+<pre class="special">/* shield page from geezer browsers -- try to get them to upgrade */
+if (document.layers) {top.location.href="http://www.mozilla.org";}
+if (document.all &amp;amp; !document.getElementById) { //oops - MSIE ver 5
+   top.location.href="http://www.microsoft.com/windows/ie/";}
+scrollSpeed2=20;    //Screen refresh rate in msec.?
+scrolled2='document.body.scrollTop';var ltop2;
+function checkScrolled2(){ //backTo Top link stays in lower right
+   document.getElementById('backZone').style.top=eval(scrolled2)+ltop2+'px';
+   setTimeout('checkScrolled2()',scrollSpeed2) ;}
+function writeBack() { copy =''; // write backToTop link dynamically
+   copy+='&lt;a class="backZone" href="#top"&gt;GoTo Top&lt;\/a&gt;';
+   document.getElementById('backZone').innerHTML=copy;
+   x1=eval(scrolled2);window.scrollBy(0,1);  //test scrolled2 ptr
+   x2=eval(scrolled2);window.scrollBy(0,-1); //reset position
+   if ((x2-x1)&lt;1) {scrolled2='document.documentElement.scrollTop';}
+   ltop2=parseInt(document.getElementById('backZone').style.top);
+   checkScrolled2();}</pre>
+<p>An <em>onload</em> to the initiating writeBack() function is required.
+The link class (backZone) can be styled if desired. The element with the
+backZone id must be added to the body as in:</p>
+<pre class="special">&lt;div class="backZone" id="backZone"
+style="position:absolute;top:380px;left:655px;z-index:3"&gt;&lt;/div&gt;</pre>
+<div class="backZone" id="backZone" style="position: absolute; left: 655px; z-index: 3; top: 380px;"><a class="backZone" href="#top">GoTo Top</a></div>
+<p>The start of the script checks for conformant browsers and points
+at the object that normally contains the document scrolled info. The
+initializing function <em>(writeBack)</em> alters that pointer for
+browsers that do not use that method. On scrolling the <em>top</em>
+property is adjusted to hold position. A further improvement would
+be to adjust both top and left offset to accomodate resolution changes
+and window sizing.</p>
+
+<h2 id="vi">Dynamic Visibility - Collapsing Text</h2>
+<p>Using the display property of CSS, one can hide segments of content
+such as detailed descriptions or sub topics until needed. This adds
+clarity to the presentation. Collapsing menus is another application
+of the <em>visibility</em> concept. The function <em>expand</em> uses
+a <em>pointer</em> from the topic element clicked on to access and
+unhide its related subtopic element. The next click on the topic element
+rehides the subtopic. This could be expanded several levels if needed.</p>
+<address onclick="expand('text1');" style="font-style: normal; font-variant: normal; font-weight: bold; font-size: 14pt; font-family: serif">Topic One</address>
+<p id="text1" style="display: none; color: red;">
+A whole bunch of stuff that needs display</p>
+<address onclick="expand('text2');" style="font-style: normal; font-variant: normal; font-weight: bold; font-size: 14pt; font-family: serif">Topic Two</address>
+<p id="text2" style="display: none; color: green;">
+A whole bunch more of stuff that needs display</p>
+<address onclick="expand('text3');" style="font-style: normal; font-variant: normal; font-weight: bold; font-size: 14pt; font-family: serif">Topic Three</address>
+<p id="text3" style="display: none; color: maroon;">
+A whole bunch more of stuff that needs display</p>
+<p>The HTML component uses topic tags (in this case address, it could
+have been a heading tag) that are always visible but clickable.
+The <em>onclick</em> event calls the <em>expand</em> function for its
+related subtopic element.</p>
+<pre class="special">&lt;address onclick="expand('text1');"&gt;Topic One&lt;/address&gt;
+&lt;p id="text1" style="display:none;color:red"&gt;
+A whole bunch of stuff that needs display&lt;/p&gt;
+....  etc.</pre>
+<p>The expand function toggles the visibility property for any
+referenced element. Note that a global state saver is not needed as this
+function can easily access the current state using a style property.</p>
+<pre class="special">function expand(thistag) {
+   styleObj=document.getElementById(thistag).style;
+   if (styleObj.display=='none') {styleObj.display='';}
+   else {styleObj.display='none';}
+}</pre>
+
+<h2 id="to">Dynamic Content - Toggle Button Example</h2>
+<p>To dynamically change content of a document element you do <em>not</em>
+use its style object. You use the innerHTML property (note case carefully!)
+An example is <em>document.getElementById('tag').innerHTML='whatever';</em></p>
+<p>One very important use of dynamic content is to isolate repetitive or
+changing text to an external JavaScript file. All documents needing this
+material only require a pointer to the file and a specific element to
+contain it. Any change in the content need not be copied to all referring
+documents.</p>
+
+<p>Some utilities need a <em>push to start/push to stop</em> or toggle
+button. One example is a run/pause button within a slide show. Since a
+button's value is normally displayed as a caption, it becomes easy to
+alter the caption with an <em>if</em> condition. In the following code
+fragment the toggle function rewrites the <em>innerHTML</em>.</p>
+<pre class="special">flip="Start"; // global to save state
+function toggle() {
+if (flip == "Start") {
+   flip="Stop";
+   //insert start code here
+   copy ='&lt;input name="b" type="button" value="Stop" ';
+   copy+='class="zone" onclick="toggle();"&gt;';
+   document.getElementById('togglezone').innerHTML=copy;
+   } else {
+   flip="Start";
+    //insert stop code here
+   copy ='&lt;input name="b" type="button" value="Start" ';
+   copy+='class="zone" onclick="toggle();"&gt;';
+   document.getElementById('togglezone').innerHTML=copy;
+    }
+}</pre>
+<div id="togglezone" class="togglezone">
+<input name="b" class="togglezone" value="Start" onclick="toggle();" type="button"></div>
+<p>
+<p align="right"><a href="file:///H:/vbsoftware2/tutorial/tutor5.htm">Tutorial 5 - Forms and DHTML</a> 
+- <a href="file:///H:/vbsoftware2/tutorial/tutor7.htm">Tutorial 7 - Animation</a>
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b><div style="border-top: 1px solid rgb(221, 221, 221); padding-top: 15px;">
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

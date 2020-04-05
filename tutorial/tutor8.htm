@@ -1,0 +1,163 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 8 - Multimedia</h1>
+<p align="right"><a href="tutor7.htm">Tutorial 7 - Animation</a> -
+<a href="tutor9.htm">Tutorial 9 - Cookies</a></p>
+<p>Multimedia covers audio, video and print presentations. <a href="tutor7.htm">Animation</a> is the process of making text and/or
+graphics to move or appear to move. It does not add content to a webpage
+but properly used, can be an important <em>attractor</em> of viewers or
+<em>highlighter</em> of material needing emphasis.</p>
+<div class="c"><table class="menu"><tbody><tr>
+<td class="box"><a href="#im">image transitions</a></td>
+<td class="box"><a href="#sl">slideshows</a></td>
+<td class="box"><a href="#mu">music is media</a></td>
+<td class="box"><a href="#print">click to print effect</a></td>
+</tr></tbody></table></div>
+
+<h2 id="im">Image Transitions</h2>
+<p>Image transitions are changes from one image to another. The basic
+transition is an abrupt switch. If done quickly enough with appropriate
+shifts in object position you get apparent movement. These images are
+normally created with either graphics or <em>morphing</em> packages
+and then sequenced by making a gif animated file or by using a
+<a href="#sl">slideshow</a> technique.</p>
+<p>More complex transitions such as wipes and curtains are available if
+you are content to limit viewers to MSIE browsers (actually the images
+will change - only the fancy effect is lost). The transitions available
+within MSIE are Barn, Blinds, CheckerBoard, Fade, GradientWipe, Inset,
+Iris, Pixelate, RadialWipe, RandomBars, RandomDissolve, Slide, Spiral,
+Stretch, Strips, Wheel, and Zigzag.</p>
+
+<h2 id="sl">Slide Shows</h2>
+<p>Presentations are linear structured events that focus on transfering
+facts to the audience in an effective and memorable way. <em>Presentation
+slide shows</em> enhance this experience with lists and graphics. In some
+cases interactivity and animation are included. The most commonly used
+presentation slideshow is <em>PowerPoint<sub>®</sub></em> but this
+program uses proprietary techniques and bulky files. In addition style
+is intermixed with content in the design process. Many <em>Open Source
+Code</em> utilities use a combination of CSS and JavaScript to duplicate
+the functionality of PowerPoint<sub>®</sub>. Two popular solutions
+are Meyer's <a href="http://www.meyerweb.com/eric/tools/s5">S5</a> and
+Raggett's <a href="http://www.w3.org/Talks/Tools/Slidy/">slidy</a>.</p>
+<p>A different approach to slideshows is available for those who intend
+showing non-interactive slides but who need a slick interface with an
+auto-sequencing timer and perhaps audio for stand-alone kiosk type operation.
+Herdejurgen's <a href="http://www.jsviewer.com/index.html">JSViewer</a>
+and Maricopa College's
+<a href="http://www.mcli.dist.maricopa.edu/proj/jclicker/">JClicker</a>
+emphasise the attractive user look.</p>
+<p>As an JavaScript learning experience I developed <a href="http://home.cogeco.ca/%7Eve3ll/utility.htm#sl">
+SlideShow</a> which you may download and modify as needed.</p>
+
+<h2 id="mu">Music is Media</h2>
+<p>To have multimedia, you must have more than a visual component!
+And that usually means <em>audio</em>.  The usual way of getting music
+to play in all major browsers is with the <em>embed</em> element like:</p>
+<pre class="special">&lt;embed src="canyon.mid" hidden="true" loop="true" autostart="true"&gt;
+&lt;/embed&gt;</pre>
+<p>The problem with the embed element (as well as the object element) is
+that they are not acceptable within the XHTML recommendation and validators
+will complain about them being invalid. There is a sneaky solution using
+JavaScript which actually allows a great deal of flexibility to be added
+to the use of music or other embed and object applications.</p>
+<p>The <a href="tutor6.htm#to">toggle button example</a> from a previous
+tutorial has already shown how the content of a <em>div</em> element can
+be rewritten dynamically. Well the content <em>could</em> be the embed
+element! By providing an empty <em>div</em> element in the body and an
+<em>onLoad</em> function to place the embedded sound, you now have a
+document that verifies but still plays background.</p>
+<pre class="special">function turnon(entry) {
+musicFile="canyon.mid"
+text='&lt;embed src="' + musicFile;
+text+='" hidden="true" loop="true" autostart="true"&gt;';
+document.getElementById(entry).innerHTML=text;
+}
+...
+&lt;body onLoad="turnon('musicdiv');"&gt;
+...
+&lt;div id="musicdiv"&gt;&lt;/div&gt;
+</pre>
+<p>Couple this with the toggle button and a second function that turns
+the audio off (ie autostart="false") and you give the user control of his
+speakers. <span>Hint:</span> Start with the music off! Use a set of radio
+buttons to control which tune is played. This is done by making the
+<em>src="x"</em> attribute a variable which is set by the radio controls.
+Don't forget to make one of them an OFF button. Add a file selection
+control so that the user can select any file on the site (or drive if the
+program is put on a cd).</p>
+
+<h2 id="print">Click To Print Effect</h2>
+<p>Suppose you have a page with an image such as a directions map on it.
+You want the reader to be able to click on the image to print a copy.
+You can start with the onclick <em>event</em> tied to the image element.
+It would call the window.print() <em>method</em> to do the actual printing
+of the page.</p>
+<pre class="special">&lt;img src="location.jpg" onclick="window.print();"&gt;</pre>
+<p>But what if you only want to print the image and not the rest of the
+page. This takes a bit more work but mostly a bit of thought. Since
+window.print() does a whole page, why not put a copy of the image on its
+own page. You can even scale the image, center it, and add information
+if needed. A fragment of the second page is:</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+function doit() {
+window.print();\\ does the print of this page
+top.location.href='first.htm';} \\ returns to original page
+&lt;/script&gt;&lt;/head&gt;&lt;body onload="doit();"&gt;</pre>
+<p>The only additional component you need besides the two pages is a method
+of transferring from one to the other. Transferring to another page can be
+done by setting the top.location.href <em>property</em></p>
+<pre class="special">&lt;img src="location.jpg" onclick="top.location.href='second.htm';"&gt;</pre>
+
+        <div align="right">
+<a href="tutor7.htm">Tutorial 7 - Animation</a> - <a href="tutor9.htm">Tutorial 9 - Cookies</a>
+
+        </div>
+
+        <div align="right">
+&nbsp;</div>
+
+        <div align="right">
+<b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b>
+
+        </div>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>

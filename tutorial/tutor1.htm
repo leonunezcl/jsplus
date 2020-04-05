@@ -1,0 +1,269 @@
+<html>
+<title>JavaScript Plus! Tutorial - Basic Display</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<td bgcolor="#e2e2e2" width="1">
+
+    <td bgcolor="#ffffff" valign="top" width="604">
+
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 1 - Basic Display</h1>
+<p align="right"><a href="tutorial.htm">Index</a> - <a href="tutor2.htm">Tutorial 2 - Objects,Events&amp;Functions</a></p>
+<p>This is the first of a series of tutorials which will help you to add
+interactivity to your HTML documents by using JavaScript. These tutorials
+<span>assume</span> a working knowledge of HTML 4 and of CSS style as well
+as a commitment to <em>validate</em> all code including stylesheets.</p>
+<p>Javascript documents should always be written to the language standard
+set by <em>ECMA</em>. One of the best ways of checking your work is to use
+<a href="http://www.crockford.com/javascript/jslint.html">
+jsLint</a>. Just cut and paste your script into the input box and press the
+jsLint button. Either you will get an 'ok' message or an easy to interpret
+message including line number on any problem. Code that checks with jsLint
+will be less likely to be quirky in any of the modern browsers.</p>
+<p>In each of the following JavaScript tutorials any text that is displayed
+in green can be cut and pasted (aka ripped) into a new HTML document template
+(ie. complete with doctype, head, title and body elements) and viewed with
+your favorite browser. You may prefer to type in the example yourself just
+so that you can review your understanding of each line as it is entered.
+Choose a strategy which works for you and have some fun learning about
+the power that JavaScript gives to web page designers.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#temp">a standard template</a></li>
+<li><a href="#where">where is JavaScript placed</a></li>
+<li><a href="#hello">'hello world' example</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#alert">alert, prompt &amp; confirm windows</a></li>
+<li><a href="#hello2">interactive 'hello world' example</a></li>
+<li><a href="#last">last update &amp; current date</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#stat">using the status line</a></li>
+<li><a href="#pop">popup windows</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="temp">A Standard JavaScript Template</h2>
+<p>Start by making a template file [eg. jstemp.htm] or setting up a
+macro in your text editor that contains the following code:</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+
+//]]&gt;
+&lt;/script&gt;</pre>
+<p>The first line creates an HTML element which tells your browser that
+what follows is in a scripted language and this time it is JavaScript
+(not VBScript or JScript).  The next line marks it as unparsed character
+data. Otherwise characters like &amp; and &amp;lt; will be treated as
+start of character entities (like &amp;nbsp;) and tags (like &lt;b&gt;)
+respectively. A comment mark is used so that JavaScript doesn't try to
+interpret CDATA. The next line (ie. the blank one) is where your JavaScript
+will be inserted. Finally both the CDATA and script elements are closed
+in the normal HTML manner.</p>
+<p><strong>NOTE:</strong> It is recommended that you write code that assumes
+that some users may not have JavaScript enabled browsers or have temporarily
+turned it off. This is part of the 'Be kind to ALL users' philosophy.
+HTML provides an element specifically for this purpose.  Make a template
+(or macro) of the following so that it can be included easily in the
+<em>body</em> section of every document that has a script element.</p>
+<pre class="special">&lt;noscript&gt;NOTE: Your browser does not support JavaScript
+    or support has been turned off. Too bad!&lt;/noscript&gt;</pre>
+<p>The message between &lt;noscript&gt; and &lt;/noscript&gt;
+will appear on a non-script enabled browser or one with scripting
+turned off. The noscript element <em>must</em> be placed in the
+<em>body</em> section of your document to be valid HTML 4!.</p>
+
+<h2 id="where">Where Is JavaScript Placed</h2>
+<p>JavaScript is similar to style property rules in that it can be placed
+in one of several locations depending on how often the code is needed.</p>
+<p>Short examples or trivial 'snippets' (such as many in this first
+tutorial) can be placed <em>inline</em> (sometimes called on-the-fly).
+These are inserted (with the above template) into the body section of
+a document.</p>
+<p>Most JavaScript utilities are placed in the head section of a
+document. This assures that they are loaded immediately and that if
+appropriate can be used in several places in the document.</p>
+<p>Just as stylesheets can be in separate files for access from many
+documents, JavaScript routines can also be isolated to separate files
+for reuse by several documents. Isolation also prevents html validators
+from signaling false errors inside javascript.</p>
+<p>And finally JavaScript can be invoked or started from within element
+attributes by using the <em>javascript:</em> keyword.</p>
+<p>The best choice is to first develop and 'debug' scripts within the
+head element. This saves time switching between files. When the script
+is working well, then cut and paste it to a separate file for reuse.
+To link to these files, the script element changes to include a 'src'
+attribute but no content between the tags. For example:</p>
+<pre class="special">&lt;script type="text/javascript" src="mtmtrack.js"&gt;&lt;/script&gt;</pre>
+<p><strong>NOTE:</strong> It is a long standing tradition for these
+external files to use the extension .js but it is not a requirement.</p>
+
+<h2 id="hello">'Hello World' Example</h2>
+<p>A common first programming assignment in many languages is to write
+the greeting 'hello world' to the screen. This will give you the chance
+to become familiar with your text editor and the development process as
+well as some basic JavaScript syntax.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+document.writeln('hello world!');
+&lt;/script&gt;</pre>
+<p><em>document.writeln('hello world!');</em> may seem trivial but it
+has many points of interest that should be thoroughly understood. The word
+<em>document</em> indicates one of the <em>major</em> objects in JavaScript.
+The complete list of available JavaScript <em>objects</em> are given in the
+<a href="tutorx.htm">Appendices</a> In this example document is used to
+direct data into an HTML document for display. The following <em>dot</em>
+indicates that a <em>method</em> or operation is to be applied to that
+particular object. In this example the method is <em>writeln()</em>.
+Brackets indicate a parameter or value to be used by the method. Inside the
+bracket is a <em>quoted</em> string value to be used as is. Matching double
+quotes may also be used but there are many situations where double quotes
+conflict with HTML attribute assignment so single quotes are preferred.
+Finally, the sentence known in programming as a <em>statement</em>)
+ends with a <em>semicolon</em>. There is another method called
+<em>write()</em> which is almost the same as writeln() but does not
+display a new line after the parameter value. New lines can be forced in
+JavaScript with the \n newline escape sequence.</p>
+
+<h2 id="alert">Alert, Prompt and Confirm Windows</h2>
+<p>JavaScript has three very simple ways of providing the user with
+information and possibly feedback through the use of popup windows.
+<em>window.alert()</em> is a window object <em>method</em> which displays
+a message but no feedback can be gathered from the user. There is only
+one string parameter.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+window.alert('hello world!');
+&lt;/script&gt;</pre>
+<p>The method <em>window.prompt()</em> displays a standard dialog which
+allows the user to enter data. Note that there are two strings, separated
+by commas as parameters. The first parameter is a prompt message. The second
+parameter sets the default value of the entry. It is normally blank but is
+required to give a blank input line in the MSIE browser.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+window.prompt('Please enter your name: ','');
+&lt;/script&gt;</pre>
+<p>The method <em>window.confirm()</em> displays a standard dialog which
+allows the user to respond with either ok or no. The parameter is a prompt
+message.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+window.confirm('Shall we continue ?');
+&lt;/script&gt;</pre>
+
+<h2 id="hello2">Interactive 'Hello World' Example</h2>
+<p>To improve a bit on the basic 'hello world' example and to show how
+JavaScript can introduce interactivity with the user, let's prompt for
+the user's name and then use it in our display.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+name="";
+name = window.prompt('Please enter your name: ','');
+document.write('hello '+name+ ' !');
+&lt;/script&gt;</pre>
+<p><em>name="";</em> introduces the concept of a variable which
+is a temporary data holder. Variable names must begin with a letter,
+contain only alphanumeric characters and underscore, and are
+<em>case sensitive</em>. <a href="tutorx.htm#Jword">Appendix - Reserved Words</a> list words with special meanings that
+<em>cannot</em> be used as variable names. The <a href="tutor3.htm">Core Language</a> tutorial has more details on variables, operators
+and statements.</p>
+<p>After the data is entered using the <em>prompt</em> method, it is stored
+in the variable called name. It is then appended to the message 'hello ' and
+displayed on the screen. Note that an alert window could also have been used
+for the display.</p>
+
+<h2 id="last">Last Update and Current Date Examples</h2>
+<p>The first snippet demonstrates a useful script to tag your web pages
+with the <em>lastmodified</em> property of the <em>document</em> object.
+Many authors hard code the file date into the text but forget to update
+it when the page changes. Why not let the browser do the work for you?</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+document.writeln("This page updated on " + document.lastModified);
+&lt;/script&gt;</pre>
+<script type="text/javascript">
+document.writeln("This page updated on " + document.lastModified);</script>
+        <p>This page updated on Fri, 14 Oct 2005 20:35:30 GMT </p>
+
+<p>The next example introduces the built-in system object called <em>Date</em>.
+A copy of the object called todays_date is created and then printed.
+For more on objects and how they are created refer to <a href="tutor2.htm">Objects, Events and Functions</a>. For a complete listing of system objects
+refer to <a href="tutorx.htm#Jobject">ECMA Core Objects</a>.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+todays_date=new Date();
+document.write("Current Date/Time is ");
+document.writeln(todays_date);
+&lt;/script&gt;</pre>
+<script type="text/javascript">
+todays_date=new Date();
+document.write("Current Date/Time is ");
+document.writeln(todays_date);</script>
+        <p>Current Date/Time is Fri Nov 25 2005 00:18:38 GMT+0100 </p>
+
+
+<h2 id="stat">Using the Status Line</h2>
+<p>Writing a message on the status line using the <em>status</em> property
+of the window object is just as easy as calling an alert window and is less
+intrusive. This sample script must be placed in the head section as it uses
+two user defined <em>functions</em> (one to display a message and the other
+to reset the status line). <em>Functions</em> are explained in the
+<a href="tutor2.htm">Objects, Events and Functions</a> tutorial. To start
+the display function the <em>onLoad event</em> is referred to by the body
+element (eg &lt;body onLoad="showStatus()"&gt;). <em>Events</em> are
+discussed in the <a href="tutor2.htm">Objects, Events and Functions</a>
+tutorial.</p>
+<pre class="special">&lt;script type="text/javascript"&gt;
+function showStatus() {
+   window.status = 'hello world!';
+   change2 = setTimeout("xit()",10000);
+   }
+function xit() {
+   window.status = "";
+   }
+&lt;/script&gt;</pre>
+<p><em>NOTE:</em> You should avoid using the status line unless necessary
+for your application. Many readers rely on access to the status line for
+observing link addresses. One way around this issue is to clear your use
+of the status line after a fixed amount of time delay as this example shows.
+<em>setTimeout()</em> is a window object method that transfers control to
+the <em>xit</em> function after 10 seconds (the second parameter [ie. value
+in brackets] must be given in milliseconds). Because the setTimeout() method
+is only defined for the window object, you need not use its full name
+[ie.window.setTimeout()].</p>
+
+<h2 id="pop">Popup Windows</h2>
+<p>New windows can be popped up over the top of the existing window by
+using the <em>window</em> object open() <em>method</em>. Open has three
+parameters in the order of URL, windowName, [featuresList]. To make sure
+underlying screens are retained, the window must be opened in a user
+defined function! To popup a short info blurb you can use:</p>
+<pre class="special">[script component - placed in document head]
+&lt;script type="text/javascript"&gt;
+function openWindow(url,name,w,h,l,t) {
+features='dependent=1,width='+w+',height='+h+',left='+l+',top='+t;
+popupWin=window.open(url,name,features);
+if (!popupWin.opener) {popupWin.opener = self;}
+}&lt;/script&gt;
+
+[html component]
+&lt;a href="javascript:openWindow('linuxreg.txt','InfoWindow',200,300,400,75)"&gt;
+Get Info&lt;/a&gt;</pre>
+<div>
+<a href="javascript:openWindow('linuxreg.txt','InfoWindow',200,300,400,75)">
+Get Info</a></div>
+<p><span>Note:</span> The window object is very browser specific and
+any use must be thoroughly tested in all anticipated client browsers.
+This simple example shows many differences between browsers:</p>
+<ul>
+<li><em>Opera:</em> Positions well and automatically adds scrollers when needed.</li>
+<li><em>Netscape:</em> Positions well but no scrollbars with large content.</li>
+<li><em>Slimbrowser:</em> Doesn't size or position well!</li>
+</ul>
+
+        <p align="right"><a href="tutorial.htm">Index</a> - <a href="tutor2.htm">Tutorial 2 - Objects,Events&amp;Functions</a></p>
+        <p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+

@@ -1,0 +1,276 @@
+<html>
+<meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+<meta name="KEYWORDS" content="javascript editor, javascript , javascript IDE, javascript authoring tool, javascript sintax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="Revisit-after" CONTENT="1 days">
+<META NAME="robots" content="ALL">
+<meta name="rating" content="general">
+<link rel="SHORTCUT ICON" href="http://www.vbsoftware.cl/vbsoftware.ico">
+<title>JavaScript Plus! Home Page</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+<!--
+.Estilo1 {font-size: 10px}
+h3.fading   {color:#000}
+span.zoomer {font-size:12pt}
+div.backZone {background:#deadff}
+div.togglezone {text-align:center}
+input.togglezone {background:#c0c0c0; color:black}div.newsbox {position:absolute;left:600px;top:145px;}div.tab {text-align:right; font-size:10pt;
+         margin:0px; margin-left:auto; margin-right:50px}
+span.tab {margin:0px 2px; background:#cccccc;
+         border:1px solid black; border-right:3px outset black;
+         border-bottom:3px outset black; padding:2px}a.tab {text-decoration:none; color:black}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<!-- header -->
+<script language="Javascript" type="text/javascript" src="js/header.js"></script>
+
+<div style="background-color: rgb(247, 247, 247);">
+
+<!-- menu -->
+<script language="Javascript" type="text/javascript" src="js/menu.js"></script>
+    <td bgcolor="#e2e2e2" width="1">
+    <img src="../images/pixel.gif" border="0" height="1" width="1"></td>
+    <td bgcolor="#ffffff" valign="top" width="604">
+<!-- Top Bar -->                   
+    <script language="Javascript" type="text/javascript" src="js/topbar.js"></script>
+    <table border="0" cellpadding="7" cellspacing="7" width="780">
+      <tbody><tr>
+        <td valign="top" width="100%">
+        <h1 class="box">Tutorial 12 - Smart Forms</h1>
+<p align="right"><a href="tutorb.htm">Tutorial 11 - Form Validation</a> -
+<a href="tutord.htm">Tutorial 13 - Getting The Bugs Out</a></p>
+<p>Smart or intelligent forms automate many repetitive tasks that we
+meet within our work or hobbies. These tasks can be as simple as altering
+case or as complex as reformatting or encrypting files. Many smart forms
+involve arithmetic operations (order forms or metric converters are
+examples). Although not as glitzy as animation, data manipulation is
+the type of task a real programmer does often. Smart forms differ from
+submission forms in that they do not communicate with other sites. All
+processing is done on the user's computer and thus offers more security.</p>
+<div class="c"><table class="menu"><tbody><tr><td class="box"><ul>
+<li><a href="#nu">validating numeric data</a></li>
+<li><a href="#mu">multiple field validation</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="#or">order forms</a></li>
+<li><a href="#he">health checkup form</a></li>
+</ul></td><td class="box"><ul>
+<li><a href="http://home.cogeco.ca/%7Etrains/rroperat.htm#sp">scale speed
+calculator</a> [off page]</li>
+<li><a href="#te">text analysis and formatting</a></li>
+</ul></td></tr></tbody></table></div>
+
+<h2 id="nu">Validating Numeric Data</h2>
+<p>Many smart forms involve mathematics so numeric input must often be
+verified before continuing. JavaScript's built-in function <em>Number()</em>
+and internal methods (such as <em>isNaN(), parseInt(), parseFloat(),</em> etc.)
+work well for validating decimal based numbers. However they are incomplete
+for other radix systems and you will have to gather together your own set
+of functions to paste into projects.</p>
+<p>A simple brute force validator solution is to test each character of
+the entry string for permitted values. <em>Binary</em> integers are limited
+to 0's and 1's. <em>Octal</em> numbers can have only the characters from 0
+to 7. <em>Hexadecimal</em> codes can contain the digits 0 to 9 and the letters
+A to F (either upper or lower case) only.</p>
+<p>The following is an example of a hexadecimal entry checker. With suitable
+changes to the characters allowed and perhaps a length control (fixed or
+maximum) this code can be reused in many validation situations. The steps are:</p>
+<ol>
+<li>Make sure there is something to check!</li>
+<li>Since uppercase letters are more common, be sure to <em>uppercase</em>
+the string.<br>Or you could include both cases in the character scan.</li>
+<li>Finally do a simple character by character check for valid characters.</li>
+</ol>
+<p>In this test invalid or null hexadecimal string will display an error
+message and return a <em>false</em> value. If the whole string passes the
+check an ok! message is displayed and a <em>true</em> value is returned.
+Often these validating functions are written without display messages,
+leaving it up to the calling function. One last variation is to accept a
+second parameter which represents whether a message is to be displayed.</p>
+<pre class="special">function isHex(entry) {
+validChar='0123456789ABCDEF'; // characters allowed in hex
+strlen=entry.length;          // how long is test string
+if (strlen &lt; 1) {alert('Enter Something!');return false;} // no check!
+entry=entry.toUpperCase();          // in case of lowercase characters
+// Now scan string for illegal characters
+for (i=0; i &lt; strlen; i++ ) {
+    if (validChar.indexOf(entry.charAt(i)) &lt; 0) {
+       alert("Entry must be in hexadecimal format!");
+       return false;
+       }
+    } // end scanning loop
+alert('ok!'); return true;
+}</pre>
+<div class="c"><form id="hex" class="fancy2" action="?" method="post" onsubmit="return false;">
+<fieldset><legend>Hexcode String Test</legend>
+<input id="io0" value="" type="text" size="20" name="1">
+<input id="go0" class="go130" value="Test the String Now!" onclick="isHex(document.getElementById('io').value);" type="button">
+</fieldset></form></div>
+<p>Once you know for sure that a variable is a number, then you can use
+the Math object methods <em>parseInt()</em> and <em>parseFloat()</em> to
+make them into the appropriate type if required. Using parseInt() and
+parseFloat() by themselves may cause unexpected problems as they can
+truncate some nonnumeric strings and yield a number as an answer (eg. 1st.).
+<em>isNaN()</em> is a function to test for numbers but it is limited to
+<em>decimal</em> values only.</p>
+
+<h2 id="mu">Multiple Field Validation</h2>
+<p>In many situations the same type of validity check has to be repeated
+over many fields. One simple method is to use the fact that if the
+<em>name</em> attribute is reused for several similar controls, an array
+is automatically set up to give unique pointers to each control value.</p>
+<p><span>Note:</span> To convert this form to one that is submitted to a
+server for script processing change the HTML form element's <em>method</em>
+to <em>get</em>, the <em>enctype</em> to <em>multipart/form-data</em> and
+redirect the <em>action</em> to the appropriate URL.</p>
+
+<div class="c"><form id="survey" class="fancy2" method="post" enctype="text/plain" action="mailto:ve3ll@rac.ca?Subject=[multifield test]">
+<fieldset><legend>Testing Dynamic Names</legend>
+<table summary="*">
+<tbody><tr><th colspan="2">Each entry box must be filled in with a single digit,
+no alpha or punctuation or blanks allowed prior to submission. Note how
+the focus moves to first blank box but user can refocus if desired.</th></tr>
+<tr><th>Field one</th>
+<td><input id="x0" class="box15" name="x1" maxlength="1" type="text" size="20"></td></tr>
+<tr><th>Field two</th>
+<td><input id="x1" class="box15" name="x2" maxlength="1" type="text" size="20"></td></tr>
+<tr><th>Field three</th>
+<td><input id="x2" class="box15" name="x" maxlength="1" type="text" size="20"></td></tr>
+<tr><th colspan="2"><input class="go130" value="Submit via e-mail" onclick="return verify('x')" type="button">
+&nbsp;<input class="go130" value="Reset form entries" type="reset"></th>
+</tr></tbody></table></fieldset></form></div>
+<pre class="special">function verify(id) {  // check entries for single digit values only
+for (idx=0;idx&lt;6;idx++) { // if any field is blank, set focus to it
+   obj=document.getElementById(id+idx);temp=obj.value;
+   if (temp==="") {obj.focus();return false}
+   if (isNaN(parseInt(temp))) {
+       alert ('Entry must be a number!');obj.value="";obj.focus();
+       return false;}
+   }
+return true;}</pre>
+
+<h2 id="or">Order Forms</h2>
+<p>Smart forms add internal computational methods to a standard form.
+Examples include order forms (with extended prices, totals, taxes and
+handling charges), tax forms and commercial forms. <span>Note:</span>
+Refer to <a href="htmlform.htm#form">form design</a> for some basics.
+A start on a simple order form is given and you are encouraged to
+'flesh it out' with:</p>
+<ul><li>some simple math for first line. UGH!</li>
+<li>automatically update the line after changes.</li>
+<li>assume that any null entry implies null display.</li>
+<li>add totaling operation.</li>
+<li>add tax line including round off to pennies.</li>
+<li>complete with grand total line.</li></ul>
+<p>Refer back to <a href="#mu">multiple field validations</a> for the
+technique for handling many line items.</p>
+<div class="c"><form class="fancy5" id="fancy" action="?" method="post" onsubmit="return false;">
+<fieldset><legend>Sample Order Form</legend>
+<table summary="*">
+<tbody><tr><th class="spec">Item Description</th>
+<th class="spec">Quantity</th>
+<th class="spec">Unit Cost</th>
+<th class="spec">Extension</th></tr>
+<tr>
+<td><input id="i1" class="box200" type="text" size="20" name="1">&nbsp;</td>
+<td><input id="q1" type="text" size="20" name="2">@&nbsp;</td>
+<td><input id="u1" type="text" size="20" name="3">=&nbsp;</td>
+<td><input id="p1" readonly="readonly" type="text" size="20" name="4"></td></tr>
+<tr>
+<td><input id="i2" class="box200" type="text" size="20" name="5">&nbsp;</td>
+<td><input id="q2" type="text" size="20" name="6">@&nbsp;</td>
+<td><input id="u2" type="text" size="20" name="7">=&nbsp;</td>
+<td><input id="p2" readonly="readonly" type="text" size="20" name="8"></td></tr>
+<tr>
+<td colspan="3" align="right">Subtotal:&nbsp;</td>
+<td><input id="sub" readonly="readonly" type="text" size="20" name="9"></td></tr>
+<tr>
+<td colspan="3" align="right">Tax:&nbsp;</td>
+<td><input id="tax" readonly="readonly" type="text" size="20" name="10"></td></tr>
+<tr>
+<td colspan="3" align="right">Total:&nbsp;</td>
+<td><input id="tot" readonly="readonly" type="text" size="20" name="11"></td></tr>
+</tbody></table></fieldset></form></div>
+<p><strong>Major project extensions: </strong> This order form could be
+turned into a major project by adding shipping and handling charges and
+checkboxes for non-taxable items. Or perhaps select boxes for product that
+when chosen, fill in the unit cost field (preventing the need for some
+error checks. A long term project could contain item descriptions (perhaps
+even images) with checkboxes.  A checked box places the item on the order
+form. This may include the quantity level which is echoed to the form.</p>
+
+<h2 id="he">Health Checkup Form</h2>
+<div class="c"><form id="calc" class="fancy5" action="">
+<fieldset><legend>Body Mass Index Calculator</legend>
+<table summary="inputs"><tbody><tr><td><table summary="data">
+<tbody><tr><td class="just"><label for="calcw">Weight in pounds:
+<input id="calcw" tabindex="1" type="text" size="20" name="1"></label></td>
+<td class="just"><label for="calcmw">In kilos:
+<input id="calcmw" readonly="readonly" type="text" size="20" name="2"></label></td></tr>
+<tr><td class="just"><label for="calch">Height in inches:
+<input id="calch" tabindex="2" type="text" size="20" name="3"></label></td>
+<td class="just"><label for="calcmh">In metres:
+<input id="calcmh" readonly="readonly" type="text" size="20" name="4"></label></td></tr>
+<tr><td class="just" colspan="2">
+<label for="calcbmi">Body Mass Index [Wgt(Kg) / Hgt(m)<sup>2</sup>]:
+<input id="calcbmi" readonly="readonly" type="text" size="20" name="5"></label></td>
+</tr></tbody></table></td><td><table summary="buttons"><tbody><tr>
+   <td><input class="go100" name="ca" value="Calculate" tabindex="3" onclick="bodymass('calc');" type="button"></td></tr><tr>
+   <td><input class="go100" name="co" value="Send comment" onclick='top.location.href="mailto:VE3LL@RAC.CA?Subject=[specbmi.js]"' type="button">
+   </td></tr><tr>
+   <td><input class="go100" name="ab" value="About" onclick="about()" type="button"></td></tr><tr>
+   <td><input class="go100" name="cl" value="Clear" onclick="clrForm('calc')" type="button"></td></tr></tbody></table>
+</td></tr></tbody></table></fieldset></form></div>
+<p>A Body Mass Index of more than 25 indicates that you are
+<em>overweight</em>. A BMI factor of 30 or more indicates <em>obesity</em>.
+Being overweight can cause many health problems such as heart disease,
+strokes and diabetes. And if you should live long enough there is an
+increased chance of Alzheimer's. Just a word to the wise.</p>
+
+<h2 id="te">Text Analysis and Formatting</h2>
+<p><em>Word count</em> analysis require breaking up <em>(ie. parsing)</em>
+the source text into words <em>(ie. tokens)</em> that are terminated
+<em>(ie. delimited)</em> with spaces or punctuation. Fortunately JavaScript
+has the built-in string method <em>split()</em> which breaks a string into
+array items based on a delimiter symbol.  The <em>CountWords</em> function
+in the head section of this document shows how the text is first prepared by
+adding leading/lagging spaces and changing other white space into plain space
+by using the string method <em>replace()</em>. Then the split() method with
+space as its delimiter is used to place all the 'words' into an array called
+splitString. The length of this array is the number of words in the text.</p>
+<div class="c"><form class="fancy5" action="" method="post" onsubmit="return false;">
+<fieldset><legend>Word Count Utility</legend>
+<table summary="*"><tbody><tr>
+<td><textarea id="w_in" cols="38" rows="3" name="S1"></textarea></td>
+<td><input id="w_out" class="go100" value="Count Words" onclick="CountWords('w_in');return false;" type="button"></td></tr></tbody></table>
+</fieldset></form></div>
+<p><strong>NOTE: </strong>You must view the source code for the CountWords()
+function!</p>
+<p><em>Concordance</em> is the counting of <em>each</em> occurrence of each
+word and providing the results in a table fashion either sorted by alpha
+or sorted by most frequently used. This type of utility quickly leads to
+a spellchecker.</p>
+<p><em>Text formatting</em> can be as simple as changing case or initializing
+all words or first words in sentence. More complex forms of formatting would
+be to add or remove database tagging.</p>
+<p><strong>Major project extensions: </strong>A document analyzer could be
+built using a textarea for input. See the JSlint utility for an example.
+For someone's major project an HTML document could be scanned and
+all obsolete elements reported. At the same time any HTML ?style?
+attributes could be flagged and appropriate CSS style properties indicated.
+This type of project should suit the zealot for modern coding techniques!!
+A <em>mega</em> project would involve correcting the document and generating
+a stylesheet for it.</p>
+
+<p align="right"><a href="tutorb.htm">Tutorial 11 - Form Validation</a> -
+<a href="tutord.htm">Tutorial 13 - Getting The Bugs Out</a></p>
+
+<p align="right"><b><a href="http://home.cogeco.ca/%7Eve3ll/home.htm">Copyright (c) 2005 by John W. M. Russell</a></b></p>
+
+<!-- footer -->
+<script language="Javascript" type="text/javascript" src="js/footer.js"></script>
+
+<!-- autor -->
+<script language="Javascript" type="text/javascript" src="js/autor.js"></script>
