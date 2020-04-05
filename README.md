@@ -79,6 +79,9 @@ Para generar el archivo de ayuda de la aplicacion (.HLP) usaba un programa llama
 
 Era bien interesante la generación de toda la documentación del programa usando los archivos de ayuda. El utilitario y compilador viene en la distribución de visual basic 6 creo que en una carpeta llamada utils ...
 
+# Software de terceros
+Esta aplicacion tiene componentes de software de http://www.vbaccelerator.con y http://www.planetsourcecode.com 
+
 # Funcionalidades generales de la aplicación
 
 Interfaz
