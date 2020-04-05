@@ -1,0 +1,949 @@
+Legend:
++ New Feature
+* improvement/modification or bugfix
+- Removed Feature
+
+------------------------------------------------------------------------------------------------------
+7.0
+------------------------------------------------------------------------------------------------------
++ Added Active Library
+  - This option is available to all main editor opened.
+
+* Improved FTP Explorer. 
+  - Now it's possible download files from server to local folder. This option not open the download files into editor.
+  - Downloading files from server are not opened into editor. Downloaded files are available to open into File Manager Panel
+  - Added a file info listview to ftp window.
+
+* Improved MRU (Most Recent Used)
+  - All files opened are added to MRU List.
+
+* Improved Image Memory Usage
+  - Optimized icons & bitmap usage from Main Editor, controls and Code Editor.
+
+* Improved File Manager Panel
+  - File manager can activate & open files.
+
+* Improved Save Files to FTP
+  - Files to be saved to ftp server send information to the FTP Explorer. (File Info ListView)
+
+* Improved Code Explorer
+  - Added option to save information about images, css, links y scripts to text file.
+  - Added option to download images, css y scripts used by web page from url.
+  - Added option to configure extension to be explored.
+  - Improved html code analizer.
+
+* Fixed bug for "unknown file extension". Improved detection for file extensions.
+
+* Fixed bug for file extension in Batch Mode Window.
+
+* Fixed bug for open script from Active Library.
+ 
+- Removed Active Library from code Editor
+  - This option was removed from code editor to improve memory usage.
+
+- Removed HTTP Error Codes Help Panel.
+
+------------------------------------------------------------------------------------------------------
+6.5
+------------------------------------------------------------------------------------------------------
++ Added js_juicer. A JavaScript enhanced tool.
++ Added new left panel. File Manager.
++ Added Save Files to FTP.
+
+* Improved FTP Explorer. 
+* Fixed bug for JavaScript Function Explorer.
+
+- Removed HTML Tree Explorer.
+
+------------------------------------------------------------------------------------------------------
+6.1
+------------------------------------------------------------------------------------------------------
+* Fixed bug with "Save As" command.
+* Fixed bug with Tree explorer.
+* Fixed bug with Code Explorer
+* Fixed bug with "Save To Folder" command.
+* Improved Splash Screen for registered version.
+* Improved Database Tool.
+
+------------------------------------------------------------------------------------------------------
+6.0
+------------------------------------------------------------------------------------------------------
++ Added new menu "Analyze". 
++ Added new option menu "Batch Mode". 
++ Added new menu "Add-Ins". 
++ Added new menu "Code Utilities". 
++ Added new menu "Library". 
++ Added Language Wizard. 
++ Added Category Wizard. 
++ Added Browse Library. 
++ Added Save to Library. 
++ Added a new tree explorer. Explore xml and html documents in a tree window. 
++ Added a new Active Library panel to edit window. 
++ Added 3 new tools. 
+  Bitmap Extractor : Extract bitmaps from files. 
+  Icon Editor : Create & Edit icons. 
+  Icon Extractor : Extract icons from files. 
++ Added CSS option to New Menu. JavaScript Plus! includes 239 ready to use css templates. 
+  Templates source from http://www.freetemplates.org
+
+* Improved Menu Tools. 
+* Improved Image Effect Tool. 
+* Improved JavaScript Analizer. Now it's possible to analyze files in batch mode. 
+* Improved Plugin Engine. 
+* Improved Add Statement. Now you can edit statement as you like. 
+* Improved MRU (Most Recent Used). Now you can administer the MRU List. 
+* Improved CSS Help Panel
+* Improved CSS language file.
+
+* Fixed own file type association not working properly. 
+* Fixed bug for default extension. 
+* Fixed small grammar errors. 
+* Fixed bug "File Doesn't exists" if file to verify already exists. 
+* Fixed bug in "Preview In Browser". Fixed preview files with equals filenames under different paths. 
+
+- Removed Insert UserTemplate. 
+- Removed Insert Template. 
+
+------------------------------------------------------------------------------------------------------
+5.0.47
+------------------------------------------------------------------------------------------------------
+- Deleted the property explorer.
+- Deleted the ansi help panel. This option was moved to the insert menu.
+
+* Improved open from web.
+* Improved open files with unknown file extension.
+* Improved image wizard. Now you can see an image preview.
+
++ Added option to install ajax libraries at first javascript startup.
++ Added max number of files to open from folder.
++ Added a new XHTML Help Panel.
++ Added a new ansi help explorer. 
++ Added a new color names explorer.
++ Added a new help panel. HTML Error Codes Help panel. 
++ Added 3 new analizer options for javascript.
++ Added the option to analize only a selected javascript text.
++ Added the option to print preview only a selected text.
++ Added icons to html & javascript output results.
+  Save : Save results to text file.
+  Html : Save results to html file.
+  Print : Print result to printer.
+
++ Added icons to functions panel.
+  Save : Save functions to text file.
+  Html : Output functions to html file. 
+
++ Added a "function count" to the function help panel.
+
++ Added popup menu for file explorer (folder & files). The file explorer now includes :
+  Folder options
+  --------------  
+    + Create a new folder.
+    + View folder properties.
+
+  File options
+  ------------
+    + Open a file. 
+    + Delete file.
+    + Refresh contents.
+    + File Properties.
+
++ Added a new option for popupmenu "Code Tools". This new option includes :
+  + Format selected text to : <p>, <i>, <b>, <u>, <!-- html tags.
+
+  + Enclose selected text with : (..), [..], {..}, "..", '..',<% .. %> tags.
+
+  + Format selected text for array element.
+      tmparray[0]="line 1";
+      tmparray[0]="line 2";
+      tmparray[0]="line 3";
+
+  + Format selected text for document.write(...)
+      document.write("line 1");
+      document.write("line 2");
+      document.write("line 3");
+
+  + Format selected text with. 
+      var x;
+      var y;
+      var z;	
+
+  + Encode selected text to url format.
+       this is a beatiful world --> this%20is%20a%20beatiful%20world
+
+  + Create a string variable from selected text source. 
+      "hello world" --> var str="hello world";
+
+  + Comment selected text. 
+     // this is a comment ... 
+
+  + Remove white spaces.
+  + Delete empty lines.
+  + Delete selected text.
+
+* Update the javascript code analizer.
+* Improved help for configure browsers window.
+* Improved print & print preview.
+* Fixed a bug with help panel.
+* Improved the "Add to favorites wizard". Now supports output html code for internet explorer & firefox.
+* Fixed a bug with code explorer. 
+* Fixed a problem with short file names opened from windows explorer.
+* Fixed a bug with html image wizard (don't show the open file box dialog).
+* Fixed icon problems with ftp explorer form. (windows vista common controls)
+* Fixed icon problems with new file form. (windows vista common controls)
+------------------------------------------------------------------------------------------------------
+4.1
+------------------------------------------------------------------------------------------------------
++ Added 5 new dll libraries.
++ Added paste html.
+* Improved jsplus.
+* Improved print preview.
+* Improved clipboard.
+* Improved xml explorer.
+* Improved console.
+* Improved image browser.
+
+------------------------------------------------------------------------------------------------------
+4.0
+------------------------------------------------------------------------------------------------------
+* Many improvements and minor bug fixes.
+* New syntax files added for the next languages : (perl, php, vxml, xml, jsp).
+* Main menus was moved/removed/merge to get a better performance.
+* Added 2 new tools. 
+	Image Effect  : Give a better look to your custom images using the effect image tool.
+	Database Tool : Connect to many databases , select, insert, update & delete records easily. Export records to xml, html. Try the new Database Tool.
+* Now you can create a custom library using the Library Manager. Expand the development environment using your preferred custom libraries.
+* Added a new option for the new menu. JavaScript Plus! has support for 9 ajax libraries :
+  - AFLAX
+  - Dojo
+  - JQuery
+  - Google Web Toolkit
+  - Mochikit
+  - Prototype
+  - Rico
+  - Scriptaculous
+  - Yahoo UI
+* Added 2 new plus options. Calendar & SlideShow. 
+  - Calendar  : Create a JavaScript Calendar without effort with the calendar plus.
+  - SlideShow : Create a professional slideshow with the slideshow plus.
+* JavaScript Plus! has built inside 18 Plus! functions ready to use. The common mistakes solved at last.
+* Improved the XML Explorer. See your xml source using the XML Explorer. You can explore / update / edit your xml file using the XML Explorer.
+* Improved Find in Files. Search for files inside subfolders.
+* Added Window List. For many documents opened you can easily search and edit your source files.
+* Added new insert option to the ASP/PHP menu. 
+* Many insert options was exported to file. Customize your own insert scripts outside JavaScript Plus!. This files are under the snipets folder.
+* Improved the preferences Menu. Customize now JavaScript Plus! is very easy.
+* Now the left / right panels can move. Previous version keep fixed the left/right panels. Now you can move panels.
+* Added Ajax Resources to the Right Help Panel. A new help option for ajax developers.
+* Now you can configure your webserver and preview your files using under the webserver location.
+* Added a basic console DOS to the Tools Menu. A very basic & useful DOS Console terminal.
+* Better performance. Get the better editing experience using JavaScript Plus!.
+------------------------------------------------------------------------------------------------------
+3.6.0
+------------------------------------------------------------------------------------------------------
+* Updated jslint file. (2006/03/09)
++ Includes new JavaScript 1.6 reference for Array Object.
+    * indexOf() - returns the index of the given item's first occurrence.
+    * lastIndexOf() - returns the index of the given item's last occurrence. 
+    * every() - runs a function on every item in the array and returns true if the function returns true for every item.
+    * filter() - runs a function on every item in the array and returns an array of all items for which the function returns true.
+    * forEach() - runs a function on every item in the array.
+    * map() - runs a function on every item in the array and returns the results in an array.
+    * some() - runs a function on every item in the array and returns true if the function returns true for any one item. 
+* Fixed a bug in jshelp.ini file for concat method under the array section.
+------------------------------------------------------------------------------------------------------
+3.5.0
+------------------------------------------------------------------------------------------------------
+* Updated/Improved the jslint file. Now you can get all errors of the selected file.
+* Updated jslint options.
+* Fixed a bug when select New|Plus|PopupMenu
+* Improved Tidy. Added the TidyCom library. 
+* Added information about the errors detected for jslint when analize a file.
+------------------------------------------------------------------------------------------------------
+
+3.2.0
+------------------------------------------------------------------------------------------------------
++ added configuration window for jslint.
++ added new menu option to tools menu -> Lookup at dictionary.com
++ added new menu option to tools menu -> Lookup at Thesaurus.com
++ added new menu option to popup menu -> Find
++ added new menu option to popup menu -> Replace
++ added new css help panel to main editor. (config\css.ini)
++ added new window to insert menu -> page -> character set. (set.ini)
++ added autocomplete for css tags.
++ added quicktip window.
++ added icon help.
+
+* Fixed a bug for open file.
+* fixed a bug for save file.
+* Updated jslint file. (jslint/jslint.js)
+* Improved check.js file (jslint/check.js)
+* Moved quick help panel to right.
+* Changed icons for JavaScript Objects.
+* Changed jshelp.ini file now includes any extras dhtml objects. (config\jshelp.ini)
+* Improved file for encoding option. (config\enconding.ini)
+* Improved file for doctype option. (config\doctype.ini)
+* Improved jsplus.ini. Now includes as first option "All Files". This option applies to open/save file dialog.
+* Improved tidy.
+* Improved JavaScript Object Browser.
+* Improved JavaScript Help Panel. (added 3 new options : constants, collections, objects)
+* Improved autocomplete. 
+
+------------------------------------------------------------------------------------------------------
+3.1.29
+------------------------------------------------------------------------------------------------------
+- Fixed a bug when select Help|Online Help (3.1.28 launches "Tip of Day")
+* Added default extension when user select "Save project"
+* Added a wait message when JavaScript Plus! is searching for bugs with jslint.
+
+------------------------------------------------------------------------------------------------------
+3.1.28 
+------------------------------------------------------------------------------------------------------
+- Improvements to the source code.
+* Improved JavaScript Guide & Reference.
+
+------------------------------------------------------------------------------------------------------
+3.1.27 
+------------------------------------------------------------------------------------------------------
+* Fixed a bug with filename extension. Bug discovered when testing a filename named : prototype-1.3.1.js
+* Improved open from ftp.
+* Improved project manager.
+* Improved popupmenu at editor. Added 2 new options. Check JavaScript & Check Html.
+* Improved autocomplete function.
+* Fixed a grammar error on function panel
+* Fixed a bug when functions are reading from source file.
++ Added a new option to file menu. Open Folder.
+
+------------------------------------------------------------------------------------------------------
+3.1.25 - First Beta 1 released.
+------------------------------------------------------------------------------------------------------
++ Added 3 new plus wizars. (TreeMenu, TabMenu, PopupMenu)
++ Added a XML Explorer.
++ Added 2 defaults plugins (ARK's WMP OBJECT generator & ARK's Media Player Script Creator)
++ Added a default Visual Basic project inside plugins folder. (plugin skeleton project).
++ Added a DHTML Help Panel.
++ Added internet explorer extended events. (blue color, standard events yellow color)
++ Added 2 panel to editor bottom. Tidy and JSLint.
++ HTML problems are reported at bottom. (tidy panel)
++ JavaScript bugs are reported at bottom. (jslint panel)
++ Add Function to JavaScript menu.
++ Added more useful links to help panel.
++ Now JavaScript Plus! supports project files (.jsp files).
++ Added 7 new submenu elements to Help Menu
+  - JavaScript Reference 1.3
+  - JavaScript Reference 1.4
+  - JavaScript Reference 1.5	
+  - JavaScript Guide 1.3
+  - JavaScript Guide 1.4
+  - JavaScript Guide 1.5
+  - JScript Reference.
+
+You can get this files from here : http://www.vbsoftware.cl/reference.htm.
+
+Download all files and install inside your javascript plus folder. 
+
+Follow the next instructions to install help files :
+
+- Creates a folder named reference.
+- Inside the reference folder creates the next folders :
+  - GuideJS13
+  - GuideJS14
+  - GuideJS15
+  - referenceJS13
+  - referenceJS14
+  - referenceJS15
+
+JavaScript Guide
+- Unzip ClientGuideJS13.zip to GuideJS13 folder.
+- Unzip CoreGuideJS14.zip to GuideJS14 folder.
+- Unzip CoreGuideJS15.zip to GuideJS15 folder.
+
+JavaScript Reference
+- Unzip ClientReferenceJS13.zip to referenceJS13 folder.
+- Unzip CoreReferenceJS14.zip to referenceJS14 folder.
+- Unzip CoreReferenceJS15.zip to referenceJS15 folder.
+
+
+* Improved online help for markup elements.
+* Improved tidy performance.
+* Improved jslint performance.
+* Improved splash startup. (5 seconds at PENTIUM IV 1.7 512 RAM, Win200 PRO SP4)
+* Fixed bug with "open from web" option. (a very hard bug ...)
+* Fixed bug when html tag are written in uppercase.
+* Improved New Menu (added new plus options)
+* Improved Plus Menu (added new plus options)
+* Improved help panel
+* Improved JavaScript reference for autocomplete
+* Improved HTML reference for autocomplete
+
+- Removed functions menu from menu bar. (don't very useful and a lot of windows resources ...)
+- Removed View Menu. Toolbars now can be hidden/shown from tools menu.
+
+------------------------------------------------------------------------------------------------------
+3.0.263 - First Beta 1 released.
+------------------------------------------------------------------------------------------------------
++ Added startup log. If startup process is not completed this will check startup problems on any pc. (Win 2000 SP4, Win 98)
+* Fixed bug in code explorer. (Tags without " ")
+
+------------------------------------------------------------------------------------------------------
+3.0.262 - First Beta 1 released.
+------------------------------------------------------------------------------------------------------
++ Added tip of day.
+
+------------------------------------------------------------------------------------------------------
+3.0.261
+------------------------------------------------------------------------------------------------------
+* Fixed a bug for all text insertions over 920 line codes. This bug applies all Javascript Plus! previous versions. 
+A very interesting bug was discovered. 
+
+To reply this bug: 
+Open a document that contains over 1000 lines of code. Press CTRL+G (goto line) and input 1000. Insert a single comment and this action isn't executed. 
+All text insertion are stoped to add text from specified cursor position. 
+
+The problem applies to CodeSense control. 
+
+* Improved for help file.
+
+------------------------------------------------------------------------------------------------------
+3.0.260
+------------------------------------------------------------------------------------------------------
++ Added double click for new document. 
++ Added multiple instances of javascript plus! for registered users. 
++ Added right menu associations when user opens a document for windows explorer. 
+* Improved file associations when user open document using double-click from windows explorer. 
+* Fixed javascript plus! icon association. 
+* Improved help file.
+
+------------------------------------------------------------------------------------------------------
+3.0.259
+------------------------------------------------------------------------------------------------------
+* Fixed bug at close document. Sometimes changes in editor wasn't detected.
+* Fixed bug when recent list value changes.
+* Added file extension (.txt) when creates a new template.
++ Added a cancel button when try to close a document. (Yes/No/Cancel)
++ Added Tidy/JSLint to Help menu.
+
+------------------------------------------------------------------------------------------------------
+3.0.258
+------------------------------------------------------------------------------------------------------
+* Improved Insert|ASP menu. 
+* Improved Menu|New. 
++ Added Insert|PHP Menu. 
++ Added Insert|SSI Menu. 
+- Removed My Templates from New window.
+
+------------------------------------------------------------------------------------------------------
+3.0.257
+------------------------------------------------------------------------------------------------------
++ Improved new file. Now user can choose create a file from 
+(Javascript,Html, Template,Plus!,Samples for learners,My Templates). Still working in this functionality. 
++ Added a preferences menu. 
++ Added file drag & drop support. 
+* Improved jsplus filesize. Ftp functions now are stored inside vbsftp.dll. 
+* Changed Column Select to Vertical Select menu item.
+
+------------------------------------------------------------------------------------------------------
+3.0.256
+------------------------------------------------------------------------------------------------------
+* Improved preview in browser. Preview filename using older DOS 8.3 format (only for browser compatibility).
+
+------------------------------------------------------------------------------------------------------
+3.0.255
+------------------------------------------------------------------------------------------------------
+* Fixed missing help descriptions for html tag. File htmlitemhelp.ini fixed inside config folder. 
+* Fixed activating help for html attributes in help window. 
+* Improved preview in browser. (Testing with Iexplore,Firefox,Netscape & Opera). 
+
+- Removed menu items when popup menu is shown. Popup menu is now a little small.
+
+------------------------------------------------------------------------------------------------------
+3.0.254
+------------------------------------------------------------------------------------------------------
+* Fixed bug in function explorer. Detected bug when line begins with chr$(9). 
+* Removed nag screen for registered users. 
+* Fixed bug in code explorer. Problem reading document with style sheets reference. 
+* Fixed bug when save all files. (ftp account problem). 
+* Added connection checking for ftp actions. Still testing .... 
+* Fixed size for Tidy Output window.
+
+------------------------------------------------------------------------------------------------------
+3.0.253
+------------------------------------------------------------------------------------------------------
+* Fixed bug Insert User Template. 
+* Improved editor settings.
+
+------------------------------------------------------------------------------------------------------
+3.0.252
+------------------------------------------------------------------------------------------------------
+* Fixed insert text only into edit window. Heavy bug & hard work fix them. ;)
+* Fixed shortcuts menu keys. Missing & repeated shortcut menu access.
+* Fixed problem with detection of ftp folders. Bug fixed.
+* Fixed problem ftp manager when deletes,renames without select a file.
+* Fixed bug for port 0 in account settings configuration.
+* Fixed setup last folder in ftp manager. Previous version always started with current folder.
+* Fixed bug for function explorer/code explorer when saves empty documents.
+* Fixed event form bug.
+* Fixed bug for function list from event form.
++ Added start from root folder when last folder not exists.
+
+------------------------------------------------------------------------------------------------------
+3.0.251
+------------------------------------------------------------------------------------------------------
+* Fixed ftp incorrect date/time format.
+* Improvements for ftp functions. 
+* Improvements for screen resolution at 800x600.
++ Added column information for attributes,owner,group to ftp manager.
+
+------------------------------------------------------------------------------------------------------
+3.0.250
+------------------------------------------------------------------------------------------------------
+* Fixed ftp date/time & improved ftp interface.
+* Fixed save to ftp bug.
+* Fixed property explorer bugs.
+* Fixed plugin wizard grammar error.
++ Added Javascript reserved words to javascript menu.
+
+------------------------------------------------------------------------------------------------------
+3.0.249
+------------------------------------------------------------------------------------------------------
+* Fixed open from web error.
+* Fixed load code explorer & function explorer when open from web.
+* Fixed missing save changes when file was opened using open from web.
+* Fixed missing preview in browser if iexplorer,firefox,opera,netscape don't exists.
+* Fixed bug for html intellisense. Previous help for empty line display previous tag.
+* Fixed save/restore toolbars positions.
+* Fixed tidy bug when active document is not a edit document.
+* Improved Toolbars only can be docked above.
+* Improved startup time. Speed up 20%.
+* Improvements tidy output.
++ Added information for Runtime & Sintax number errors.
++ Double click go to line in tidy output.
++ Double click in tidy task list executes selected task.
++ Language files for each html extension. Testing html & javascript.
+- Removed left,right and bottom dock panel. Problem with dock component.
+- Removed posibilities to undock toolbars. (Only Show/Hide)
+
+------------------------------------------------------------------------------------------------------
+3.0.248
+------------------------------------------------------------------------------------------------------
++ Tools Menu
+Validate HTML/XHTML
+Validate CSS
+Validate Hyperlinks
+Validate XML
++ Trial System (Testing)
++ Update checker for registered copy (Testing)
++ Help File
+
+* Improved Help File
+* Sorted countries for content language
+
+------------------------------------------------------------------------------------------------------
+3.0.247
+------------------------------------------------------------------------------------------------------
+- Improved plugin generator.
+
+------------------------------------------------------------------------------------------------------
+3.0.246
+------------------------------------------------------------------------------------------------------
+Fixed bugs for :
+- function explorer
+- code explorer
+- Tidy configuration problems
+- Tidy save settings
+- Default task for tidy on main toolbar
+- Missing close tag for htmlhelp.ini
+- Filename in print preview
+
+Added
+- toolbar to function explorer
+- toolbar to markup browser
+- toolbar to javascript browser
+- editor settings
+
+Improved
+- minor changes for markup browser
+- minor changes for javascript browser
+- changed icons for alert,confirm & prompt on main toolbar
+
+Removed
+- Plugins Menu. Moved to Tools Menu
+- View ->
+File explorer
+Javascript browser
+Markup Browser
+Clipboard
+Color Browser
+Quick Help
+Online Help
+Ansi Explorer
+Property Explorer
+
+------------------------------------------------------------------------------------------------------
+3.0.245
+------------------------------------------------------------------------------------------------------
++ Added
+* Fixed
+- Removed
+
+* Improved function explorer. Now jsplus can detect functions defined with a constructor "function ..." and "function expressions".
+
+Example:
+
+JSONIC.autoElement = function (n, f) {
+JSONIC.element[n.toLowerCase()] = f;
+};
+
+HuiUtil.setHuiDisplayed = function( isDisplayed )
+{
+/* code goes here */
+}
+
+Thank you to Douglas Crockford & Stevens Doug.
+
+------------------------------------------------------------------------------------------------------
+3.0.244
+------------------------------------------------------------------------------------------------------
++ Added icon for Find in Files
++ Display path file in statusbar when user clic on tab file.
+
+* Table cell
+* Ansi browser
+* Frame icon from htm toolbar
+* Item help for regular expression (file path error)
+* Icon for item help
+* Preview in browser only for active edit.
+* Insert array only for active edit.
+* Insert statements only for active edit.
+* Escape Character only for active edit.
+* Regular Expression only for active edit.
+* Insert pretemplate only for active edit.
+* Save to FTP only for active edit.
+
+- Refresh for javascript toolbar
+
+------------------------------------------------------------------------------------------------------
+3.0.240
+------------------------------------------------------------------------------------------------------
++ Popup Menu at Right click on editor.
++ Preview in browsers at right click. (iexplorer, firefox, netscape, opera)
++ Online help now read info from config path. The info is stored into help.ini. The config file from help files is not ready.
++ Item help at right click. You can get help for html tag & javascript code.
++ Edit|Word Count.
++ Edit|Column select.
+
+* Fixed JSLint links from toolbar & tools menu.
+* Functions menu has new 6 menu elements. (Date functions, Document Functions,Events, Math Functions,String Functions, Window Functions)
+* Fixed code explorer & function explorer.
+
+------------------------------------------------------------------------------------------------------
+3.0.234
+------------------------------------------------------------------------------------------------------
++ Configure browser paths
++ Preview in browser
++ Insert Cascading Style Block
++ Toolbar File|Open from FTP ...
++ Toolbar File|Open from WEB ...
+
+* Improved insert Style Sheet Link
+* Fixed removed temp files
+* Fixed code explorer & function explorer
+
+------------------------------------------------------------------------------------------------------
+3.0.230
+------------------------------------------------------------------------------------------------------
++ ASP MENU
++ ASP Includes
++ ASP Delimiter
++ ASP String Output
++ ASP Server Variable
++ ASP If Condition
++ ASP Else Condition
++ ASP End If Condition
+
+* Find In Files
+* Home Page Icon
+* MetaTag Wizard
+
+- Restore toolbars position (bug with restore_layout method) 
+
+------------------------------------------------------------------------------------------------------
+3.0.224
+------------------------------------------------------------------------------------------------------
++ Jslint features
++ Open from ftp
++ Save to ftp
++ Open from Web
++ Show/Hide toolbars
++ Save/Restore Toolbars
++ Plugins
++ Find in Files
++ Save As Template
+
+------------------------------------------------------------------------------------------------------
+3.0.170 Alpha 1 
+Jul/19/2005
+------------------------------------------------------------------------------------------------------
++ A new look
++ Docked toolbars
++ Html Intellisense
++ Improved File Explorer
++ Improved Javascript Explorer
++ Improved Html Explorer
++ Added Code Explorer
++ Added Property Explorer
++ Added Clipboard Window
++ Added Help Explorer
++ Added Tidy
++ Improved Character Browser
++ Improved Ansi Explorer
++ Improved Color Browser
++ Tabbed Panel
++ Improved Frames
+
+------------------------------------------------------------------------------------------------------
+2.1.25 Beta 5 
+May/29/2005
+------------------------------------------------------------------------------------------------------
+
+INI ERROR :
+-----------
+If the lastpath is equal with "Desktop" (in our language "Asztal"), then the same pah not found message appears. I think this would happen with any other strange paths.
+Status : Done.
+
+Format/Decrease Indent/Format/Increase Indent:
+-------------------------------------------
+After investigate another "free software" that uses codemax control this problem replicates again.
+You can check this from sourceedit editor at webpage : http://www.sourceedit.com
+I have discoverer that Indent/Outdent functions like Visual Basic. Try pressing Tab for indent & shift+tab
+for outdent. For this moment i think this "bug" leaves as "soft close". I will try to find another
+way to do that no using codemax methods. May be the codemax updates (at this this 4.x.x) has
+resolved this "problem" or may be implemented more events for this.
+Javascript Plus! uses codemax 2.2 (an older freeware release).
+
+View/Favourites Explorer
+I would remove the " :" after the "File" in the error message (~the one which comes up if you have opened that favourite already)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Status :Done.
+
+- how to delete a macro from the program?
+A.- The only way to delete a macro is overwrite.
+
+- how do you remeber what the 10th macro is? (as you can't give a name to the macro...)
+A.- The macro process is managed by codesense control. I was investigating if the control tell me
+in any events when finished the macro process. The codesense control don't tell me the macro
+process. (almost in 2.x).
+
+- you are able to define function keys even if they were already in use (fe. Ctrl+M,M)
+A.- I try saving Ctrl+N (New Document) as Macro 1. When i pressed Ctrl+N the New Document run.
+But if i select "run macro" and select Macro 1 the "macro code" is fired.
+
+Settings/Configure Editor
+-------------------------
+You may improve it later, i would rename it to "Configure Colors" or "Configure Editor Colors".
+- if you modify "comment" colors, the "<!--" part won't change, only the "//" parts;
+Status : Done.
+
++ Added a Copy button in Insert Predefined Template
++ Removed insert line.
++ Added a save macro to hard disk.
++ Fixed bug with "strange paths".
++ Fixed coloured syntax for html & javscript
++ Fixed & for email plus.
++ Add new folders for :
+- templates (user templates & predefined templates)
+- help (jsplus help, html css & javascript)
+- js (user files)
+- macros (saved macros)
+- pal (color palettes for color mistakes) 
+
+Plus!/Drop Down Menu
+--------------------
+You should rename "Button Text" to something like "Submit text" (I've noticed that it's not a
+submit input, but it works as a submit button). Also, you may want to add "Item name" to the list.
+* Done
+
+HTML/Image
+----------
+- choose an image and align it to "At the bottom": there's no align HTML code;
+* Done.
+
+(not big-bug)- try to fill up all possibilities: there are too many blank spaces in the code;
+* Done.
+
+It would be also good if the parts would follow the ABC (like: "A"lt/"B"order/"C"lass/ecw.)
+* It's a good idea. I will change this in a future.
+
+HTML/Forms
+---------
+Is there a reason to choose from Mail/FTP/ecw.?
+* : Yes/No. All give flexibility.
+
+I suggest to add enctype to the script. Usually (at form tags),
+* : Done.
+
+HTML/Forms/Checkbox
+------------------
+1 more space between type and name values.
+* : Done.
+
+JavaScript/Insert User Templates
+--------------------------------
+It's has the same problem as some other window: click on Ok and it won't unload.
+* Done.
+
+- how to delete/modify a template?
+* : Now you can delete/modify a template.
+
+------------------------------------------------------------------------------------------------------
+2.1.25 Beta 4
+May/26/2005.
+------------------------------------------------------------------------------------------------------
+
+File/Exit: "At first, you should ask if you want to SAVE the user's file and only after this, you can ask if he wants to close the program itself. "
+R. Done.
+
+JavaScript/window
+-----------------
+- Window alert: i think it shouldn't be an alert-prompt combo. I think a right example would be:
+Code:
+function my_alert()
+{
+alert("Your text");
+}
+R. Done.
+
+Window prompt: the Window alert's script would be better here;
+R. Done.
+
+Window confirm: there's a missing last "}" sign from the end of script;
+R. Done.
+
+Window popup: see Plus!/Popup window below;
+R.- Done.
+
+Plus!/Image Rollover : I would attach a setting for image border.
+R.- Done.
+
+Plus!/Popup Window :
+"Function should at the first line and should be separated from the others."
+R.- Done.
+
+"The window won't unload automaticly after pressing Ok."
+R.- Done.
+
+"Also, other script haven't got the "<script.. " and the closeing tag, so it should be removed."
+R.- Done.
+
+"It would be wise to place a browse icon next to the "Link" field, so the user can select the
+file he want to show to the visitors."
+R.- Done.
+
+"I think the "Window name" is missleading, maybe "Window identifier" would be better."
+R.- Done.
+
+Plus!/Configure Meta Tags
+- <META http-equiv="Content-Type" CONTENT="text/html; charset=iso-8859-1"> This isn't very good, as fe. me is useing iso-2, instead of 1. I suggest to remove this feature or to add a combo box, so the user can choose the encoding.
+- R. Done. "charset=iso-8859-1". Removed.
+
+Plus!/Email ...
+"email-form": you must put &nbsp; characters between the words instead of spaces or it mightn't work with some e-mail clients (fe. ms outlook). I think you may use the "&body=text_to_message_body", but not all e-mail client can handle the &body (fe. some mozilla-based). Also, if you want to use it, you can use the "%0A" as the code of break line ("fe: &body=Dear&nbsp;Customer!%0A%0AI&nbsp;hope&nbsp;you&nbsp;enjoyed&nbsp;your&nbsp;stay!%0A%0AYour&nbsp;sincerely,%0AThe&nbsp;Director"). Also, it would be wise to use <form action=mailto:... intead of the onclick (i don't know who'd use this onclick method with a form...) fe:
+Code:
+<form action="mailto:yourname@yourcompany.com&subject=Homepage" method="POST" ENCTYPE="text/plain">
+<textarea name="Information" cols="50" rows="10"></textarea>
+<input type="submit" value="Send">
+</form>
+
+Even better, if first you use the action to send the form to a script, which'll check the contents of the form.
+R.- Done. Changed to Email Form.
+
+"Search/Replace : I would rename it to "Find & Replace"."
+R.- Finally i keept Find & replace. Wink
+
+------------------------------------------------------------------------------------------------------
+2.1.25 Beta 3 
+May/25/2005
+------------------------------------------------------------------------------------------------------
+"File: You can't close "Noname 1". Not a big-bug, just to mention it. "
+R. This will be fixed on future releases not in 2.1.x or 2.x. Wink
+
+Functions/Refresh
+"As i told you, the "Refresh" word is missleading. I would either remove or rename this option (fe. to Save).
+- Click on Refresh: "Update file" This sentence isn't user-friendly Smile. Let ask it: "Do you want to update your project?"
+- If you click on "Yes", then choose "Cancel": "An error a try to update file." Grammar problems, but i think you don't need any error messages here, if the user click on the Cancel button (~so he might noticed that Smile."
+R.- Done.
+
+Search : "It look that searching is working for the first success or not working for me."
+Search/Find: "the searching stops and is unloading itself at the first success ..."
+R.- Very strange. The edit features are management for the codesense control. I did any tipical
+exercises without problem. May be that your country codepage is not fully supported by the
+codesense control. You can post this question in winmain forum. (http://www.winmain.com)
+
+"Search/Replace : I would rename it to "Find & Replace"."
+R.- Done.
+
+"I had to "Bárbár" and wanted to change them to "Barbár", but it didn't work;"
+R.- This was replicated using BárBár or Bárbár words and the search & replace functions works
+perfectly. If i'm wrong please give to me an example or step by step to try to reproduce the bug.
+
+Format/Decrese Indent : "It look that you must select at least 2 lines to decrease it for a text."
+R.- Testing ...
+
+Format/Increse Indent : "It won't work with text selecting as it'll delete it..."
+R.- Testing ...
+
+Insert/Insert File... : "I would rename it to "Insert File Contents...". "
+R. Done
+
+Functions : "Delete" (Improvements)
+R.- This features was deleted.
+
+JavaScript/IF "if .. the" I think you wanted to write "if ... then ... else"
+R.- Done.
+
+Plus! : "I would share Plus! to technical parts, fe. the Colored Scrollbar and the Mouseover Text links are useing CSS technology, so a CSS sub menu should be created. "
+R. Done.
+
+Utilities :
+"You should move "Validate..." things to "Help/Validate/Validate ...".
+"I would move the Utilities below "Plus!", so user can still access it from Plus!/Utilities/Utility name. "
+R.- Done.
+
+Shell
+"I think you don't need it as a main File menu item, maybe move it below Plus! (so it'd be Plus!/Shell/Operation name)"
+"you can still use the button, even if you can't see the explorer bar; "
+R.- Done.
+
+Shell/File Find... "Not working for me under xp sp2. (nothing happens)"
+R.- Very strange. This is called using API Windows Interface. The find command is "find".
+This works perfectly. I think regional settings problems ...
+
+Shell/File Explorer... "You can call it on the same name, "Windows Explorer"."
+R.- Done. 
+
+2.1.25 (May/21/2005) Beta 2
++ Includes Javascript Help (.hlp) (rev1)
++ Improves the script features
+- deleted the project features
+- deleted the Javascript Quick Help
++ minor bugs fixed
+
+2.1.25 (May/18/2005) Beta 1
+* Many initial bugs fixed.
++ Includes 11 Javascript Plus! Wizards (Add to Favorites, Colored Scrollbar, Drop Down Menu, Email Link, IFrame Wizard, Image Rollover, Last Modified Date, Left Menu, Meta Tag,  MouseOver Text Links, Popup Window)
++ Include 12 Html Wizards (Form, CheckBox, Radio, Listbox, ComboBox, TextBox,  TextArea, Button, Hidden Entry, File Attach, Image and Tables)
++ Every Html Wizard include the Event Wizard. Now setup events for html tags made easy 
++ For beginners include wizard for creating variables, arrays , regular expression, alert window, confirm window and prompt window.
++ Array wizard include 7 templates ready to use (Days, Short month names,  Long month names, numbers, colors, short name country, long name country)
++ Now create a regular expression is too easy using the regular expression Wizard  
++ Includes help reference for Javascript, Html and CSS.
++ Get instant help for common html and html attributes quickly and easy.
++ Include a Javascript Object Browser (like the Visual Basic Object Browser)  
++ Includes 120 templates ready to use.   
++ Include 9 toolbars to make easy the Javascript development (file, edit, functions, html wizards, javascript, help panel, shell and html attributes help)
++ Integrated panel help (Javascript Language, Windows Ansi Characters, HTML 4.01, CSS1, CSS2, Javascript Runtime Errors and Javascript Sintax Errors)
++ Include 4 files panels (My Files, My Media, My Images and My Favorites)
++ Include a picture preview 
++ Support for function overloading 
+
+1.00 (01/04/2005)
+- Initial release.
