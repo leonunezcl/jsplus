@@ -1,0 +1,11 @@
+function ComparePosNegVal(n)
+{
+  var s;
+  var v1 = Math.abs(n);  
+  var v2 = Math.abs(-n);
+  if (v1 = v2)
+    s = "The absolute values of " + n + " and "
+    s += -n + " are identical.";
+  return(s);
+}
+

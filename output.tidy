@@ -1,0 +1,760 @@
+<html>
+<head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 1st February 2005), see www.w3.org">
+    <meta name="DESCRIPTION" content="Javascript Plus! Home Page">
+    <meta name="KEYWORDS" content=
+    "javascript, vb, vb6, foros, shareware, freeware, proyectos, submitir, inscribir, vbscript, asp, php, java, xml, php, jscript, .NET, software chileno, chile, software de chile, vbsoftware, editor de javascript, easyquery, javascript plus, jspad, project explorer, project backup, explorer, backup, gratis, shareware, internet, editor, freeware, aplicaciones gratis, download, utilitarios, evaluar, java, php, perl, cgi, html, hojas de estilo, programacion, RAD, visual basic, eclipse, builder, microsoft, sun, project explorer, javascript plus, jspad, easyquery, project compare, activex, componentes,c#, .net">
+    <meta name="Resource-type" content="Document">
+    <meta name="Revisit-after" content="1 days">
+    <meta name="robots" content="ALL">
+    <meta name="rating" content="general">
+    <link rel="SHORTCUT ICON" href=
+    "http://www.vbsoftware.cl/vbsoftware.ico">
+
+    <title>Javascript Plus! Home Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" bgcolor="#FFFFFF" marginheight=
+"0" marginwidth="0">
+    <a name="top"></a>
+
+    <table bgcolor="#FFFFFF" border="0" cellpadding="0"
+    cellspacing="0" width="771">
+        <tbody>
+            <tr>
+                <td width="60%">
+                    <p style="margin-top: 0; margin-bottom: 0">
+                    <img border="0" src="images/cabezera.jpg"
+                    width="1002" height="86"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td background="images/navbg.gif" bgcolor="#E2E2E2"
+                width="100%"><b><font size="1"><script language=
+                "Javascript" type="text/javascript" src=
+                "js/title.js">
+</script></font></b></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="background-color: rgb(247, 247, 247);">
+        <table border="0" cellpadding="0" cellspacing="0" width=
+        "775">
+            <tbody>
+                <tr>
+                    <td bgcolor="#F7F7F7" valign="top" width="169">
+                        <table border="0" cellpadding="4"
+                        cellspacing="4" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/home.gif" width="15"
+                                    height="15"> Home<br></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/down.gif" width="16"
+                                    height="16"> <a href=
+                                    "download.htm">Download</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/comprar.gif" width="16"
+                                    height="16"> <a href=
+                                    "register.htm">Order
+                                    Now</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img src="images/info.gif"
+                                    align="middle" height="14"
+                                    width="14"> <a href=
+                                    "screenshots.html">Screenshots</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/awards.gif" width="16"
+                                    height="16"><a href=
+                                    "awards.htm">Awards</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/forum.gif" width="16"
+                                    height="16"> <a href=
+                                    "http://www.vbsoftware.cl/forum">
+                                    Forum</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/email.gif" width="16"
+                                    height="16"> <a href=
+                                    "mailto:contact@vbsoftware.cl">Email</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="top" width="100%">
+                                    <img border="0" src=
+                                    "images/soporte.gif" width="16"
+                                    height="16"> <a href=
+                                    "mailto:support@vbsoftware.cl">Support</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p style="text-align: center;">
+                        <!-- Begin Nedstat Basic code -->
+                        <!-- Title: vbsoftware -->
+                        <!-- URL: http://www.vbsoftware.cl/ -->
+                        <script language="JavaScript" type=
+                        "text/javascript" src=
+                        "http://m1.nedstatbasic.net/basic.js">
+</script><script language="JavaScript" type="text/javascript">
+<!--
+  nedstatbasic("ADQ1LAOXzXu9fy9OaFHUeqM9LPzw", 0);
+// -->
+</script> <noscript><a target="_blank"
+                        href="http://www.nedstatbasic.net/stats?ADQ1LAOXzXu9fy9OaFHUeqM9LPzw">
+                        <img src=
+                        "http://m1.nedstatbasic.net/n?id=ADQ1LAOXzXu9fy9OaFHUeqM9LPzw"
+                        border="0" width="18" height="18" alt=
+                        "Nedstat Basic - Web site estad?ticas gratuito El contador para sitios web particulares">
+                        <br></a><a target="_blank" href=
+                        "http://www.nedstatbasic.net/">Contador
+                        gratuito</a></noscript> 
+                        <!-- End Nedstat Basic code -->
+                         <!--webbot bot="HTMLMarkup" startspan -->
+                        <!-- Begin Nedstat Basic code -->
+                        <!-- Title: 100 % Software Visual Basic -->
+                        <!-- URL: http://www.vbsoftware.cl -->
+                        <script language="JavaScript" src=
+                        "http://m1.nedstatbasic.net/basic.js" type=
+                        "text/javascript">
+</script> <script language="JavaScript" type="text/javascript">
+<!--
+ nedstatbasic("ABZFhQ40frSFMTYrML+qi6XgEKzg", 0);
+// -->
+</script> <noscript><a target="_blank"
+                        href="http://v1.nedstatbasic.net/stats?ABZFhQ40frSFMTYrML+qi6XgEKzg">
+                        <img src=
+                        "http://m1.nedstatbasic.net/n?id=ABZFhQ40frSFMTYrML+qi6XgEKzg"
+                        border="0" nosave="" width="18" height=
+                        "18"></a></noscript> 
+                        <!-- End Nedstat Basic code -->
+                        <!--webbot bot="HTMLMarkup" endspan i-checksum="36260" --></p>
+
+                        <p align="center"><script language=
+                        "javascript" type="text/javascript">
+s="na";c="na";j="na";f=""+escape(document.referrer)
+</script></p>
+                    </td>
+
+                    <td bgcolor="#E2E2E2" width="1"><img src=
+                    "images/pixel.gif" border="0" height="1" width=
+                    "1"></td>
+
+                    <td bgcolor="#FFFFFF" valign="top" width="604">
+                        <!-- Top Bar -->
+
+                        <table border="0" cellpadding="0"
+                        cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="30%">
+                                        <p align="center">
+                                        <img border="0" src=
+                                        "images/jsplus.gif" width=
+                                        "32" height="32">
+                                        <font color=
+                                        "#003495">Javascript Plus!
+                                        <script language=
+                                        "Javascript" type=
+                                        "text/javascript" src=
+                                        "js/version.js">
+</script></font></p>
+                                    </td>
+
+                                    <td align="right" valign=
+                                    "middle" width="70%">
+                                        <div style=
+                                        "padding-top: 8px; padding-right: 8px;">
+                                        <a target="_blank"
+                                            href="dowload.htm"><img src="images/btn_down.gif"
+                                            alt="Download" border=
+                                            "0" height="22" width=
+                                            "108"></a> &nbsp;&nbsp;
+                                            <a target="_blank"
+                                            href="http://www.regnow.com/softsell/nph-softsell.cgi?item=12453-1">
+                                            <img src=
+                                            "images/btn_buy.gif"
+                                            alt="Purchase" border=
+                                            "0" height="22" width=
+                                            "100"></a>
+
+                                            <div class="price">
+                                                Only <b>$30</b>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><!-- Top Bar -->
+
+                        <table border="0" cellpadding="7"
+                        cellspacing="7" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="100%">
+                                        <h1>Complete Javascript
+                                        editor</h1>
+
+                                        <table align="right"
+                                        border="0" cellpadding="2"
+                                        cellspacing="2" width=
+                                        "180">
+                                            <tbody>
+                                                <tr>
+                                                    <td align=
+                                                    "right">
+                                                    <a target=
+                                                    "_blank" href=
+                                                    "imgv2/fullmain.jpg">
+                                                    <img src=
+                                                    "imgv2/shot.jpg"
+                                                    border="0"
+                                                    height="199"
+                                                    width=
+                                                    "270"></a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td align=
+                                                    "right">
+                                                    <img src=
+                                                    "images/info.gif"
+                                                    align="middle"
+                                                    height="14"
+                                                    width=
+                                                    "14">&nbsp;<a target="_blank"
+                                                    href=
+                                                    "screenshots.html">
+                                                    More
+                                                    screenshots</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <p>Javascript Plus! is a
+                                        complete Javascript editor
+                                        a basic html editor for
+                                        windows.</p>
+
+                                        <p>Clean and convenient
+                                        interface, quick startup,
+                                        true flexibility and
+                                        powerful features allow you
+                                        to create and edit
+                                        Javascript.</p>
+
+                                        <p><b>JavaScript Plus!</b>
+                                        makes it easy to handle
+                                        JavaScript. This version
+                                        includes 11 common
+                                        Javascript templates. Setup
+                                        the parameters and your are
+                                        ready to use!. Why would
+                                        you buy another&nbsp;
+                                        software if you can get
+                                        <b>all-in-one</b> ?</p>
+
+                                        <p>We say that Javascript
+                                        Plus! is a good editor for
+                                        Javascript, low cost,
+                                        powerfull, easy to use and
+                                        the most important for our
+                                        users. We offer free
+                                        updates for registered
+                                        users.</p>
+
+                                        <p>Are yoy ready to know
+                                        the Javascript Plus Key
+                                        Features ?. Please take a
+                                        look about the Javascript
+                                        Plus key features. Enjoy
+                                        your stay!.</p>
+
+                                        <p><span class="list">Key
+                                        Features</span></p>
+
+                                        <ul>
+                                            <li>Advanced JavaScript
+                                            editing. Full support
+                                            for all javascript
+                                            objects, methods,
+                                            properties and events.
+                                            (<a target="_blank"
+                                            href=
+                                            "imgv2/autocomplete1.jpg">
+                                            javascript objects</a>,
+                                            <a target="_blank"
+                                            href="imgv2/autocomplete2.jpg">
+                                            javascript methods</a>
+                                            and <a target="_blank"
+                                            href=
+                                            "imgv2/autocomplete3.jpg">
+                                            javascript user
+                                            functions</a>)</li>
+
+                                            <li>Includes 11
+                                            Javascript Plus!
+                                            Wizards (<a target=
+                                            "_blank" href=
+                                            "imgv2/addfavorites.jpg">
+                                            Add to Favorites</a>,
+                                            <a target="_blank"
+                                            href="imgv2/colscrollbar.jpg">
+                                            Colored Scrollbar</a>,
+                                            <a target="_blank"
+                                            href="imgv2/dropdown.jpg">
+                                            Drop Down Menu</a>,
+                                            <a target="_blank"
+                                            href="imgv2/emaillink.jpg">
+                                            Email Link</a>,
+                                            <a target="_blank"
+                                            href="imgv2/iframe.jpg">
+                                            IFrame Wizard</a>,
+                                            <a target="_blank"
+                                            href="imgv2/imgrollover.jpg">
+                                            Image Rollover</a>,
+                                            <a target="_blank"
+                                            href="imgv2/lastdate.jpg">
+                                            Last Modified Date</a>,
+                                            <a href=
+                                            "imgv2/leftmenu.jpg">Left
+                                            Menu</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/metatagw.jpg">Meta
+                                            Tag</a>,&nbsp;
+                                            <a target="_blank"
+                                            href="imgv2/mouseovert.jpg">
+                                            MouseOver Text
+                                            Links</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/popupw.jpg">Popup
+                                            Window</a>)</li>
+
+                                            <li>Includes 12 Html
+                                            Wizards (<a target=
+                                            "_blank" href=
+                                            "imgv2/formwizard.jpg">Form</a>,
+                                            <a target="_blank"
+                                            href="imgv2/checkbox.jpg">
+                                            CheckBox</a>, <a href=
+                                            "imgv2/radio.jpg">Radio</a>,
+                                            <a target="_blank"
+                                            href="imgv2/listbox.jpg">
+                                            Listbox</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/combobox.jpg">ComboBox</a>,
+                                            <a target="_blank"
+                                            href="imgv2/textbox.jpg">
+                                            TextBox</a>,&nbsp;
+                                            <a target="_blank"
+                                            href="imgv2/textarea.jpg">
+                                            TextArea</a>,
+                                            <a target="_blank"
+                                            href="imgv2/button.jpg">
+                                            Button</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/hidden.jpg">Hidden
+                                            Entry</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/fileattach.jpg">File
+                                            Attach</a>, <a target=
+                                            "_blank" href=
+                                            "imgv2/image.jpg">Image</a>
+                                            and <a target="_blank"
+                                            href=
+                                            "imgv2/tables.jpg">Tables</a>)</li>
+
+                                            <li>Every Html Wizard
+                                            include the Event
+                                            Wizard. Now setup
+                                            events for html tags
+                                            made easy <a target=
+                                            "_blank" href=
+                                            "imgv2/eventlist.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>For beginners
+                                            includes wizard for
+                                            creating <a target=
+                                            "_blank" href=
+                                            "imgv2/variable.jpg">variables</a>,
+                                            <a target="_blank"
+                                            href="imgv2/array.jpg">arrays</a>
+                                            , <a target="_blank"
+                                            href=
+                                            "imgv2/regexp.jpg">regular
+                                            expression</a>, alert
+                                            window, confirm window
+                                            and prompt window.</li>
+
+                                            <li>Array wizard
+                                            includes 7 templates
+                                            ready to use (Days,
+                                            Short months
+                                            names,&nbsp; Long
+                                            months names, numbers,
+                                            colors, short countries
+                                            names, Long countries
+                                            names)</li>
+
+                                            <li>Now create a
+                                            regular expression is
+                                            too easy using the
+                                            regular expression
+                                            Wizard <a target=
+                                            "_blank" href=
+                                            "imgv2/regexp.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Includes help
+                                            reference for
+                                            Javascript, Html and
+                                            CSS.</li>
+
+                                            <li>Get instant help
+                                            for <a target="_blank"
+                                            href=
+                                            "imgv2/htmlhelp.jpg">common
+                                            html</a> and <a target=
+                                            "_blank" href=
+                                            "imgv2/htmlitemhelp.jpg">
+                                            html attributes</a>
+                                            quick and easy.</li>
+
+                                            <li>Syntax Highlighting
+                                            for Javascript , HTML
+                                            and CSS <a target=
+                                            "_blank" href=
+                                            "imgv2/sintax.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Includes a
+                                            Javascript Object
+                                            Browser (like the
+                                            Visual Basic Object
+                                            Browser) <a target=
+                                            "_blank" href=
+                                            "imgv2/objbrowser.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Includes 120
+                                            templates ready to
+                                            use.&nbsp; <a target=
+                                            "_blank" href=
+                                            "imgv2/template.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Includes 9 toolbars
+                                            to make easy the
+                                            Javascript development
+                                            (file, edit, functions,
+                                            html wizards,
+                                            javascript, help panel,
+                                            shell and html
+                                            attributes help)</li>
+
+                                            <li>Test your
+                                            javascript functions
+                                            using the test wizard
+                                            <a target="_blank"
+                                            href="imgv2/tfunction.jpg">
+                                            <img src=
+                                            "images/info.gif" alt=
+                                            "More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Integrated image
+                                            browser <a target=
+                                            "_blank" href=
+                                            "imgv2/ibrowser.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Includes a basic
+                                            FTP&nbsp; <a target=
+                                            "_blank" href=
+                                            "imgv2/ftp.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Integrated File
+                                            Explorer <a target=
+                                            "_blank" href=
+                                            "imgv2/fexplorer.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Integrated panel
+                                            help (Javascript
+                                            Language, Windows Ansi
+                                            Characters, HTML 4.01,
+                                            CSS1, CSS2, Javascript
+                                            Runtime Errors and
+                                            Javascript Sintax
+                                            Errors)</li>
+
+                                            <li>Includes 4 files
+                                            panels (My Files, My
+                                            Media, My Images and My
+                                            Favorites)</li>
+
+                                            <li>Search and Replace
+                                            with Regular Expression
+                                            Support</li>
+
+                                            <li>Integrated
+                                            Javascript function
+                                            explorer <a target=
+                                            "_blank" href=
+                                            "imgv2/funlist.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Countless goodie
+                                            features (bracket
+                                            matching, line
+                                            highlighting, text
+                                            indentation...)</li>
+
+                                            <li>Unlimited
+                                            Undo,Redo</li>
+
+                                            <li>Support for user
+                                            defined templates</li>
+
+                                            <li>Includes a picture
+                                            preview <a target=
+                                            "_blank" href=
+                                            "imgv2/picpreview.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Support for
+                                            macros</li>
+
+                                            <li>Includes an Activex
+                                            browser <a target=
+                                            "_blank" href=
+                                            "imgv2/activex.jpg"><img src="images/info.gif"
+                                            alt="More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Support for
+                                            function overloading
+                                            <a target="_blank"
+                                            href="imgv2/foverload.jpg">
+                                            <img src=
+                                            "images/info.gif" alt=
+                                            "More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Create a function
+                                            is easy with the
+                                            function wizard
+                                            <a target="_blank"
+                                            href="imgv2/function.jpg">
+                                            <img src=
+                                            "images/info.gif" alt=
+                                            "More info" align=
+                                            "absbottom" border="0"
+                                            height="14" width=
+                                            "14"></a></li>
+
+                                            <li>Easy to
+                                            configure.</li>
+                                        </ul>
+
+                                        <p>Click <img src=
+                                        "images/info.gif" align=
+                                        "absbottom" border="0"
+                                        height="14" width="14"> for
+                                        a screenshot, demo or
+                                        detailed description.</p>
+
+                                        <div style=
+                                        "border-top: 1px solid rgb(221, 221, 221); padding-top: 15px;">
+                                        <div style=
+                                        "width: 70%; float: left;">
+                                            <div class="listitem">
+                                                <img src=
+                                                "images/ico_is_guarantee.gif"
+                                                    align="middle"
+                                                    height="16"
+                                                    width="16">
+                                                    Unconditional
+                                                    30-Day
+                                                    <b>Money-Back
+                                                    Guarantee</b>
+                                                </div>
+
+                                                <div class=
+                                                "listitem">
+                                                    <img src=
+                                                    "images/ico_is_secure.gif"
+                                                    align="middle"
+                                                    height="16"
+                                                    width="16">
+                                                    Secure Online
+                                                    Order Form with
+                                                    SSL encryption
+                                                    via RegNow
+                                                </div>
+
+                                                <div class=
+                                                "listitem">
+                                                    <img src=
+                                                    "images/ico_is_windows.gif"
+                                                    align="middle"
+                                                    height="16"
+                                                    width="16">
+                                                    Supports
+                                                    Windows XP,
+                                                    2000, NT, Me,
+                                                    98
+                                                </div>
+
+                                                <div class=
+                                                "listitem">
+                                                    <img src=
+                                                    "images/ico_is_free.gif"
+                                                    align="middle"
+                                                    height="16"
+                                                    width="16">
+                                                    Free Updates
+                                                </div>
+                                            </div>
+
+                                            <div style=
+                                            "width: 25%; text-align: right; float: right;">
+                                            <a target="_blank"
+                                                href="http://www.regnow.com/softsell/nph-softsell.cgi?item=12453-1">
+                                                <img style=
+                                                "margin-bottom: 10px;"
+                                                src=
+                                                "images/btn_purchase.gif"
+                                                alt="Purchase"
+                                                border="0" height=
+                                                "30" width=
+                                                "140"></a>
+                                                <a target="_blank"
+                                                href=
+                                                "download.htm"><img src="images/btn_download.gif"
+                                                alt="Download"
+                                                border="0" height=
+                                                "30" width=
+                                                "140"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                    <td rowspan="2" bgcolor="#FFFFFF" width="1">
+                    <img src="images/pixel.gif" border="0" height=
+                    "1" width="1"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td background="images/navbg.gif" bgcolor="#E2E2E2"
+                width="100%">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="771">
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="3" cellspacing=
+                    "3" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="55%"><font color=
+                                "#808080">Created by Luis Nunez
+                                Ibarra &#169; <img border="0" src=
+                                "images/flag_cl.gif" width="21"
+                                height="15"></font></td>
+
+                                <td class="small" align="right"
+                                width="45%"><font color=
+                                "#808080">Copyright &#169;
+                                2002-2005 VBSoftware</font></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

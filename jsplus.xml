@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>3.01</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 3.0.1.35 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>VBSoftware</Company_Name>
+		<Address_1>Ureta Cox 1050 depto 208</Address_1>
+		<Address_2 />
+		<City_Town>Santiago</City_Town>
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Chile</Country>
+		<Company_WebSite_URL>http://www.vbsoftware.cl/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Luis</Author_First_Name>
+			<Author_Last_Name>Nunez</Author_Last_Name>
+			<Author_Email>contact@vbsoftware.cl</Author_Email>
+			<Contact_First_Name>Luis</Contact_First_Name>
+			<Contact_Last_Name>Nunez</Contact_Last_Name>
+			<Contact_Email>contact@vbsoftware.cl</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>sales@vbsoftware.cl</Sales_Email>
+			<Support_Email>support@vbsoftware.cl</Support_Email>
+			<General_Email>contact@vbsoftware.cl</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>JavaScript Plus!</Program_Name>
+		<Program_Version>6.1</Program_Version>
+		<Program_Release_Month>01</Program_Release_Month>
+		<Program_Release_Day>28</Program_Release_Day>
+		<Program_Release_Year>2008</Program_Release_Year>
+		<Program_Cost_Dollars>45</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Shareware</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>WinME,Windows2000,WinXP,Windows2003,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Development Tools</Program_Specific_Category>
+		<Program_Category_Class>Web Development::Java &amp; JavaScript</Program_Category_Class>
+		<Program_System_Requirements />
+		<File_Info>
+			<File_Size_Bytes>2424840</File_Size_Bytes>
+			<File_Size_K>2368</File_Size_K>
+			<File_Size_MB>2.31</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>Y</Has_Expire_Info>
+			<Expire_Count>20</Expire_Count>
+			<Expire_Based_On>Uses</Expire_Based_On>
+			<Expire_Other_Info>Remember unregistered version</Expire_Other_Info>
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>javascript , javascript editor, javascript IDE, javascript authoring tool, javascript syntax , Web Design Tool, Web Development Tool, Web Design, Web Development, Webmaster</Keywords>
+			<Char_Desc_45>JavaScript Plus! - Advanced JavaScript editor</Char_Desc_45>
+			<Char_Desc_80>JavaScript Plus! - Advanced JavaScript editor for windows.</Char_Desc_80>
+			<Char_Desc_250>JavaScript Plus! is an advanced JavaScript editor for windows. Modern, clean and convenient interface, quick startup, true flexibility and powerful features allow you to create and edit JavaScript. </Char_Desc_250>
+			<Char_Desc_450>JavaScript Plus! is an advanced javascript editor for windows. Modern, clean and convenient interface, quick startup, true flexibility and powerful features allow you to create and edit JavaScript.</Char_Desc_450>
+			<Char_Desc_2000>JavaScript Plus! is an advanced javascript editor for windows. Modern, clean and convenient interface, quick startup, true flexibility and powerful features allow you to create and edit JavaScript.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.vbsoftware.cl/</Application_Info_URL>
+			<Application_Order_URL>http://www.regnow.com/softsell/nph-softsell.cgi?item=12453-1</Application_Order_URL>
+			<Application_Screenshot_URL>http://www.vbsoftware.cl/jspad/images/main.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL>http://www.vbsoftware.cl/jspad/images/jsplus.gif</Application_Icon_URL>
+			<Application_XML_File_URL>http://www.vbsoftware.cl/jspad/jsplus.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.vbsoftware.cl/jspad/setup/setup.exe</Primary_Download_URL>
+			<Secondary_Download_URL />
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Javascript Plus! Editor v6.1
+01/28/2008
+==================================
+Copyright © 2002-2008 VBSoftware
+Homepage: http://www.vbsoftware.cl/
+E-mail  : support@vbsoftware.cl
+
+What is Javascript Plus!
+----------------------------
+Javascript Plus! is an advanced Javascript editor for windows. 
+Modern, clean and convenient interface, quick startup, true flexibility and powerful features allow 
+you to create and edit Javascript.
+
+Main Features 
+-----------------
+- Clean &amp; powerfull interface. A modern interface like Visual Studio .NET develoment environment. 
+- Javascript Intellisense. Get instant information for javascript objects, methods , properties and user functions.
+- HTML  Intellisense. Get instant information for html tags , attributes &amp; events. 
+- Explore functions using the function explorer. 
+- Explore your html documents using the Html explorer. View images, hiperlinks, scripts &amp; sheets style reference. 
+- Analize and Search for Errors using the code analizer. 
+- Includes Tidy. (Powerful html validator). Using tidy you can clean html, convert to XHTML, convert to xml, indent html tags, validate &amp; fix html, validate html. 
+- Integrated Object Browser. Explore all javascript objects, method and properties. 
+- Expand the environment using plugins. Build your own plugin using activex dll. Javascript Plus! includes a Visual Basic 6.0 sample project ready to use. 
+- Preview your file in browser. Javascript Plus! supports Internet Explorer, Mozilla Firefox, Netscape &amp; Opera. 
+- Includes 18 Built in Wizards (Add to Favorites, Calendar, Countries Menu, Coloured Scrollbar, Drop Down Menu, Email Link, IFrame Wizard, Image Rollover, Last Modified Date, Left Menu, Meta Tag,  MouseOver Text Links, Popup Window, Page Transition, Tree Menus, SlideShow, Tabbed Menu, Popup Menu) 
+- Macro supports.
+
+SHAREWARE
+---------------
+Javascript Plus! is not free software. You may use this software for 
+evaluation purposes without charge for 20 uses. If you use 
+this software after the 20 use, you must pay 
+registration fee. See 'How to register' on the Online Manual.
+
+Distribution
+-------------
+You may distribute the evaluation version of this software and 
+documentation in its unmodified form via electronic means. But you 
+should not charge or requesting donations for any such copies however 
+made and from distributing the software and/or documentation with 
+other products without the author's written permission.
+
+System Requirement
+------------------------
+* Windows 98/Me/NT4/2000/XP.
+* IE 6 or higher for browser feature (optional).
+
+Installation
+-------------
+IMPORTANT!!!
+- remove older Javascript Plus! version first.
+
+- Execute setup.exe.
+
+Remove
+----------
+Run 'Uninstall' on the Javascript Plus! Start Menu folder or open 'Add/Remove 
+Programs' in Control Panel and double-click 'Javascript Plus! 6.1' in the list 
+box.
+
+Feedback
+-----------
+For feedback, questions and any comments:
+- E-mail          support@vbsoftware.cl 
+- sales	      sales@vbsoftware.cl
+- contact       contact@vbsoftware.cl
+- Homepage  http://www.vbsoftware.cl/</Distribution_Permissions>
+		<EULA>JavaScript Plus!. Copyright © 2008 Luis Nunez
+
+END-USER LICENSE AGREEMENT
+Important - read carefully:
+
+This End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and the mentioned author of this Software for the software product identified above, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+1. GRANT OF LICENSE. 
+
+This EULA grants you the following rights: Installation and Use. You may install and use the SOFTWARE PRODUCT on a single computer.
+ 
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.
+
+Limitations on Reverse Engineering, Decompilation, and Disassembly. You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.
+
+Separation of Components. The SOFTWARE PRODUCT is licensed as a single product. Its component parts may not be separated for use on more than one computer. Software Transfer. You may permanently transfer all of your rights under this EULA, provided the recipient agrees to the terms of this EULA. 
+
+Distribution. The SOFTWARE PRODUCT may not be sold or be included in a product or package which intends to receive benefits through the inclusion of the SOFTWARE PRODUCT. The SOFTWARE PRODUCT may be included in any free or non-profit packages or products.
+
+3. COPYRIGHT.
+All title and copyrights in and to the SOFTWARE PRODUCT (including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the SOFTWARE PRODUCT), the accompanying printed materials, and any copies of the SOFTWARE PRODUCT are owned by the Author of this Software. The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions. Therefore, you must treat the SOFTWARE PRODUCT like any other copyrighted material except that you may install the SOFTWARE PRODUCT on a single computer provided you keep the original solely for backup or archival purposes.
+
+
+LIMITED WARRANTY
+
+NO WARRANTIES. 
+The Author of this Software expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT and any related documentation is provided "as is" without warranty of any kind, either express or implied, including, without Limitation, the implied warranties or merchantability, fitness for a particular purpose, or noninfringement. The entire risk arising out of use or performance of the SOFTWARE 
+PRODUCT remains with you.  The SOFTWARE PRODUCT supplied as "try before you buy" software, i.e. if it not works correctly on your computer hardware, you must detect this trouble BEFORE YOU ORDER the SOFTWARE PRODUCT. After you have registered your copy of SOFTWARE PRODUCT if want to refund your payment due any reasons  then Author of this Software reserves the right to decline refund.
+
+NO LIABILITY FOR DAMAGES. 
+In no event shall the author of this Software be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this product, even if the Author of this Software has been advised of the possibility of such damages.
+
+REGISTRATION
+
+SOFTWARE PRODUCT requires registration. Registration removes uses.You can find out how to register in program's “About” dialog, or Help system, or on author's website: http://www.vbsoftware.cl/) 
+After REGISTRATION you will receive your personal registration key, and you will gain rights to use program for unlimited time period.
+
+You can not distribute your personal registration key to any persons or companies, publish it on the web, 
+CD and any other types of media. If your personal registration key will be found on public resources, 
+or it will be used by other persons, author reserves the right to avoid your registration and remove your key 
+from future product's versions without the refunding registration fee.
+
+DISTRIBUTION
+You can FREE distribute any count of UNREGISTERED copies of this program without making any changes in program code, data, license agreement, copyrights and documentation text. You CAN NOT MODIFY program code, data, license agreement, copyrights and documentation text after installing SOFTWARE PRODUCT on computer. (including automated modification by any other software except software authored by VBSoftware.)
+
+If you have any question on this license agreement, contact us at contact@vbsoftware.cl.
+
+Company logos and trademarks are properties of their respective owners.</EULA>
+	</Permissions>
+</XML_DIZ_INFO>

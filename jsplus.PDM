@@ -1,0 +1,249 @@
+[Root]
+Most Recent Package=Paquete de instalación estándar 1
+
+
+[Package|Paquete de instalación estándar 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=F:\Proyectos\v3\Paquete
+
+[Package|Paquete de instalación estándar 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación estándar 1|Files Found]
+
+[Package|Paquete de instalación estándar 1|Files Released]
+javascript.CHI=
+html40.CHI=
+IEREF.CHI=
+
+[Package|Paquete de instalación estándar 1|Missing Dependency Information]
+C:\Archivos de programa\Copperbeech\PropertyWindow\PropertyWindow8.ocx=
+C:\WINNT\system32\colorpick.ocx=
+C:\WINNT\system32\vbalTreeView6.ocx=
+C:\WINNT\system32\vbaListView6.ocx=
+C:\WINNT\system32\vbalSGrid6.ocx=
+C:\WINNT\system32\vbalTab6.ocx=
+C:\WINNT\system32\vbalExpBar6.ocx=
+C:\WINNT\system32\vbalToolboxBar6.ocx=
+C:\WINNT\system32\vbalCbEx6.ocx=
+C:\WINNT\system32\vbalODCL6.ocx=
+C:\WINNT\system32\vbalDTab6.ocx=
+C:\WINNT\system32\vbalDkTb6.ocx=
+C:\WINNT\system32\vbalTbar6.ocx=
+C:\WINNT\system32\xpstylelib.dll=
+F:\Proyectos\v3\Library.dll=
+C:\WINNT\system32\jsplusx.dll=
+C:\WINNT\system32\msimg32.dll=
+F:\Proyectos\v3\help\INETWH32.dll=
+
+[Package|Paquete de instalación estándar 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\MSCOMCTL.OCX=
+
+[Package|Paquete de instalación estándar 1|Files Added]
+F:\Proyectos\v3\config\regexp.ini=
+F:\Proyectos\v3\config\arrays.ini=
+F:\Proyectos\v3\config\htmlhelp.ini=
+F:\Proyectos\v3\config\htmlitemhelp.ini=
+F:\Proyectos\v3\config\htmlmap.ini=
+F:\Proyectos\v3\config\jshelp.ini=
+F:\Proyectos\v3\config\ansihelp.ini=
+F:\Proyectos\v3\help\javascript.chm=
+F:\Proyectos\v3\help\html40.chm=
+F:\Proyectos\v3\help\IEREF.CHM=
+F:\Proyectos\v3\help\INETWH16.DLL=
+F:\Proyectos\v3\help\INETWH32.dll=
+F:\Proyectos\v3\help\css.hlp=
+F:\Proyectos\v3\pal\windows.pal=
+F:\Proyectos\v3\pal\2.pal=
+F:\Proyectos\v3\pal\256c.pal=
+F:\Proyectos\v3\pal\256g.pal=
+F:\Proyectos\v3\pal\8.pal=
+F:\Proyectos\v3\pal\browser.pal=
+F:\Proyectos\v3\pal\default.pal=
+F:\Proyectos\v3\pal\named.pal=
+F:\Proyectos\v3\pal\16.pal=
+
+[Package|Paquete de instalación estándar 1|Files Removed]
+
+[Package|Paquete de instalación estándar 1|Files In Project]
+F:\Proyectos\v3\jsplus.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\VB6ES.DLL=Yes
+C:\WINNT\system32\msimg32.dll=Yes
+C:\WINNT\system32\cmcs21.ocx=Yes
+C:\WINNT\system32\jsplusx.dll=Yes
+F:\Proyectos\v3\Library.dll=Yes
+C:\WINNT\system32\xpstylelib.dll=Yes
+C:\WINNT\system32\vbalTbar6.ocx=Yes
+C:\WINNT\system32\vbalDkTb6.ocx=Yes
+C:\WINNT\system32\vbalDTab6.ocx=Yes
+C:\WINNT\system32\vbalODCL6.ocx=Yes
+C:\WINNT\system32\vbalCbEx6.ocx=Yes
+C:\WINNT\system32\vbalToolboxBar6.ocx=Yes
+C:\WINNT\system32\vbalExpBar6.ocx=Yes
+C:\WINNT\system32\vbalTab6.ocx=Yes
+C:\WINNT\system32\vbalSGrid6.ocx=Yes
+C:\WINNT\system32\vbaListView6.ocx=Yes
+C:\WINNT\system32\vbalTreeView6.ocx=Yes
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\WINNT\system32\MSCMCES.DLL=Yes
+C:\WINNT\system32\ccrpftv6.ocx=Yes
+C:\WINNT\system32\colorpick.ocx=Yes
+C:\Archivos de programa\Copperbeech\PropertyWindow\PropertyWindow8.ocx=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+F:\Proyectos\v3\config\regexp.ini=Yes
+F:\Proyectos\v3\config\arrays.ini=Yes
+F:\Proyectos\v3\config\htmlhelp.ini=Yes
+F:\Proyectos\v3\config\htmlitemhelp.ini=Yes
+F:\Proyectos\v3\config\htmlmap.ini=Yes
+F:\Proyectos\v3\config\jshelp.ini=Yes
+F:\Proyectos\v3\config\ansihelp.ini=Yes
+F:\Proyectos\v3\help\javascript.chm=Yes
+C:\WINNT\system32\hhctrl.ocx=Yes
+C:\WINNT\system32\itss.dll=Yes
+C:\WINNT\system32\itircl.dll=Yes
+C:\WINNT\hh.exe=Yes
+F:\Proyectos\v3\help\html40.chm=Yes
+F:\Proyectos\v3\help\IEREF.CHM=Yes
+F:\Proyectos\v3\help\INETWH16.DLL=Yes
+F:\Proyectos\v3\help\INETWH32.dll=Yes
+F:\Proyectos\v3\help\css.hlp=Yes
+F:\Proyectos\v3\pal\windows.pal=Yes
+F:\Proyectos\v3\pal\2.pal=Yes
+F:\Proyectos\v3\pal\256c.pal=Yes
+F:\Proyectos\v3\pal\256g.pal=Yes
+F:\Proyectos\v3\pal\8.pal=Yes
+F:\Proyectos\v3\pal\browser.pal=Yes
+F:\Proyectos\v3\pal\default.pal=Yes
+F:\Proyectos\v3\pal\named.pal=Yes
+F:\Proyectos\v3\pal\16.pal=Yes
+
+[Package|Paquete de instalación estándar 1|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Install Locations]
+F:\Proyectos\v3\jsplus.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\VB6ES.DLL=$(WinSysPath)
+C:\WINNT\system32\msimg32.dll=$(WinSysPath)
+C:\WINNT\system32\cmcs21.ocx=$(WinSysPath)
+C:\WINNT\system32\jsplusx.dll=$(WinSysPath)
+F:\Proyectos\v3\Library.dll=$(WinSysPath)
+C:\WINNT\system32\xpstylelib.dll=$(WinSysPath)
+C:\WINNT\system32\vbalTbar6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalDkTb6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalDTab6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalODCL6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalCbEx6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalToolboxBar6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalExpBar6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalTab6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalSGrid6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbaListView6.ocx=$(WinSysPath)
+C:\WINNT\system32\vbalTreeView6.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSCMCES.DLL=$(WinSysPath)
+C:\WINNT\system32\ccrpftv6.ocx=$(WinSysPath)
+C:\WINNT\system32\colorpick.ocx=$(WinSysPath)
+C:\Archivos de programa\Copperbeech\PropertyWindow\PropertyWindow8.ocx=$(WinSysPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Archivos de programa\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+F:\Proyectos\v3\config\regexp.ini=$(AppPath)
+F:\Proyectos\v3\config\arrays.ini=$(AppPath)
+F:\Proyectos\v3\config\htmlhelp.ini=$(AppPath)
+F:\Proyectos\v3\config\htmlitemhelp.ini=$(AppPath)
+F:\Proyectos\v3\config\htmlmap.ini=$(AppPath)
+F:\Proyectos\v3\config\jshelp.ini=$(AppPath)
+F:\Proyectos\v3\config\ansihelp.ini=$(AppPath)
+F:\Proyectos\v3\help\javascript.chm=$(AppPath)
+C:\WINNT\system32\hhctrl.ocx=$(WinSysPath)
+C:\WINNT\system32\itss.dll=$(WinSysPath)
+C:\WINNT\system32\itircl.dll=$(WinSysPath)
+C:\WINNT\hh.exe=$(WinSysPath)
+F:\Proyectos\v3\help\html40.chm=$(AppPath)
+F:\Proyectos\v3\help\IEREF.CHM=$(AppPath)
+F:\Proyectos\v3\help\INETWH16.DLL=$(AppPath)
+F:\Proyectos\v3\help\INETWH32.dll=$(WinSysPath)
+F:\Proyectos\v3\help\css.hlp=$(AppPath)
+F:\Proyectos\v3\pal\windows.pal=$(AppPath)
+F:\Proyectos\v3\pal\2.pal=$(AppPath)
+F:\Proyectos\v3\pal\256c.pal=$(AppPath)
+F:\Proyectos\v3\pal\256g.pal=$(AppPath)
+F:\Proyectos\v3\pal\8.pal=$(AppPath)
+F:\Proyectos\v3\pal\browser.pal=$(AppPath)
+F:\Proyectos\v3\pal\default.pal=$(AppPath)
+F:\Proyectos\v3\pal\named.pal=$(AppPath)
+F:\Proyectos\v3\pal\16.pal=$(AppPath)
+
+[Package|Paquete de instalación estándar 1|Configure Shared Files]
+Applicable=Yes
+F:\Proyectos\v3\jsplus.exe=No
+F:\Proyectos\v3\config\regexp.ini=No
+F:\Proyectos\v3\config\arrays.ini=No
+F:\Proyectos\v3\config\htmlhelp.ini=No
+F:\Proyectos\v3\config\htmlitemhelp.ini=No
+F:\Proyectos\v3\config\htmlmap.ini=No
+F:\Proyectos\v3\config\jshelp.ini=No
+F:\Proyectos\v3\config\ansihelp.ini=No
+F:\Proyectos\v3\help\javascript.chm=No
+F:\Proyectos\v3\help\html40.chm=No
+F:\Proyectos\v3\help\IEREF.CHM=No
+F:\Proyectos\v3\help\INETWH16.DLL=No
+F:\Proyectos\v3\help\css.hlp=No
+F:\Proyectos\v3\pal\windows.pal=No
+F:\Proyectos\v3\pal\2.pal=No
+F:\Proyectos\v3\pal\256c.pal=No
+F:\Proyectos\v3\pal\256g.pal=No
+F:\Proyectos\v3\pal\8.pal=No
+F:\Proyectos\v3\pal\browser.pal=No
+F:\Proyectos\v3\pal\default.pal=No
+F:\Proyectos\v3\pal\named.pal=No
+F:\Proyectos\v3\pal\16.pal=No
+
+[Package|Paquete de instalación estándar 1|Distribution]
+Type=single
+Size=
+Title=Javascript Plus!
+
+[Package|Paquete de instalación estándar 1|IconGroups]
+Group0=VBSoftware
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 1|VBSoftware]
+Icon1=jsplus.exe
+Title1=Javascript Plus!
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 1|Package]
+PackageFolder=F:\Proyectos\v3\Paquete
+ProjectFolder=F:\Proyectos\v3
+ServerSideCab=
+File1=F:\Proyectos\v3\Paquete\setup.exe
+File2=F:\Proyectos\v3\Paquete\Setup.Lst
+File3=F:\Proyectos\v3\Paquete\jsplus.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

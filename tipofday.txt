@@ -1,0 +1,23 @@
+You can get help for html attributes pressing CTRL+SPACEBAR.
+You can clean, validate and fix html problems using tidy. Go to Tools Menu->Tidy
+You can detect errors in your javascript files using jslint. Go to Tools Menu->JSLint.
+You can do a document previous for internet explorer, firefox, netscape & opera.
+JavaScript Plus! includes an integrated image viewer. Go to Tools Menu->Image Browser
+JavaScript Plus! includes an object browser likes the Visual Basic object browser. Go to JavaScript Menu->Object Browser
+For select a vertical text press ALT+LEFT BUTTON MOUSE.
+For open a document from a ftp server you must to configure a ftp account.
+For save a document from a ftp server you must to configure a ftp account.
+To expand the development environment JavaScript Plus! includes supports for plugins. To develop a new plugin go to Tools Menu->Plugins.
+For JavaScript reference go to Javascript Menu->Javascript reference
+For CSS reference go to Help Menu->CSS reference.
+For Tidy reference go to Help Menu->Tidy reference.
+For JSLint reference go to Help Menu->JSLint reference.
+If you have a suggestions, improvements or bug reports post it to vbsoftware forums. http://www.vbsoftware.cl/forums.
+JavaScript Plus! includes supports for all JavaScript objects, properties y events.
+JavaScript Plus! includes supports for all HTML tags and attributes.
+JavaScript Plus! also includes help for ASP statements. Insert Menu->ASP
+JavaScript Plus! also includes help for PHP statements. Insert Menu->PHP
+JavaScript Plus! also includes help for SSI statements. Insert Menu->SSI
+JavaScript Plus! includes 18 ready to use wizards for common JavaScript Tasks.
+
+
