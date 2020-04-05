@@ -1,0 +1,502 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Javascript Run-Time Errors</title>
+</head>
+
+<body>
+
+<p><b><font face="Verdana" size="2">Javascript Run-Time Errors</font></b></p>
+
+<table border="1" bordercolor="#000099" cellpadding="0" cellspacing="0" style="border-collapse: collapse" height="1282" width="948">
+<tr>
+<td bgcolor="#C0C0C0" align="right" height="32" width="52"><b><font size="2" face="Verdana">Error #</font></b></td>
+<td bgcolor="#C0C0C0" height="32" width="893"><b><font size="2" face="Verdana">Error Code</font></b></td>
+</tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5000</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Cannot assign to 'this'</font><p>
+  <font face="Verdana" size="2">You attempted to assign a value to <b>this</b>.
+  <b>this </b>is a JScript keyword that refers to either: </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">the object currently executing a method,</font></li>
+    <li><font face="Verdana" size="2">the global object if there is no current 
+    method (or the method does not belong to any other object).</font></li>
+  </ul>
+  <p><font face="Verdana" size="2">A method is a JScript function that is 
+  invoked through an object. Inside a method, the <b>this </b>keyword is a 
+  reference to the object the method was invoked through (which happens to be 
+  the object created by invoking the class constructor with the <b>new </b>
+  operator).</font></p>
+  <p><font face="Verdana" size="2">Inside a method, you can use <b>this</b> to 
+  refer to the current object, but you cannot assign a new value to <b>this</b>.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Do not attempt to assign to <b>this</b>. To 
+  access a property or method of an instantiated object, use the dot operator (e.g., 
+  circle<b>.</b>radius).</font></p>
+  <blockquote class="dtBlock">
+    <p><font face="Verdana" size="2"><b><b class="le">Note</b>&nbsp;&nbsp;&nbsp;</b>You cannot 
+    name a user-created variable <b>this</b>; it is a JScript reserved word.</font></p>
+  </blockquote>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5001</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a number; Number expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Number.prototype.toString</b> or <b>Number.prototype.valueOf</b> method on an 
+  object of a type other than <b>Number</b>. The object of this type of 
+  invocation must be of type <b>Number</b>.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>Number.prototype.toString</b> 
+  or <b>Number.prototype.valueOf</b> methods on objects of type <b>Number</b>.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5002</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a function; Function expected</font><p>
+  <font face="Verdana" size="2">Either you attempted to invoke one of the <b>
+  Function prototype</b> methods on an object that was not a <b>Function</b> 
+  object, or you used an object in a function call context. For example, the 
+  following code produces this error because <b>example </b>is not a function.</font></p>
+  <pre class="code"><font face="Verdana">var example = new Object();  // Create a new object called &quot;example&quot;.
+var x = example();           // Try and call example as if it were a function.</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Only call <b>Function prototype</b> 
+    methods on <b>Function</b> objects.</font></li>
+    <li><font face="Verdana" size="2">Ensure that you use the function call 
+    operator <b>()</b> to call functions only.</font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="13" width="52"><font face="Verdana" size="2">5003</font></td>
+  <td height="13" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Cannot assign to a function result</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Boolean.prototype.toString</b> or <b>Boolean.prototype.valueOf</b> method on 
+  an object of a type other than <b>Boolean</b>. The object of this type of 
+  invocation must be of type <b>Boolean</b>. For example:</font></p>
+  <pre class="code"><font face="Verdana">var o = new Object;
+o.f = Boolean.prototype.toString;
+o.f();</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Only invoke the Boolean<b>.prototype.toString</b> 
+    or <b>Boolean.prototype.valueOf </b>methods on objects of type <b>Boolean.</b></font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5004</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not an indexable object; Cannot index object</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5005</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a string; String expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  String.prototype.toString</b> or <b>String.prototype.valueOf</b> method on an 
+  object of a type other than <b>String</b>. The object of this type of 
+  invocation must be of type <b>String</b>.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>String.prototype.toString</b> 
+  or <b>String.prototype.valueOf</b> methods on objects of type <b>String</b>.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5006</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a date object; Date object expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Date.prototype.toString</b> or <b>Date.prototype.valueOf</b> method on an 
+  object of a type other than <b>Date</b>. The object of this type of invocation 
+  must be of type <b>Date</b>. For example:</font></p>
+  <pre class="code"><font face="Verdana">var o = new Object;
+o.f = Date.prototype.toString;
+o.f();</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>Date.prototype.toString</b> 
+  or <b>Date.prototype.valueOf</b> methods on objects of type <b>Date</b>.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5007</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not an object; Object expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Object.prototype.toString</b> or <b>Object.prototype.valueOf</b> method on an 
+  object of a type other than <b>Object</b>. The object of this type of 
+  invocation must be of type <b>Object</b>.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>Object.prototype.toString</b> 
+  or <b>Object.prototype.valueOf</b> methods on objects of type <b>Object</b>.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5008</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Cannot assign to &lt;item&gt;; Illegal assignment</font><p>
+  <font face="Verdana" size="2">You attempted to assign a value to a read-only 
+  identifier. You cannot assign a value to a read-only identifier. For example, 
+  host defined objects and external COM objects.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Do not assign values to read-only identifiers.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5009</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is undefined; Undefined identifier</font><p>
+  <font face="Verdana" size="2">You attempted to use an identifier that the 
+  JScript compiler does not recognize. The undefined value is returned whenever 
+  you use: </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">a variable that does not exist,</font></li>
+    <li><font face="Verdana" size="2">a variable that has been declared, but 
+    never had a value assigned to it,</font></li>
+    <li><font face="Verdana" size="2">an object property that does not exist.</font></li>
+  </ul>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Declare the variable with a <b>var </b>
+  statement (as in <b>var</b> x;).</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5010</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a boolean; Boolean expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Boolean.prototype.toString</b> or <b>Boolean.prototype.valueOf</b> method on 
+  an object of a type other than <b>Boolean</b>. The object of this type of 
+  invocation must be of type <b>Boolean</b>. For example:</font></p>
+  <pre class="code"><font face="Verdana">var o = new Object;
+o.f = Boolean.prototype.toString;
+o.f();</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Only invoke the Boolean<b>.prototype.toString</b> 
+    or <b>Boolean.prototype.valueOf </b>methods on objects of type <b>Boolean.</b></font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5011</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Can't execute code from a freed script</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5012</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Cannot delete &lt;item&gt;; Object member expected</font><p>
+  <font face="Verdana" size="2">You attempted to perform an operation on an 
+  object's data member, but the member does not exist.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure you typed the name of the data member 
+  correctly.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5013</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a VBArray; VBArray expected</font><p>
+  <font face="Verdana" size="2">You supplied an object that was not a Visual 
+  Basic safeArray, when one was expected.</font></p>
+  <pre class="code"><font face="Verdana">new VBArray(safeArray);</font></pre>
+  <p><font face="Verdana" size="2">VBArrays are read-only, and cannot be created 
+  directly. The safeArray argument is a VBArray value, and must have obtained a 
+  VBArray value before being passed to the <b>VBArray</b> constructor. This can 
+  only be done by retrieving the value from an existing ActiveX or other object.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure you pass only <b>VBArray </b>objects 
+  to the <b>VBArray </b>constructor.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5014</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a JScript object; JScript object expected</font><p>
+  <font face="Verdana" size="2">You attempted to pass a non-JScript object to a 
+  built-in function that expects a JScript object. Various built-in functions 
+  require objects defined in JScript (as opposed to objects defined by the host, 
+  or an external component like a control).</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure that the object you are passing in as 
+  a parameter is of the correct type.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5015</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not an enumerator object; Enumerator object expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  Enumerator.prototype.atEnd, Enumerator.prototype.item, 
+  Enumerator.prototype.moveFirst,</b> or <b>Enumerator.prototype.moveNext </b>
+  method on an object of a type other than <b>Enumerator</b>. The object of this 
+  type of invocation must be of type <b>Enumerator</b>. Here is an example of 
+  code that breaks this rule:</font></p>
+  <pre class="code"><font face="Verdana">var o = new Object;
+o.f = Enumerator.prototype.atEnd;
+o.f();</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>Enumerator.prototype.atEnd</b>,
+  <b>Enumerator.prototype.item</b>, <b>Enumerator.prototype.moveFirst</b>, or <b>
+  Enumerator.prototype.moveNext</b> methods on objects of type <b>Enumerator</b>. 
+  To find out if your object is an <b>Enumerator</b> object, use:</font></p>
+  <pre class="code"><font face="Verdana">if(x instanceof Enumerator)</font></pre>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5016</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">&lt;Item&gt; is not a regular expression object; Regular Expression object expected</font><p>
+  <font face="Verdana" size="2">You attempted to invoke the <b>
+  RegExp.prototype.toString</b> or <b>RegExp.prototype.valueOf</b> method on an 
+  object of a type other than <b>RegExp</b>. The object of this type of 
+  invocation must be of type <b>RegExp</b>.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Only invoke the <b>RegExp.prototype.toString</b> 
+  or <b>RegExp.prototype.valueOf</b> methods on objects of type <b>RegExp</b>.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5017</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Syntax error in regular expression</font><p>
+  <font face="Verdana" size="2">The structure of your search string violates one 
+  or more of the grammatical rules of a JScript regular expression.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure the structure of your regular 
+  expression search string adheres to the JScript regular expression syntax.
+  </font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5018</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Unexpected quantifier</font><p>
+  <font face="Verdana" size="2">When composing your regular expression search 
+  pattern, you created a pattern element with an illegal repetition factor. For 
+  example, the pattern</font></p>
+  <pre class="code"><font face="Verdana">/^+/</font></pre>
+  <p><font face="Verdana" size="2">is illegal because the element ^ (beginning 
+  of input) cannot have a repetition factor. The following table lists the 
+  elements that cannot have repetition factors.</font></p>
+  <div class="tablediv">
+    <table class="dtTABLE" cellspacing="0">
+      <tr valign="top">
+        <th width="26%"><font face="Verdana" size="2">Element</font></th>
+        <th width="74%"><font face="Verdana" size="2">Description</font></th>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">^</font></td>
+        <td width="74%"><font face="Verdana" size="2">Beginning of input</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">$</font></td>
+        <td width="74%"><font face="Verdana" size="2">End of input</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">\b</font></td>
+        <td width="74%"><font face="Verdana" size="2">Word boundary</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">\B</font></td>
+        <td width="74%"><font face="Verdana" size="2">Non-word boundary</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">*</font></td>
+        <td width="74%"><font face="Verdana" size="2">Zero or more repetitions</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">+</font></td>
+        <td width="74%"><font face="Verdana" size="2">One or more repetitions</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">?</font></td>
+        <td width="74%"><font face="Verdana" size="2">Zero or one repetitions</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">{n}</font></td>
+        <td width="74%"><font face="Verdana" size="2">n repetitions</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">{n,}</font></td>
+        <td width="74%"><font face="Verdana" size="2">n or more repetitions</font></td>
+      </tr>
+      <tr valign="top">
+        <td width="26%"><font face="Verdana" size="2">{n,m}</font></td>
+        <td width="74%"><font face="Verdana" size="2">From n to m repetitions, 
+        inclusive</font></td>
+      </tr>
+    </table>
+  </div>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure your search pattern element contains 
+  legal repetition factors only.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5019</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Expected ']' in regular expression</font><p>
+  <font face="Verdana" size="2">You attempted to create a character class for a 
+  regular expression match, but did not include the right bracket. Individual 
+  literal character combinations can be assembled into character classes by 
+  placing them within brackets. A character class matches any one character it 
+  contains. For example, /[abc]/ matches any one of the letters &quot;a&quot;, &quot;b&quot;, or 
+  &quot;c&quot;.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Add the right bracket to the regular 
+  expression.</font></p>
+  <blockquote class="dtBlock">
+    <p><font face="Verdana" size="2"><b><b class="le">Note</b>&nbsp;&nbsp;&nbsp;</b>If you want 
+    to match a single bracket, escape it with a backslash - \[ - so it is not 
+    interpreted as a special character by JScript.</font></p>
+  </blockquote>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5020</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Expected ')' in regular expression</font><p>
+  <font face="Verdana" size="2">You attempted to create a regular expression 
+  capture, assertion, or group, but did not include the closing parenthesis. 
+  Parentheses have several purposes in regular expressions. Primarily, they are 
+  used to capture sub-expressions, to specify assertions, or to group patterns 
+  together so that the items can be treated as a single unit by *, +, ?, and so 
+  on.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Add the rightmost closing parentheses.</font></p>
+  <blockquote class="dtBlock">
+    <p><font face="Verdana" size="2"><b><b class="le">Note</b>&nbsp;&nbsp;&nbsp;</b>If you want 
+    to match a single parenthesis, escape it with a backslash - \( - so that it 
+    is not interpreted as a special character by JScript.</font></p>
+  </blockquote>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5021</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Invalid range in character set</font><p>
+  <font face="Verdana" size="2">You attempted to create a regular expression 
+  with an invalid character set range. Character sets must range from single 
+  characters only, such as a-z or 0-9; you cannot include character classes such 
+  as \w in a character set. The first character in the range must also come 
+  before the second character in the range. For example:</font></p>
+  <pre class="code"><font face="Verdana">var good = /[a-z]/;     // A valid character range - a comes before z.
+var notGood = /[z-a]/;  // An invalid character range - z does not come before a.</font></pre>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Use only single characters to compose your 
+  regular expression character set, and make sure they are in the correct order.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5022</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Exception thrown and not caught</font><p>
+  <font face="Verdana" size="2">You included a <b>throw</b> statement in your 
+  code, but it was not enclosed within a <b>try</b> block, or there was no 
+  associated <b>catch</b> block to trap the error. Exceptions are thrown from 
+  within the <b>try </b>block using the <b>throw </b>statement, and caught 
+  outside the <b>try </b>block with a <b>catch </b>statement.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Enclose code that can throw an exception 
+    in a <b>try </b>block, and ensure there is a corresponding <b>catch</b> 
+    block.</font></li>
+    <li><font face="Verdana" size="2">Make sure your catch statement expects the 
+    correct form of exception.</font></li>
+    <li><font face="Verdana" size="2">If the exception is rethrown, make sure 
+    there is another corresponding catch statement.</font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5023</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Function does not have a valid prototype object</font><p>
+  <font face="Verdana" size="2">You attempted to use <b>instanceof </b>to 
+  determine if an object was derived from a particular function class, but you 
+  redefined the object's <b>prototype</b> property as either <b>null</b>, or an 
+  external object type (both not valid JScript objects). An external object can 
+  be an object from the host object model (for example, Internet Explorer's 
+  document or window object), or an external COM object.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure the function's <b>prototype</b> 
+  property refers to a valid JScript object.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5024</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">The URI to be encoded contains an invalid character</font><p>
+  <font face="Verdana" size="2">You attempted to encode a string as a URI (Uniform 
+  Resource Identifier), but it contained invalid characters. Although most 
+  characters are valid inside strings to be converted to URIs, some Unicode 
+  character sequences are illegal.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure the string to be encoded contains only 
+  valid Unicode sequences.</font></p>
+  <p><font face="Verdana" size="2">A complete URI is composed of a sequence of 
+  components and separators. The general form is:</font></p>
+  <pre class="code"><font face="Verdana">&lt;Scheme&gt;:&lt;first&gt;/&lt;second&gt;;&lt;third&gt;?&lt;fourth&gt;</font></pre>
+  <p><font face="Verdana" size="2">The names in angle brackets represent 
+  components, and the &quot;:&quot;, &quot;/&quot;, &quot;;&quot; and &quot;?&quot; are reserved characters used as 
+  separators.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5025</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">The URI to be decoded is not a valid encoding</font><p>
+  <font face="Verdana" size="2">You attempted to decode an improperly formed URI 
+  (Uniform Resource Identifier). URIs have a special syntax; most non-alphanumeric 
+  characters must be encoded before they can be used in a URI. You can use the
+  <b>encodeURI</b> and <b>encodeURIComponent</b> methods to create a URI from a 
+  normal JScript string.</font></p>
+  <p><font face="Verdana" size="2">A complete URI is composed of a sequence of 
+  components and separators. The general form is:</font></p>
+  <pre class="code"><font face="Verdana">&lt;Scheme&gt;:&lt;first&gt;/&lt;second&gt;;&lt;third&gt;?&lt;fourth&gt;</font></pre>
+  <p><font face="Verdana" size="2">The names in angle brackets represent 
+  components, and the &quot;:&quot;, &quot;/&quot;, &quot;;&quot; and &quot;?&quot; are reserved characters used as 
+  separators.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure you are trying to decode valid URIs 
+  only. You cannot decode normal JScript strings, as they may contain invalid 
+  characters.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5026</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">The number of fractional digits is out of range</font><p>
+  <font face="Verdana" size="2">You attempted to pass an invalid argument to the 
+  function <b>Number.prototype.toExponential</b>. The argument to the function
+  <b>toExponential()</b> must be between 0 and 20 (inclusive).</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure the argument to <b>toExponential()</b> 
+  is not too large or too small.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="16" width="52"><font face="Verdana" size="2">5027</font></td>
+  <td height="16" width="893">
+  <font color="#FF0000" face="Verdana" size="2">The precision is out of range</font><p>
+  <font face="Verdana" size="2">You attempted to pass an invalid argument to the 
+  function <b>Number.prototype.toPrecision</b>. The argument to <b>toPrecision
+  </b>must between 1 and 21 (inclusive).</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b></font></p>
+  <p><font face="Verdana" size="2">Ensure the argument to <b>toPrecision</b> is 
+  not too large or too small.</font></td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="168" width="52"><font face="Verdana" size="2">5028</font></td>
+  <td height="168" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Array or arguments object expected</font><p>
+  <font face="Verdana" size="2">You did not supply an array as an argument. This 
+  error applies to the <b>Function.prototype.apply</b> method only. If specified, 
+  the second argument to this function must be either an <b>Array</b> object or 
+  an <b>Arguments</b> object.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Specify either an <b>Array</b> or an <b>
+    Arguments</b> object as the second argument.</font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="349" width="52"><font face="Verdana" size="2">5029</font></td>
+  <td height="349" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Array length must be a finite positive integer</font><p>
+  <font face="Verdana" size="2">You are calling the <b>Array </b>constructor 
+  with an argument that is not a whole number (whole numbers consist of zero 
+  plus the set of positive integers). </font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Use positive integers only when creating a 
+    new <b>Array</b> object. If you want to create an array with a single 
+    element that is not an integer, do it in a two-step process. First create an 
+    array with one element, then place the value in the first element (array[0]). 
+    The following is an example that generates this error. </font>
+    <pre class="code"><font face="Verdana">var piArray = new Array(3.14159);</font></pre>
+    <p><font face="Verdana" size="2">The following example demonstrates the 
+    correct way to specify an array with a single numeric element. </font></p>
+    <pre class="code"><font face="Verdana">var piArray = new Array(1);
+piArray [0] = 3.14159;</font></pre>
+    <p><font face="Verdana" size="2">There is no upper limit for the size of an 
+    array, other than the maximum integer value (approximately 4 billion).
+    </font></li>
+  </ul>
+  </td></tr>
+<tr><td bgcolor="#C0C0C0" align="right" height="257" width="52"><font face="Verdana" size="2">5030</font></td>
+  <td height="257" width="893">
+  <font color="#FF0000" face="Verdana" size="2">Array length must be assigned a finite positive number</font><p>
+  <font face="Verdana" size="2">When setting the <b>length </b>property of an 
+  existing <b>Array </b>object, you specified an array length that was not a 
+  positive number or zero. This error occurs when you assign a value to the <b>
+  length</b> property of an <b>Array</b> object that is negative or not a number 
+  (<b>NaN</b>). Note that JScript automatically converts fractional numbers to 
+  whole integers.</font></p>
+  <p class="labelproc"><font face="Verdana" size="2"><b>To correct this error</b>
+  </font></p>
+  <ul type="disc">
+    <li><font face="Verdana" size="2">Assign a positive whole number to the 
+    length property. There is no upper limit for the size of an array, other 
+    than the maximum integer value (approximately 4 billion). The following 
+    example demonstrates the correct way to set the <b>length</b> property of an
+    <b>Array </b>object. </font>
+    <pre class="code"><font face="Verdana">var my_array = new Array();
+my_array.length = 99;</font></pre>
+    </li>
+  </ul>
+  </td></tr>
+</table>
+
+
+<!-- BEGIN JavaScript NoRightClick (Msg Box Ver.) -->
+<!-- (C)2003 USINGIT.COM, All rights reserved. -->
+<script language="JavaScript1.2" src="usingitscripts/js_disable_right_click/js_disable_right_click_cfg.js"></script>
+<script language="JavaScript1.2" src="usingitscripts/js_disable_right_click/js_disable_right_click.js"></script>
+<!-- END JavaScript NoRightClick (Msg Box Ver.) -->
+</body>
+
+</html>
