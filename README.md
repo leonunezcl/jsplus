@@ -1,5 +1,9 @@
 # Autor
-Luis Leonardo Nuñez Ibarra
+Luis Leonardo Nuñez Ibarra. 
+
+leo.nunez@gmail.com
+
+https://www.facebook.com/leo.oyechen/
 
 # Tipo de Proyecto
 JavaScript Plus fue un editor de texto para javascript creado por mi por alla por el año 2004. El proyecto fue distribuido como shareware y hoy liberado para estudio y disponible para la comunidad. Fue escrito en Visual Basic 6.0 usando principalmente muchas librerias creadas por el sitio web http://www.vbaccelerator.com y adaptadas al proyecto.
@@ -24,3 +28,28 @@ Un poco larga la historia, pero como veran con esfuerzo, paciencia, constancia, 
 Finalmente al dia de hoy aun lo ocupo para algunas cosas en particular en mi trabajo. Fue desarrollado integramente en VisuaL Basic 6.0 con las librerias .dll del sitio www.vbaccelerator.com el cual para mi fue uno de los mejores y mas avanzados sitios dedicados a VB de mi epoca. 
 
 Espero te haya gustado mi historia.
+
+# Componentes del proyecto
+El proyecto esta construido usando varias tecnologias de la epoca. Destaco las principales :
+
+- Componentes ActiveX OCX para la interfaz de usuario.
+- Librerias ActiveX DLL las cuales proveen varias funcionalidades de apoyo al proyecto.
+- Archivo de ayuda .hlp 
+- Instalador para la aplicación.
+- Packetes de librerias las cuales se instalan descomprimiendo archivos .zip
+- Para la validacion de archivos javascript usa JSLINT
+- Para la validacion de archivos .css usa Tidy
+- Varias guias de diferentes versiones de javascript
+- Tiene un tutorial de javascript incorporado.
+- Manejo de FTP propio.
+- Definiciones de los atributos de las propiedades de HTML y CSS en archivos .INI
+- Llamadas a la API de windows.
+
+# Funcionalidades de la aplicación
+- Editor de texto multi archivos. (MDI)
+- Construido en Intellisense. (usando componente activex codesence que era un muy componente para editar texto. Ya no existe)
+- Explorador de funciones.
+- Capacidad de ampliar las funcionalidades usando plugins (Se desarrollaban en visual basic 6.0 y la idea era expandir las funcionalidades de la aplicación)
+
+# Utilitarios Anexos (Algunos construidos tambien por mi ...)
+- Easy Query. Gestor para conectarse a distintas bases de datos via ODBC. (Otra herramienta mas que nacio de la necesidad)
