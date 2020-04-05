@@ -1,0 +1,5 @@
+jsPrinter = 129, 103, 617, 679, C
+qcTextItem = 0, 0, 0, 0, C
+qcTextItemCol = 0, 0, 0, 0, C
+frmPreview = 129, 103, 617, 679, C, 0, 0, 0, 0, C
+frmPrint = 129, 103, 617, 679, C, 0, 0, 0, 0, C
