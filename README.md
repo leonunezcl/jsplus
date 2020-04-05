@@ -1,5 +1,5 @@
 # Programa
-Javascript Plus!, un editor de texto.
+Javascript Plus!, un editor avanzado para archivos javascript.
 
 # Autor
 Luis Leonardo Nuñez Ibarra. Año 2005. email : leo.nunez@gmail.com. 
