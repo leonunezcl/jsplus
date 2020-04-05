@@ -1,0 +1,8 @@
+add-xml-decl: yes
+indent-spaces: 4
+indent: auto
+indent-attributes: no
+tidy-mark: yes
+markup: yes
+show-errors: 6
+show-warnings: yes
