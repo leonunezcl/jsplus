@@ -29,6 +29,8 @@ Finalmente al dia de hoy aun lo ocupo para algunas cosas en particular en mi tra
 
 Espero te haya gustado mi historia.
 
+El proyecto finalizo el año 2010 por falta de tiempo, bajas ventas y por el periodo de vida util de la aplicacion. Debo agradecer todo lo que aprendi con el, las muchas noches que me acoste tarde, el frio del invierno de ese año en especial 2005 y las incontables tazas de te que tome .... xD
+
 # Componentes del proyecto
 El proyecto esta construido usando varias tecnologias de la epoca. Destaco las principales :
 
@@ -37,19 +39,19 @@ El proyecto esta construido usando varias tecnologias de la epoca. Destaco las p
 - Archivo de ayuda .hlp 
 - Instalador para la aplicación.
 - Packetes de librerias las cuales se instalan descomprimiendo archivos .zip
-- Para la validacion de archivos javascript usa JSLINT
-- Para la validacion de archivos .css usa Tidy
+- Llamadas a la API de windows.
+
+# Funcionalidades generales de la aplicación
+- Editor de texto multi archivos. (MDI)
+- Construido en Intellisense. (usando componente activex codesence que era un muy buen componente para editar texto creado por la empresa http://www.winmain.com. Ya no existe ...
+- Explorador de funciones.
+- Capacidad de ampliar las funcionalidades usando plugins (Se desarrollaban en visual basic 6.0 y la idea era expandir las funcionalidades de la aplicación)
+- Validacion de archivos javascript usando JSLINT
+- Validacion de archivos .css usando Tidy
 - Varias guias de diferentes versiones de javascript
 - Tiene un tutorial de javascript incorporado.
 - Manejo de FTP propio.
-- Definiciones de los atributos de las propiedades de HTML y CSS en archivos .INI
-- Llamadas a la API de windows.
-
-# Funcionalidades de la aplicación
-- Editor de texto multi archivos. (MDI)
-- Construido en Intellisense. (usando componente activex codesence que era un muy componente para editar texto. Ya no existe)
-- Explorador de funciones.
-- Capacidad de ampliar las funcionalidades usando plugins (Se desarrollaban en visual basic 6.0 y la idea era expandir las funcionalidades de la aplicación)
+- Definiciones de los atributos de las propiedades de HTML y CSS en archivos .INI 
 
 # Utilitarios Anexos (Algunos construidos tambien por mi ...)
 - Easy Query. Gestor para conectarse a distintas bases de datos via ODBC. (Otra herramienta mas que nacio de la necesidad)
