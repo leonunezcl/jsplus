@@ -2,7 +2,11 @@
 Javascript Plus!, un editor de texto.
 
 # Autor
-Luis Leonardo Nuñez Ibarra. Año 2005. email : leo.nunez@gmail.com
+Luis Leonardo Nuñez Ibarra. Año 2005. email : leo.nunez@gmail.com. 
+
+Chileno, casado , tengo 2 hijos. Aficionado a los videojuegos y el tenis de mesa. Mi primer computador fue un Talent MSX que me compro mi papa por alla por el año 1985. En el di mis primeros pasos jugando juegos como Galaga y PacMan y luego programando en MSX-BASIC. 
+
+En la actualidad mi area de conocimiento esta referida a las tecnologias .NET con mas de 15 años de experiencia desarrollando varias paginas web usando asp.net con bases de datos sql server y Oracle. Integrador de tecnologias, desarrollo de servicios, aplicaciones de escritorio.
 
 # Tipo de Proyecto
 JavaScript Plus fue un editor de texto para javascript creado por mi por alla por el año 2004. El proyecto fue distribuido como shareware y hoy liberado para estudio y disponible para la comunidad. Fue escrito en Visual Basic 6.0 usando principalmente muchas librerias creadas por el sitio web http://www.vbaccelerator.com y adaptadas al proyecto.
@@ -28,6 +32,7 @@ Finalmente al dia de hoy aun lo ocupo para algunas cosas en particular en mi tra
 
 Espero te haya gustado mi historia.
 
+# Término y fin del proyecto
 El proyecto finalizo el año 2010 por falta de tiempo, bajas ventas y por el periodo de vida util de la aplicacion. Debo agradecer todo lo que aprendi con el, las muchas noches que me acoste tarde, el frio del invierno de ese año en especial 2005 y las incontables tazas de te que tome .... xD
 
 # Shareware y canales de promoción
