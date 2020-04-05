@@ -1,0 +1,34 @@
+:Base jsplus.hlp
+:Title Javascript Plus Online Help
+:Index Index for jsplus.hlp=jsplus.hlp
+1 What it's Javascript Plus! ?=Hlp_What_itxs
+1 What's new=Hlp_Javascript_Plus
+1 License agreement=Hlp_InstallingxUninstalling_Javascript
+1 How to install/remove=Hlp_How_to
+1 How to register=Hlp_Feedback_and
+1 Feedback and support=Hlp_Feedback_and
+1 About VBSoftware=Hlp_About_VBSoftware
+1 About the Autor ...=Hlp_About_the
+1 Features
+2 Syntax Highlighting=Hlp_Syntax_Highlighting
+2 Intellisense=Hlp_Intellisense
+2 Javascript Plus Wizards=Hlp_Javascript_Plus1
+2 Array Wizard=Hlp_Array_Wizards
+2 Object Browser=Hlp_Object_Browser
+2 Variable Wizard=Hlp_Variable_wizard
+2 Event Wizard=Hlp_Event_wizard
+2 Html Wizards=Hlp_Html_Wizards
+2 Other Features=Hlp_Other_features
+1 Commands
+2 File Menu=Hlp_File_Menu
+2 Edit Menu=Hlp_Edit_Menu
+2 Search Menu=Hlp_Search_Menu
+2 Insert Menu=Hlp_Insert_Menu
+2 Format Menu=Hlp_Format_Menu
+2 Macro Menu=Hlp_Macro_Menu
+2 Functions Menu=Hlp_Functions_Menu
+2 Javascript Menu=Hlp_Javascript_Menu
+2 Plus Menu=Hlp_Plus_Menu
+2 View Menu=!
+2 Utilities Menu=Hlp_Utilities_Menu
+2 Settings Menu=Hlp_Settings_Menu
