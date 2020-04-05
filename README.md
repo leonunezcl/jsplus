@@ -1,9 +1,8 @@
+# Programa
+Javascript Plus!, un editor de texto.
+
 # Autor
-Luis Leonardo Nuñez Ibarra. 
-
-leo.nunez@gmail.com
-
-https://www.facebook.com/leo.oyechen/
+Luis Leonardo Nuñez Ibarra. Año 2005. email : leo.nunez@gmail.com
 
 # Tipo de Proyecto
 JavaScript Plus fue un editor de texto para javascript creado por mi por alla por el año 2004. El proyecto fue distribuido como shareware y hoy liberado para estudio y disponible para la comunidad. Fue escrito en Visual Basic 6.0 usando principalmente muchas librerias creadas por el sitio web http://www.vbaccelerator.com y adaptadas al proyecto.
@@ -30,6 +29,27 @@ Finalmente al dia de hoy aun lo ocupo para algunas cosas en particular en mi tra
 Espero te haya gustado mi historia.
 
 El proyecto finalizo el año 2010 por falta de tiempo, bajas ventas y por el periodo de vida util de la aplicacion. Debo agradecer todo lo que aprendi con el, las muchas noches que me acoste tarde, el frio del invierno de ese año en especial 2005 y las incontables tazas de te que tome .... xD
+
+# Shareware y canales de promoción
+Para usar el canal de venta ocupe el que provee la empresa http://www.regnow.com. Tienes que configurar una cuenta, indicar los datos del deposito de la cuenta destino y solicitar al banco un numero de transaccion para autorizar depositos internacionales. Luego en tu cuenta de regnow te configuras cada cuanto quieres que te lleguen los depositos (en mi caso eran cada 200 USD). 
+
+Regnow te da todo el canal de venta y procesamiento del pago. Tu solo vas recibiendo las transacciones realizadas. En esa epoca regnow me cobraba el 10% de cada venta.
+
+Para los canales de promoción existen muchos y variados sitios web que te ofrecen promocionar tu producto de muchas maneras. Algunos gratis y otros mejoran tu posicion de búsqueda haciendo algun pago. Algun editor revisa tu software y lo valora con "estrellitas" segun corresponda. En su epoca yo busque muchos portales de distribución de software y subia la informacion. 
+
+La subida de la información se realizaba usando la aplicacion PAD la cual te permitia configurar varios parametros comunes en los portales de distribución de software o bien tenias que ingresar "a mano" todos los valores segun corresponda.
+
+# Distribución y empaquetamiento de la aplicación
+El proceso de instalación se realizaba usando la aplicacion Inno Setup Script Wizard el cual generabas todo el script y proceso de instalación de todos los archivos de la aplicación. Luego la aplicacion "compila" tu proyecto en un archivo setup.exe el cual va realizando todos los tipicos pasos tradicionales de un instalador de software.
+
+# Proceso de validación y trial de la aplicación
+Para el proceso de la validación del trial de la aplicacion el proyecto tiene un flag dentro de las opciones de compilación condicional. Este parámetro se llama LITE. Si tiene el valor 1 al momento de compilar entonces era la version trial y se permitia usar hasta 30 veces la aplicación. Pasado ese numero se invitaba al usuario a comprar la aplicación y se bloqueba el uso de esta. El metodo para evitar posibles hackeos o crackeos usaba el siguiente truco :
+
+- La aplicacion ejecutable se "firmaba" con un pequeño programa escrito en visual basic que agrega una firma "adicional" al archivo ejecutable. Luego en el proceso de validacion se validaban estos bytes extras a modo de evitar alguna alteracion en el archivo.
+
+- Luego el proceso de ejecución en su primera vez instala 10 archivos en el directorio windows/system del sistema y luego via api windows le cambia la fecha de creacion. Los nombres eran como de archivos de sistema a modo de no generar sospechas. El proceso en su carga validaba por la existencia de esos 10 archivos. Si alguno no existia entonces era un posible intento de hackeo/crackeo a la aplicacion y esta no partia.
+
+- Para la versión de pago se le solicitaba al usuario agregar crear un archivo llamado "reguser.ini" en el cual simplemente tenia el valor del nombre del usuario. Luego la aplicacion detecta de forma interna cuando es registrada este archivo y ademas el instalador del ejecutable "registrado" venia un archivo adicional llamado "licencia.dat" el cual contenia codificado en base64 el poema de pablo neruda "Muere Lentamente". Si la lectura del archivo coincidia con el poema "codificado" entonces era una versión valida de lo contrario no era valido para su ejecución.
 
 # Componentes del proyecto
 El proyecto esta construido usando varias tecnologias de la epoca. Destaco las principales :
