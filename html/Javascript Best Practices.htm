@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0047)http://www.javascripttoolbox.com/bestpractices/ -->
+<HTML><HEAD><TITLE>Javascript Best Practices</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+media=all href="Javascript%20Best%20Practices_archivos/css.css" type=text/css 
+rel=stylesheet>
+<SCRIPT src="Javascript%20Best%20Practices_archivos/main.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="Javascript%20Best%20Practices_archivos/jquery.js" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.6000.16525" name=GENERATOR></HEAD>
+<BODY>
+<TABLE class=columns cellSpacing=0 border=0>
+  <TBODY>
+  <TR>
+    <TD class=left rowSpan=2>
+      <DIV style="TEXT-ALIGN: center"><A title=Home 
+      href="http://www.javascripttoolbox.com/"><IMG alt=Logo 
+      src="Javascript%20Best%20Practices_archivos/logo5.gif"></A></DIV>
+      <DIV class=portlet>
+      <H5>Navigation</H5>
+      <DIV class=pBody><A title=Home 
+      href="http://www.javascripttoolbox.com/">Home</A> <A title=Libraries 
+      href="http://www.javascripttoolbox.com/lib/">Libraries</A> <A 
+      class=selected title="Best Practices" 
+      href="http://www.javascripttoolbox.com/bestpractices/">Best Practices</A> 
+      <A title="jQuery Tips" 
+      href="http://www.javascripttoolbox.com/jquery/">jQuery Tips</A> <A 
+      title=Support href="http://www.javascripttoolbox.com/support/">Support</A> 
+      <A title="Javascript Resources" 
+      href="http://www.javascripttoolbox.com/resources/">Resources / Links</A> 
+      <A title="Javascript Knowledge Base Search" 
+      href="http://www.javascripttoolbox.com/search/">JS Knowledge Base</A> <A 
+      title="Donate To Support This Site" 
+      href="http://www.javascripttoolbox.com/donate/">Donate!</A> <A 
+      title="About Me" href="http://www.javascripttoolbox.com/aboutme/">About 
+      Me</A> <A title=AJAX href="http://www.ajaxtoolbox.com/" target=_blank>AJAX 
+      Toolbox</A> </DIV></DIV>
+      <DIV class=portlet>
+      <H5>Libraries</H5>
+      <DIV class=pBody><A title="" 
+      href="http://www.javascripttoolbox.com/lib/calendar/">Calendar Popup</A> 
+      <A title="" 
+      href="http://www.javascripttoolbox.com/lib/checkboxgroup/">Checkbox 
+      Group</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/datadumper/">Data Dumper</A> <A 
+      title="" href="http://www.javascripttoolbox.com/lib/validations/">Data 
+      Validation</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/date/">Date Functions</A> <A 
+      title="" href="http://www.javascripttoolbox.com/lib/mktree/">DHTML 
+      Tree</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/dragiframe/">Draggable 
+      Iframes</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/dynamicoptionlist/">Dependent 
+      Select Boxes</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/form/">Form Functions</A> <A 
+      title="" 
+      href="http://www.javascripttoolbox.com/lib/objectposition/">Object 
+      Position</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/optiontransfer/">Option 
+      Transfer</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/popup/">Popups (In-Page 
+      DIV)</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/selectbox/">Selectbox 
+      Functions</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/table/">Table Sorting And 
+      Utils</A> <A title="" 
+      href="http://www.javascripttoolbox.com/lib/util/">Util/DOM/CSS/Event</A> 
+      </DIV></DIV>
+      <H5>doctype [<A title="What's This?" 
+      onclick="alert('Since some web browsers use the DOCTYPE of a document to switch between Quirks or Standards mode, some code may have different behavior depending on the DOCTYPE specified. These links allow pages to be tested using strict, loose, or no doctype at all for compatability testing.'); return false;" 
+      href="http://www.javascripttoolbox.com/bestpractices/#">?</A>]</H5>[<A 
+      href="http://www.javascripttoolbox.com/bestpractices/?doctype=strict">strict</A>] 
+      [<A 
+      href="http://www.javascripttoolbox.com/bestpractices/?doctype=loose">loose</A>] 
+      [<A 
+      href="http://www.javascripttoolbox.com/bestpractices/?doctype=none">none</A>] 
+    </TD>
+    <TD class=header colSpan=2>
+      <DIV id=searchbox>
+      <FORM action=http://www.google.com/custom method=get><INPUT type=hidden 
+      value=javascripttoolbox.com name=domains><INPUT class=search 
+      onclick="this.style.color='black';this.value='';" maxLength=255 size=15 
+      value=Search! name=q><INPUT type=submit value=go name=sa><INPUT 
+      type=hidden value=javascripttoolbox.com name=sitesearch><INPUT type=hidden 
+      value=pub-9155030588311591 name=client><INPUT type=hidden value=1 
+      name=forid><INPUT type=hidden value=ISO-8859-1 name=ie><INPUT type=hidden 
+      value=ISO-8859-1 name=oe><INPUT type=hidden 
+      value=GALT:#008000;GL:1;DIV:#AAAAAA;VLC:663399;AH:center;BGC:FFFFFF;LBGC:C2DDF4;ALC:002BB8;LC:002BB8;T:000000;GFNT:AAAAAA;GIMP:AAAAAA;LH:50;LW:588;L:http://www.javascripttoolbox.com/search_header.gif;S:http://www.JavascriptToolbox.com/;FORID:1; 
+      name=cof><INPUT type=hidden value=en name=hl></FORM></DIV>
+      <H1>Javascript Best Practices</H1></TD></TR>
+  <TR>
+    <TD class=middle>
+      <DIV class="corner cornerul"></DIV>
+      <DIV class=body>
+      <DIV class=content><BR>
+      <H2 class=first>Introduction</H2>
+      <P>This document is a list of best practices and preferred ways of 
+      developing javascript code, based on opinions and experience from many 
+      developers in the javascript community. Since this is a list of 
+      recommendations rather than a list of absolute rules, experienced 
+      developers may have slightly differing opinions from those expressed 
+      below. </P><BR>
+      <TABLE class=toc>
+        <TBODY>
+        <TR>
+          <TD>
+            <P class=title>Table Of Contents</P>
+            <OL>
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#var">Always 
+              Use 'var'</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#detect">Feature-Detect 
+              Rather Than Browser-Detect</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#squarebracket">Use 
+              Square Bracket Notation</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#eval">Avoid 
+              'eval'</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#forms">Reference 
+              Forms and Form Elements Correctly</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#with">Avoid 
+              'with' Statements</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#onclick">Use 
+              onclick In Anchors Instead Of javascript: Pseudo-Protocol</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#plus">Use 
+              The Unary + Operator To TypeConvert To Number</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#all">Avoid 
+              document.all</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#comments">Don't 
+              Use HTML Comments In Script Blocks</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#namespace">Avoid 
+              Cluttering The Global Namespace</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#sync">Avoid 
+              sync "Ajax" calls</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#json">Use 
+              JSON</A> 
+              <LI><A 
+              href="http://www.javascripttoolbox.com/bestpractices/#script">Use 
+              Correct &lt;script&gt; Tags</A> </LI></OL></TD></TR></TBODY></TABLE><A 
+      name=var></A>
+      <H2>Always Use 'var'</H2>
+      <P>Variables in javascript either have global scope or function scope, and 
+      using the 'var' keyword is vital to keeping them straight. When declaring 
+      a variable for use either as a global variable or as a function-level 
+      variable, always prefix the declaration with the 'var' keyword. The 
+      example below highlights the potential problem caused by not doing so.</P>
+      <DIV class=codecaption>Problem Caused By Not Using Var</DIV><PRE class=badcode>var i=0; // This is good - creates a global variable
+function test() {
+   for (i=0; i&lt;10; i++) {
+      alert("Hello World!");
+   }
+}
+test();
+alert(i); // The global variable i is now 10!
+</PRE>
+      <P>Since the variable i inside the function was not declared as a 
+      function-level variable by using the 'var' keyword, it references the 
+      global variable in this example. It is a good idea to always declare 
+      global variables using 'var', but it is vital to declare function-scoped 
+      variables using 'var'. The two approaches below are functionally 
+      identical.</P>
+      <DIV class=codecaption>Fixed Function</DIV><PRE class=goodcode>function test() {
+   <B>var i=0;</B>
+   for (i=0; i&lt;10; i++) {
+      alert("Hello World!");
+   }
+}
+</PRE>
+      <DIV class=codecaption>Fixed Function</DIV><PRE class=goodcode>function test() {
+   for (<B>var</B> i=0; i&lt;10; i++) {
+      alert("Hello World!");
+   }
+}
+</PRE><A name=detect></A>
+      <H2>Feature-Detect Rather Than Browser-Detect</H2>
+      <P>Some code is written to detect browser versions and to take different 
+      action based on the user agent being used. This, in general, is a very bad 
+      practice. Any code which even looks at the global "navigator" object is 
+      suspect. </P>
+      <P>The better approach is to use feature detection. That is, before using 
+      any advanced feature that an older browser may not support, check to see 
+      if the function or property exists first, then use it. This is better than 
+      detecting the browser version specifically, and assuming that you know its 
+      capabilities. An in-depth article about this topic can be found at <A 
+      href="http://www.jibbering.com/faq/faq_notes/not_browser_detect.html">http://www.jibbering.com/faq/faq_notes/not_browser_detect.html</A>. 
+      </P>
+      <DIV class=codecaption>Example</DIV><PRE class=goodcode>if (document.getElementById) {
+   var element = document.getElementById('MyId');
+}
+else {
+   alert('Your browser lacks the capabilities required to run this script!');
+}
+</PRE><A name=squarebracket></A>
+      <H2>Use Square Bracket Notation</H2>
+      <P>When accessing object properties that are determined at run-time or 
+      which contain characters not compatible with dot notation, use square 
+      bracket notation. If you are not an experienced javascript programmer, 
+      it's not a bad practice to use square bracket notation all the time. </P>
+      <P>Objects properties in javascript can be accessed primarily in two ways: 
+      Dot notation and Square bracket notation. </P>
+      <DIV class=codecaption>Dot notation</DIV><PRE class=code>MyObject.property
+</PRE>
+      <DIV class=codecaption>Square bracket notation</DIV><PRE class=code>MyObject["property"]
+</PRE>
+      <P>With dot notation, the property name is hard-coded and cannot be 
+      changed at run-time. With bracket notation, the property name is a string 
+      which is evaluated to resolve the property name. The string can be 
+      hard-coded, or a variable, or even a function call which returns a string 
+      property name. </P>
+      <P>If a property name is being generated at run-time, the bracket notation 
+      is required. For example, if you have properties "value1", "value2", and 
+      "value3", and want to access the property using a variable i=2: </P>
+      <DIV class=codecaption>This Will Work</DIV><PRE class=goodcode>MyObject["value"+i]
+</PRE>
+      <DIV class=codecaption>This Will Not</DIV><PRE class=badcode>MyObject.value+i
+</PRE>
+      <P>Also, in some server-side environments (PHP, Struts, etc) form field 
+      names are appended with [] to denote that the form field should be treated 
+      as an array on the server-side. However, referencing a field name 
+      containing [] using dot notation will not work because [] is the syntax 
+      for reference a javascript array. So, square bracket notation is required. 
+      </P>
+      <DIV class=codecaption>This Will Work</DIV><PRE class=goodcode>formref.elements["name[]"]
+</PRE>
+      <DIV class=codecaption>This Will Not</DIV><PRE class=badcode>formref.elements.name[]
+</PRE>
+      <P>The recommendation for using square bracket notation is to always use 
+      it when it is required (obviously). Using it when not strictly required is 
+      a matter of personal preference and convention. One good rule of thumb is 
+      to use dot notation to access standard properties of objects, and square 
+      bracket notation to access properties which are defined as objects in the 
+      page. So, while <TT>document["getElementById"]()</TT> is perfectly vaid 
+      using square bracket notation, <TT>document.getElementById()</TT> is the 
+      preferred syntax because getElementById is a standard property of the 
+      document object as defined in the DOM specifications. Mixing the use of 
+      dot and square bracket notation makes it clear which properties are 
+      standard and which are names defined by the content: </P><PRE class=goodcode>document.forms["myformname"].elements["myinput"].value
+</PRE>
+      <P>Here, the <TT>forms</TT> property is a standard property of 
+      <TT>document</TT>, while the form name <TT>myformname</TT> is defined by 
+      the page content. Likewise, the <TT>elements</TT> property and 
+      <TT>value</TT> property are both defined by the specs, but then 
+      <TT>myinput</TT> name is defined in the page. This syntax is very clear 
+      and easy to understand and is a recommended convention to follow, but not 
+      a strict rule. </P><A name=eval></A>
+      <H2>Avoid 'eval'</H2>
+      <P>The eval() function in javascript is a way to run arbitrary code at 
+      run-time. In almost all cases, eval should never be used. If it exists in 
+      your page, there is almost always a more correct way to accomplish what 
+      you are doing. For example, eval is often used by programmers who do not 
+      know about using <A 
+      href="http://www.javascripttoolbox.com/bestpractices/#squarebracket">Square 
+      Bracket Notation</A>. </P>
+      <P>The rule is, "Eval is evil." Don't use it unless you are an experienced 
+      developer and know that your case is an exception. </P><A name=forms></A>
+      <H2>Reference Forms and Form Elements Correctly</H2>
+      <P>All forms in an HTML form should have a name attribute. For XHTML 
+      documents, the name attribute is not required and instead the form tag 
+      should have an id attribute and should be referenced using 
+      document.getElementById(). Referencing forms using indexes, such as 
+      document.forms[0] is a bad practice in almost all cases. Some browsers 
+      make the form available as a property of the document itself using its 
+      name. This is not reliable and shouldn't be used. </P>
+      <P>The example below uses square bracket notation and correct object 
+      references to show the most fool-proof way of referencing a form 
+input.</P>
+      <DIV class=codecaption>Correct Reference To Form Input</DIV><PRE class=goodcode>document.forms["formname"].elements["inputname"]
+</PRE>
+      <DIV class=codecaption>Bad Practice</DIV><PRE class=badcode>document.formname.inputname
+</PRE>
+      <P>If you will be referencing multiple form elements within a function, 
+      it's best to make a reference to the form object first and store it in a 
+      variable. This avoids multiple lookups to resolve the form object 
+      reference. </P><PRE class=goodcode>var formElements = document.forms["mainForm"].elements;
+formElements["input1"].value="a";
+formElements["input2"].value="b";
+</PRE>
+      <P>When validating an input field using onChange or similar event 
+      handlers, it is always a good idea to pass a reference to the input 
+      element itself into the function. Every input element within a form has a 
+      reference to the form object that it is contained in. </P><PRE class=goodcode>&lt;input type="text" name="address" onChange="validate(this)"&gt;
+
+function validate(input_obj) {
+   // Get a reference to the form which contains this element
+   var theform = input_obj.form;
+   // Now you can check other inputs in the same form without
+   // hard-coding a reference to the form itself
+   if (theform.elements["city"].value=="") {
+      alert("Error");
+   }
+}
+</PRE>
+      <P>By passing a reference to the form element and accessing its form 
+      property, you can write a function which does not contain a hard reference 
+      to any specific form name on the page. This is a good practice because the 
+      function becomes more reusable. </P><A name=with></A>
+      <H2>Avoid 'with'</H2>
+      <P>The 'with' statement in javascript inserts an object at the front scope 
+      chain, so any property/variable references will first try to be resolved 
+      against the object. This is often used as a shortcut to avoid multiple 
+      long references. </P>
+      <DIV class=codecaption>Example Using with</DIV><PRE class=badcode>with (document.forms["mainForm"].elements) {
+   input1.value = "junk";
+   input2.value = "junk";
+}
+</PRE>
+      <P>The problem is that the programmer has no way to verify that input1 or 
+      input2 are actually being resolved as properties of the form elements 
+      array. It is checked first for properties with these names, but if they 
+      aren't found then it continues to search up the scope chain. Eventually, 
+      it reaches the global object where it tries to treat "input1" and "input2" 
+      as global variables and tries to set their "value" properties, which 
+      result in an error. </P>
+      <P>Instead, create a reference to the reused object and use it to resolve 
+      references. </P>
+      <DIV class=codecaption>Using A Reference Instead</DIV><PRE class=goodcode>var elements = document.forms["mainForm"].elements;
+elements.input1.value = "junk";
+elements.input2.value = "junk";
+</PRE><A name=onclick></A>
+      <H2>Use onclick In Anchors Instead Of javascript: Pseudo-Protocol</H2>
+      <P>When you want to trigger javascript code from an anchor &lt;A&gt; tag, 
+      the onclick handler should be used rather than the javascript: 
+      pseudo-protocol. The javascript code that runs within the onclick handler 
+      must return true or false (or an expression than evalues to true or false) 
+      back to the tag itself - if it returns true, then the HREF of the anchor 
+      will be followed like a normal link. If it returns false, then the HREF 
+      will be ignored. This is why "return false;" is often included at the end 
+      of the code within an onclick handler. </P>
+      <DIV class=codecaption>Correct Syntax</DIV><PRE class=goodcode>&lt;a href="javascript_required.html" onclick="doSomething(); return false;"&gt;go&lt;/a&gt;
+</PRE>
+      <P>In this case, the "doSomething()" function (defined by the user 
+      somewhere in the page) will be called when the link is clicked, and then 
+      false will be returned. The href will never be followed for 
+      javascript-enabled browsers. However, if the browser does not have 
+      javascript enabled, the javascript_required.html file will be loaded, 
+      where you can inform your user that javascript is required. Often, links 
+      will just contain href="#" for the sake of simplicity, when you know for 
+      sure that your users will have javascript enabled. This practice is 
+      discouraged. It's always a good idea to put a local fall-back page that 
+      will be loaded for users with javascript disabled. </P>
+      <P>Sometimes, you want to conditionally follow a link. For example, if a 
+      user is navigating away from your form page and you first want to validate 
+      that nothing has changed. In this case, your onclick will call a function 
+      and it will return a value itself to say whether the link should be 
+      followed. </P>
+      <DIV class=codecaption>Conditional Link Following</DIV><PRE class=goodcode>&lt;a href="/" onClick="return validate();"&gt;Home&lt;/a&gt;
+
+function validate() {
+	return prompt("Are you sure you want to exit this page?");
+}
+</PRE>
+      <P>In this case, the validate() function should always return either true 
+      or false. True if the user should be allowed to navigate back to the home 
+      page, or false if the link should not be followed. This example prompts 
+      the user for confirmation, then returns true or false, depending on if the 
+      user clicked OK or Cancel. </P>
+      <P>Below are examples of things NOT to do. If you see code like this in 
+      your pages, it is not correct and should be fixed. </P>
+      <DIV class=codecaption>What Not To Do</DIV><PRE class=badcode>&lt;a href="javascript:doSomething()"&gt;link&lt;/a&gt;
+&lt;a href="#" onClick="doSomething()"&gt;link&lt;/a&gt;
+&lt;a href="#" onClick="javascript:doSomething();"&gt;link&lt;/a&gt;
+&lt;a href="#" onClick="javascript:doSomething(); return false;"&gt;link&lt;/a&gt;
+</PRE><A name=plus></A>
+      <H2>Use The Unary + Operator To TypeConvert To Number</H2>
+      <P>In javascript, the + operator is used for both addition and 
+      concatenation. This can cause problems when adding up form field values, 
+      for example, since javascript is a non-typed language. Form field values 
+      will be treated as strings, and if you + them together, javascript will 
+      treat it as concatenation instead of addition. </P>
+      <DIV class=codecaption>Problematic Example</DIV><PRE class=badcode>&lt;form name="myform" action="[url]"&gt;
+&lt;input type="text" name="val1" value="1"&gt;
+&lt;input type="text" name="val2" value="2"&gt;
+&lt;/form&gt;
+
+function total() {
+	var theform = document.forms["myform"];
+	var total = theform.elements["val1"].value + theform.elements["val2"].value;
+	alert(total); // This will alert "12", but what you wanted was 3!
+}
+</PRE>
+      <P>To fix this problem, Javascript needs a hint to tell it to treat the 
+      values as numbers, rather than strings. You can use the unary + operator 
+      to convert the string value into a number. Prefixing a variable or 
+      expression with + will force it to evaluate as a number, which can then be 
+      successfully used in a math operation. </P>
+      <DIV class=codecaption>Fixed Example</DIV><PRE class=goodcode>function total() {
+	var theform = document.forms["myform"];
+	var total = (+theform.elements["val1"].value) + (+theform.elements["val2"].value);
+	alert(total); // This will alert 3
+}
+</PRE><A name=all></A>
+      <H2>Avoid document.all</H2>
+      <P>document.all was introduced by Microsoft in IE and is not a standard 
+      javascript DOM feature. Although many newer browsers do support it to try 
+      to support poorly-written scripts that depend on it, many browsers do not. 
+      </P>
+      <P>There is never a reason to use document.all in javascript except as a 
+      fall-back case when other methods are not supported and very early IE 
+      support (&lt;5.0) is required. You should never use document.all support 
+      as a way to determine if the browser is IE, since other browsers also now 
+      support it. </P>
+      <DIV class=codecaption>Only Use document.all As A Last Resort</DIV><PRE class=goodcode>if (document.getElementById) {
+	var obj = document.getElementById("myId");
+}
+else if (document.all) {
+	var obj = document.all("myId");
+}
+</PRE>
+      <P>Some rules for using document.all are</P>
+      <UL>
+        <LI>Always try other standard methods first 
+        <LI>Only fall back to using document.all as a last resort 
+        <LI>Only use it if you need to support IE versions earlier than 5.0 
+        <LI>Always check that it is supported with "if (document.all) { }" 
+        around the block where you use it. </LI></UL><A name=comments></A>
+      <H2>Don't Use HTML Comments In Script Blocks</H2>
+      <P>In the ancient days of javascript (1995), some browsers like Netscape 
+      1.0 didn't have any support or knowledge of the script tag. So when 
+      javascript was first released, a technique was needed to hide the code 
+      from older browsers so they wouldn't show it as text in the page. The 
+      'hack' was to use HTML comments within the script block to hide the code. 
+      </P>
+      <DIV class=codecaption>Using HTML Comments In Script Is Bad</DIV><PRE class=badcode>&lt;script language="javascript"&gt;
+&lt;!--
+   // code here
+//--&gt;
+&lt;/script&gt;
+</PRE>
+      <P>No browsers in common use today are ignorant of the &lt;script&gt; tag, 
+      so hiding of javascript source is no longer necessary. In fact, it can be 
+      considered harmful for the following reasons: </P>
+      <UL>
+        <LI>Within XHTML documents, the source will actually be hidden from all 
+        browsers and rendered useless 
+        <LI>-- is not allowed within HTML comments, so any decrement operations 
+        in script are invalid </LI></UL><A name=namespace></A>
+      <H2>Avoid Cluttering The Global Namespace</H2>
+      <P>Global variables and functions are rarely required. Using globals may 
+      cause naming conflicts between javascript source files and cause code to 
+      break. For this reason, it is a good practice to encapsulate functionality 
+      within a single global namespace. </P>
+      <P>There are several ways to accomplish this task, some of which are much 
+      more complicated than others. The simplest approach is to create a single 
+      global object and assign properties and methods to this object. </P>
+      <DIV class=codecaption>Creating A Namespace</DIV><PRE class=goodcode>var MyLib = {}; // global Object cointainer
+MyLib.value = 1;
+MyLib.increment = function() { MyLib.value++; }
+MyLib.show = function() { alert(MyLib.value); }
+
+MyLib.value=6;
+MyLib.increment();
+MyLib.show(); // alerts 7
+</PRE>
+      <P>Namespaces can also be created using <A 
+      href="http://www.jibbering.com/faq/faq_notes/closures.html" 
+      target=_blank>Closures</A>, and <A 
+      href="http://www.crockford.com/javascript/private.html" 
+      target=_blank>Private Member Variables</A> can also be simulated in 
+      javascript. </P><A name=sync></A>
+      <H2>Avoid sync "Ajax" calls</H2>
+      <P>When making "Ajax" requests, you may choose either async or sync mode. 
+      Async mode runs the request in the background while other browser 
+      activities can continue to process. Sync mode will wait for the request to 
+      return before continuing. </P>
+      <P>Requests made with sync mode should be avoided. These requests will 
+      cause the browser to lock up for the user until the request returns. In 
+      cases where the server is busy and the response takes a while, the user's 
+      browser (and maybe OS) will not allow anything else to be done. In cases 
+      where a response is never properly received, the browser may continue to 
+      block until the request is timed out. </P>
+      <P>If you think that your situation requires sync mode, it is most likely 
+      time to re-think your design. Very few (if any) situations actually 
+      require Ajax requests in sync mode. </P><A name=json></A>
+      <H2>Use JSON</H2>
+      <P>When storing data structures as plain text or sending/retrieving data 
+      structures via <A href="http://www.ajaxtoolbox.com/" 
+      target=_blank>Ajax</A>, use JSON instead of XML when possible. <A 
+      href="http://www.json.org/" target=_blank>JSON (JavaScript Object 
+      Notation)</A> is a more compact and efficient data format, and is 
+      language-neutral. </P><A name=script></A>
+      <H2>Use Correct &lt;script&gt; Tags</H2>
+      <P>The LANGUAGE attribute is deprecated in the &lt;script&gt; tag. The 
+      proper way to create a javascript code block is:</P><PRE class=goodcode>&lt;script type="text/javascript"&gt;
+// code here
+&lt;/script&gt;
+</PRE></DIV></DIV></TD>
+    <TD class=right id=googleAds>
+      <SCRIPT type=text/javascript>
+		google_ad_client = "pub-9155030588311591";
+		google_ad_width = 120;
+		google_ad_height = 600;
+		google_ad_format = "120x600_as";
+		google_color_border = "000000";
+		google_color_bg = "FFFFFF";
+		google_color_link = "000000";
+		google_color_url = "000000";
+		google_color_text = "000000";
+		</SCRIPT>
+
+      <SCRIPT src="Javascript%20Best%20Practices_archivos/show_ads.js" 
+      type=text/javascript></SCRIPT>
+    </TD></TR>
+  <TR>
+    <TD class=footer colSpan=3><IMG alt=Logo 
+      src="Javascript%20Best%20Practices_archivos/bullet-bolt.gif">&nbsp;All 
+      Contents Copyright © <A href="http://www.mattkruse.com/">Matt 
+  Kruse</A></TD></TR></TBODY></TABLE></BODY></HTML>

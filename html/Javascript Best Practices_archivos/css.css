@@ -1,0 +1,310 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: small sans-serif; COLOR: black; PADDING-TOP: 0px
+}
+EM {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #002bb8; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #002bb8
+}
+A:active {
+	COLOR: #002bb8
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+P {
+	MARGIN: 0.5em 0px; LINE-HEIGHT: 1.4em
+}
+P IMG {
+	MARGIN: 0px
+}
+IMG {
+	VERTICAL-ALIGN: middle; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+H1 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 6px 0px 6px 25px; COLOR: black
+}
+H2 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaa 1px solid
+}
+H3 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaa 1px solid
+}
+H4 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaa 1px solid
+}
+H5 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaa 1px solid
+}
+H6 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0.17em; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaa 1px solid
+}
+H1 {
+	FONT-SIZE: 188%
+}
+H2 {
+	FONT-SIZE: 150%; PADDING-TOP: 1em
+}
+H2.first {
+	PADDING-TOP: 0px
+}
+H3 {
+	FONT-WEIGHT: bold; BORDER-BOTTOM-STYLE: none
+}
+H4 {
+	FONT-WEIGHT: bold; BORDER-BOTTOM-STYLE: none
+}
+H5 {
+	FONT-WEIGHT: bold; BORDER-BOTTOM-STYLE: none
+}
+H6 {
+	FONT-WEIGHT: bold; BORDER-BOTTOM-STYLE: none
+}
+H3 {
+	FONT-SIZE: 120%
+}
+H4 {
+	FONT-SIZE: 110%
+}
+H5 {
+	FONT-SIZE: 100%
+}
+H6 {
+	FONT-SIZE: 80%
+}
+A.button {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #c2ddf4; TEXT-DECORATION: none
+}
+A.button:hover {
+	TEXT-DECORATION: none
+}
+HR {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0.2em 0px; COLOR: #aaa; HEIGHT: 1px; BACKGROUND-COLOR: #aaa; BORDER-RIGHT-WIDTH: 0px
+}
+P TT {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #dddddd 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 100%; PADDING-BOTTOM: 0px; BORDER-LEFT: #dddddd 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #dddddd 1px solid; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #f6f6f6
+}
+TABLE.columns {
+	WIDTH: 100%; BACKGROUND-COLOR: #c2ddf4
+}
+TABLE.columns TD.left {
+	VERTICAL-ALIGN: top; WIDTH: 200px; BACKGROUND-COLOR: #c2ddf4
+}
+TABLE.columns TD.header {
+	PADDING-RIGHT: 120px
+}
+TABLE.columns TD.middle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; BACKGROUND-COLOR: white
+}
+TABLE.columns TD.middle DIV.body {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0px; PADDING-TOP: 20px
+}
+DIV.corner {
+	FLOAT: left; WIDTH: 25px; HEIGHT: 25px
+}
+TABLE.columns TD.middle DIV.cornerul {
+	BACKGROUND: url(/rounded-corner-25-ul.gif) #c2ddf4 no-repeat left top
+}
+TABLE.columns TD.middle DIV.tabcontent {
+	CLEAR: left; BORDER-RIGHT: black 1px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+TABLE.columns TD.middle DIV.content {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 20px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE.columns TD.middle DIV.tabcontent {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 20px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE.columns TD.right {
+	VERTICAL-ALIGN: top; WIDTH: 120px
+}
+TABLE.columns TD.footer {
+	FONT-WEIGHT: bold; HEIGHT: 20px; TEXT-ALIGN: center
+}
+DIV.tabContainer {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; BORDER-LEFT: black 0px solid; WIDTH: 100%; PADDING-TOP: 0px; BORDER-BOTTOM: black 1px solid
+}
+DIV.tabContainer DIV {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 1px; MARGIN: 0px 5px; BORDER-LEFT: black 1px solid; COLOR: black; PADDING-TOP: 1px; BORDER-BOTTOM: black 1px solid; POSITION: relative; TOP: 1px; HEIGHT: 1.3em; BACKGROUND-COLOR: #eeeeee
+}
+DIV.tabContainer DIV.selected {
+	FONT-WEIGHT: bold; BORDER-BOTTOM-COLOR: white; BACKGROUND-COLOR: white
+}
+DIV.tabContainer DIV A {
+	COLOR: black; TEXT-DECORATION: none
+}
+DIV.tabContainer DIV A:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+DIV.tabContainer DIV A:hover {
+	TEXT-DECORATION: underline
+}
+FIELDSET.example {
+	BORDER-RIGHT: #8e9086 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #8e9086 2px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 10px; BORDER-LEFT: #8e9086 2px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #8e9086 2px solid
+}
+FIELDSET.example LEGEND {
+	FONT-WEIGHT: bold
+}
+DIV.example {
+	OVERFLOW-X: scroll; WIDTH: 100%
+}
+DIV.example DIV.text {
+	FONT-WEIGHT: bold
+}
+DIV.codecaption {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: -5px; MARGIN-LEFT: 10px
+}
+PRE.code {
+	BORDER-RIGHT: black 1px dashed; PADDING-RIGHT: 3px; BORDER-TOP: black 1px dashed; PADDING-LEFT: 3px; FONT-SIZE: 90%; PADDING-BOTTOM: 3px; MARGIN: 8px 0px 8px 10px; BORDER-LEFT: black 1px dashed; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px dashed; BACKGROUND-COLOR: #eeeeee
+}
+PRE.badcode {
+	BORDER-RIGHT: black 1px dashed; PADDING-RIGHT: 3px; BORDER-TOP: black 1px dashed; PADDING-LEFT: 3px; FONT-SIZE: 90%; PADDING-BOTTOM: 3px; MARGIN: 8px 0px 8px 10px; BORDER-LEFT: black 1px dashed; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px dashed; BACKGROUND-COLOR: #eeeeee
+}
+PRE.goodcode {
+	BORDER-RIGHT: black 1px dashed; PADDING-RIGHT: 3px; BORDER-TOP: black 1px dashed; PADDING-LEFT: 3px; FONT-SIZE: 90%; PADDING-BOTTOM: 3px; MARGIN: 8px 0px 8px 10px; BORDER-LEFT: black 1px dashed; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px dashed; BACKGROUND-COLOR: #eeeeee
+}
+PRE.code B {
+	FONT-WEIGHT: bold
+}
+PRE.badcode B {
+	FONT-WEIGHT: bold
+}
+PRE.goodcode B {
+	FONT-WEIGHT: bold
+}
+PRE.badcode {
+	BORDER-RIGHT: red 1px dashed; BORDER-TOP: red 1px dashed; BORDER-LEFT: red 1px dashed; BORDER-BOTTOM: red 1px dashed; BACKGROUND-COLOR: #ffeeee
+}
+PRE.goodcode {
+	BORDER-RIGHT: green 1px dashed; BORDER-TOP: green 1px dashed; BORDER-LEFT: green 1px dashed; BORDER-BOTTOM: green 1px dashed; BACKGROUND-COLOR: #eeffee
+}
+PRE.source {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 80%; PADDING-BOTTOM: 3px; MARGIN: 8px 0px 8px 10px; OVERFLOW: scroll; BORDER-LEFT: black 1px solid; WIDTH: 95%; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid; HEIGHT: 500px; BACKGROUND-COLOR: #eeeeee
+}
+TABLE.sourceDetails {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 8px 0px 8px 10px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff
+}
+TABLE.sourceDetails TH {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaa 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #dddddd; TEXT-ALIGN: right
+}
+TABLE.sourceDetails TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px; VERTICAL-ALIGN: top; BORDER-LEFT: #aaa 1px; BORDER-BOTTOM: #aaa 1px solid
+}
+.portlet {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 95%; PADDING-BOTTOM: 0px; MARGIN: 2px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.portlet H5 {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 0px 0px 5px; WHITE-SPACE: nowrap
+}
+.pBody {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; COLOR: black; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: white
+}
+.portlet A {
+	DISPLAY: block; PADDING-LEFT: 20px; BACKGROUND: url(/bullet-bolt.gif) white no-repeat left top; MARGIN-LEFT: 3px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 1.6em
+}
+.portlet A.selected {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #a0c5e5
+}
+.portlet A:hover {
+	BACKGROUND-COLOR: #c2ddf4; TEXT-DECORATION: none
+}
+
+@media Print    
+{
+TABLE.columns TD.left {
+	DISPLAY: none
+}
+TABLE.columns TD.right {
+	DISPLAY: none
+}
+TABLE.columns {
+	BACKGROUND-COLOR: white
+}
+TABLE.columns TD.middle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE.columns TD.middle DIV.cornerul {
+	DISPLAY: none
+}
+TABLE.columns TD.middle DIV.body {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#searchbox {
+	DISPLAY: none
+}
+H1 {
+	MARGIN: 6px 0px
+}
+    }
+.js_comment {
+	COLOR: green
+}
+TABLE.table {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.table TD {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #aaa 1px solid
+}
+TABLE.table TH {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #aaa 1px solid
+}
+TABLE.table THEAD TR TH {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: center
+}
+TABLE.table TBODY TR TH {
+	VERTICAL-ALIGN: middle; TEXT-ALIGN: right
+}
+TABLE.table TH {
+	BACKGROUND-COLOR: #c2ddf4
+}
+TABLE.table_small TBODY TR TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: smaller; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+TABLE.table_small THEAD TR TH {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: smaller; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+UL.links LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TABLE.toc {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 20px; BORDER-LEFT: black 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+TABLE.toc P.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 120%; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE.toc OL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TABLE.toc OL LI {
+	FONT-SIZE: 110%; MARGIN-LEFT: 20px; TEXT-DECORATION: none
+}
+#searchbox {
+	FLOAT: right
+}
+#searchbox FORM {
+	DISPLAY: inline
+}
+#searchbox FORM INPUT.search {
+	COLOR: #aaa
+}
+DIV.libbox {
+	BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 2px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 15px; BORDER-LEFT: black 2px solid; WIDTH: 150px; PADDING-TOP: 3px; BORDER-BOTTOM: black 2px solid; HEIGHT: 250px
+}
+DIV.libbox DIV.image {
+	HEIGHT: 150px
+}
+DIV.libbox DIV.title {
+	MARGIN-TOP: 5px; FONT-WEIGHT: bold; FONT-SIZE: small
+}
+DIV.libbox DIV.title A {
+	TEXT-DECORATION: underline
+}
+DIV.libbox DIV.description {
+	FONT-SIZE: x-small; FONT-FAMILY: sans serif
+}
+.beta_tag {
+	BORDER-RIGHT: #990000 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #990000 2px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; BORDER-LEFT: #990000 2px solid; COLOR: #999999; PADDING-TOP: 0px; BORDER-BOTTOM: #990000 2px solid; FONT-FAMILY: verdana, helvetica, sans serif
+}
