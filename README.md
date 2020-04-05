@@ -35,6 +35,12 @@ Espero te haya gustado mi historia.
 # Término y fin del proyecto
 El proyecto finalizo el año 2010 por falta de tiempo, bajas ventas y por el periodo de vida util de la aplicacion. Debo agradecer todo lo que aprendi con el, las muchas noches que me acoste tarde, el frio del invierno de ese año en especial 2005 y las incontables tazas de te que tome .... xD
 
+# Hosting del proyecto
+Javascript Plus! estaba alojado en el sitio web http://www.vbsoftware.cl. Este nombre de sitio venia originalmente de un proyecto personal al cual yo habia llamado "proyectovb" y del cual fui muy entusiasta con el lenguaje visual basic desde la version 4 a la 6. Este sitio actualmente esta "tomado" en NIC por otra persona. Curiosamente usa la aplicacion como promoción en su sitio pero tiene un link de direccion a juegos de casino. No tengo ganas de iniciar algun tipo de pelea o disputa legal por el nombre del sitio. Curioso igual que tengan el proyecto como referencia en este. Quizas como experiencia cuiden sus sitios webs o registren su marca. 
+
+# Patentes y nombres comerciales
+Javascript Plus! no es un nombre de marca registrado y esperaria que se conserve como esta. En su epoca hice las averiguaciones del tema "legal" de registro de marcas y patentes pero era engorroso y caro para mi en la epoca. Desconozco si en la actualidad esto seguira igual o se haya simplificado el proceso de registro de aplicaciones.
+
 # Shareware y canales de promoción
 Para usar el canal de venta ocupe el que provee la empresa http://www.regnow.com. Tienes que configurar una cuenta, indicar los datos del deposito de la cuenta destino y solicitar al banco un numero de transaccion para autorizar depositos internacionales. Luego en tu cuenta de regnow te configuras cada cuanto quieres que te lleguen los depositos (en mi caso eran cada 200 USD). 
 
@@ -67,16 +73,101 @@ El proyecto esta construido usando varias tecnologias de la epoca. Destaco las p
 - Llamadas a la API de windows.
 
 # Funcionalidades generales de la aplicación
-- Editor de texto multi archivos. (MDI)
-- Construido en Intellisense. (usando componente activex codesence que era un muy buen componente para editar texto creado por la empresa http://www.winmain.com. Ya no existe ...
-- Explorador de funciones.
-- Capacidad de ampliar las funcionalidades usando plugins (Se desarrollaban en visual basic 6.0 y la idea era expandir las funcionalidades de la aplicación)
-- Validacion de archivos javascript usando JSLINT
-- Validacion de archivos .css usando Tidy
-- Varias guias de diferentes versiones de javascript
-- Tiene un tutorial de javascript incorporado.
-- Manejo de FTP propio.
-- Definiciones de los atributos de las propiedades de HTML y CSS en archivos .INI 
+
+Interfaz
+
+    Interfaz moderna como Microsoft Visual Studio .NET
+    Interfaz de documentos múltiples
+    Familiar MS Officeź pestañas de estilo
+    Panel dividido
+
+Editor de texto
+
+    Numeración de líneas
+    Ajuste de línea
+    Múltiples niveles Deshacer/Rehacer
+    Buscar y reemplazar con soporte de expresiones regulares
+    Buscar en archivos
+
+Resaltado de sintaxis de código
+
+    Resaltado de sintaxis JavaScript
+    Resaltado de sintaxis HTML
+
+Escritura de código HTML
+
+    Inspector de código para etiquetas HTML
+    Autocompletar para etiquetas HTML
+    Generadores de etiquetas HTML
+    Selector de color HTML
+    Explorador de código HTML
+    12 asistentes HTML
+
+Escritura de código JavaScript
+
+    Autocompletar para objetos JavaScript
+    Sugerencias de la función JavaScript
+    Explorador de funciones JavaScript
+    Navegador de objetos JavaScript
+    18 JavaScript Plus! Asistentes (Integrados)
+
+Características de conectividad
+
+    Abrir documentos desde el servidor HTTP
+    Abrir/guardar documentos desde/a un servidor FTP
+
+Vista previa del código
+
+    Vista previa en el Navegador Externo (sin guardar el archivo)
+
+Herramientas de productividad
+
+    Portapapeles de varios elementos
+    Explorador de archivos incorporado
+    Biblioteca de códigos
+    Validación HTML usando HTML Tidy
+    Navegador de etiquetas HTML
+    Navegador de objetos JavaScript
+    Validación de JavaScript usando JSLint
+
+Ayuda y referencia
+
+    Referencia JavaScript
+    Referencia HTML 4.0
+    Referencia CSS
+    Ordenado Referencia
+    Referencia JSLint
+
+Beneficios para los profesionales
+
+    Edite HTML, JavaScript en un solo programa
+    Carga limpia, ligera y rápida
+    Interfaz familiar que permite un arranque rápido
+    Todas las funciones esenciales de edición de código están en su lugar
+    Editor de texto, menús, barras de herramientas y teclas de acceso directo totalmente personalizables
+    Reutilizar eficientemente fragmentos de código comunes
+    Pocos clic clic FTP subir o actualizar
+
+Beneficios para los estudiantes
+
+    Fácil de aprender y usar
+    Varias plantillas y fragmentos de código
+    Asistentes HTML y JavaScript de inicio rápido
+    Ayuda a aprender HTML, JavaScript e incluso algunos scripts
+
+Características Principales
+
+    Construido con JavaScript y HTML Autocompletar.
+    Incluye la referencia completa de JavaScript y la guía básica 1.3, 1.4 y 1.5.
+    Incluye referencia completa HTML, CSS, DOM y JSCRIPT.
+    FTP integrado.
+    Construya su propio proyecto personalizado “JavaScript Plus!”
+    Incluye 18 JavaScript Plus! Asistentes (Agregar a Favoritos, Calendario, Menú de Países, Barra de desplazamiento de colores, Menú desplegable, Enlace de correo electrónico, Asistente de IFrame, Transferencia de imagen, Última fecha modificada, Menú izquierdo, Metaetiqueta, Enlaces de texto MouseOver, Ventana emergente, Transición de página, Menú emergente, Menú TabMenu y TreeMenu, SlideShow)
+    Navegador de objetos integrado. Explore todos los objetos javascript, métodos, propiedades de una manera fácil.
+    Expanda el entorno utilizando plugins. Cree su propio plugin usando activex dll. JavaScript Plus! incluye un esqueleto de muestra de Visual Basic 6.0 para crear sus propios plugins.
+    Previsualice su archivo en el navegador. JavaScript Plus! es compatible con Internet Explorer, Mozilla Firefox,
+    Netscape y Opera.
+    Soportes de macros.
 
 # Utilitarios Anexos (Algunos construidos tambien por mi ...)
 - Easy Query. Gestor para conectarse a distintas bases de datos via ODBC. (Otra herramienta mas que nacio de la necesidad)
