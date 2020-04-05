@@ -1,0 +1,91 @@
+[OPTIONS]
+ERRORLOG=F:\Proyectos\jspad\Ingles\ayuda\jsplus.ERR
+ROOT=F:\PROYEC~1\jspad\Ingles\ayuda
+BMROOT=F:\Proyectos\jspad\Ingles\ayuda\bmps
+COMPRESS=OFF
+CONTENTS = Hlp_Index                                                       
+COPYRIGHT=VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra
+REPORT=ON
+TITLE=Javascript Plus! Online Help
+WARNING=1
+
+[WINDOWS]
+main="Javascript Plus! Online Help", ( 255 , 255 , 511 , 511  ), 28160 ,,(r 15138815 )
+HlpWnd02="Window 2", ( 511 , 0 , 511 , 1000  ), 0 ,(r 14876671 ),(r 14876671 )
+HlpWnd03="Window 3", ( 255 , 511 , 511 , 511  ), 0 ,(r 14876671 ),(r 14876671 )
+HlpWnd04="Window 4", ( 255 , 511 , 511 , 511  ), 0 ,(r 14876671 ),(r 14876671 )
+HlpWnd05="Window 5", ( 255 , 511 , 511 , 511  ), 0 ,(r 14876671 ),(r 14876671 )
+HlpWnd06="Window 6", ( 255 , 511 , 511 , 511  ), 0 ,(r 14876671 ),(r 14876671 )
+
+[CONFIG]
+RR("mmsystem","sndPlaySound","Su")
+BrowseButtons()
+CreateButton("btn_copy", "C&opy", "CopyTopic()")
+
+[BAGGAGE]
+
+
+[BITMAPS]
+C:\Archivos de programa\HelpWriter32\GLOSSARY.SHG
+
+[MAP]
+Hlp_Index  10
+Hlp_File_Menu  20
+Hlp_Edit_Menu  30
+Hlp_View_Menu  40
+Hlp_Search_Menu  50
+Hlp_Format_Menu  60
+Hlp_Insert_Menu  70
+Hlp_Macro_Menu  80
+Hlp_Functions_Menu  90
+Hlp_Javascript_Menu  100
+Hlp_Plus_Menu  110
+Hlp_Html_Menu  120
+Hlp_What_itxs  130
+Hlp_InstallingxUninstalling_Javascript  140
+Hlp_Feedback_and  150
+Hlp_How_to  160
+Hlp_Javascript_Plus  170
+Hlp_Whatxs_New  180
+Hlp_Utilities_Menu  190
+Hlp_Shell_Menu  200
+Hlp_Syntax_Highlighting  220
+Hlp_Intellisense  230
+Hlp_Javascript_Plusx  240
+Hlp_Colored_Scrollbar  250
+Hlp_Drop_Down  260
+Hlp_Email_Link  270
+Hlp_IFrame_Wizard  280
+Hlp_Image_Rollover  290
+Hlp_Last_Modified  300
+Hlp_Left_Menu  310
+Hlp_Meta_Tag  320
+Hlp_MouseOver_Text  330
+Hlp_Popup_Window  340
+Hlp_Regular_expression  350
+Hlp_Javascript_Plus1  360
+Hlp_Array_Wizards  370
+Hlp_Object_Browser  380
+Hlp_Variable_wizard  390
+Hlp_Event_wizard  400
+Hlp_Html_Wizards  410
+Hlp_Form_Wizard  420
+Hlp_CheckBox_Wizard  430
+Hlp_Radio_Wizard  440
+Hlp_Listbox_Wizard  460
+Hlp_ComboBox_Wizard  470
+Hlp_TextBox_Wizard  480
+Hlp_TextArea_Wizard  490
+Hlp_Button_Wizard  500
+Hlp_Hidden_Entry  510
+Hlp_File_Attach  520
+Hlp_Image_Wizard  530
+Hlp_Table_Wizard  540
+Hlp_Other_features  550
+Hlp_Settings_Menu  560
+Hlp_About_VBSoftware  570
+Hlp_About_the  580
+GLOSSARY 64000
+
+[FILES]
+F:\Proyectos\jspad\Ingles\ayuda\jsplus.p01

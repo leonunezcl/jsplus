@@ -1,0 +1,28 @@
+05-21-2005 01:49:36 - start FailSafe client v5.00.04 (for Visual Basic 5.0) data capture
+*****************************************************************
+C:\Archivos de programa\HelpWriter32\helpwrit32 ver 4.3.1
+Error Information
+Error 0
+              Category      Remote OLE Automation error
+              Source        helpwrit32 (local)
+              Module        HESUBS.BAS
+              Procedure     Sub ClearHighEditWorkspace
+              Line Number   850
+              Error No.     -196344
+              Description   Application-defined or object-defined error : Automation error
+
+
+Call Tree & Arguments
+               1 : Call	mdiform1.frm : Sub ActiveBar1_Click : (Tool=<ActiveBarLibraryCtl.Tool>)
+               2 : Call		BTNBAR.BAS : Sub CompileTool : ()
+               3 : Call			MDIFORM1.BAS : Sub SaveAndCompileHelpfile : ()
+               4 : Call				RTF_IO.BAS : Sub Write_HC_Files : ()
+               5 : Call					HESUBS.BAS : Sub EndRTFTemp : ()
+               6 : Call						HESUBS.BAS : Sub ClearHighEditWorkspace : ()
+               7 : Trap							Runtime error -196344, Application-defined or object-defined error : Automation error on line 850
+
+System State Information
+
+User Said
+              Type in what you where doing here.
+05-21-2005 01:49:36 - stop FailSafe client v5.00.04 (for Visual Basic 5.0) data capture

@@ -1,0 +1,1440 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fcharset0 Verdana;}{\f3\froman\fcharset0 Times New Roman;}}
+{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue127;\red0\green127\blue127;\red0\green127\blue0;\red127\green0\blue127;\red127\green0\blue0;\red127\green127\blue0;\red127\green127\blue127;\red192\green192\blue192;}
+{\info{\creatim\yr2005\mo5\dy21\hr2\min6\sec33}{\revtim\yr2005\mo5\dy21\hr5\min0\sec30}{\version22}{\vern393248}}\paperw16835\paperh11903\margl360\margr0\margt360\margb360\deftab849
+
+#{\footnote Hlp_Index}
+${\footnote Index}
+K{\footnote Index}
++{\footnote Browse:0005}
+\pard{\b\f0\fs20\cf0 \{bmc jsplus.bmp\} Javascript Plus! Online Manual}{
+\par}\pard{
+\par}\pard{\f0\fs18\cf0 Welcome to the Online Javascript Help. Click on any topic to get help.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Overview}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 What it's Javascript Plus! ?}{\f2\fs18\cf0 {\v Hlp_What_itxs }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 What's New}{\f2\fs18\cf0 {\v Hlp_Whatxs_New }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 License agreement}{\f2\fs18\cf0 {\v Hlp_Javascript_Plus }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Installing/Uninstalling Javascript Plus!}{\f2\fs18\cf0 {\v Hlp_InstallingxUninstalling_Javascript }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 How to Register}{\f2\fs18\cf0 {\v Hlp_How_to }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Feedback and Support}{\f2\fs18\cf0 {\v Hlp_Feedback_and }}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Features}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Syntax Highlighting}{\f2\fs18\cf0 {\v Hlp_Syntax_Highlighting }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Intellisense}{\f2\fs18\cf0 {\v Hlp_Intellisense }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes 11 Javascript Plus! Wizards}{\f2\fs18\cf0 {\v Hlp_Javascript_Plus1 }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes 7 array wizards.}{\f2\fs18\cf0 {\v Hlp_Array_Wizards }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes a Javascript Object Browser}{\f2\fs18\cf0 {\v Hlp_Object_Browser }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes a regular expression wizard}{\f2\fs18\cf0 {\v Hlp_Regular_expression }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes a variables wizard}{\f2\fs18\cf0 {\v Hlp_Variable_wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes the event wizard}{\f2\fs18\cf0 {\v Hlp_Event_wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Includes 12 Html Wizards}{\f2\fs18\cf0 {\v Hlp_Html_Wizards }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Other features}{\f2\fs18\cf0 {\v Hlp_Other_features }}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Commands}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 File Menu}{\f2\fs18\cf0 {\v Hlp_File_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Edit Menu}{\f2\fs18\cf0 {\v Hlp_Edit_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 View Menu}{\f2\fs18\cf0 {\v Hlp_View_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Search Menu}{\f2\fs18\cf0 {\v Hlp_Search_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Format Menu}{\f2\fs18\cf0 {\v Hlp_Format_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Insert Menu}{\f2\fs18\cf0 {\v Hlp_Insert_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Macro Menu}{\f2\fs18\cf0 {\v Hlp_Macro_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Functions Menu}{\f2\fs18\cf0 {\v Hlp_Functions_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Javascript Menu}{\f2\fs18\cf0 {\v Hlp_Javascript_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Plus Menu}{\f2\fs18\cf0 {\v Hlp_Plus_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Html Menu}{\f2\fs18\cf0 {\v Hlp_Html_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Utilities Menu}{\f2\fs18\cf0 {\v Hlp_Utilities_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Shell Menu}{\f2\fs18\cf0 {\v Hlp_Shell_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Settings Menu}{\f2\fs18\cf0 {\v Hlp_Settings_Menu }}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Others}{
+\par}\pard{\strike\f2\fs18\cf0 About VBSoftware}{\f2\fs18\cf0 {\v Hlp_About_VBSoftware }}{
+\par}\pard{\strike\f2\fs18\cf0 About the Autor}{\f2\fs18\cf0 {\v Hlp_About_the }}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_File_Menu}
+${\footnote File Menu}
+K{\footnote File Menu}
++{\footnote grupo3:0010}
+\pard{\b\f0\fs20\cf0 File Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 New }{
+\par}\pard{\f2\fs18\cf0 Creates a new document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Open}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Opens an existing document. You must configure this in jsplus.ini file , section [filelist]. }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Open FTP }{
+\par}\pard{\f2\fs18\cf0 This activate a basic ftp. }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Save}{
+\par}\pard{\f2\fs18\cf0 Saves an opened document using the same filename.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Save File As}{
+\par}\pard{\f2\fs18\cf0 Saves an opened document to a specified file name.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Save All Files}{
+\par}\pard{\f2\fs18\cf0 Saves all documents.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Close File}{
+\par}\pard{\f2\fs18\cf0 Closes an opened document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Close All Files}{
+\par}\pard{\f2\fs18\cf0 Closes all document windows.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Configure Printer}{
+\par}\pard{\f2\fs18\cf0 Selects a printer and printer connection.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Print Preview}{
+\par}\pard{\f2\fs18\cf0 Displays the document on the screen as it would appear printed.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Print}{
+\par}\pard{\f2\fs18\cf0 Prints a document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Recent Files}{
+\par}\pard{\f2\fs18\cf0 Opens last documents you closed.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Exit}{
+\par}\pard{\f2\fs18\cf0 Exits Javascript Plus.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Edit_Menu}
+${\footnote Edit Menu}
+K{\footnote Edit Menu}
++{\footnote grupo3:0020}
+\pard{\b\f0\fs20\cf0 Edit Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Undo}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Reverse previous editing operation.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Redo}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Reverse previous undo operation.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Cut }{
+\par}\pard{\f2\fs18\cf0 Deletes text from the document and moves it to the clipboard.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Copy}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Copies text from the document to the clipboard.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Paste}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Pastes text from the clipboard into the document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Delete}{\f2\fs18\cf0  Selection }{
+\par}\pard{\f2\fs18\cf0 Deletes the current selection.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Select All}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Selects the entire document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Column select}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 Starts the column selection.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Goto Line}{
+\par}\pard{\f2\fs18\cf0 Goes to specified line in the active document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Word Count }{
+\par}\pard{\f2\fs18\cf0 Counts the number of words in the document or selection.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_View_Menu}
+${\footnote View Menu}
+K{\footnote View Menu}
++{\footnote grupo3:0030}
+\pard{\b\f0\fs20\cf0 View Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File explorer}{
+\par}\pard{\f2\fs18\cf0 Show the file explorer. With the file explorer you can navigate your hard disk. Double click in file to }{\f2\fs18\cf0 begin edit. Right click in }{
+\par}\pard{\f2\fs18\cf0 selected file to show the shell menu. You can do file operations and folder operations.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File Operations}{
+\par}\pard{\f2\fs18\cf0 See the }{\strike\f2\fs18\cf0 Shell Menu}{\f2\fs18\cf0 {\v Hlp_Shell_Menu }.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Functions Explorer}{
+\par}\pard{\f2\fs18\cf0 Show the Javascript functions explorer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Help Explorer}{
+\par}\pard{\f2\fs18\cf0 Show the help explorer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Favorites Explorer}{
+\par}\pard{\f2\fs18\cf0 Show the favorites explorer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 My Images}{
+\par}\pard{\f2\fs18\cf0 Show My Images panel}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 My Media}{
+\par}\pard{\f2\fs18\cf0 Show My Images panel}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 My Hypertext/Script Files}{
+\par}\pard{\f2\fs18\cf0 Show My Images panel}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Toolbars}{
+\par}\pard{\f2\fs18\cf0 Enabled/Disabled the next toolbars :}{
+\par}\pard{\f2\fs18\cf0 - File}{
+\par}\pard{\f2\fs18\cf0 - Html Tags}{
+\par}\pard{\f2\fs18\cf0 - Edit}{
+\par}\pard{\f2\fs18\cf0 - Functions}{
+\par}\pard{\f2\fs18\cf0 - Html Form Fields}{
+\par}\pard{\f2\fs18\cf0 - Javascript}{
+\par}\pard{\f2\fs18\cf0 - Help Panel}{
+\par}\pard{\f2\fs18\cf0 - Shell}{
+\par}\pard{\f2\fs18\cf0 - Html Element Help}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Search_Menu}
+${\footnote Search Menu}
+K{\footnote Search Menu}
++{\footnote grupo3:0040}
+\pard{\b\f0\fs20\cf0 Search Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find}{
+\par}\pard{\f2\fs18\cf0 Finds the specified text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Replace}{
+\par}\pard{\f2\fs18\cf0 Replaces specific text with different text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find Next}{
+\par}\pard{\f2\fs18\cf0 Finds the next matching text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find Preview}{
+\par}\pard{\f2\fs18\cf0 Finds the previous matching text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find next word}{
+\par}\pard{\f2\fs18\cf0 Finds the next occurrence of the selected text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find prev word}{
+\par}\pard{\f2\fs18\cf0 Finds the previous occurrence of the selected text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find begin/end \{\}}{
+\par}\pard{\f2\fs18\cf0 Searched for a matching brace.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Format_Menu}
+${\footnote Format Menu}
+K{\footnote Format Menu}
++{\footnote grupo3:0050}
+\pard{\b\f0\fs20\cf0 Format Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Convert to Upper Case}{
+\par}\pard{\f2\fs18\cf0 Changes the selected text to upper case.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Convert to Lower Case}{
+\par}\pard{\f2\fs18\cf0 Changes the selected text to lower case.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Capitalize}{
+\par}\pard{\f2\fs18\cf0 Capitalizes the selected text.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Increase Indent}{
+\par}\pard{\f2\fs18\cf0 Increases text indent}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Decrease Indent}{
+\par}\pard{\f2\fs18\cf0 Decreases text indent}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Insert_Menu}
+${\footnote Insert Menu}
+K{\footnote Insert Menu}
++{\footnote grupo3:0060}
+\pard{\b\f0\fs20\cf0 Insert Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert Line}{
+\par}\pard{\f2\fs18\cf0 Inserts a new line.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert File}{
+\par}\pard{\f2\fs18\cf0 Inserts file into cursor position of current document.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert/Quit dividing line}{
+\par}\pard{\f2\fs18\cf0 Inserts or quit a dividing line.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Date}{
+\par}\pard{\f2\fs18\cf0 Inserts current date.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Time}{
+\par}\pard{\f2\fs18\cf0 Inserts current time.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 DateTime}{
+\par}\pard{\f2\fs18\cf0 Inserts current date/time.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Font}{
+\par}\pard{\f2\fs18\cf0 Inserts a screen o printer font.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Script}{
+\par}\pard{\f2\fs18\cf0 Inserts a script sentence.}{
+\par}\pard{\f2\fs18\cf0 <SCRIPT language="JavaScript">}{
+\par}\pard{\f2\fs18\cf0 <!--}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 //-->}{
+\par}\pard{\f2\fs18\cf0 </SCRIPT>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Html Special Symbols}{
+\par}\pard{\f2\fs18\cf0 Inserts a special symbols.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 ActiveX Object}{
+\par}\pard{\f2\fs18\cf0 Inserts an Activex Object.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Macro_Menu}
+${\footnote Macro Menu}
+K{\footnote Macro Menu}
++{\footnote grupo3:0070}
+\pard{\b\f0\fs20\cf0 Macro Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Record Macro}{
+\par}\pard{\f2\fs18\cf0 Records a macro}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Play Macro}{
+\par}\pard{\f2\fs18\cf0 Executes the saved macro}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Functions_Menu}
+${\footnote Functions Menu}
+K{\footnote Functions Menu}
++{\footnote grupo3:0080}
+\pard{\b\f0\fs20\cf0 Functions Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Add}{
+\par}\pard{\f2\fs18\cf0 Add a new function.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Delete}{
+\par}\pard{\f2\fs18\cf0 Deletes the selected function.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Search}{
+\par}\pard{\f2\fs18\cf0 Search for a function. This search all ocurrences the selected function in active edit.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Run}{
+\par}\pard{\f2\fs18\cf0 Executes the selected function.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Refresh}{
+\par}\pard{\f2\fs18\cf0 Updates the function list.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Javascript_Menu}
+${\footnote Javascript Menu}
+K{\footnote Javascript Menu}
++{\footnote grupo3:0090}
+\pard{\b\f0\fs20\cf0 Javascript Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Javascript Reference Help}{
+\par}\pard{\f2\fs18\cf0 Show the Javascript reference help. }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Javascript & Navigator versions}{
+\par}\pard{\f2\fs18\cf0 Show a list with the Javascript version & navigator version.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Statements}{
+\par}\pard{\f2\fs18\cf0 Show a list of javascript statements. (do while, for, for in, function, if then, switch, try catch, var, while with).}{
+\par}\pard{\f2\fs18\cf0 Double click to select.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Windows}{
+\par}\pard{\f2\fs18\cf0 Creates a new javascript window. You can create the next windows :}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Window alert}{
+\par}\pard{\f2\fs18\cf0 Creates a new window alert.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Window confirm}{
+\par}\pard{\f2\fs18\cf0 Creates a new window confirm.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Window prompt}{
+\par}\pard{\f2\fs18\cf0 Creates a new window prompt.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Window popup}{
+\par}\pard{\f2\fs18\cf0 Creates a new window popup. (this features only available in registered version)}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 New Array}{
+\par}\pard{\f2\fs18\cf0 Creates a new array. You must select the next items :}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 New empty array}{
+\par}\pard{\f2\fs18\cf0 Creates a empty array.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Days array}{
+\par}\pard{\f2\fs18\cf0 Example : aDays[0]="Monday"....}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Short months names array}{
+\par}\pard{\f2\fs18\cf0 Example : strMonthArray[0]="Jan"}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Long months names array}{
+\par}\pard{\f2\fs18\cf0 Example : strMonthArray[0]="January";}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Numbers array}{
+\par}\pard{\f2\fs18\cf0 Example : strNumberArray[0]="One";}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Colors array}{
+\par}\pard{\f2\fs18\cf0 Example : strColorArray[0]="Black";}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Short Countries names array}{
+\par}\pard{\f2\fs18\cf0 Example : strShortCountryArray[0]="AF";}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Long Countries names array}{
+\par}\pard{\f2\fs18\cf0 Example : strLongCountryArray[0]="AFGHANISTAN";}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert New Regular Expression}{
+\par}\pard{\f2\fs18\cf0 Creates a new regular expresion.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert Predefined Templates}{
+\par}\pard{\f2\fs18\cf0 Insert a predefined template. Javascript Plus! includes 120 predefined templates ready to use.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Insert User Templates}{
+\par}\pard{\f2\fs18\cf0 Insert a user predefined templates.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Object Browser}{
+\par}\pard{\f2\fs18\cf0 Explore the javascript objects, methods and properties. Like the Visual Basic Object Browser.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Plus_Menu}
+${\footnote Plus Menu}
+K{\footnote Plus Menu}
++{\footnote grupo3:0100}
+\pard{\b\f0\fs20\cf0 Plus Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Add to Favorites}{
+\par}\pard{\f2\fs18\cf0 Creates an Add to favorites script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Colored Scrollbar}{
+\par}\pard{\f2\fs18\cf0 Creates a colored scrollbar.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Drop Down Menu}{
+\par}\pard{\f2\fs18\cf0 Creates a drop down menu.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Email Link}{
+\par}\pard{\f2\fs18\cf0 Creates a email script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 IFRAME Wizard}{
+\par}\pard{\f2\fs18\cf0 Creates a IFRAME script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Image Rollover}{
+\par}\pard{\f2\fs18\cf0 Creates an image rollover script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Last Modified Date}{
+\par}\pard{\f2\fs18\cf0 Creates a last modified date script}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Left Menu}{
+\par}\pard{\f2\fs18\cf0 Creates a left menu script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Meta Tag Wizard}{
+\par}\pard{\f2\fs18\cf0 Creates a meta tag html script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Mouseover text links}{
+\par}\pard{\f2\fs18\cf0 Creates a mouseover text links css script.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Popup Window}{
+\par}\pard{\f2\fs18\cf0 Creates a popup window script}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Html_Menu}
+${\footnote Html Menu}
+K{\footnote Html Menu}
++{\footnote grupo3:0110}
+\pard{\b\f0\fs20\cf0 Html Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Index of Attributes}{
+\par}\pard{\f2\fs18\cf0 Show help about html attributes from http://www.w3.org/TR/html401/index/attributes.html}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Hyperlink}{
+\par}\pard{\f2\fs18\cf0 Inserts a html hyperlink. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <a href="http://www.mywebsite.com">My Web Site</a>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Image}{
+\par}\pard{\f2\fs18\cf0 Inserts a html image. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <img src=""  border="0" ...>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 HTML Comment}{
+\par}\pard{\f2\fs18\cf0 Inserts a html comment. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <!-- this is a comment -->}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Bold}{
+\par}\pard{\f2\fs18\cf0 Inserts a html bold text. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <b>this text in bold</b>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Italic}{
+\par}\pard{\f2\fs18\cf0 Inserts a html italic text. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <i>this text in italic</i>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Underline}{
+\par}\pard{\f2\fs18\cf0 Inserts a html underline text. }{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <u>this text in underline</u>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Forms Controls}{
+\par}\pard{\b\f2\fs18\cf0 Form}{
+\par}\pard{\f2\fs18\cf0 Inserts a html form.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <form action="http://www.vbsoftware.cl" method="post" ></form>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 CheckBox}{
+\par}\pard{\f2\fs18\cf0 Inserts a html chechkbox}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="checkbox"  name="chk" value="Are you sure ?" >Are you sure ?<br>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 RadioButton}{
+\par}\pard{\f2\fs18\cf0 Inserts a html radio button}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="radio"  name="radio1" value="Are you sure ?" >Are you sure ?<br>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 ListBox}{
+\par}\pard{\f2\fs18\cf0 Inserts a html listbox.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  }{
+\par}\pard{\f2\fs18\cf0 <select name="listbox1" size="5"  >}{
+\par}\pard{\f2\fs18\cf0 <option value="red">lst1</option>}{
+\par}\pard{\f2\fs18\cf0 <option value="blue">lst1</option>}{
+\par}\pard{\f2\fs18\cf0 <option value="yellow">lst1</option>}{
+\par}\pard{\f2\fs18\cf0 </select>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 ComboxBox}{
+\par}\pard{\f2\fs18\cf0 Inserts a html combobox.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Example :}{
+\par}\pard{\f2\fs18\cf0 <select name="combobox1">}{
+\par}\pard{\f2\fs18\cf0 <option value="blue">cbo1</option>}{
+\par}\pard{\f2\fs18\cf0 <option value="red">cbo1</option>}{
+\par}\pard{\f2\fs18\cf0 <option value="black">cbo1</option>}{
+\par}\pard{\f2\fs18\cf0 </select>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 TextBox}{
+\par}\pard{\f2\fs18\cf0 Inserts a html textbox.}{
+\par}\pard{\b\f2\fs18\cf0 Example : }{\f2\fs18\cf0 <input type="text" name="textbo1" size="10" maxlength="100" value="hello world"  >}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Password}{
+\par}\pard{\f2\fs18\cf0 Inserts a html password textbox.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="password" name="textbox2" size="10" maxlength="10" value="txtpwd"  >}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 TextArea}{
+\par}\pard{\f2\fs18\cf0 Inserts a html textarea.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <textarea name="textarea1" cols="3" rows="5"></textarea>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Button}{
+\par}\pard{\f2\fs18\cf0 Inserts a html button.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="button" value="button1">}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 ResetButton}{
+\par}\pard{\f2\fs18\cf0 Inserts a html reset button}{
+\par}\pard{\b\f2\fs18\cf0 Example : }{\f2\fs18\cf0 <input type="reset" value="text2">}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Submit Button}{
+\par}\pard{\f2\fs18\cf0 Inserts a html submit button}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="reset" value="text3" >}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Hidden Entry}{
+\par}\pard{\f2\fs18\cf0 Inserts a html hidden entry.}{
+\par}\pard{\b\f2\fs18\cf0 Example : }{\f2\fs18\cf0 <input type="hidden" name="txthidden1" value="mike sinclair">}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File Attach}{
+\par}\pard{\f2\fs18\cf0 Inserts a html file attach.}{
+\par}\pard{\b\f2\fs18\cf0 Example :}{\f2\fs18\cf0  <input type="file" name="fileattach" accept="c:\\readme.txt">}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Page Break}{
+\par}\pard{\f2\fs18\cf0 Inserts a html page break.}{
+\par}\pard{\f2\fs18\cf0 Example : This text ....<br>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Paragraph}{
+\par}\pard{\f2\fs18\cf0 Inserts a html paragraph.}{
+\par}\pard{\f2\fs18\cf0 Example : <p>This is me first html document ....</p>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Horizontal Ruler}{
+\par}\pard{\f2\fs18\cf0 Inserts a html horizontal ruler.}{
+\par}\pard{\f2\fs18\cf0 Example :}{
+\par}\pard{\f2\fs18\cf0 <hr>}{
+\par}\pard{\f2\fs18\cf0 <p>line one</p><br>}{
+\par}\pard{\f2\fs18\cf0 <hr>}{
+\par}\pard{\f2\fs18\cf0 <p>line two</p><br>}{
+\par}\pard{\f2\fs18\cf0 ...}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Preformat}{
+\par}\pard{\f2\fs18\cf0 Inserts a html preformat text. }{
+\par}\pard{\f2\fs18\cf0 Example :  <pre>#include<stdio.h>void main()\{printf("Hello World!\\n")'\}</pre>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Aligment}{
+\par}\pard{\f2\fs18\cf0 Insert an aligment html tag. }{
+\par}\pard{\b\f2\fs18\cf0 Align Left :}{\f2\fs18\cf0  <div align="left"></div>}{
+\par}\pard{\b\f2\fs18\cf0 Align center :}{\f2\fs18\cf0  <center></center>}{
+\par}\pard{\b\f2\fs18\cf0 Align Right :}{\f2\fs18\cf0  <div align="right"></div>}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Special character}{
+\par}\pard{\f2\fs18\cf0 Inserts a html special character.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_What_itxs}
+${\footnote What it's Javascript Plus!}
+K{\footnote What it's Javascript Plus!}
++{\footnote grupo1:0010}
+\pard{\b\f0\fs20\cf0 What it's Javascript Plus! ?}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus! is a text editor for Javascript Language. Javascript Plus! offers the next features :}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 *  Advanced JavaScript editing. Full support for all javascript objects, methods, properties and events. (javascript objects, }{\f2\fs18\cf0 javascript methods and javascript user functions)}{
+\par}\pard{\f2\fs18\cf0 * Includes 11 Javascript Plus! Wizards (Add to Favorites, Colored Scrollbar, Drop Down Menu, Email Link, IFrame Wizard, }{\f2\fs18\cf0 Image Rollover, Last Modified Date, Left Menu, Meta Tag,  MouseOver Text Links, Popup Window)}{
+\par}\pard{\f2\fs18\cf0 * Includes 12 Html Wizards (Form, CheckBox, Radio, Listbox, ComboBox, TextBox,  TextArea, Button, Hidden Entry, File }{\f2\fs18\cf0 Attach, Image and Tables)}{
+\par}\pard{\f2\fs18\cf0 * Every Html Wizard include the Event Wizard. Now setup events for html tags made easy More info}{
+\par}\pard{\f2\fs18\cf0 * For beginners includes wizard for creating variables, arrays , regular expression, alert window, confirm window and }{\f2\fs18\cf0 prompt window.}{
+\par}\pard{\f2\fs18\cf0 * Array wizard includes 7 templates ready to use (Days, Short months names,  Long months names, numbers, colors, }{\f2\fs18\cf0 short countries names, Long countries names)}{
+\par}\pard{\f2\fs18\cf0 * Now create a regular expression is too easy using the regular expression Wizard More info}{
+\par}\pard{\f2\fs18\cf0 * Includes help reference for Javascript, Html and CSS.}{
+\par}\pard{\f2\fs18\cf0 * Get instant help for common html and html attributes quick and easy.}{
+\par}\pard{\f2\fs18\cf0 * Syntax Highlighting for Javascript , HTML and CSS More info}{
+\par}\pard{\f2\fs18\cf0 * Includes a Javascript Object Browser (like the Visual Basic Object Browser) More info}{
+\par}\pard{\f2\fs18\cf0 * Includes 120 templates ready to use.  More info}{
+\par}\pard{\f2\fs18\cf0 * Includes 9 toolbars to make easy the Javascript development (file, edit, functions, html wizards, javascript, help panel, }{\f2\fs18\cf0 shell and html attributes help)}{
+\par}\pard{\f2\fs18\cf0 * Test your javascript functions using the test wizard More info}{
+\par}\pard{\f2\fs18\cf0 * Integrated image browser More info}{
+\par}\pard{\f2\fs18\cf0 * Includes a basic FTP  More info}{
+\par}\pard{\f2\fs18\cf0 * Integrated File Explorer More info}{
+\par}\pard{\f2\fs18\cf0 * Integrated panel help (Javascript Language, Windows Ansi Characters, HTML 4.01, CSS1, CSS2, Javascript Runtime }{\f2\fs18\cf0 Errors and Javascript Sintax Errors)}{
+\par}\pard{\f2\fs18\cf0 * Includes 4 files panels (My Files, My Media, My Images and My Favorites)}{
+\par}\pard{\f2\fs18\cf0 * Search and Replace with Regular Expression Support}{
+\par}\pard{\f2\fs18\cf0 * Integrated Javascript function explorer More info}{
+\par}\pard{\f2\fs18\cf0 * Countless goodie features (bracket matching, line highlighting, text indentation...)}{
+\par}\pard{\f2\fs18\cf0 * Unlimited Undo,Redo}{
+\par}\pard{\f2\fs18\cf0 * Support for user defined templates}{
+\par}\pard{\f2\fs18\cf0 * Includes a picture preview More info}{
+\par}\pard{\f2\fs18\cf0 * Support for macros}{
+\par}\pard{\f2\fs18\cf0 * Includes an Activex browser More info}{
+\par}\pard{\f2\fs18\cf0 * Support for function overloading More info}{
+\par}\pard{\f2\fs18\cf0 * Create a function is easy with the function wizard More info}{
+\par}\pard{\f2\fs18\cf0 * Easy to configure.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_InstallingxUninstalling_Javascript}
+${\footnote Installing/Uninstalling Javascript Plus!}
+K{\footnote Installing/Uninstalling Javascript Plus!}
++{\footnote grupo1:0040}
+\pard{\b\f0\fs20\cf0 Installing/Uninstalling Javascript Plus!}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 System requirement }{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 Windows 95/98/Me/NT4/2000/XP or higher.}{
+\par}\pard{\f2\fs18\cf0\tab}{\f2\fs18\cf0 IE 3 or higher for browser feature (optional).}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Installation }{
+\par}\pard{\f2\fs18\cf0\tab}{\f2\fs18\cf0 If you downloaded a self-extracting setup file (setup.exe), just run the executable.}{
+\par}\pard{\f2\fs18\cf0\tab}{\f2\fs18\cf0 If you downloaded a zip file (setup.zip), extract it to a temporary directory, then execute setup.exe}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Remove }{
+\par}\pard{\f2\fs18\cf0\tab}{\f2\fs18\cf0 Run 'Uninstall' on the VBSoftware Start Menu folder or open 'Add/Remove Programs' in Control Panel and double-click 'Javascript Plus }{\f2\fs18\cf0 2' in the list box}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Feedback_and}
+${\footnote Feedback and Support}
+K{\footnote Feedback and Support}
++{\footnote grupo1:0060}
+\pard{\b\f0\fs20\cf0 Feedback and Support}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Homepage}{
+\par}\pard{\f2\fs18\cf0 If you want to get the latest information about Javascript Plus, please visit VBSoftware Homepage on the web. You can also download }{\f2\fs18\cf0 latest version of Javascript Plus at the homepage.}{
+\par}\pard{\b\f2\fs18\cf0 http://www.vbsoftware.cl}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Feedback}{
+\par}\pard{\f2\fs18\cf0 Please send any bug report, suggestion, question and comment to the author at following address.}{
+\par}\pard{\f2\fs18\cf0 support@vbsoftware.cl}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_How_to}
+${\footnote How to Register}
+K{\footnote How to Register}
++{\footnote grupo1:0050}
+\pard{\b\f0\fs20\cf0 How to Register}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus is distributed as Shareware. You can freely download and try it for 30 days. If you find it useful and decide to keep it over }{\f2\fs18\cf0 30-day evaluation period, you should pay the registration fee. See also License agreement.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 The registration of Javascript Plus! Version 2 costs $30 per user.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 How To Order}{
+\par}\pard{\f2\fs18\cf0 Please visit our ordering web site: }{\f2\fs18\cf0\tab}{
+\par}\pard{\f2\fs18\cf0 http://www.vbsoftware.cl/}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 For more information, please contact <sales@vbsoftware.cl>.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Registration Benefits}{
+\par}\pard{\f2\fs18\cf0 Full license to use the software beyond the 30-day evaluation.}{
+\par}\pard{\f2\fs18\cf0 Personal reg code to your copy into the registered version.}{
+\par}\pard{\f2\fs18\cf0 Free upgrades (e.g. 2.1 -> 3.0).}{
+\par}\pard{\f2\fs18\cf0 Free technical support by e-mail}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Javascript_Plus}
+${\footnote Javascript Plus Version 2 License Agreement}
+K{\footnote Javascript Plus Version 2 License Agreement}
++{\footnote grupo1:0030}
+\pard{\b\f0\fs20\cf0 Javascript Plus Version 2 License Agreement}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 NO WARRANTY}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 JAVASCRIPT PLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE }{\f2\fs18\cf0 OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF }{\f2\fs18\cf0 PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Evaluation and Registration}{
+\par}\pard{\f2\fs18\cf0 Javascript Plus! is not free software. You may use this software for evaluation purposes without charge for a period of 30 days. If you use }{\f2\fs18\cf0 this software after the 30 day evaluation period, you must pay registration fee.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Distribution of the evaluation version}{
+\par}\pard{\f2\fs18\cf0 You may copy the evaluation version of this software and documentation as you wish, and give exact copies of the original evaluation }{\f2\fs18\cf0 version to anyone, and distribute the evaluation version of the software and documentation in its unmodified form via electronic means. }{\f2\fs18\cf0 But you should not charge or requesting donations for any such copies however made and from distributing the software and/or }{\f2\fs18\cf0 documentation with other products without the author's written permission.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Registered version}{
+\par}\pard{\f2\fs18\cf0 One registered copy of Javascript Plus may either be used by a single person who uses the software personally on one or more computers, }{\f2\fs18\cf0 or installed on a single workstation used non-simultaneously by multiple people, but not both. You may access the registered version of }{\f2\fs18\cf0 Javascript Plus through a network, provided that you have obtained individual licenses for the software covering all workstations that will }{\f2\fs18\cf0 access the software through the network.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Whatxs_New}
+${\footnote What's New}
+K{\footnote What's New}
++{\footnote grupo1:0020}
+\pard{\b\f0\fs20\cf0 What's New}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Version 2.1.25}{\f2\fs18\cf0  }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Legend:}{
+\par}\pard{\f2\fs18\cf0 + new feature}{
+\par}\pard{\f2\fs18\cf0 * improvement/modification or bugfix}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 2.1.25 (May/18/2005) Beta 1}{
+\par}\pard{\f2\fs18\cf0 * Many initial bugs fixed.}{
+\par}\pard{\f2\fs18\cf0 + Includes 11 Javascript Plus! Wizards (Add to Favorites, Colored Scrollbar, Drop Down Menu, Email }{\f2\fs18\cf0 Link, IFrame Wizard, Image Rollover, Last Modified Date, Left Menu, Meta Tag,  MouseOver Text Links, }{\f2\fs18\cf0 Popup Window)}{
+\par}\pard{\f2\fs18\cf0 + Include 12 Html Wizards (Form, CheckBox, Radio, Listbox, ComboBox, TextBox,  TextArea, Button, }{\f2\fs18\cf0 Hidden Entry, File Attach, Image and Tables)}{
+\par}\pard{\f2\fs18\cf0 + Every Html Wizard include the Event Wizard. Now setup events for html tags made easy }{
+\par}\pard{\f2\fs18\cf0 + For beginners include wizard for creating variables, arrays , regular expression, alert window, confirm }{\f2\fs18\cf0 window and prompt window.}{
+\par}\pard{\f2\fs18\cf0 + Array wizard include 7 templates ready to use (Days, Short month names,  Long month names, }{\f2\fs18\cf0 numbers, colors, short name country, long name country)}{
+\par}\pard{\f2\fs18\cf0 + Now create a regular expression is too easy using the regular expression Wizard  }{
+\par}\pard{\f2\fs18\cf0 + Includes help reference for Javascript, Html and CSS.}{
+\par}\pard{\f2\fs18\cf0 + Get instant help for common html and html attributes quickly and easy.}{
+\par}\pard{\f2\fs18\cf0 + Include a Javascript Object Browser (like the Visual Basic Object Browser)  }{
+\par}\pard{\f2\fs18\cf0 + Includes 120 templates ready to use.   }{
+\par}\pard{\f2\fs18\cf0 + Include 9 toolbars to make easy the Javascript development (file, edit, functions, html wizards, }{\f2\fs18\cf0 javascript, help panel, shell and html attributes help)}{
+\par}\pard{\f2\fs18\cf0 + Integrated panel help (Javascript Language, Windows Ansi Characters, HTML 4.01, CSS1, CSS2, }{\f2\fs18\cf0 Javascript Runtime Errors and Javascript Sintax Errors)}{
+\par}\pard{\f2\fs18\cf0 + Include 4 files panels (My Files, My Media, My Images and My Favorites)}{
+\par}\pard{\f2\fs18\cf0 + Include a picture preview }{
+\par}\pard{\f2\fs18\cf0 + Support for function overloading }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 1.00 (01/04/2005)}{
+\par}\pard{\f2\fs18\cf0 - Initial release.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Utilities_Menu}
+${\footnote Utilities Menu}
+K{\footnote Utilities Menu}
++{\footnote grupo3:0120}
+\pard{\b\f0\fs20\cf0 Utilities Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Validate HTML, XHTML}{
+\par}\pard{\f2\fs18\cf0 Validate the contents of a html document using the W3C Markup Validation Service}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Validate CSS}{
+\par}\pard{\f2\fs18\cf0 Validate the contents of a html document using the W3C CSS Validation Service}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Validate Hyperlinks}{
+\par}\pard{\f2\fs18\cf0 Validate the contents of a html document using the W3C Link Checker}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Validate XML}{
+\par}\pard{\f2\fs18\cf0 Validate the contents of a html document using the W3C Validator for XML Schema}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find My Images Files}{
+\par}\pard{\f2\fs18\cf0 Find all images files. (bmp, jpg, jpeg, gif, ico). After this you can see in My Image Panel.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find My Media Files}{
+\par}\pard{\f2\fs18\cf0 Find all media files. The file list is configured in jsplus.ini file section [media]}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Find My Hypertext/Script Files}{
+\par}\pard{\f2\fs18\cf0 Find all hypertext & script files.}{\f2\fs18\cf0  }{\f2\fs18\cf0  The file list is configured in jsplus.ini file section [filelist]}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Image Browser}{
+\par}\pard{\f2\fs18\cf0 Show images with the image browser}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Shell_Menu}
+${\footnote Shell Menu}
+K{\footnote Shell Menu}
++{\footnote grupo3:0130}
+\pard{\b\f0\fs20\cf0 Shell Menu}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Copy File}{
+\par}\pard{\f2\fs18\cf0 Copies the selected file to another folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Delete File}{
+\par}\pard{\f2\fs18\cf0 Deletes the selected file of current folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Rename File}{
+\par}\pard{\f2\fs18\cf0 Renames the selected file to new file name}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File properties}{
+\par}\pard{\f2\fs18\cf0 Show the file properties of selected file}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Update File Contents}{
+\par}\pard{\f2\fs18\cf0 Updates the file list of current folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Create Folder}{
+\par}\pard{\f2\fs18\cf0 Creates a new folder in current folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Change Folder}{
+\par}\pard{\f2\fs18\cf0 Changes from current folder to another folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Remove Folder}{
+\par}\pard{\f2\fs18\cf0 Removes current folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Update Folder List}{
+\par}\pard{\f2\fs18\cf0 Updates the folder contents of current folder}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File Find}{
+\par}\pard{\f2\fs18\cf0 Run the windows file find}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 File Explorer}{
+\par}\pard{\f2\fs18\cf0 Run the windows explorer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Registry Editor}{
+\par}\pard{\f2\fs18\cf0 Run the windows registry editor}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Run Command}{
+\par}\pard{\f2\fs18\cf0 Executes the windows run command }{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Syntax_Highlighting}
+${\footnote Syntax Highlighting}
+K{\footnote Syntax Highlighting}
++{\footnote grupo2:0010}
+\pard{\b\f0\fs20\cf0 Syntax Highlighting}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus! support syntax highlighting for HTML, CSS and Javascript language. You can configure }{\f2\fs18\cf0 this in jsplus.ini file.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Intellisense}
+${\footnote Intellisense}
+K{\footnote Intellisense}
++{\footnote grupo2:0020}
+\pard{\b\f0\fs20\cf0 Intellisense}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus! support intellisense for Javascript objects, methods, events and user }{\f2\fs18\cf0 functions. If you have used the Microsoft development software like Visual Basic, }{\f2\fs18\cf0 Javascript Plus has the same functionalities. }{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc auto1.bmp\}}{
+\par}\pard{\f2\fs18\cf0 Intellisense for Javascript Objects, methods, events & properties.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc auto2.bmp\}}{
+\par}\pard{\f2\fs18\cf0 Autocomplete for Javascript methods.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc auto3.bmp\}}{
+\par}\pard{\f2\fs18\cf0 Autocomplete for user defined functions.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Javascript_Plusx}
+${\footnote Add to Favorites}
+K{\footnote Javascript Plus! Wizards}
++{\footnote grupo4:0010}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Add to Favorites}{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_add_favorites.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Colored_Scrollbar}
+${\footnote Colored Scrollbar}
+K{\footnote Colored Scrollbar}
++{\footnote grupo4:0020}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Colored Scrollbar}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_col_scrollbar.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Drop_Down}
+${\footnote Drop Down Menu}
+K{\footnote Drop Down Menu}
++{\footnote grupo4:0030}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Drop Down Menu}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_drop_down_menu.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Email_Link}
+${\footnote Email Link}
+K{\footnote Email Link}
++{\footnote grupo4:0040}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Email Link}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_email_link.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_IFrame_Wizard}
+${\footnote IFrame Wizard}
+K{\footnote IFrame Wizard}
++{\footnote grupo4:0050}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 IFrame Wizard}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_iframe.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Image_Rollover}
+${\footnote Image Rollover}
+K{\footnote Image Rollover}
++{\footnote grupo4:0060}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Image Rollover}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_image_rollover.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Last_Modified}
+${\footnote Last Modified Date}
+K{\footnote Last Modified Date}
++{\footnote grupo4:0070}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Last Modified Date}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_last_mod_date.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Left_Menu}
+${\footnote Left Menu}
+K{\footnote Left Menu}
++{\footnote grupo4:0080}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Left Menu}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_left_menu.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Meta_Tag}
+${\footnote Meta Tag}
+K{\footnote Meta Tag}
++{\footnote grupo4:0090}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Meta Tag}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_meta_tag.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_MouseOver_Text}
+${\footnote MouseOver Text Links}
+K{\footnote MouseOver Text Links}
++{\footnote grupo4:0100}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 MouseOver Text Links}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_mouserver.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Popup_Window}
+${\footnote Popup Window}
+K{\footnote Popup Window}
++{\footnote grupo4:0110}
+\pard{\b\f0\fs20\cf0 Javascript Plus! Wizards}{
+\keepn\par}\pard{
+\par}\pard{\b\f0\fs20\cf0 Popup Window}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc wiz_popup.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Regular_expression}
+${\footnote Regular expression Wizard}
+K{\footnote Regular expression Wizard}
++{\footnote grupo2:0010}
+\pard{\b\f0\fs20\cf0 Regular expression Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Creates a regular expression is to easy using the regular expression wizard.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc regexp.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Javascript_Plus1}
+${\footnote Javascript Plus Wizards}
+K{\footnote Javascript Plus Wizards}
++{\footnote grupo2:0010}
+\pard{\b\f0\fs20\cf0 Javascript Plus Wizards}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 This is the Javascript Plus! Wizards : }{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Add to Favorites}{\f2\fs18\cf0 {\v Hlp_Javascript_Plusx }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Colored Scrollbar}{\f2\fs18\cf0 {\v Hlp_Colored_Scrollbar }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Drop Down Menu}{\f2\fs18\cf0 {\v Hlp_Drop_Down }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Email Link}{\f2\fs18\cf0 {\v Hlp_Email_Link }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 IFrame Wizard}{\f2\fs18\cf0 {\v Hlp_IFrame_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Image Rollover}{\f2\fs18\cf0 {\v Hlp_Image_Rollover }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Last Modified Date}{\f2\fs18\cf0 {\v Hlp_Last_Modified }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Left Menu}{\f2\fs18\cf0 {\v Hlp_Left_Menu }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Meta Tag}{\f2\fs18\cf0 {\v Hlp_Meta_Tag }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 MouseOver Text Links}{\f2\fs18\cf0 {\v Hlp_MouseOver_Text }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Popup Window}{\f2\fs18\cf0 {\v Hlp_Popup_Window }}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Array_Wizards}
+${\footnote Array Wizards}
+K{\footnote Array Wizards}
++{\footnote grupo2:0010}
+\pard{\b\f0\fs20\cf0 Array Wizards}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus! includes 7 array wizards. Double click and ready your array. You can configure this in jsplus.ini file.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Days }{
+\par}\pard{\f2\fs18\cf0 Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday   }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Short Months Names}{
+\par}\pard{\f2\fs18\cf0 Jan ,Feb ,Mar ,Apr ,May ,Jun ,Jul ,Aug ,Sep ,Oct,Nov,Dec}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Long Months Names}{
+\par}\pard{\f2\fs18\cf0 January,February,March,April,May,June,July,August ,September,October ,November,December}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Numbers}{
+\par}\pard{\f2\fs18\cf0 One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten,Eleven,Twelve,}{
+\par}\pard{\f2\fs18\cf0 Thirteen,Fourteen,Fifteen,Sixteen,Seventeen,Eighteen,Nineteen,            }{
+\par}\pard{\f2\fs18\cf0 Twenty,Thirty,Forty,Fifty,Sixty,Seventy,Eighty,Ninety,One Hundred         }{
+\par}\pard{\f2\fs18\cf0 One Thousand,One hundred thousand,One million         }{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Colors}{
+\par}\pard{\f2\fs18\cf0 Black,Blue,Red,Yellow,White,Green   }{
+\par}\pard{\f2\fs18\cf0 Gray,Cyan,Magenta,Silver,Maroon }{
+\par}\pard{\f2\fs18\cf0 Purple,Fuchsia,Lime,Olive,Navy,Teal   }{
+\par}\pard{\f2\fs18\cf0 Aqua}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Short Countries Names}{
+\par}\pard{\f2\fs18\cf0 (See jsplus.ini short_country_array section)}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Long Countries Names}{
+\par}\pard{\f2\fs18\cf0 (See jsplus.ini long_country_array section)}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Object_Browser}
+${\footnote Object Browser}
+K{\footnote Object Browser}
++{\footnote grupo2:0020}
+\pard{\b\f0\fs20\cf0 Object Browser}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 With the Javascript Object Browser you can navigate the javascript objects, methods, events and properties.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc objbrowser.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Variable_wizard}
+${\footnote Variable wizard}
+K{\footnote Variable wizard}
++{\footnote grupo2:0030}
+\pard{\b\f0\fs20\cf0 Variable wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 You can create a javascript variable using the variable wizard.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc varwizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Event_wizard}
+${\footnote Event wizard}
+K{\footnote Event wizard}
++{\footnote grupo2:0040}
+\pard{\b\f0\fs20\cf0 Event wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 With the event wizard you cant setup the events for html and javascript objects.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc event_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Html_Wizards}
+${\footnote Html Wizards}
+K{\footnote Html Wizards}
++{\footnote grupo2:0050}
+\pard{\b\f0\fs20\cf0 Html Wizards}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 With Javascript Plus! you can work with html files. This offers the next Html Wizards :}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Form}{\f2\fs18\cf0 {\v Hlp_Form_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 CheckBox}{\f2\fs18\cf0 {\v Hlp_CheckBox_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Radio}{\f2\fs18\cf0 {\v Hlp_Radio_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Listbox}{\f2\fs18\cf0 {\v Hlp_Listbox_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 ComboBox}{\f2\fs18\cf0 {\v Hlp_ComboBox_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 TextBox}{\f2\fs18\cf0 {\v Hlp_TextBox_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 TextArea}{\f2\fs18\cf0 {\v Hlp_TextArea_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Button}{\f2\fs18\cf0 {\v Hlp_Button_Wizard }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Hidden Entry}{\f2\fs18\cf0 {\v Hlp_Hidden_Entry }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 File Attach}{\f2\fs18\cf0 {\v Hlp_File_Attach }}{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Image}{\f2\fs18\cf0 {\v Hlp_Image_Wizard } }{
+\par}\pard{\f2\fs18\cf0 - }{\strike\f2\fs18\cf0 Tables}{\f2\fs18\cf0 {\v Hlp_Table_Wizard }}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Form_Wizard}
+${\footnote Form Wizard}
+K{\footnote Form Wizard}
++{\footnote grupo5:0010}
+\pard{\b\f0\fs20\cf0 Form Wizard}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 The html form wizard help to you to insert a html form.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc form_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_CheckBox_Wizard}
+${\footnote CheckBox Wizard}
+K{\footnote CheckBox Wizard}
++{\footnote grupo5:0020}
+\pard{\b\f0\fs20\cf0 CheckBox Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The checkbox wizard help to you an insert a html checkbox.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc checkbox_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Radio_Wizard}
+${\footnote Radio Wizard}
+K{\footnote Radio Wizard}
++{\footnote grupo5:0030}
+\pard{\b\f0\fs20\cf0 Radio Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The radio wizard help to you an insert a html radiobutton.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc radio_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Listbox_Wizard}
+${\footnote Listbox Wizard}
+K{\footnote Listbox Wizard}
++{\footnote grupo5:0040}
+\pard{\b\f0\fs20\cf0 Listbox Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The Listbox wizard help to you an insert a html listbox control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc listbox_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_ComboBox_Wizard}
+${\footnote ComboBox Wizard}
+K{\footnote ComboBox Wizard}
++{\footnote grupo5:0050}
+\pard{\b\f0\fs20\cf0 ComboBox Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The ComboBox wizard help to you an insert a html combobox control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc combo_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_TextBox_Wizard}
+${\footnote TextBox Wizard}
+K{\footnote TextBox Wizard}
++{\footnote grupo5:0060}
+\pard{\b\f0\fs20\cf0 TextBox Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The TextBox wizard help to you an insert a html textbox control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc textbox_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_TextArea_Wizard}
+${\footnote TextArea Wizard}
+K{\footnote TextArea Wizard}
++{\footnote grupo5:0070}
+\pard{\b\f0\fs20\cf0 TextArea Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The TextArea wizard help to you an insert a html textarea control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc textarea_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Button_Wizard}
+${\footnote Button Wizard}
+K{\footnote Button Wizard}
++{\footnote grupo5:0080}
+\pard{\b\f0\fs20\cf0 Button Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The Button wizard help to you an insert a html button control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc button_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Hidden_Entry}
+${\footnote Hidden Entry Wizard}
+K{\footnote Hidden Entry Wizard}
++{\footnote grupo5:0090}
+\pard{\b\f0\fs20\cf0 Hidden Entry Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The Hidden Entry wizard help to you an insert a html hidden entry.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc hidden_entry_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_File_Attach}
+${\footnote File Attach Wizard}
+K{\footnote File Attach Wizard}
++{\footnote grupo5:0100}
+\pard{\b\f0\fs20\cf0 File Attach Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The File Attach wizard help to you an insert a html file attach control.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc file_attach_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Image_Wizard}
+${\footnote Image Wizard}
+K{\footnote Image Wizard}
++{\footnote grupo5:0110}
+\pard{\b\f0\fs20\cf0 Image Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 The Image wizard help to you an insert a image.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc image_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Table_Wizard}
+${\footnote Table Wizard}
+K{\footnote Table Wizard}
++{\footnote grupo5:0120}
+\pard{\b\f0\fs20\cf0 Table Wizard}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 With the table wizard you can create a html table.}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 \{bmc table_wizard.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Other_features}
+${\footnote Other features}
+K{\footnote Other features}
++{\footnote grupo2:0060}
+\pard{\b\f0\fs20\cf0 Other features}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Javascript Plus also includes the next features :}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 + Every Html Wizard include the Event Wizard. Now setup events for html tags made easy }{
+\par}\pard{\f2\fs18\cf0 + Includes help reference for Javascript, Html and CSS.}{
+\par}\pard{\f2\fs18\cf0 + Get instant help for common html and html attributes quickly and easy.}{
+\par}\pard{\f2\fs18\cf0 + Includes 120 templates ready to use.   }{
+\par}\pard{\f2\fs18\cf0 + Include 9 toolbars to make easy the Javascript development (file, edit, functions, html wizards, javascript, help panel, }{\f2\fs18\cf0 shell and html attributes help)}{
+\par}\pard{\f2\fs18\cf0 + Integrated panel help (Javascript Language, Windows Ansi Characters, HTML 4.01, CSS1, CSS2, Javascript Runtime }{\f2\fs18\cf0 Errors and Javascript Sintax Errors)}{
+\par}\pard{\f2\fs18\cf0 + Include 4 files panels (My Files, My Media, My Images and My Favorites)}{
+\par}\pard{\f2\fs18\cf0 + Include a picture preview }{
+\par}\pard{\f2\fs18\cf0 + Support for function overloading }{
+\par}\pard{\f2\fs18\cf0 + Includes a basic FTP}{
+\par}\pard{\f2\fs18\cf0 + Includes an Image Browser}{
+\par}\pard{\f2\fs18\cf0 + Unlimited Undo/Redo}{
+\par}\pard{\f2\fs18\cf0 + Line Numbering}{
+\par}\pard{\f2\fs18\cf0 + Column selection}{
+\par}\pard{\f2\fs18\cf0 + Functions browser}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_Settings_Menu}
+${\footnote Settings Menu}
+K{\footnote Settings Menu}
++{\footnote grupo3:0140}
+\pard{\b\f0\fs20\cf0 Settings Menu}{
+\keepn\par}\pard{
+\par}\pard{\f2\fs18\cf0 Here you can can configure the editor color settings. This configuration is stored in jsplus.ini file.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Comments}{
+\par}\pard{\f2\fs18\cf0 Setup the comments color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Comments Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for comments}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Highlited Line}{
+\par}\pard{\f2\fs18\cf0 Setup the highlited line color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Keywords}{
+\par}\pard{\f2\fs18\cf0 Setup the keywords colors}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 KeyWords Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for keywords}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Line Number}{
+\par}\pard{\f2\fs18\cf0 Setup the line number color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Line Number Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for line numbers}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Numbers}{
+\par}\pard{\f2\fs18\cf0 Setup the numbers color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Numbers Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for numbers}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Operators}{
+\par}\pard{\f2\fs18\cf0 Setup the operators color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Operators Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for operators}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Scope}{
+\par}\pard{\f2\fs18\cf0 Setup the scope color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Scope Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for scope}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Strings}{
+\par}\pard{\f2\fs18\cf0 Setup the strings color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Strings Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for strings}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Normal Text}{
+\par}\pard{\f2\fs18\cf0 Setup the normal text color}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Normal Text Background}{
+\par}\pard{\f2\fs18\cf0 Setup the background color for normal text}{
+\par}\pard{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_About_VBSoftware}
+${\footnote About VBSoftware}
+K{\footnote About VBSoftware}
++{\footnote grupo1:0010}
+\pard{\b\f0\fs20\cf0 \{bmc logo.bmp\}}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware born in February/2002. In begin this was a Visual Basic related website. Many applications born from here :}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Component Cleaner}{
+\par}\pard{\f2\fs18\cf0 ActiveX component cleaner}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Component Manager}{
+\par}\pard{\f2\fs18\cf0 ActiveX component manager}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 EasyQuery!}{
+\par}\pard{\f2\fs18\cf0 A lite sql query.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Project Explorer}{
+\par}\pard{\f2\fs18\cf0 Visual Basic code analizer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Project Backup}{
+\par}\pard{\f2\fs18\cf0 Visual Basic project backup}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Project Compare}{
+\par}\pard{\f2\fs18\cf0 Visual Basic source compare}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Project Dependency}{
+\par}\pard{\f2\fs18\cf0 Visual Basic project dependency}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Project Documenter}{
+\par}\pard{\f2\fs18\cf0 Visual Basic project report}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 3 years ago in Feb/2005, VBSoftware turn to commercial with the first shareware software. Javascript Plus!}{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page
+#{\footnote Hlp_About_the}
+${\footnote About the Autor}
+K{\footnote About the Autor}
++{\footnote grupo1:0020}
+\pard{\b\f0\fs20\cf0 About the Autor}{
+\keepn\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Name}{
+\par}\pard{\f2\fs18\cf0 Luis Nunez Ibarra.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Age}{
+\par}\pard{\f2\fs18\cf0 28 years old.}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Country}{
+\par}\pard{\f2\fs18\cf0 Chile}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Status}{
+\par}\pard{\f2\fs18\cf0 Married}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Profession}{
+\par}\pard{\f2\fs18\cf0 Programmer}{
+\par}\pard{
+\par}\pard{\b\f2\fs18\cf0 Hobbies}{
+\par}\pard{\f2\fs18\cf0 Star Wars, play video games, rock music, play ping-pong}{
+\par}\pard{
+\par}\pard{
+\par}\pard{
+\par}\pard{\f2\fs18\cf0 VBSoftware Chile, 2002-2005 by Luis Nunez Ibarra}{
+\par}
+\page}
+
