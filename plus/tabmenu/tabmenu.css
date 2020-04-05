@@ -1,0 +1,79 @@
+/******************************************************************************
+* Styles for the tabbed displays.                                             *
+******************************************************************************/
+
+/*-----------------------------------------------------------------------------
+  Note: The border-radius property is a proposed feature for CSS3 which creates
+        rounded corners. Mozilla/Netscape browsers currently support this
+        feature via the proprietary -moz-border-radius property. Both are
+        defined here. Browsers that support neither should simply ignore them.
+-----------------------------------------------------------------------------*/
+
+div.tabBox {}
+
+div.tabArea {
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0px 0px 3px 0px;
+}
+
+a.tab {
+  background-color: #d0b0ff;
+  border: 2px solid #000000;
+  border-bottom-width: 0px;
+  border-color: #f0d0ff #b090e0 #b090e0 #f0d0ff;
+  -moz-border-radius: .75em .75em 0em 0em;
+  border-radius-topleft: .75em;
+  border-radius-topright: .75em;
+  padding: 2px 1em 2px 1em;
+  position: relative;
+  text-decoration: none;
+  top: 3px;
+  z-index: 100;
+}
+
+a.tab, a.tab:visited {
+  color: #8060b0;
+}
+
+a.tab:hover {
+  background-color: #03DE16;
+  border-color: #c0a0f0 #8060b0 #8060b0 #c0a0f0;
+  color: #ffe0ff;
+}
+
+a.tab.activeTab, a.tab.activeTab:hover, a.tab.activeTab:visited {
+  background-color: #9070c0;
+  border-color: #b090e0 #7050a0 #7050a0 #b090e0;
+  color: #ffe0ff;
+}
+
+a.tab.activeTab {
+  padding-bottom: 4px;
+  top: 1px;
+  z-index: 102;
+}
+
+div.tabMain {
+  background-color: #D138C1;
+  border: 2px solid #000000;
+  border-color: #b090e0 #7050a0 #7050a0 #b090e0;
+  -moz-border-radius: 0em .5em .5em 0em;
+  border-radius-topright: .5em;
+  border-radius-bottomright: .5em;
+  padding: .5em;
+  position: relative;
+  z-index: 101;
+}
+
+div.tabIframeWrapper {
+  width: 100%;
+}
+
+iframe.tabContent {
+  background-color: #0319B5;
+  border: 1px solid #000000;
+  border-color: #7050a0 #b090e0 #b090e0 #7050a0;
+  width: 100%;
+  height: 36ex;
+}

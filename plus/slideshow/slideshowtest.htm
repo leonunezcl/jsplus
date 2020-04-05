@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Slideshow Template</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT TYPE="text/javascript" SRC="slideshow.js">
+<!--
+
+// JavaScript Slideshow by Patrick Fitzgerald
+// http://slideshow.barelyfitz.com/
+// -->
+</SCRIPT>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+SLIDES = new slideshow("SLIDES");
+SLIDES.timeout = 3000;
+SLIDES.prefetch = -1;
+SLIDES.repeat = false;
+s = new slide();
+s.src = "Concert_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Crimson_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Dream_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Lenne_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Paine_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Paine_2.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Rikku_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Rikku_2.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Shuyin_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "YRP_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Yuna_1.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Yuna_2.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Yuna_3.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "Yuna_4.jpg";
+s.text = unescape("");
+s.link = "";
+s.target = "";
+s.attr = "";
+s.filter = "";
+SLIDES.add_slide(s);
+
+if (false) SLIDES.shuffle();
+//-->
+</SCRIPT>
+<STRONG><A HREF="javascript:SLIDES.previous()">&lt;previous</A></STRONG>
+<STRONG><A HREF="javascript:SLIDES.next()">next&gt;</A></STRONG>
+<STRONG><A HREF="javascript:SLIDES.goto_random_slide()">random</A></STRONG>
+<STRONG><A HREF="javascript:SLIDES.hotlink()">view</A></STRONG>
+<STRONG><A HREF="javascript:SLIDES.play()">play</A></STRONG>
+<STRONG><A HREF="javascript:SLIDES.pause()">stop</A></STRONG>
+
+<P>
+<DIV ID="SLIDESTEXT">
+
+<SCRIPT type="text/javascript">
+<!--
+// For browsers that cannot change the HTML on the page,
+// display all of the text from the slideshow.
+// I place this within the DIV, so browers won't see it
+// if they can change the DIV.
+nodivtext = SLIDES.get_all_text("<li>", "<p>\n");
+if (nodivtext) {
+  document.write("<UL>\n" + nodivtext + "\n</UL>");
+}
+//-->
+</SCRIPT>
+
+</DIV>
+
+<BODY ONLOAD="SLIDES.restore_position('SS_POSITION');SLIDES.update();" ONUNLOAD="SLIDES.save_position('SS_POSITION');">
+<P>
+<a href=javascript:SLIDES.hotlink()><img name="SLIDESIMG" src="Concert_1.jpg" STYLE="filter:progid:DXImageTransform.Microsoft.Fade()" BORDER=0 alt="Slideshow image"></A>
+<SCRIPT type=text/javascript>
+<!--
+if (document.images) {
+SLIDES.image = document.images.SLIDESIMG;
+SLIDES.textid = SLIDESTEXT;
+SLIDES.update();
+SLIDES.play();
+}
+//-->
+</SCRIPT>
+
+<BR CLEAR=all>
+
+<NOSCRIPT>
+<HR>
+Since your web browser does not support JavaScript,
+here is a non-JavaScript version of the image slideshow:
+<P>
+<P>
+<IMG SRC=Concert_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Crimson_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Dream_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Lenne_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Paine_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Paine_2.jpg ALT=slideshow image><BR>
+<IMG SRC=Rikku_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Rikku_2.jpg ALT=slideshow image><BR>
+<IMG SRC=Shuyin_1.jpg ALT=slideshow image><BR>
+<IMG SRC=YRP_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Yuna_1.jpg ALT=slideshow image><BR>
+<IMG SRC=Yuna_2.jpg ALT=slideshow image><BR>
+<IMG SRC=Yuna_3.jpg ALT=slideshow image><BR>
+<IMG SRC=Yuna_4.jpg ALT=slideshow image><BR>
+</P>
+<HR>
+
+</NOSCRIPT>
+
+<!-- BEGIN JavaScript NoRightClick (Msg Box Ver.) -->
+<!-- (C)2003 USINGIT.COM, All rights reserved. -->
+<script language="JavaScript1.2" src="usingitscripts/js_disable_right_click/js_disable_right_click_cfg.js"></script>
+<script language="JavaScript1.2" src="usingitscripts/js_disable_right_click/js_disable_right_click.js"></script>
+<!-- END JavaScript NoRightClick (Msg Box Ver.) -->
+</body>
+</html>
+
