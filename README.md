@@ -11,6 +11,52 @@ En la actualidad mi area de conocimiento esta referida a las tecnologias .NET co
 # Tipo de Proyecto
 JavaScript Plus fue un editor de texto para javascript creado por mi por alla por el año 2004. El proyecto fue distribuido como shareware y hoy liberado para estudio y disponible para la comunidad. Fue escrito en Visual Basic 6.0 usando principalmente muchas librerias creadas por el sitio web http://www.vbaccelerator.com y adaptadas al proyecto.
 
+# Archivos Necesarios
+Este proyecto ocupa 33 componentes ActiveX 
+
+- Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WIN\system32\stdole2.tlb#OLE Automation
+- Object={665BF2B8-F41F-4EF4-A8D0-303FBFFC475E}#2.0#0; cmcs21.ocx
+- Reference=*\G{24042BC3-630E-4340-8906-B3E0DB1FC0BF}#1.0#0#C:\Archivos de programa\jsplus\dll\vbslibrary.dll#VBSoftware - Library
+- Reference=*\G{B0F6465F-C038-418D-9954-C80B985D847D}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsengine.dll#Javascript Plus! Engine - Powered by vbaccelerator components
+- Object={EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}#1.1#0; SHDOCVW.DLL
+- Reference=*\G{405951B7-1EAF-4A8C-BDC1-20DF46E5C6D5}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsftp.dll#Javascript Plus! - FTP Engine
+- Reference=*\G{B3B4F02C-84F1-4C7F-A6BC-A623DE688F48}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsclipboard.dll#VBSoftware - Special Clipboard Library
+- Reference=*\G{45E6F8A4-4D4E-42EE-904B-64B62F3D879F}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsprintpreview.dll#VBSoftware - Print Preview Library
+- Reference=*\G{10677DAE-9352-40CF-9657-DF96F8190940}#2.0#0#C:\Archivos de programa\jsplus\dll\vbsxmlexplorer.dll#VBSoftware - Enhanced XML Explorer
+- Reference=*\G{E76D5D20-515C-4147-B2DC-4D3E946D93F3}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsconsole.dll#VBSoftware - Console Emulation
+- Reference=*\G{816B6959-6446-4794-9F10-69EE168CF924}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsimagebrowser.dll#VBSoftware - Image Browser
+- Reference=*\G{7DF84B65-F293-4EDB-B532-CC7557E30113}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsunzip.dll#VBSoftware - Unzip Library Manager
+- Reference=*\G{B67ABA03-CA2E-44EA-8A6D-6A2F03D1FB28}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsimageeffect.dll#VBSoftware - Image Effect
+- Reference=*\G{73100AAE-F78B-4338-BA56-C91865AB82AA}#1.0#0#C:\Archivos de programa\jsplus\dll\vbscodelibrary.dll#VBSoftware - Code Library
+- Reference=*\G{BE5D99D9-0EE1-434A-84BE-85F7E945B363}#1.0#0#C:\Archivos de programa\jsplus\dll\vbsplugins.dll#VBSoftware - Plugin Engine
+- Object={831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0; mscomctl.ocx
+- Object={246E535D-09D2-4109-80DA-2FF183F4D185}#2.1#0; colorpick.ocx
+- Object={04DE47C8-1CE9-420F-ABED-109D480907D3}#1.2#0; PropertyWindow8.ocx
+- Object={19B7F2A2-1610-11D3-BF30-1AF820524153}#1.2#0; ccrpftv6.ocx
+- Object={971CBA62-C40B-4E49-9602-35CDA8C00036}#1.0#0; vbsExpBar6.ocx
+- Object={2128BF45-F895-4206-84CD-F4DE2DD8D6B1}#2.0#0; vbsTbar6.ocx
+- Object={3E0CB9ED-F88D-4146-BA44-38084D53F916}#2.0#0; vbsCbEx6.ocx
+- Object={BCA5B647-4A34-488D-8923-BAED19344F42}#2.0#0; vbsToolboxBar6.ocx
+- Object={E7106799-3A07-4335-80BA-4F20E8E5E2E9}#2.0#0; vbsODCL6.ocx
+- Object={FCFAF346-DE8A-4FB6-8612-5000548EFDC7}#2.0#0; vbsListView6.ocx
+- Object={E861E505-03C0-49EC-8FC6-8AB54B4361FE}#2.0#0; vbsDTab6.ocx
+- Object={8C44B082-B582-4258-9E2C-7D9383CE7DF4}#1.0#0; vbsTreeView6.ocx
+- Object={98F993CC-3598-405A-9E9A-0D2CF198B250}#2.0#0; vbsDkTb6.ocx
+- Object={D890B066-6CE9-4233-9AC2-5E66E7917BF3}#2.0#0; vbsTab6.ocx
+- Object={A9700EB9-4073-41EA-AF2D-6410341636CD}#1.0#0; vbsmditabs.ocx
+- Object={C03D5026-EB27-402A-BD60-0E05020E600B}#2.0#0; vbsframex.ocx
+- Object={764E381F-AD5F-40CB-9BEE-A63326278294}#1.0#0; vbscolorname.ocx
+- Object={866F095F-113F-4DC1-B803-F4CF4AFC96EE}#1.0#0; vbspgbbar.ocx
+
+El archivo PVB_XMENU.DLL es un componente customizado para que los menus se puedan aplicar iconos y ayuda al momento de selección.
+
+# Registro de los componentes ActiveX
+Se debe realizar desde la linea de comando de windows regsvr32.exe [nombre del componente]
+Para windows 10 necesitaras instalar con permisos de administrador. 
+
+# Notas de los componentes ActiveX de Windows
+Si obtienes error de licencia de componentes al momento de ejecutar el proyecto necesitaras instalar quizas la runtime de Visual Basic 5 (MSCVBM50.DLL) y bajar el archivo VB5CLI.EXE y VBUSC.EXE ambos disponibles en internet para descarga. Esto corregira los problemas de licencia de componentes de VB5.
+
 # Historia
 Quisiera compartir con uds esta historia que puede ser de motivacion para mas de alguno que quiera partir con una idea y no sabe como empezar. Hace muchos años atras trabajaba como recurso externo en la AFP Habitat del metro pedro de valdivia. Como era externo casi eramos "mierda" a diferencia de los que trabajan para la afp. En esa afp el piso de informatica estaba en el piso 10 y trabajaban con un lenguaje que habia inventado un tipo de ahi al que llamaban IUX.
 
